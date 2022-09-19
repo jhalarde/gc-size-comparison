@@ -1,5 +1,5 @@
 {
-  "name": "@harveyjovit/size-comparison",
+  "name": "gc-size-comparison",
   "author": "harveyjovit",
   "type": "module",
   "files": [
