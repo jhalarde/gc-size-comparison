@@ -12940,18 +12940,19 @@ const Me = yn.exports, fr = ["id"], mn = {
     xHeight: Number,
     yWidth: Number,
     yHeight: Number,
-    imageLoaded: Boolean
+    imageLoaded: Boolean,
+    config: Object
   },
   setup(ne) {
     const ct = ne, W = ui(() => "#" + ct.position + "Ruler"), ut = Mi(null), et = ui(() => ({
-      pixelsPerInch: 72,
+      pixelsPerInch: ct.config.pixelsPerInch || 72,
       spaceAddend: 15,
       subUnitBase: 2,
       subUnitExponent: 2,
       levelToLevelMultiplier: 0.5,
       ticksPerUnit: Math.pow(2, 2),
       masterTickQty: Math.pow(2, 2) * ct.xWidth,
-      rulerWidth: Math.round(15 + 0.3 * 72)
+      rulerWidth: Math.round(15 + 0.3 * ct.config.pixelsPerInch)
     })), O = ui(() => {
       let Tt = {
         left: {
@@ -13071,7 +13072,7 @@ const Me = yn.exports, fr = ["id"], mn = {
       }
       Me.view.draw();
     }, Gt = (Tt, pt, Nt, z) => {
-      let Dt = ct.position === "left" ? -10 : 4, at = 1;
+      let Dt = ct.position === "left" ? -5 : -2, at = 1;
       Nt === 0 ? at = 15 : at = -5;
       let xt = new Me.PointText(
         new Me.Point(Tt + Dt, pt + at)
@@ -13081,7 +13082,7 @@ const Me = yn.exports, fr = ["id"], mn = {
         fontSize: 14
       };
     }, ve = (Tt, pt, Nt, z, Dt) => {
-      let at = 4, xt = 10;
+      let at = 4, xt = 6;
       Nt && (at = -1 * at);
       let ft = new Me.PointText(
         new Me.Point(Tt + at, pt + xt)
@@ -13127,18 +13128,19 @@ const Me = yn.exports, fr = ["id"], mn = {
     position: String,
     comparison: String,
     image: Object,
-    maxLength: Number
+    maxLength: Number,
+    config: Object
   },
   emits: ["imageLoaded"],
   setup(ne, { emit: ct }) {
     const W = ne, ut = Mi(null), et = Mi(!1), O = Oi({
-      pixelsPerInch: 72,
+      pixelsPerInch: W.config.pixelsPerInch || 72,
       spaceAddend: 15,
       xWidth: 0.3,
       xHeight: 0.3,
       yWidth: 0.3,
       yHeight: 0.3,
-      rulerWidth: Math.round(15 + 0.3 * 72)
+      rulerWidth: Math.round(15 + 0.3 * W.config.pixelsPerInch)
     }), Qt = ui(() => ({
       width: W.image.rawLength * O.pixelsPerInch
     })), Gt = () => {
@@ -13170,8 +13172,9 @@ const Me = yn.exports, fr = ["id"], mn = {
         "x-height": O.xHeight,
         "y-width": O.yWidth,
         "y-height": O.yHeight,
-        "image-loaded": et.value
-      }, null, 8, ["position", "comparison", "x-width", "x-height", "y-width", "y-height", "image-loaded"]),
+        "image-loaded": et.value,
+        config: W.config
+      }, null, 8, ["position", "comparison", "x-width", "x-height", "y-width", "y-height", "image-loaded", "config"]),
       Qe("img", {
         ref_key: "image",
         ref: ut,
@@ -13186,8 +13189,9 @@ const Me = yn.exports, fr = ["id"], mn = {
         "x-height": O.xHeight,
         "y-width": O.yWidth,
         "y-height": O.yHeight,
-        "image-loaded": et.value
-      }, null, 8, ["position", "comparison", "x-width", "x-height", "y-width", "y-height", "image-loaded"])
+        "image-loaded": et.value,
+        config: W.config
+      }, null, 8, ["position", "comparison", "x-width", "x-height", "y-width", "y-height", "image-loaded", "config"])
     ]));
   }
 }, cr = /* @__PURE__ */ Qe("option", { value: "Facing Up" }, "Facing Up", -1), dr = /* @__PURE__ */ Qe("option", { value: "Back-to-Back" }, "Back-to-Back", -1), pr = /* @__PURE__ */ Qe("option", { value: "Facing In" }, "Facing In", -1), gr = [
@@ -13198,7 +13202,7 @@ const Me = yn.exports, fr = ["id"], mn = {
   __name: "App",
   setup(ne) {
     const ct = Mi("Facing In"), W = Oi({
-      pixelsPerInch: 72,
+      pixelsPerInch: 48,
       spaceAddend: 15,
       spacing: 0.3
     }), ut = ui(() => {
@@ -13263,8 +13267,9 @@ const Me = yn.exports, fr = ["id"], mn = {
           comparison: ct.value,
           image: O,
           maxLength: Re(et).maxLength,
+          config: W,
           onImageLoaded: Gt
-        }, null, 8, ["style", "comparison", "image", "maxLength"]),
+        }, null, 8, ["style", "comparison", "image", "maxLength", "config"]),
         Ni(xn, {
           style: Li({
             height: Re(et).containerHeight,
@@ -13275,8 +13280,9 @@ const Me = yn.exports, fr = ["id"], mn = {
           comparison: ct.value,
           image: Qt,
           maxLength: Re(et).maxLength,
+          config: W,
           onImageLoaded: ve
-        }, null, 8, ["style", "comparison", "image", "maxLength"])
+        }, null, 8, ["style", "comparison", "image", "maxLength", "config"])
       ])
     ], 4));
   }

@@ -9,6 +9,7 @@
             :y-width="config.yWidth"
             :y-height="config.yHeight"
             :image-loaded="imageLoaded"
+            :config="props.config"
         ></image-ruler>
 
         <img ref="image" id="image" @load="onImageLoad" />
@@ -22,6 +23,7 @@
             :y-width="config.yWidth"
             :y-height="config.yHeight"
             :image-loaded="imageLoaded"
+            :config="props.config"
         ></image-ruler>
     </div>
 </template>
@@ -36,18 +38,19 @@ const props = defineProps({
     comparison: String,
     image: Object,
     maxLength: Number,
+    config: Object,
 })
 
 const imageLoaded = ref(false)
 
 const config = reactive({
-    pixelsPerInch: 72,
+    pixelsPerInch: props.config.pixelsPerInch || 72,
     spaceAddend: 15,
     xWidth: 0.3,
     xHeight: 0.3,
     yWidth: 0.3,
     yHeight: 0.3,
-    rulerWidth: Math.round(15 + 0.3 * 72),
+    rulerWidth: Math.round(15 + 0.3 * props.config.pixelsPerInch),
 })
 
 const imageConfig = computed(() => {

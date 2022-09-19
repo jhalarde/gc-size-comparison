@@ -22,6 +22,7 @@
                 :comparison="comparison"
                 :image="leftImage"
                 :maxLength="defaultConfig.maxLength"
+                :config="config"
                 @imageLoaded="leftImageLoaded"
             ></ImageCompare>
 
@@ -35,6 +36,7 @@
                 :comparison="comparison"
                 :image="rightImage"
                 :maxLength="defaultConfig.maxLength"
+                :config="config"
                 @imageLoaded="rightImageLoaded"
             ></ImageCompare>
         </div>
@@ -56,7 +58,7 @@ import { computed, onMounted, reactive, ref } from 'vue'
 const comparison = ref('Facing In')
 
 const config = reactive({
-    pixelsPerInch: 72,
+    pixelsPerInch: 52,
     spaceAddend: 15,
     spacing: 0.3,
 })

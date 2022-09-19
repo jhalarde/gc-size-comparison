@@ -22,20 +22,21 @@ const props = defineProps({
     yWidth: Number,
     yHeight: Number,
     imageLoaded: Boolean,
+    config: Object,
 })
 
 const ruler = ref(null)
 
 const config = computed(() => {
     return {
-        pixelsPerInch: 72,
+        pixelsPerInch: props.config.pixelsPerInch || 72,
         spaceAddend: 15,
         subUnitBase: 2,
         subUnitExponent: 2,
         levelToLevelMultiplier: 0.5,
         ticksPerUnit: Math.pow(2, 2),
         masterTickQty: Math.pow(2, 2) * props.xWidth,
-        rulerWidth: Math.round(15 + 0.3 * 72),
+        rulerWidth: Math.round(15 + 0.3 * props.config.pixelsPerInch),
     }
 })
 
@@ -263,7 +264,7 @@ const constructRuler = () => {
 }
 
 const yRulerTextSetup = (x, y, tickIndex, tickQty) => {
-    let xLabelOffset = props.position === 'left' ? -10 : 4
+    let xLabelOffset = props.position === 'left' ? -5 : -2
     let yLabelOffset = 1
     if (tickIndex === 0) {
         yLabelOffset = 15
@@ -289,7 +290,7 @@ const yRulerTextSetup = (x, y, tickIndex, tickQty) => {
 
 const xRulerTextSetup = (x, y, finalTick, tickIndex, tickQty) => {
     let xLabelOffset = 4
-    let yLabelOffset = 10
+    let yLabelOffset = 6
     if (finalTick) {
         xLabelOffset = -1 * xLabelOffset
     } //last label is right justified
