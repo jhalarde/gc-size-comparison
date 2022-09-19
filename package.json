@@ -1,7 +1,10 @@
 {
-  "name": "size-comparison",
+  "name": "@harveyjovit/size-comparison",
+  "author": "harveyjovit",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "module": "./dist/size-comparison",
   "version": "1.0.0",
   "scripts": {
@@ -28,5 +31,16 @@
       "import": "./dist/size-comparison.js",
       "require": "./dist/size-comparison.umd.cjs"
     }
-  }
+  },
+  "description": "GC Size Comparison",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhalarde/gc-size-comparison.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jhalarde/gc-size-comparison/issues"
+  },
+  "homepage": "https://github.com/jhalarde/gc-size-comparison#readme"
 }
