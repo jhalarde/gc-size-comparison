@@ -4,11 +4,11 @@
             width: baseContainerWidth,
         }"
     >
-        <select v-model="comparison" style="margin-bottom: 25px">
-            <option value="Facing Up">Facing Up</option>
-            <option value="Back-to-Back">Back-to-Back</option>
-            <option value="Facing In">Facing In</option>
-        </select>
+        <!--        <select v-model="comparison" style="margin-bottom: 25px">-->
+        <!--            <option value="Facing Up">Facing Up</option>-->
+        <!--            <option value="Back-to-Back">Back-to-Back</option>-->
+        <!--            <option value="Facing In">Facing In</option>-->
+        <!--        </select>-->
         <div
             style="display: flex; align-items: center; justify-content: center"
         >
@@ -47,15 +47,15 @@
 import ImageCompare from './components/ImageCompare.vue'
 import { computed, onMounted, reactive, ref } from 'vue'
 
-// const props = defineProps({
-//     comparison: {
-//         type: String,
-//         required: true,
-//         default: 'Facing Up', // Facing Up, Back-to-Back, Facing In, Back
-//     },
-// })
+const props = defineProps({
+    comparison: {
+        type: String,
+        required: true,
+        default: 'Facing Up', // Facing Up, Back-to-Back, Facing In, Back
+    },
+})
 
-const comparison = ref('Facing In')
+const comparison = ref(props.comparison || 'Facing In')
 
 const config = reactive({
     pixelsPerInch: 52,

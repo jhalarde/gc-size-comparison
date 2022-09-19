@@ -1,49 +1,49 @@
-import { computed as ui, ref as Mi, onMounted as Xi, watch as Zi, openBlock as Ki, createElementBlock as Yi, normalizeStyle as Li, unref as Re, createElementVNode as Qe, reactive as Oi, createVNode as Ni, withDirectives as nr, vModelSelect as rr, defineCustomElement as sr } from "vue";
+import { computed as ai, ref as Oi, onMounted as Zi, watch as ji, openBlock as Xi, createElementBlock as Ki, normalizeStyle as Ti, unref as Ve, createElementVNode as Yi, reactive as Li, createVNode as Mi, defineCustomElement as nr } from "vue";
 var bn = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {};
-function ar(ne) {
-  var ct = ne.default;
-  if (typeof ct == "function") {
-    var W = function() {
-      return ct.apply(this, arguments);
+function rr(te) {
+  var pt = te.default;
+  if (typeof pt == "function") {
+    var G = function() {
+      return pt.apply(this, arguments);
     };
-    W.prototype = ct.prototype;
+    G.prototype = pt.prototype;
   } else
-    W = {};
-  return Object.defineProperty(W, "__esModule", { value: !0 }), Object.keys(ne).forEach(function(ut) {
-    var et = Object.getOwnPropertyDescriptor(ne, ut);
-    Object.defineProperty(W, ut, et.get ? et : {
+    G = {};
+  return Object.defineProperty(G, "__esModule", { value: !0 }), Object.keys(te).forEach(function(et) {
+    var it = Object.getOwnPropertyDescriptor(te, et);
+    Object.defineProperty(G, et, it.get ? it : {
       enumerable: !0,
       get: function() {
-        return ne[ut];
+        return te[et];
       }
     });
-  }), W;
+  }), G;
 }
-function ur(ne) {
-  throw new Error('Could not dynamically require "' + ne + '". Please configure the dynamicRequireTargets or/and ignoreDynamicRequires option of @rollup/plugin-commonjs appropriately for this require call to work.');
+function sr(te) {
+  throw new Error('Could not dynamically require "' + te + '". Please configure the dynamicRequireTargets or/and ignoreDynamicRequires option of @rollup/plugin-commonjs appropriately for this require call to work.');
 }
 var yn = { exports: {} };
-const or = {}, hr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const ar = {}, ur = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: or
-}, Symbol.toStringTag, { value: "Module" })), _n = /* @__PURE__ */ ar(hr);
-var Ti = { exports: {} }, vn;
-function lr() {
-  return vn || (vn = 1, function(ne, ct) {
-    (function(W, ut) {
-      ut(ct);
-    })(bn, function(W) {
-      var ut = [509, 0, 227, 0, 150, 4, 294, 9, 1368, 2, 2, 1, 6, 3, 41, 2, 5, 0, 166, 1, 574, 3, 9, 9, 370, 1, 154, 10, 50, 3, 123, 2, 54, 14, 32, 10, 3, 1, 11, 3, 46, 10, 8, 0, 46, 9, 7, 2, 37, 13, 2, 9, 6, 1, 45, 0, 13, 2, 49, 13, 9, 3, 2, 11, 83, 11, 7, 0, 161, 11, 6, 9, 7, 3, 56, 1, 2, 6, 3, 1, 3, 2, 10, 0, 11, 1, 3, 6, 4, 4, 193, 17, 10, 9, 5, 0, 82, 19, 13, 9, 214, 6, 3, 8, 28, 1, 83, 16, 16, 9, 82, 12, 9, 9, 84, 14, 5, 9, 243, 14, 166, 9, 71, 5, 2, 1, 3, 3, 2, 0, 2, 1, 13, 9, 120, 6, 3, 6, 4, 0, 29, 9, 41, 6, 2, 3, 9, 0, 10, 10, 47, 15, 406, 7, 2, 7, 17, 9, 57, 21, 2, 13, 123, 5, 4, 0, 2, 1, 2, 6, 2, 0, 9, 9, 49, 4, 2, 1, 2, 4, 9, 9, 330, 3, 19306, 9, 87, 9, 39, 4, 60, 6, 26, 9, 1014, 0, 2, 54, 8, 3, 82, 0, 12, 1, 19628, 1, 4706, 45, 3, 22, 543, 4, 4, 5, 9, 7, 3, 6, 31, 3, 149, 2, 1418, 49, 513, 54, 5, 49, 9, 0, 15, 0, 23, 4, 2, 14, 1361, 6, 2, 16, 3, 6, 2, 1, 2, 4, 262, 6, 10, 9, 357, 0, 62, 13, 1495, 6, 110, 6, 6, 9, 4759, 9, 787719, 239], et = [0, 11, 2, 25, 2, 18, 2, 1, 2, 14, 3, 13, 35, 122, 70, 52, 268, 28, 4, 48, 48, 31, 14, 29, 6, 37, 11, 29, 3, 35, 5, 7, 2, 4, 43, 157, 19, 35, 5, 35, 5, 39, 9, 51, 13, 10, 2, 14, 2, 6, 2, 1, 2, 10, 2, 14, 2, 6, 2, 1, 68, 310, 10, 21, 11, 7, 25, 5, 2, 41, 2, 8, 70, 5, 3, 0, 2, 43, 2, 1, 4, 0, 3, 22, 11, 22, 10, 30, 66, 18, 2, 1, 11, 21, 11, 25, 71, 55, 7, 1, 65, 0, 16, 3, 2, 2, 2, 28, 43, 28, 4, 28, 36, 7, 2, 27, 28, 53, 11, 21, 11, 18, 14, 17, 111, 72, 56, 50, 14, 50, 14, 35, 349, 41, 7, 1, 79, 28, 11, 0, 9, 21, 43, 17, 47, 20, 28, 22, 13, 52, 58, 1, 3, 0, 14, 44, 33, 24, 27, 35, 30, 0, 3, 0, 9, 34, 4, 0, 13, 47, 15, 3, 22, 0, 2, 0, 36, 17, 2, 24, 85, 6, 2, 0, 2, 3, 2, 14, 2, 9, 8, 46, 39, 7, 3, 1, 3, 21, 2, 6, 2, 1, 2, 4, 4, 0, 19, 0, 13, 4, 159, 52, 19, 3, 21, 2, 31, 47, 21, 1, 2, 0, 185, 46, 42, 3, 37, 47, 21, 0, 60, 42, 14, 0, 72, 26, 38, 6, 186, 43, 117, 63, 32, 7, 3, 0, 3, 7, 2, 1, 2, 23, 16, 0, 2, 0, 95, 7, 3, 38, 17, 0, 2, 0, 29, 0, 11, 39, 8, 0, 22, 0, 12, 45, 20, 0, 19, 72, 264, 8, 2, 36, 18, 0, 50, 29, 113, 6, 2, 1, 2, 37, 22, 0, 26, 5, 2, 1, 2, 31, 15, 0, 328, 18, 190, 0, 80, 921, 103, 110, 18, 195, 2637, 96, 16, 1070, 4050, 582, 8634, 568, 8, 30, 18, 78, 18, 29, 19, 47, 17, 3, 32, 20, 6, 18, 689, 63, 129, 74, 6, 0, 67, 12, 65, 1, 2, 0, 29, 6135, 9, 1237, 43, 8, 8936, 3, 2, 6, 2, 1, 2, 290, 46, 2, 18, 3, 9, 395, 2309, 106, 6, 12, 4, 8, 8, 9, 5991, 84, 2, 70, 2, 1, 3, 0, 3, 1, 3, 3, 2, 11, 2, 0, 2, 6, 2, 64, 2, 3, 3, 7, 2, 6, 2, 27, 2, 3, 2, 4, 2, 0, 4, 6, 2, 339, 3, 24, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 7, 1845, 30, 482, 44, 11, 6, 17, 0, 322, 29, 19, 43, 1269, 6, 2, 3, 2, 1, 2, 14, 2, 196, 60, 67, 8, 0, 1205, 3, 2, 26, 2, 1, 2, 0, 3, 0, 2, 9, 2, 3, 2, 0, 2, 0, 7, 0, 5, 0, 2, 0, 2, 0, 2, 2, 2, 1, 2, 0, 3, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 1, 2, 0, 3, 3, 2, 6, 2, 3, 2, 3, 2, 0, 2, 9, 2, 16, 6, 2, 2, 4, 2, 16, 4421, 42719, 33, 4152, 8, 221, 3, 5761, 15, 7472, 3104, 541, 1507, 4938], O = "\u200C\u200D\xB7\u0300-\u036F\u0387\u0483-\u0487\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u0669\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u06F0-\u06F9\u0711\u0730-\u074A\u07A6-\u07B0\u07C0-\u07C9\u07EB-\u07F3\u07FD\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u0898-\u089F\u08CA-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0966-\u096F\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u09E6-\u09EF\u09FE\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A66-\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0AE6-\u0AEF\u0AFA-\u0AFF\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B55-\u0B57\u0B62\u0B63\u0B66-\u0B6F\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0BE6-\u0BEF\u0C00-\u0C04\u0C3C\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C66-\u0C6F\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0CE6-\u0CEF\u0D00-\u0D03\u0D3B\u0D3C\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D66-\u0D6F\u0D81-\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DE6-\u0DEF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0E50-\u0E59\u0EB1\u0EB4-\u0EBC\u0EC8-\u0ECD\u0ED0-\u0ED9\u0F18\u0F19\u0F20-\u0F29\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1040-\u1049\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F-\u109D\u135D-\u135F\u1369-\u1371\u1712-\u1715\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u17E0-\u17E9\u180B-\u180D\u180F-\u1819\u18A9\u1920-\u192B\u1930-\u193B\u1946-\u194F\u19D0-\u19DA\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F-\u1A89\u1A90-\u1A99\u1AB0-\u1ABD\u1ABF-\u1ACE\u1B00-\u1B04\u1B34-\u1B44\u1B50-\u1B59\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BB0-\u1BB9\u1BE6-\u1BF3\u1C24-\u1C37\u1C40-\u1C49\u1C50-\u1C59\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF4\u1CF7-\u1CF9\u1DC0-\u1DFF\u203F\u2040\u2054\u20D0-\u20DC\u20E1\u20E5-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA620-\uA629\uA66F\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA82C\uA880\uA881\uA8B4-\uA8C5\uA8D0-\uA8D9\uA8E0-\uA8F1\uA8FF-\uA909\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9D0-\uA9D9\uA9E5\uA9F0-\uA9F9\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA50-\uAA59\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uABF0-\uABF9\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F\uFE33\uFE34\uFE4D-\uFE4F\uFF10-\uFF19\uFF3F", Qt = "\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0560-\u0588\u05D0-\u05EA\u05EF-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u0860-\u086A\u0870-\u0887\u0889-\u088E\u08A0-\u08C9\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u09FC\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C5D\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D04-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E86-\u0E8A\u0E8C-\u0EA3\u0EA5\u0EA7-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16EE-\u16F8\u1700-\u1711\u171F-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1878\u1880-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4C\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1C90-\u1CBA\u1CBD-\u1CBF\u1CE9-\u1CEC\u1CEE-\u1CF3\u1CF5\u1CF6\u1CFA\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2118-\u211D\u2124\u2126\u2128\u212A-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2160-\u2188\u2C00-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u3005-\u3007\u3021-\u3029\u3031-\u3035\u3038-\u303C\u3041-\u3096\u309B-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312F\u3131-\u318E\u31A0-\u31BF\u31F0-\u31FF\u3400-\u4DBF\u4E00-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6EF\uA717-\uA71F\uA722-\uA788\uA78B-\uA7CA\uA7D0\uA7D1\uA7D3\uA7D5-\uA7D9\uA7F2-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA8FE\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB69\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC", Gt = {
+  default: ar
+}, Symbol.toStringTag, { value: "Module" })), _n = /* @__PURE__ */ rr(ur);
+var Ei = { exports: {} }, vn;
+function or() {
+  return vn || (vn = 1, function(te, pt) {
+    (function(G, et) {
+      et(pt);
+    })(bn, function(G) {
+      var et = [509, 0, 227, 0, 150, 4, 294, 9, 1368, 2, 2, 1, 6, 3, 41, 2, 5, 0, 166, 1, 574, 3, 9, 9, 370, 1, 154, 10, 50, 3, 123, 2, 54, 14, 32, 10, 3, 1, 11, 3, 46, 10, 8, 0, 46, 9, 7, 2, 37, 13, 2, 9, 6, 1, 45, 0, 13, 2, 49, 13, 9, 3, 2, 11, 83, 11, 7, 0, 161, 11, 6, 9, 7, 3, 56, 1, 2, 6, 3, 1, 3, 2, 10, 0, 11, 1, 3, 6, 4, 4, 193, 17, 10, 9, 5, 0, 82, 19, 13, 9, 214, 6, 3, 8, 28, 1, 83, 16, 16, 9, 82, 12, 9, 9, 84, 14, 5, 9, 243, 14, 166, 9, 71, 5, 2, 1, 3, 3, 2, 0, 2, 1, 13, 9, 120, 6, 3, 6, 4, 0, 29, 9, 41, 6, 2, 3, 9, 0, 10, 10, 47, 15, 406, 7, 2, 7, 17, 9, 57, 21, 2, 13, 123, 5, 4, 0, 2, 1, 2, 6, 2, 0, 9, 9, 49, 4, 2, 1, 2, 4, 9, 9, 330, 3, 19306, 9, 87, 9, 39, 4, 60, 6, 26, 9, 1014, 0, 2, 54, 8, 3, 82, 0, 12, 1, 19628, 1, 4706, 45, 3, 22, 543, 4, 4, 5, 9, 7, 3, 6, 31, 3, 149, 2, 1418, 49, 513, 54, 5, 49, 9, 0, 15, 0, 23, 4, 2, 14, 1361, 6, 2, 16, 3, 6, 2, 1, 2, 4, 262, 6, 10, 9, 357, 0, 62, 13, 1495, 6, 110, 6, 6, 9, 4759, 9, 787719, 239], it = [0, 11, 2, 25, 2, 18, 2, 1, 2, 14, 3, 13, 35, 122, 70, 52, 268, 28, 4, 48, 48, 31, 14, 29, 6, 37, 11, 29, 3, 35, 5, 7, 2, 4, 43, 157, 19, 35, 5, 35, 5, 39, 9, 51, 13, 10, 2, 14, 2, 6, 2, 1, 2, 10, 2, 14, 2, 6, 2, 1, 68, 310, 10, 21, 11, 7, 25, 5, 2, 41, 2, 8, 70, 5, 3, 0, 2, 43, 2, 1, 4, 0, 3, 22, 11, 22, 10, 30, 66, 18, 2, 1, 11, 21, 11, 25, 71, 55, 7, 1, 65, 0, 16, 3, 2, 2, 2, 28, 43, 28, 4, 28, 36, 7, 2, 27, 28, 53, 11, 21, 11, 18, 14, 17, 111, 72, 56, 50, 14, 50, 14, 35, 349, 41, 7, 1, 79, 28, 11, 0, 9, 21, 43, 17, 47, 20, 28, 22, 13, 52, 58, 1, 3, 0, 14, 44, 33, 24, 27, 35, 30, 0, 3, 0, 9, 34, 4, 0, 13, 47, 15, 3, 22, 0, 2, 0, 36, 17, 2, 24, 85, 6, 2, 0, 2, 3, 2, 14, 2, 9, 8, 46, 39, 7, 3, 1, 3, 21, 2, 6, 2, 1, 2, 4, 4, 0, 19, 0, 13, 4, 159, 52, 19, 3, 21, 2, 31, 47, 21, 1, 2, 0, 185, 46, 42, 3, 37, 47, 21, 0, 60, 42, 14, 0, 72, 26, 38, 6, 186, 43, 117, 63, 32, 7, 3, 0, 3, 7, 2, 1, 2, 23, 16, 0, 2, 0, 95, 7, 3, 38, 17, 0, 2, 0, 29, 0, 11, 39, 8, 0, 22, 0, 12, 45, 20, 0, 19, 72, 264, 8, 2, 36, 18, 0, 50, 29, 113, 6, 2, 1, 2, 37, 22, 0, 26, 5, 2, 1, 2, 31, 15, 0, 328, 18, 190, 0, 80, 921, 103, 110, 18, 195, 2637, 96, 16, 1070, 4050, 582, 8634, 568, 8, 30, 18, 78, 18, 29, 19, 47, 17, 3, 32, 20, 6, 18, 689, 63, 129, 74, 6, 0, 67, 12, 65, 1, 2, 0, 29, 6135, 9, 1237, 43, 8, 8936, 3, 2, 6, 2, 1, 2, 290, 46, 2, 18, 3, 9, 395, 2309, 106, 6, 12, 4, 8, 8, 9, 5991, 84, 2, 70, 2, 1, 3, 0, 3, 1, 3, 3, 2, 11, 2, 0, 2, 6, 2, 64, 2, 3, 3, 7, 2, 6, 2, 27, 2, 3, 2, 4, 2, 0, 4, 6, 2, 339, 3, 24, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 7, 1845, 30, 482, 44, 11, 6, 17, 0, 322, 29, 19, 43, 1269, 6, 2, 3, 2, 1, 2, 14, 2, 196, 60, 67, 8, 0, 1205, 3, 2, 26, 2, 1, 2, 0, 3, 0, 2, 9, 2, 3, 2, 0, 2, 0, 7, 0, 5, 0, 2, 0, 2, 0, 2, 2, 2, 1, 2, 0, 3, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 1, 2, 0, 3, 3, 2, 6, 2, 3, 2, 3, 2, 0, 2, 9, 2, 16, 6, 2, 2, 4, 2, 16, 4421, 42719, 33, 4152, 8, 221, 3, 5761, 15, 7472, 3104, 541, 1507, 4938], O = "\u200C\u200D\xB7\u0300-\u036F\u0387\u0483-\u0487\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u0669\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u06F0-\u06F9\u0711\u0730-\u074A\u07A6-\u07B0\u07C0-\u07C9\u07EB-\u07F3\u07FD\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u0898-\u089F\u08CA-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0966-\u096F\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u09E6-\u09EF\u09FE\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A66-\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0AE6-\u0AEF\u0AFA-\u0AFF\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B55-\u0B57\u0B62\u0B63\u0B66-\u0B6F\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0BE6-\u0BEF\u0C00-\u0C04\u0C3C\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C66-\u0C6F\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0CE6-\u0CEF\u0D00-\u0D03\u0D3B\u0D3C\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D66-\u0D6F\u0D81-\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DE6-\u0DEF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0E50-\u0E59\u0EB1\u0EB4-\u0EBC\u0EC8-\u0ECD\u0ED0-\u0ED9\u0F18\u0F19\u0F20-\u0F29\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1040-\u1049\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F-\u109D\u135D-\u135F\u1369-\u1371\u1712-\u1715\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u17E0-\u17E9\u180B-\u180D\u180F-\u1819\u18A9\u1920-\u192B\u1930-\u193B\u1946-\u194F\u19D0-\u19DA\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F-\u1A89\u1A90-\u1A99\u1AB0-\u1ABD\u1ABF-\u1ACE\u1B00-\u1B04\u1B34-\u1B44\u1B50-\u1B59\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BB0-\u1BB9\u1BE6-\u1BF3\u1C24-\u1C37\u1C40-\u1C49\u1C50-\u1C59\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF4\u1CF7-\u1CF9\u1DC0-\u1DFF\u203F\u2040\u2054\u20D0-\u20DC\u20E1\u20E5-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA620-\uA629\uA66F\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA82C\uA880\uA881\uA8B4-\uA8C5\uA8D0-\uA8D9\uA8E0-\uA8F1\uA8FF-\uA909\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9D0-\uA9D9\uA9E5\uA9F0-\uA9F9\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA50-\uAA59\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uABF0-\uABF9\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F\uFE33\uFE34\uFE4D-\uFE4F\uFF10-\uFF19\uFF3F", Yt = "\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0560-\u0588\u05D0-\u05EA\u05EF-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u0860-\u086A\u0870-\u0887\u0889-\u088E\u08A0-\u08C9\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u09FC\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C5D\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D04-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E86-\u0E8A\u0E8C-\u0EA3\u0EA5\u0EA7-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16EE-\u16F8\u1700-\u1711\u171F-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1878\u1880-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4C\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1C90-\u1CBA\u1CBD-\u1CBF\u1CE9-\u1CEC\u1CEE-\u1CF3\u1CF5\u1CF6\u1CFA\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2118-\u211D\u2124\u2126\u2128\u212A-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2160-\u2188\u2C00-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u3005-\u3007\u3021-\u3029\u3031-\u3035\u3038-\u303C\u3041-\u3096\u309B-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312F\u3131-\u318E\u31A0-\u31BF\u31F0-\u31FF\u3400-\u4DBF\u4E00-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6EF\uA717-\uA71F\uA722-\uA788\uA78B-\uA7CA\uA7D0\uA7D1\uA7D3\uA7D5-\uA7D9\uA7F2-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA8FE\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB69\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC", Nt = {
         3: "abstract boolean byte char class double enum export extends final float goto implements import int interface long native package private protected public short static super synchronized throws transient volatile",
         5: "class enum extends super const export import",
         6: "enum",
         strict: "implements interface let package private protected public static yield",
         strictBind: "eval arguments"
-      }, ve = "break case catch continue debugger default do else finally for function if return switch throw try var while with null true false instanceof typeof void delete new in this", Wt = {
-        5: ve,
-        "5module": ve + " export import",
-        6: ve + " const class extends export import super"
-      }, Tt = /^in(stanceof)?$/, pt = new RegExp("[" + Qt + "]"), Nt = new RegExp("[" + Qt + O + "]");
+      }, _e = "break case catch continue debugger default do else finally for function if return switch throw try var while with null true false instanceof typeof void delete new in this", xe = {
+        5: _e,
+        "5module": _e + " export import",
+        6: _e + " const class extends export import super"
+      }, Et = /^in(stanceof)?$/, ct = new RegExp("[" + Yt + "]"), Vt = new RegExp("[" + Yt + O + "]");
       function z(n, u) {
         for (var x = 65536, A = 0; A < u.length; A += 2) {
           if (x += u[A], x > n)
@@ -52,11 +52,11 @@ function lr() {
             return !0;
         }
       }
-      function Dt(n, u) {
-        return n < 65 ? n === 36 : n < 91 ? !0 : n < 97 ? n === 95 : n < 123 ? !0 : n <= 65535 ? n >= 170 && pt.test(String.fromCharCode(n)) : u === !1 ? !1 : z(n, et);
+      function Ft(n, u) {
+        return n < 65 ? n === 36 : n < 91 ? !0 : n < 97 ? n === 95 : n < 123 ? !0 : n <= 65535 ? n >= 170 && ct.test(String.fromCharCode(n)) : u === !1 ? !1 : z(n, it);
       }
-      function at(n, u) {
-        return n < 48 ? n === 36 : n < 58 ? !0 : n < 65 ? !1 : n < 91 ? !0 : n < 97 ? n === 95 : n < 123 ? !0 : n <= 65535 ? n >= 170 && Nt.test(String.fromCharCode(n)) : u === !1 ? !1 : z(n, et) || z(n, ut);
+      function ut(n, u) {
+        return n < 48 ? n === 36 : n < 58 ? !0 : n < 65 ? !1 : n < 91 ? !0 : n < 97 ? n === 95 : n < 123 ? !0 : n <= 65535 ? n >= 170 && Vt.test(String.fromCharCode(n)) : u === !1 ? !1 : z(n, it) || z(n, et);
       }
       var xt = function(u, x) {
         x === void 0 && (x = {}), this.label = u, this.keyword = x.keyword, this.beforeExpr = !!x.beforeExpr, this.startsExpr = !!x.startsExpr, this.isLoop = !!x.isLoop, this.isAssign = !!x.isAssign, this.prefix = !!x.prefix, this.postfix = !!x.postfix, this.binop = x.binop || null, this.updateContext = null;
@@ -64,7 +64,7 @@ function lr() {
       function ft(n, u) {
         return new xt(n, { beforeExpr: !0, binop: u });
       }
-      var se = { beforeExpr: !0 }, At = { startsExpr: !0 }, Bt = {};
+      var re = { beforeExpr: !0 }, At = { startsExpr: !0 }, Bt = {};
       function kt(n, u) {
         return u === void 0 && (u = {}), u.keyword = n, Bt[n] = new xt(n, u);
       }
@@ -81,16 +81,16 @@ function lr() {
         braceR: new xt("}"),
         parenL: new xt("(", { beforeExpr: !0, startsExpr: !0 }),
         parenR: new xt(")"),
-        comma: new xt(",", se),
-        semi: new xt(";", se),
-        colon: new xt(":", se),
+        comma: new xt(",", re),
+        semi: new xt(";", re),
+        colon: new xt(":", re),
         dot: new xt("."),
-        question: new xt("?", se),
+        question: new xt("?", re),
         questionDot: new xt("?."),
-        arrow: new xt("=>", se),
+        arrow: new xt("=>", re),
         template: new xt("template"),
         invalidTemplate: new xt("invalidTemplate"),
-        ellipsis: new xt("...", se),
+        ellipsis: new xt("...", re),
         backQuote: new xt("`", At),
         dollarBraceL: new xt("${", { beforeExpr: !0, startsExpr: !0 }),
         eq: new xt("=", { beforeExpr: !0, isAssign: !0 }),
@@ -112,20 +112,20 @@ function lr() {
         starstar: new xt("**", { beforeExpr: !0 }),
         coalesce: ft("??", 1),
         _break: kt("break"),
-        _case: kt("case", se),
+        _case: kt("case", re),
         _catch: kt("catch"),
         _continue: kt("continue"),
         _debugger: kt("debugger"),
-        _default: kt("default", se),
+        _default: kt("default", re),
         _do: kt("do", { isLoop: !0, beforeExpr: !0 }),
-        _else: kt("else", se),
+        _else: kt("else", re),
         _finally: kt("finally"),
         _for: kt("for", { isLoop: !0 }),
         _function: kt("function", At),
         _if: kt("if"),
-        _return: kt("return", se),
+        _return: kt("return", re),
         _switch: kt("switch"),
-        _throw: kt("throw", se),
+        _throw: kt("throw", re),
         _try: kt("try"),
         _var: kt("var"),
         _const: kt("const"),
@@ -135,7 +135,7 @@ function lr() {
         _this: kt("this", At),
         _super: kt("super", At),
         _class: kt("class", At),
-        _extends: kt("extends", se),
+        _extends: kt("extends", re),
         _export: kt("export"),
         _import: kt("import", At),
         _null: kt("null", At),
@@ -146,28 +146,28 @@ function lr() {
         _typeof: kt("typeof", { beforeExpr: !0, prefix: !0, startsExpr: !0 }),
         _void: kt("void", { beforeExpr: !0, prefix: !0, startsExpr: !0 }),
         _delete: kt("delete", { beforeExpr: !0, prefix: !0, startsExpr: !0 })
-      }, Rt = /\r\n?|\n|\u2028|\u2029/, Ee = new RegExp(Rt.source, "g");
-      function jt(n) {
+      }, zt = /\r\n?|\n|\u2028|\u2029/, Ee = new RegExp(zt.source, "g");
+      function Gt(n) {
         return n === 10 || n === 13 || n === 8232 || n === 8233;
       }
       function Ce(n, u, x) {
         x === void 0 && (x = n.length);
         for (var A = u; A < x; A++) {
           var N = n.charCodeAt(A);
-          if (jt(N))
+          if (Gt(N))
             return A < x - 1 && N === 13 && n.charCodeAt(A + 1) === 10 ? A + 2 : A + 1;
         }
         return -1;
       }
-      var Ue = /[\u1680\u2000-\u200a\u202f\u205f\u3000\ufeff]/, ee = /(?:\s|\/\/.*|\/\*[^]*?\*\/)*/g, ye = Object.prototype, _t = ye.hasOwnProperty, oi = ye.toString, nt = Object.hasOwn || function(n, u) {
+      var Ue = /[\u1680\u2000-\u200a\u202f\u205f\u3000\ufeff]/, ee = /(?:\s|\/\/.*|\/\*[^]*?\*\/)*/g, ye = Object.prototype, _t = ye.hasOwnProperty, ui = ye.toString, rt = Object.hasOwn || function(n, u) {
         return _t.call(n, u);
       }, be = Array.isArray || function(n) {
-        return oi.call(n) === "[object Array]";
+        return ui.call(n) === "[object Array]";
       };
-      function me(n) {
+      function ve(n) {
         return new RegExp("^(?:" + n.replace(/ /g, "|") + ")$");
       }
-      function Et(n) {
+      function Tt(n) {
         return n <= 65535 ? String.fromCharCode(n) : (n -= 65536, String.fromCharCode((n >> 10) + 55296, (n & 1023) + 56320));
       }
       var we = /(?:[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF])/, Ne = function(u, x) {
@@ -187,7 +187,7 @@ function lr() {
           ++x, A = N;
         }
       }
-      var Je = {
+      var Qe = {
         ecmaVersion: null,
         sourceType: "script",
         onInsertedSemicolon: null,
@@ -206,71 +206,71 @@ function lr() {
         sourceFile: null,
         directSourceFile: null,
         preserveParens: !1
-      }, Jt = !1;
-      function $e(n) {
+      }, Qt = !1;
+      function Je(n) {
         var u = {};
-        for (var x in Je)
-          u[x] = n && nt(n, x) ? n[x] : Je[x];
-        if (u.ecmaVersion === "latest" ? u.ecmaVersion = 1e8 : u.ecmaVersion == null ? (!Jt && typeof console == "object" && console.warn && (Jt = !0, console.warn(`Since Acorn 8.0.0, options.ecmaVersion is required.
+        for (var x in Qe)
+          u[x] = n && rt(n, x) ? n[x] : Qe[x];
+        if (u.ecmaVersion === "latest" ? u.ecmaVersion = 1e8 : u.ecmaVersion == null ? (!Qt && typeof console == "object" && console.warn && (Qt = !0, console.warn(`Since Acorn 8.0.0, options.ecmaVersion is required.
 Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion = 11) : u.ecmaVersion >= 2015 && (u.ecmaVersion -= 2009), u.allowReserved == null && (u.allowReserved = u.ecmaVersion < 5), n.allowHashBang == null && (u.allowHashBang = u.ecmaVersion >= 14), be(u.onToken)) {
           var A = u.onToken;
           u.onToken = function(N) {
             return A.push(N);
           };
         }
-        return be(u.onComment) && (u.onComment = hi(u, u.onComment)), u;
+        return be(u.onComment) && (u.onComment = oi(u, u.onComment)), u;
       }
-      function hi(n, u) {
-        return function(x, A, N, H, j, $) {
-          var st = {
+      function oi(n, u) {
+        return function(x, A, N, W, j, $) {
+          var at = {
             type: x ? "Block" : "Line",
             value: A,
             start: N,
-            end: H
+            end: W
           };
-          n.locations && (st.loc = new We(this, j, $)), n.ranges && (st.range = [N, H]), u.push(st);
+          n.locations && (at.loc = new We(this, j, $)), n.ranges && (at.range = [N, W]), u.push(at);
         };
       }
-      var Be = 1, zt = 2, Zt = 4, Ut = 8, bi = 16, He = 32, li = 64, fi = 128, Ge = 256, ci = Be | zt | Ge;
-      function di(n, u) {
-        return zt | (n ? Zt : 0) | (u ? Ut : 0);
+      var Be = 1, qt = 2, jt = 4, Wt = 8, xi = 16, He = 32, hi = 64, li = 128, Ge = 256, fi = Be | qt | Ge;
+      function ci(n, u) {
+        return qt | (n ? jt : 0) | (u ? Wt : 0);
       }
-      var ti = 0, ei = 1, Ft = 2, ii = 3, Ht = 4, pi = 5, dt = function(u, x, A) {
-        this.options = u = $e(u), this.sourceFile = u.sourceFile, this.keywords = me(Wt[u.ecmaVersion >= 6 ? 6 : u.sourceType === "module" ? "5module" : 5]);
+      var $e = 0, ti = 1, Dt = 2, ei = 3, Ht = 4, di = 5, dt = function(u, x, A) {
+        this.options = u = Je(u), this.sourceFile = u.sourceFile, this.keywords = ve(xe[u.ecmaVersion >= 6 ? 6 : u.sourceType === "module" ? "5module" : 5]);
         var N = "";
-        u.allowReserved !== !0 && (N = Gt[u.ecmaVersion >= 6 ? 6 : u.ecmaVersion === 5 ? 5 : 3], u.sourceType === "module" && (N += " await")), this.reservedWords = me(N);
-        var H = (N ? N + " " : "") + Gt.strict;
-        this.reservedWordsStrict = me(H), this.reservedWordsStrictBind = me(H + " " + Gt.strictBind), this.input = String(x), this.containsEsc = !1, A ? (this.pos = A, this.lineStart = this.input.lastIndexOf(`
-`, A - 1) + 1, this.curLine = this.input.slice(0, this.lineStart).split(Rt).length) : (this.pos = this.lineStart = 0, this.curLine = 1), this.type = I.eof, this.value = null, this.start = this.end = this.pos, this.startLoc = this.endLoc = this.curPosition(), this.lastTokEndLoc = this.lastTokStartLoc = null, this.lastTokStart = this.lastTokEnd = this.pos, this.context = this.initialContext(), this.exprAllowed = !0, this.inModule = u.sourceType === "module", this.strict = this.inModule || this.strictDirective(this.pos), this.potentialArrowAt = -1, this.potentialArrowInForAwait = !1, this.yieldPos = this.awaitPos = this.awaitIdentPos = 0, this.labels = [], this.undefinedExports = /* @__PURE__ */ Object.create(null), this.pos === 0 && u.allowHashBang && this.input.slice(0, 2) === "#!" && this.skipLineComment(2), this.scopeStack = [], this.enterScope(Be), this.regexpState = null, this.privateNameStack = [];
+        u.allowReserved !== !0 && (N = Nt[u.ecmaVersion >= 6 ? 6 : u.ecmaVersion === 5 ? 5 : 3], u.sourceType === "module" && (N += " await")), this.reservedWords = ve(N);
+        var W = (N ? N + " " : "") + Nt.strict;
+        this.reservedWordsStrict = ve(W), this.reservedWordsStrictBind = ve(W + " " + Nt.strictBind), this.input = String(x), this.containsEsc = !1, A ? (this.pos = A, this.lineStart = this.input.lastIndexOf(`
+`, A - 1) + 1, this.curLine = this.input.slice(0, this.lineStart).split(zt).length) : (this.pos = this.lineStart = 0, this.curLine = 1), this.type = I.eof, this.value = null, this.start = this.end = this.pos, this.startLoc = this.endLoc = this.curPosition(), this.lastTokEndLoc = this.lastTokStartLoc = null, this.lastTokStart = this.lastTokEnd = this.pos, this.context = this.initialContext(), this.exprAllowed = !0, this.inModule = u.sourceType === "module", this.strict = this.inModule || this.strictDirective(this.pos), this.potentialArrowAt = -1, this.potentialArrowInForAwait = !1, this.yieldPos = this.awaitPos = this.awaitIdentPos = 0, this.labels = [], this.undefinedExports = /* @__PURE__ */ Object.create(null), this.pos === 0 && u.allowHashBang && this.input.slice(0, 2) === "#!" && this.skipLineComment(2), this.scopeStack = [], this.enterScope(Be), this.regexpState = null, this.privateNameStack = [];
       }, t = { inFunction: { configurable: !0 }, inGenerator: { configurable: !0 }, inAsync: { configurable: !0 }, canAwait: { configurable: !0 }, allowSuper: { configurable: !0 }, allowDirectSuper: { configurable: !0 }, treatFunctionsAsVar: { configurable: !0 }, allowNewDotTarget: { configurable: !0 }, inClassStaticBlock: { configurable: !0 } };
       dt.prototype.parse = function() {
         var u = this.options.program || this.startNode();
         return this.nextToken(), this.parseTopLevel(u);
       }, t.inFunction.get = function() {
-        return (this.currentVarScope().flags & zt) > 0;
+        return (this.currentVarScope().flags & qt) > 0;
       }, t.inGenerator.get = function() {
-        return (this.currentVarScope().flags & Ut) > 0 && !this.currentVarScope().inClassFieldInit;
+        return (this.currentVarScope().flags & Wt) > 0 && !this.currentVarScope().inClassFieldInit;
       }, t.inAsync.get = function() {
-        return (this.currentVarScope().flags & Zt) > 0 && !this.currentVarScope().inClassFieldInit;
+        return (this.currentVarScope().flags & jt) > 0 && !this.currentVarScope().inClassFieldInit;
       }, t.canAwait.get = function() {
         for (var n = this.scopeStack.length - 1; n >= 0; n--) {
           var u = this.scopeStack[n];
           if (u.inClassFieldInit || u.flags & Ge)
             return !1;
-          if (u.flags & zt)
-            return (u.flags & Zt) > 0;
+          if (u.flags & qt)
+            return (u.flags & jt) > 0;
         }
         return this.inModule && this.options.ecmaVersion >= 13 || this.options.allowAwaitOutsideFunction;
       }, t.allowSuper.get = function() {
         var n = this.currentThisScope(), u = n.flags, x = n.inClassFieldInit;
-        return (u & li) > 0 || x || this.options.allowSuperOutsideMethod;
+        return (u & hi) > 0 || x || this.options.allowSuperOutsideMethod;
       }, t.allowDirectSuper.get = function() {
-        return (this.currentThisScope().flags & fi) > 0;
+        return (this.currentThisScope().flags & li) > 0;
       }, t.treatFunctionsAsVar.get = function() {
         return this.treatFunctionsAsVarInScope(this.currentScope());
       }, t.allowNewDotTarget.get = function() {
         var n = this.currentThisScope(), u = n.flags, x = n.inClassFieldInit;
-        return (u & (zt | Ge)) > 0 || x;
+        return (u & (qt | Ge)) > 0 || x;
       }, t.inClassStaticBlock.get = function() {
         return (this.currentVarScope().flags & Ge) > 0;
       }, dt.extend = function() {
@@ -299,7 +299,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           if ((u[1] || u[2]) === "use strict") {
             ee.lastIndex = n + u[0].length;
             var x = ee.exec(this.input), A = x.index + x[0].length, N = this.input.charAt(A);
-            return N === ";" || N === "}" || Rt.test(x[0]) && !(/[(`.[+\-/*%<>=,?^&]/.test(N) || N === "!" && this.input.charAt(A + 1) === "=");
+            return N === ";" || N === "}" || zt.test(x[0]) && !(/[(`.[+\-/*%<>=,?^&]/.test(N) || N === "!" && this.input.charAt(A + 1) === "=");
           }
           n += u[0].length, ee.lastIndex = n, n += ee.exec(this.input)[0].length, this.input[n] === ";" && n++;
         }
@@ -312,7 +312,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }, e.expectContextual = function(n) {
         this.eatContextual(n) || this.unexpected();
       }, e.canInsertSemicolon = function() {
-        return this.type === I.eof || this.type === I.braceR || Rt.test(this.input.slice(this.lastTokEnd, this.start));
+        return this.type === I.eof || this.type === I.braceR || zt.test(this.input.slice(this.lastTokEnd, this.start));
       }, e.insertSemicolon = function() {
         if (this.canInsertSemicolon())
           return this.options.onInsertedSemicolon && this.options.onInsertedSemicolon(this.lastTokEnd, this.lastTokEndLoc), !0;
@@ -356,8 +356,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
         if (this.inModule)
           for (var A = 0, N = Object.keys(this.undefinedExports); A < N.length; A += 1) {
-            var H = N[A];
-            this.raiseRecoverable(this.undefinedExports[H].start, "Export '" + H + "' is not defined");
+            var W = N[A];
+            this.raiseRecoverable(this.undefinedExports[W].start, "Export '" + W + "' is not defined");
           }
         return this.adaptDirectivePrologue(n.body), this.next(), n.sourceType = this.options.sourceType, this.finishNode(n, "Program");
       };
@@ -373,13 +373,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return !1;
         if (A === 123)
           return !0;
-        if (Dt(A, !0)) {
-          for (var N = x + 1; at(A = this.input.charCodeAt(N), !0); )
+        if (Ft(A, !0)) {
+          for (var N = x + 1; ut(A = this.input.charCodeAt(N), !0); )
             ++N;
           if (A === 92 || A > 55295 && A < 56320)
             return !0;
-          var H = this.input.slice(x, N);
-          if (!Tt.test(H))
+          var W = this.input.slice(x, N);
+          if (!Et.test(W))
             return !0;
         }
         return !1;
@@ -388,10 +388,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return !1;
         ee.lastIndex = this.pos;
         var n = ee.exec(this.input), u = this.pos + n[0].length, x;
-        return !Rt.test(this.input.slice(this.pos, u)) && this.input.slice(u, u + 8) === "function" && (u + 8 === this.input.length || !(at(x = this.input.charCodeAt(u + 8)) || x > 55295 && x < 56320));
+        return !zt.test(this.input.slice(this.pos, u)) && this.input.slice(u, u + 8) === "function" && (u + 8 === this.input.length || !(ut(x = this.input.charCodeAt(u + 8)) || x > 55295 && x < 56320));
       }, s.parseStatement = function(n, u, x) {
-        var A = this.type, N = this.startNode(), H;
-        switch (this.isLet(n) && (A = I._var, H = "let"), A) {
+        var A = this.type, N = this.startNode(), W;
+        switch (this.isLet(n) && (A = I._var, W = "let"), A) {
           case I._break:
           case I._continue:
             return this.parseBreakContinueStatement(N, A.keyword);
@@ -417,7 +417,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             return this.parseTryStatement(N);
           case I._const:
           case I._var:
-            return H = H || this.value, n && H !== "var" && this.unexpected(), this.parseVarStatement(N, H);
+            return W = W || this.value, n && W !== "var" && this.unexpected(), this.parseVarStatement(N, W);
           case I._while:
             return this.parseWhileStatement(N);
           case I._with:
@@ -430,8 +430,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           case I._import:
             if (this.options.ecmaVersion > 10 && A === I._import) {
               ee.lastIndex = this.pos;
-              var j = ee.exec(this.input), $ = this.pos + j[0].length, st = this.input.charCodeAt($);
-              if (st === 40 || st === 46)
+              var j = ee.exec(this.input), $ = this.pos + j[0].length, at = this.input.charCodeAt($);
+              if (at === 40 || at === 46)
                 return this.parseExpressionStatement(N, this.parseExpression());
             }
             return this.options.allowImportExportEverywhere || (u || this.raise(this.start, "'import' and 'export' may only appear at the top level"), this.inModule || this.raise(this.start, "'import' and 'export' may appear only with 'sourceType: module'")), A === I._import ? this.parseImport(N) : this.parseExport(N, x);
@@ -464,8 +464,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           var A = this.startNode(), N = x ? "let" : this.value;
           return this.next(), this.parseVar(A, !0, N), this.finishNode(A, "VariableDeclaration"), (this.type === I._in || this.options.ecmaVersion >= 6 && this.isContextual("of")) && A.declarations.length === 1 ? (this.options.ecmaVersion >= 9 && (this.type === I._in ? u > -1 && this.unexpected(u) : n.await = u > -1), this.parseForIn(n, A)) : (u > -1 && this.unexpected(u), this.parseFor(n, A));
         }
-        var H = this.isContextual("let"), j = !1, $ = new r(), st = this.parseExpression(u > -1 ? "await" : !0, $);
-        return this.type === I._in || (j = this.options.ecmaVersion >= 6 && this.isContextual("of")) ? (this.options.ecmaVersion >= 9 && (this.type === I._in ? u > -1 && this.unexpected(u) : n.await = u > -1), H && j && this.raise(st.start, "The left-hand side of a for-of loop may not start with 'let'."), this.toAssignable(st, !1, $), this.checkLValPattern(st), this.parseForIn(n, st)) : (this.checkExpressionErrors($, !0), u > -1 && this.unexpected(u), this.parseFor(n, st));
+        var W = this.isContextual("let"), j = !1, $ = new r(), at = this.parseExpression(u > -1 ? "await" : !0, $);
+        return this.type === I._in || (j = this.options.ecmaVersion >= 6 && this.isContextual("of")) ? (this.options.ecmaVersion >= 9 && (this.type === I._in ? u > -1 && this.unexpected(u) : n.await = u > -1), W && j && this.raise(at.start, "The left-hand side of a for-of loop may not start with 'let'."), this.toAssignable(at, !1, $), this.checkLValPattern(at), this.parseForIn(n, at)) : (this.checkExpressionErrors($, !0), u > -1 && this.unexpected(u), this.parseFor(n, at));
       }, s.parseFunctionStatement = function(n, u, x) {
         return this.next(), this.parseFunction(n, l | (x ? 0 : f), !1, u);
       }, s.parseIfStatement = function(n) {
@@ -482,7 +482,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             u || this.unexpected(), u.consequent.push(this.parseStatement(null));
         return this.exitScope(), u && this.finishNode(u, "SwitchCase"), this.next(), this.labels.pop(), this.finishNode(n, "SwitchStatement");
       }, s.parseThrowStatement = function(n) {
-        return this.next(), Rt.test(this.input.slice(this.lastTokEnd, this.start)) && this.raise(this.lastTokEnd, "Illegal newline after throw"), n.argument = this.parseExpression(), this.semicolon(), this.finishNode(n, "ThrowStatement");
+        return this.next(), zt.test(this.input.slice(this.lastTokEnd, this.start)) && this.raise(this.lastTokEnd, "Illegal newline after throw"), n.argument = this.parseExpression(), this.semicolon(), this.finishNode(n, "ThrowStatement");
       };
       var o = [];
       s.parseTryStatement = function(n) {
@@ -491,7 +491,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           if (this.next(), this.eat(I.parenL)) {
             u.param = this.parseBindingAtom();
             var x = u.param.type === "Identifier";
-            this.enterScope(x ? He : 0), this.checkLValPattern(u.param, x ? Ht : Ft), this.expect(I.parenR);
+            this.enterScope(x ? He : 0), this.checkLValPattern(u.param, x ? Ht : Dt), this.expect(I.parenR);
           } else
             this.options.ecmaVersion < 10 && this.unexpected(), u.param = null, this.enterScope(0);
           u.body = this.parseBlock(!1), this.exitScope(), n.handler = this.finishNode(u, "CatchClause");
@@ -506,12 +506,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }, s.parseEmptyStatement = function(n) {
         return this.next(), this.finishNode(n, "EmptyStatement");
       }, s.parseLabeledStatement = function(n, u, x, A) {
-        for (var N = 0, H = this.labels; N < H.length; N += 1) {
-          var j = H[N];
+        for (var N = 0, W = this.labels; N < W.length; N += 1) {
+          var j = W[N];
           j.name === u && this.raise(x.start, "Label '" + u + "' is already declared");
         }
-        for (var $ = this.type.isLoop ? "loop" : this.type === I._switch ? "switch" : null, st = this.labels.length - 1; st >= 0; st--) {
-          var mt = this.labels[st];
+        for (var $ = this.type.isLoop ? "loop" : this.type === I._switch ? "switch" : null, at = this.labels.length - 1; at >= 0; at--) {
+          var mt = this.labels[at];
           if (mt.statementStart === n.start)
             mt.statementStart = this.start, mt.kind = $;
           else
@@ -542,41 +542,41 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
         return n;
       }, s.parseVarId = function(n, u) {
-        n.id = this.parseBindingAtom(), this.checkLValPattern(n.id, u === "var" ? ei : Ft, !1);
+        n.id = this.parseBindingAtom(), this.checkLValPattern(n.id, u === "var" ? ti : Dt, !1);
       };
       var l = 1, f = 2, _ = 4;
       s.parseFunction = function(n, u, x, A, N) {
-        this.initFunction(n), (this.options.ecmaVersion >= 9 || this.options.ecmaVersion >= 6 && !A) && (this.type === I.star && u & f && this.unexpected(), n.generator = this.eat(I.star)), this.options.ecmaVersion >= 8 && (n.async = !!A), u & l && (n.id = u & _ && this.type !== I.name ? null : this.parseIdent(), n.id && !(u & f) && this.checkLValSimple(n.id, this.strict || n.generator || n.async ? this.treatFunctionsAsVar ? ei : Ft : ii));
-        var H = this.yieldPos, j = this.awaitPos, $ = this.awaitIdentPos;
-        return this.yieldPos = 0, this.awaitPos = 0, this.awaitIdentPos = 0, this.enterScope(di(n.async, n.generator)), u & l || (n.id = this.type === I.name ? this.parseIdent() : null), this.parseFunctionParams(n), this.parseFunctionBody(n, x, !1, N), this.yieldPos = H, this.awaitPos = j, this.awaitIdentPos = $, this.finishNode(n, u & l ? "FunctionDeclaration" : "FunctionExpression");
+        this.initFunction(n), (this.options.ecmaVersion >= 9 || this.options.ecmaVersion >= 6 && !A) && (this.type === I.star && u & f && this.unexpected(), n.generator = this.eat(I.star)), this.options.ecmaVersion >= 8 && (n.async = !!A), u & l && (n.id = u & _ && this.type !== I.name ? null : this.parseIdent(), n.id && !(u & f) && this.checkLValSimple(n.id, this.strict || n.generator || n.async ? this.treatFunctionsAsVar ? ti : Dt : ei));
+        var W = this.yieldPos, j = this.awaitPos, $ = this.awaitIdentPos;
+        return this.yieldPos = 0, this.awaitPos = 0, this.awaitIdentPos = 0, this.enterScope(ci(n.async, n.generator)), u & l || (n.id = this.type === I.name ? this.parseIdent() : null), this.parseFunctionParams(n), this.parseFunctionBody(n, x, !1, N), this.yieldPos = W, this.awaitPos = j, this.awaitIdentPos = $, this.finishNode(n, u & l ? "FunctionDeclaration" : "FunctionExpression");
       }, s.parseFunctionParams = function(n) {
         this.expect(I.parenL), n.params = this.parseBindingList(I.parenR, !1, this.options.ecmaVersion >= 8), this.checkYieldAwaitInDefaultParams();
       }, s.parseClass = function(n, u) {
         this.next();
         var x = this.strict;
         this.strict = !0, this.parseClassId(n, u), this.parseClassSuper(n);
-        var A = this.enterClassBody(), N = this.startNode(), H = !1;
+        var A = this.enterClassBody(), N = this.startNode(), W = !1;
         for (N.body = [], this.expect(I.braceL); this.type !== I.braceR; ) {
           var j = this.parseClassElement(n.superClass !== null);
-          j && (N.body.push(j), j.type === "MethodDefinition" && j.kind === "constructor" ? (H && this.raise(j.start, "Duplicate constructor in the same class"), H = !0) : j.key && j.key.type === "PrivateIdentifier" && v(A, j) && this.raiseRecoverable(j.key.start, "Identifier '#" + j.key.name + "' has already been declared"));
+          j && (N.body.push(j), j.type === "MethodDefinition" && j.kind === "constructor" ? (W && this.raise(j.start, "Duplicate constructor in the same class"), W = !0) : j.key && j.key.type === "PrivateIdentifier" && v(A, j) && this.raiseRecoverable(j.key.start, "Identifier '#" + j.key.name + "' has already been declared"));
         }
         return this.strict = x, this.next(), n.body = this.finishNode(N, "ClassBody"), this.exitClassBody(), this.finishNode(n, u ? "ClassDeclaration" : "ClassExpression");
       }, s.parseClassElement = function(n) {
         if (this.eat(I.semi))
           return null;
-        var u = this.options.ecmaVersion, x = this.startNode(), A = "", N = !1, H = !1, j = "method", $ = !1;
+        var u = this.options.ecmaVersion, x = this.startNode(), A = "", N = !1, W = !1, j = "method", $ = !1;
         if (this.eatContextual("static")) {
           if (u >= 13 && this.eat(I.braceL))
             return this.parseClassStaticBlock(x), x;
           this.isClassElementNameStart() || this.type === I.star ? $ = !0 : A = "static";
         }
-        if (x.static = $, !A && u >= 8 && this.eatContextual("async") && ((this.isClassElementNameStart() || this.type === I.star) && !this.canInsertSemicolon() ? H = !0 : A = "async"), !A && (u >= 9 || !H) && this.eat(I.star) && (N = !0), !A && !H && !N) {
-          var st = this.value;
-          (this.eatContextual("get") || this.eatContextual("set")) && (this.isClassElementNameStart() ? j = st : A = st);
+        if (x.static = $, !A && u >= 8 && this.eatContextual("async") && ((this.isClassElementNameStart() || this.type === I.star) && !this.canInsertSemicolon() ? W = !0 : A = "async"), !A && (u >= 9 || !W) && this.eat(I.star) && (N = !0), !A && !W && !N) {
+          var at = this.value;
+          (this.eatContextual("get") || this.eatContextual("set")) && (this.isClassElementNameStart() ? j = at : A = at);
         }
-        if (A ? (x.computed = !1, x.key = this.startNodeAt(this.lastTokStart, this.lastTokStartLoc), x.key.name = A, this.finishNode(x.key, "Identifier")) : this.parseClassElementName(x), u < 13 || this.type === I.parenL || j !== "method" || N || H) {
+        if (A ? (x.computed = !1, x.key = this.startNodeAt(this.lastTokStart, this.lastTokStartLoc), x.key.name = A, this.finishNode(x.key, "Identifier")) : this.parseClassElementName(x), u < 13 || this.type === I.parenL || j !== "method" || N || W) {
           var mt = !x.static && g(x, "constructor"), wt = mt && n;
-          mt && j !== "method" && this.raise(x.key.start, "Constructor can't have get/set modifier"), x.kind = mt ? "constructor" : j, this.parseClassMethod(x, N, H, wt);
+          mt && j !== "method" && this.raise(x.key.start, "Constructor can't have get/set modifier"), x.kind = mt ? "constructor" : j, this.parseClassMethod(x, N, W, wt);
         } else
           this.parseClassField(x);
         return x;
@@ -587,8 +587,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }, s.parseClassMethod = function(n, u, x, A) {
         var N = n.key;
         n.kind === "constructor" ? (u && this.raise(N.start, "Constructor can't be a generator"), x && this.raise(N.start, "Constructor can't be an async method")) : n.static && g(n, "prototype") && this.raise(N.start, "Classes may not have a static property named prototype");
-        var H = n.value = this.parseMethod(u, x, A);
-        return n.kind === "get" && H.params.length !== 0 && this.raiseRecoverable(H.start, "getter should have no params"), n.kind === "set" && H.params.length !== 1 && this.raiseRecoverable(H.start, "setter should have exactly one param"), n.kind === "set" && H.params[0].type === "RestElement" && this.raiseRecoverable(H.params[0].start, "Setter cannot use rest params"), this.finishNode(n, "MethodDefinition");
+        var W = n.value = this.parseMethod(u, x, A);
+        return n.kind === "get" && W.params.length !== 0 && this.raiseRecoverable(W.start, "getter should have no params"), n.kind === "set" && W.params.length !== 1 && this.raiseRecoverable(W.start, "setter should have exactly one param"), n.kind === "set" && W.params[0].type === "RestElement" && this.raiseRecoverable(W.params[0].start, "Setter cannot use rest params"), this.finishNode(n, "MethodDefinition");
       }, s.parseClassField = function(n) {
         if (g(n, "constructor") ? this.raise(n.key.start, "Classes can't have a field named 'constructor'") : n.static && g(n, "prototype") && this.raise(n.key.start, "Classes can't have a static field named 'prototype'"), this.eat(I.eq)) {
           var u = this.currentThisScope(), x = u.inClassFieldInit;
@@ -599,22 +599,22 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }, s.parseClassStaticBlock = function(n) {
         n.body = [];
         var u = this.labels;
-        for (this.labels = [], this.enterScope(Ge | li); this.type !== I.braceR; ) {
+        for (this.labels = [], this.enterScope(Ge | hi); this.type !== I.braceR; ) {
           var x = this.parseStatement(null);
           n.body.push(x);
         }
         return this.next(), this.exitScope(), this.labels = u, this.finishNode(n, "StaticBlock");
       }, s.parseClassId = function(n, u) {
-        this.type === I.name ? (n.id = this.parseIdent(), u && this.checkLValSimple(n.id, Ft, !1)) : (u === !0 && this.unexpected(), n.id = null);
+        this.type === I.name ? (n.id = this.parseIdent(), u && this.checkLValSimple(n.id, Dt, !1)) : (u === !0 && this.unexpected(), n.id = null);
       }, s.parseClassSuper = function(n) {
         n.superClass = this.eat(I._extends) ? this.parseExprSubscripts(!1) : null;
       }, s.enterClassBody = function() {
         var n = { declared: /* @__PURE__ */ Object.create(null), used: [] };
         return this.privateNameStack.push(n), n.declared;
       }, s.exitClassBody = function() {
-        for (var n = this.privateNameStack.pop(), u = n.declared, x = n.used, A = this.privateNameStack.length, N = A === 0 ? null : this.privateNameStack[A - 1], H = 0; H < x.length; ++H) {
-          var j = x[H];
-          nt(u, j.name) || (N ? N.used.push(j) : this.raiseRecoverable(j.start, "Private field '#" + j.name + "' must be declared in an enclosing class"));
+        for (var n = this.privateNameStack.pop(), u = n.declared, x = n.used, A = this.privateNameStack.length, N = A === 0 ? null : this.privateNameStack[A - 1], W = 0; W < x.length; ++W) {
+          var j = x[W];
+          rt(u, j.name) || (N ? N.used.push(j) : this.raiseRecoverable(j.start, "Private field '#" + j.name + "' must be declared in an enclosing class"));
         }
       };
       function v(n, u) {
@@ -647,8 +647,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           if (n.declaration = null, n.specifiers = this.parseExportSpecifiers(u), this.eatContextual("from"))
             this.type !== I.string && this.unexpected(), n.source = this.parseExprAtom();
           else {
-            for (var H = 0, j = n.specifiers; H < j.length; H += 1) {
-              var $ = j[H];
+            for (var W = 0, j = n.specifiers; W < j.length; W += 1) {
+              var $ = j[W];
               this.checkUnreserved($.local), this.checkLocalExport($.local), $.local.type === "Literal" && this.raise($.local.start, "A string literal cannot be used as an exported binding without `from`.");
             }
             n.source = null;
@@ -657,20 +657,20 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
         return this.finishNode(n, "ExportNamedDeclaration");
       }, s.checkExport = function(n, u, x) {
-        !n || (typeof u != "string" && (u = u.type === "Identifier" ? u.name : u.value), nt(n, u) && this.raiseRecoverable(x, "Duplicate export '" + u + "'"), n[u] = !0);
+        !n || (typeof u != "string" && (u = u.type === "Identifier" ? u.name : u.value), rt(n, u) && this.raiseRecoverable(x, "Duplicate export '" + u + "'"), n[u] = !0);
       }, s.checkPatternExport = function(n, u) {
         var x = u.type;
         if (x === "Identifier")
           this.checkExport(n, u, u.start);
         else if (x === "ObjectPattern")
           for (var A = 0, N = u.properties; A < N.length; A += 1) {
-            var H = N[A];
-            this.checkPatternExport(n, H);
+            var W = N[A];
+            this.checkPatternExport(n, W);
           }
         else if (x === "ArrayPattern")
           for (var j = 0, $ = u.elements; j < $.length; j += 1) {
-            var st = $[j];
-            st && this.checkPatternExport(n, st);
+            var at = $[j];
+            at && this.checkPatternExport(n, at);
           }
         else
           x === "Property" ? this.checkPatternExport(n, u.value) : x === "AssignmentPattern" ? this.checkPatternExport(n, u.left) : x === "RestElement" ? this.checkPatternExport(n, u.argument) : x === "ParenthesizedExpression" && this.checkPatternExport(n, u.expression);
@@ -703,12 +703,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var n = [], u = !0;
         if (this.type === I.name) {
           var x = this.startNode();
-          if (x.local = this.parseIdent(), this.checkLValSimple(x.local, Ft), n.push(this.finishNode(x, "ImportDefaultSpecifier")), !this.eat(I.comma))
+          if (x.local = this.parseIdent(), this.checkLValSimple(x.local, Dt), n.push(this.finishNode(x, "ImportDefaultSpecifier")), !this.eat(I.comma))
             return n;
         }
         if (this.type === I.star) {
           var A = this.startNode();
-          return this.next(), this.expectContextual("as"), A.local = this.parseIdent(), this.checkLValSimple(A.local, Ft), n.push(this.finishNode(A, "ImportNamespaceSpecifier")), n;
+          return this.next(), this.expectContextual("as"), A.local = this.parseIdent(), this.checkLValSimple(A.local, Dt), n.push(this.finishNode(A, "ImportNamespaceSpecifier")), n;
         }
         for (this.expect(I.braceL); !this.eat(I.braceR); ) {
           if (u)
@@ -716,7 +716,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           else if (this.expect(I.comma), this.afterTrailingComma(I.braceR))
             break;
           var N = this.startNode();
-          N.imported = this.parseModuleExportName(), this.eatContextual("as") ? N.local = this.parseIdent() : (this.checkUnreserved(N.imported), N.local = N.imported), this.checkLValSimple(N.local, Ft), n.push(this.finishNode(N, "ImportSpecifier"));
+          N.imported = this.parseModuleExportName(), this.eatContextual("as") ? N.local = this.parseIdent() : (this.checkUnreserved(N.imported), N.local = N.imported), this.checkLValSimple(N.local, Dt), n.push(this.finishNode(N, "ImportSpecifier"));
         }
         return n;
       }, s.parseModuleExportName = function() {
@@ -746,8 +746,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             case "ObjectExpression":
               n.type = "ObjectPattern", x && this.checkPatternErrors(x, !0);
               for (var A = 0, N = n.properties; A < N.length; A += 1) {
-                var H = N[A];
-                this.toAssignable(H, u), H.type === "RestElement" && (H.argument.type === "ArrayPattern" || H.argument.type === "ObjectPattern") && this.raise(H.argument.start, "Unexpected token");
+                var W = N[A];
+                this.toAssignable(W, u), W.type === "RestElement" && (W.argument.type === "ArrayPattern" || W.argument.type === "ObjectPattern") && this.raise(W.argument.start, "Unexpected token");
               }
               break;
             case "Property":
@@ -783,8 +783,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           N && this.toAssignable(N, u);
         }
         if (x) {
-          var H = n[x - 1];
-          this.options.ecmaVersion === 6 && u && H && H.type === "RestElement" && H.argument.type !== "Identifier" && this.unexpected(H.argument.start);
+          var W = n[x - 1];
+          this.options.ecmaVersion === 6 && u && W && W.type === "RestElement" && W.argument.type !== "Identifier" && this.unexpected(W.argument.start);
         }
         return n;
       }, d.parseSpread = function(n) {
@@ -811,8 +811,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             if (x && this.afterTrailingComma(n))
               break;
             if (this.type === I.ellipsis) {
-              var H = this.parseRestBinding();
-              this.parseBindingListItem(H), A.push(H), this.type === I.comma && this.raise(this.start, "Comma is not permitted after the rest element"), this.expect(n);
+              var W = this.parseRestBinding();
+              this.parseBindingListItem(W), A.push(W), this.type === I.comma && this.raise(this.start, "Comma is not permitted after the rest element"), this.expect(n);
               break;
             } else {
               var j = this.parseMaybeDefault(this.start, this.startLoc);
@@ -828,11 +828,11 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var A = this.startNodeAt(n, u);
         return A.left = x, A.right = this.parseMaybeAssign(), this.finishNode(A, "AssignmentPattern");
       }, d.checkLValSimple = function(n, u, x) {
-        u === void 0 && (u = ti);
-        var A = u !== ti;
+        u === void 0 && (u = $e);
+        var A = u !== $e;
         switch (n.type) {
           case "Identifier":
-            this.strict && this.reservedWordsStrictBind.test(n.name) && this.raiseRecoverable(n.start, (A ? "Binding " : "Assigning to ") + n.name + " in strict mode"), A && (u === Ft && n.name === "let" && this.raiseRecoverable(n.start, "let is disallowed as a lexically bound name"), x && (nt(x, n.name) && this.raiseRecoverable(n.start, "Argument name clash"), x[n.name] = !0), u !== pi && this.declareName(n.name, u, n.start));
+            this.strict && this.reservedWordsStrictBind.test(n.name) && this.raiseRecoverable(n.start, (A ? "Binding " : "Assigning to ") + n.name + " in strict mode"), A && (u === Dt && n.name === "let" && this.raiseRecoverable(n.start, "let is disallowed as a lexically bound name"), x && (rt(x, n.name) && this.raiseRecoverable(n.start, "Argument name clash"), x[n.name] = !0), u !== di && this.declareName(n.name, u, n.start));
             break;
           case "ChainExpression":
             this.raiseRecoverable(n.start, "Optional chaining cannot appear in left-hand side");
@@ -846,24 +846,24 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             this.raise(n.start, (A ? "Binding" : "Assigning to") + " rvalue");
         }
       }, d.checkLValPattern = function(n, u, x) {
-        switch (u === void 0 && (u = ti), n.type) {
+        switch (u === void 0 && (u = $e), n.type) {
           case "ObjectPattern":
             for (var A = 0, N = n.properties; A < N.length; A += 1) {
-              var H = N[A];
-              this.checkLValInnerPattern(H, u, x);
+              var W = N[A];
+              this.checkLValInnerPattern(W, u, x);
             }
             break;
           case "ArrayPattern":
             for (var j = 0, $ = n.elements; j < $.length; j += 1) {
-              var st = $[j];
-              st && this.checkLValInnerPattern(st, u, x);
+              var at = $[j];
+              at && this.checkLValInnerPattern(at, u, x);
             }
             break;
           default:
             this.checkLValSimple(n, u, x);
         }
       }, d.checkLValInnerPattern = function(n, u, x) {
-        switch (u === void 0 && (u = ti), n.type) {
+        switch (u === void 0 && (u = $e), n.type) {
           case "Property":
             this.checkLValInnerPattern(n.value, u, x);
             break;
@@ -877,8 +877,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             this.checkLValPattern(n, u, x);
         }
       };
-      var w = function(u, x, A, N, H) {
-        this.token = u, this.isExpr = !!x, this.preserveSpace = !!A, this.override = N, this.generator = !!H;
+      var w = function(u, x, A, N, W) {
+        this.token = u, this.isExpr = !!x, this.preserveSpace = !!A, this.override = N, this.generator = !!W;
       }, m = {
         b_stat: new w("{", !1),
         b_expr: new w("{", !0),
@@ -899,7 +899,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return this.context[this.context.length - 1];
       }, k.braceIsBlock = function(n) {
         var u = this.curContext();
-        return u === m.f_expr || u === m.f_stat ? !0 : n === I.colon && (u === m.b_stat || u === m.b_expr) ? !u.isExpr : n === I._return || n === I.name && this.exprAllowed ? Rt.test(this.input.slice(this.lastTokEnd, this.start)) : n === I._else || n === I.semi || n === I.eof || n === I.parenR || n === I.arrow ? !0 : n === I.braceL ? u === m.b_stat : n === I._var || n === I._const || n === I.name ? !1 : !this.exprAllowed;
+        return u === m.f_expr || u === m.f_stat ? !0 : n === I.colon && (u === m.b_stat || u === m.b_expr) ? !u.isExpr : n === I._return || n === I.name && this.exprAllowed ? zt.test(this.input.slice(this.lastTokEnd, this.start)) : n === I._else || n === I.semi || n === I.eof || n === I.parenR || n === I.arrow ? !0 : n === I.braceL ? u === m.b_stat : n === I._var || n === I._const || n === I.name ? !1 : !this.exprAllowed;
       }, k.inGeneratorContext = function() {
         for (var n = this.context.length - 1; n >= 1; n--) {
           var u = this.context[n];
@@ -928,7 +928,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         this.context.push(u ? m.p_stat : m.p_expr), this.exprAllowed = !0;
       }, I.incDec.updateContext = function() {
       }, I._function.updateContext = I._class.updateContext = function(n) {
-        n.beforeExpr && n !== I._else && !(n === I.semi && this.curContext() !== m.p_stat) && !(n === I._return && Rt.test(this.input.slice(this.lastTokEnd, this.start))) && !((n === I.colon || n === I.braceL) && this.curContext() === m.b_stat) ? this.context.push(m.f_expr) : this.context.push(m.f_stat), this.exprAllowed = !1;
+        n.beforeExpr && n !== I._else && !(n === I.semi && this.curContext() !== m.p_stat) && !(n === I._return && zt.test(this.input.slice(this.lastTokEnd, this.start))) && !((n === I.colon || n === I.braceL) && this.curContext() === m.b_stat) ? this.context.push(m.f_expr) : this.context.push(m.f_stat), this.exprAllowed = !1;
       }, I.backQuote.updateContext = function() {
         this.curContext() === m.q_tmpl ? this.context.pop() : this.context.push(m.q_tmpl), this.exprAllowed = !1;
       }, I.star.updateContext = function(n) {
@@ -955,31 +955,31 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             default:
               return;
           }
-          var H = n.kind;
+          var W = n.kind;
           if (this.options.ecmaVersion >= 6) {
-            N === "__proto__" && H === "init" && (u.proto && (x ? x.doubleProto < 0 && (x.doubleProto = A.start) : this.raiseRecoverable(A.start, "Redefinition of __proto__ property")), u.proto = !0);
+            N === "__proto__" && W === "init" && (u.proto && (x ? x.doubleProto < 0 && (x.doubleProto = A.start) : this.raiseRecoverable(A.start, "Redefinition of __proto__ property")), u.proto = !0);
             return;
           }
           N = "$" + N;
           var j = u[N];
           if (j) {
             var $;
-            H === "init" ? $ = this.strict && j.init || j.get || j.set : $ = j.init || j[H], $ && this.raiseRecoverable(A.start, "Redefinition of property");
+            W === "init" ? $ = this.strict && j.init || j.get || j.set : $ = j.init || j[W], $ && this.raiseRecoverable(A.start, "Redefinition of property");
           } else
             j = u[N] = {
               init: !1,
               get: !1,
               set: !1
             };
-          j[H] = !0;
+          j[W] = !0;
         }
       }, p.parseExpression = function(n, u) {
         var x = this.start, A = this.startLoc, N = this.parseMaybeAssign(n, u);
         if (this.type === I.comma) {
-          var H = this.startNodeAt(x, A);
-          for (H.expressions = [N]; this.eat(I.comma); )
-            H.expressions.push(this.parseMaybeAssign(n, u));
-          return this.finishNode(H, "SequenceExpression");
+          var W = this.startNodeAt(x, A);
+          for (W.expressions = [N]; this.eat(I.comma); )
+            W.expressions.push(this.parseMaybeAssign(n, u));
+          return this.finishNode(W, "SequenceExpression");
         }
         return N;
       }, p.parseMaybeAssign = function(n, u, x) {
@@ -988,58 +988,58 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             return this.parseYield(n);
           this.exprAllowed = !1;
         }
-        var A = !1, N = -1, H = -1, j = -1;
-        u ? (N = u.parenthesizedAssign, H = u.trailingComma, j = u.doubleProto, u.parenthesizedAssign = u.trailingComma = -1) : (u = new r(), A = !0);
-        var $ = this.start, st = this.startLoc;
+        var A = !1, N = -1, W = -1, j = -1;
+        u ? (N = u.parenthesizedAssign, W = u.trailingComma, j = u.doubleProto, u.parenthesizedAssign = u.trailingComma = -1) : (u = new r(), A = !0);
+        var $ = this.start, at = this.startLoc;
         (this.type === I.parenL || this.type === I.name) && (this.potentialArrowAt = this.start, this.potentialArrowInForAwait = n === "await");
         var mt = this.parseMaybeConditional(n, u);
-        if (x && (mt = x.call(this, mt, $, st)), this.type.isAssign) {
-          var wt = this.startNodeAt($, st);
+        if (x && (mt = x.call(this, mt, $, at)), this.type.isAssign) {
+          var wt = this.startNodeAt($, at);
           return wt.operator = this.value, this.type === I.eq && (mt = this.toAssignable(mt, !1, u)), A || (u.parenthesizedAssign = u.trailingComma = u.doubleProto = -1), u.shorthandAssign >= mt.start && (u.shorthandAssign = -1), this.type === I.eq ? this.checkLValPattern(mt) : this.checkLValSimple(mt), wt.left = mt, this.next(), wt.right = this.parseMaybeAssign(n), j > -1 && (u.doubleProto = j), this.finishNode(wt, "AssignmentExpression");
         } else
           A && this.checkExpressionErrors(u, !0);
-        return N > -1 && (u.parenthesizedAssign = N), H > -1 && (u.trailingComma = H), mt;
+        return N > -1 && (u.parenthesizedAssign = N), W > -1 && (u.trailingComma = W), mt;
       }, p.parseMaybeConditional = function(n, u) {
         var x = this.start, A = this.startLoc, N = this.parseExprOps(n, u);
         if (this.checkExpressionErrors(u))
           return N;
         if (this.eat(I.question)) {
-          var H = this.startNodeAt(x, A);
-          return H.test = N, H.consequent = this.parseMaybeAssign(), this.expect(I.colon), H.alternate = this.parseMaybeAssign(n), this.finishNode(H, "ConditionalExpression");
+          var W = this.startNodeAt(x, A);
+          return W.test = N, W.consequent = this.parseMaybeAssign(), this.expect(I.colon), W.alternate = this.parseMaybeAssign(n), this.finishNode(W, "ConditionalExpression");
         }
         return N;
       }, p.parseExprOps = function(n, u) {
         var x = this.start, A = this.startLoc, N = this.parseMaybeUnary(u, !1, !1, n);
         return this.checkExpressionErrors(u) || N.start === x && N.type === "ArrowFunctionExpression" ? N : this.parseExprOp(N, x, A, -1, n);
       }, p.parseExprOp = function(n, u, x, A, N) {
-        var H = this.type.binop;
-        if (H != null && (!N || this.type !== I._in) && H > A) {
+        var W = this.type.binop;
+        if (W != null && (!N || this.type !== I._in) && W > A) {
           var j = this.type === I.logicalOR || this.type === I.logicalAND, $ = this.type === I.coalesce;
-          $ && (H = I.logicalAND.binop);
-          var st = this.value;
+          $ && (W = I.logicalAND.binop);
+          var at = this.value;
           this.next();
-          var mt = this.start, wt = this.startLoc, qt = this.parseExprOp(this.parseMaybeUnary(null, !1, !1, N), mt, wt, H, N), oe = this.buildBinary(u, x, n, qt, st, j || $);
-          return (j && this.type === I.coalesce || $ && (this.type === I.logicalOR || this.type === I.logicalAND)) && this.raiseRecoverable(this.start, "Logical expressions and coalesce expressions cannot be mixed. Wrap either by parentheses"), this.parseExprOp(oe, u, x, A, N);
+          var mt = this.start, wt = this.startLoc, Ut = this.parseExprOp(this.parseMaybeUnary(null, !1, !1, N), mt, wt, W, N), ue = this.buildBinary(u, x, n, Ut, at, j || $);
+          return (j && this.type === I.coalesce || $ && (this.type === I.logicalOR || this.type === I.logicalAND)) && this.raiseRecoverable(this.start, "Logical expressions and coalesce expressions cannot be mixed. Wrap either by parentheses"), this.parseExprOp(ue, u, x, A, N);
         }
         return n;
-      }, p.buildBinary = function(n, u, x, A, N, H) {
+      }, p.buildBinary = function(n, u, x, A, N, W) {
         A.type === "PrivateIdentifier" && this.raise(A.start, "Private identifier can only be left side of binary expression");
         var j = this.startNodeAt(n, u);
-        return j.left = x, j.operator = N, j.right = A, this.finishNode(j, H ? "LogicalExpression" : "BinaryExpression");
+        return j.left = x, j.operator = N, j.right = A, this.finishNode(j, W ? "LogicalExpression" : "BinaryExpression");
       }, p.parseMaybeUnary = function(n, u, x, A) {
-        var N = this.start, H = this.startLoc, j;
+        var N = this.start, W = this.startLoc, j;
         if (this.isContextual("await") && this.canAwait)
           j = this.parseAwait(A), u = !0;
         else if (this.type.prefix) {
-          var $ = this.startNode(), st = this.type === I.incDec;
-          $.operator = this.value, $.prefix = !0, this.next(), $.argument = this.parseMaybeUnary(null, !0, st, A), this.checkExpressionErrors(n, !0), st ? this.checkLValSimple($.argument) : this.strict && $.operator === "delete" && $.argument.type === "Identifier" ? this.raiseRecoverable($.start, "Deleting local variable in strict mode") : $.operator === "delete" && y($.argument) ? this.raiseRecoverable($.start, "Private fields can not be deleted") : u = !0, j = this.finishNode($, st ? "UpdateExpression" : "UnaryExpression");
+          var $ = this.startNode(), at = this.type === I.incDec;
+          $.operator = this.value, $.prefix = !0, this.next(), $.argument = this.parseMaybeUnary(null, !0, at, A), this.checkExpressionErrors(n, !0), at ? this.checkLValSimple($.argument) : this.strict && $.operator === "delete" && $.argument.type === "Identifier" ? this.raiseRecoverable($.start, "Deleting local variable in strict mode") : $.operator === "delete" && y($.argument) ? this.raiseRecoverable($.start, "Private fields can not be deleted") : u = !0, j = this.finishNode($, at ? "UpdateExpression" : "UnaryExpression");
         } else if (!u && this.type === I.privateId)
           (A || this.privateNameStack.length === 0) && this.unexpected(), j = this.parsePrivateIdent(), this.type !== I._in && this.unexpected();
         else {
           if (j = this.parseExprSubscripts(n, A), this.checkExpressionErrors(n))
             return j;
           for (; this.type.postfix && !this.canInsertSemicolon(); ) {
-            var mt = this.startNodeAt(N, H);
+            var mt = this.startNodeAt(N, W);
             mt.operator = this.value, mt.prefix = !1, mt.argument = j, this.checkLValSimple(j), this.next(), j = this.finishNode(mt, "UpdateExpression");
           }
         }
@@ -1047,7 +1047,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           if (u)
             this.unexpected(this.lastTokStart);
           else
-            return this.buildBinary(N, H, j, this.parseMaybeUnary(null, !1, !1, A), "**", !1);
+            return this.buildBinary(N, W, j, this.parseMaybeUnary(null, !1, !1, A), "**", !1);
         else
           return j;
       };
@@ -1058,38 +1058,38 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var x = this.start, A = this.startLoc, N = this.parseExprAtom(n, u);
         if (N.type === "ArrowFunctionExpression" && this.input.slice(this.lastTokStart, this.lastTokEnd) !== ")")
           return N;
-        var H = this.parseSubscripts(N, x, A, !1, u);
-        return n && H.type === "MemberExpression" && (n.parenthesizedAssign >= H.start && (n.parenthesizedAssign = -1), n.parenthesizedBind >= H.start && (n.parenthesizedBind = -1), n.trailingComma >= H.start && (n.trailingComma = -1)), H;
+        var W = this.parseSubscripts(N, x, A, !1, u);
+        return n && W.type === "MemberExpression" && (n.parenthesizedAssign >= W.start && (n.parenthesizedAssign = -1), n.parenthesizedBind >= W.start && (n.parenthesizedBind = -1), n.trailingComma >= W.start && (n.trailingComma = -1)), W;
       }, p.parseSubscripts = function(n, u, x, A, N) {
-        for (var H = this.options.ecmaVersion >= 8 && n.type === "Identifier" && n.name === "async" && this.lastTokEnd === n.end && !this.canInsertSemicolon() && n.end - n.start === 5 && this.potentialArrowAt === n.start, j = !1; ; ) {
-          var $ = this.parseSubscript(n, u, x, A, H, j, N);
+        for (var W = this.options.ecmaVersion >= 8 && n.type === "Identifier" && n.name === "async" && this.lastTokEnd === n.end && !this.canInsertSemicolon() && n.end - n.start === 5 && this.potentialArrowAt === n.start, j = !1; ; ) {
+          var $ = this.parseSubscript(n, u, x, A, W, j, N);
           if ($.optional && (j = !0), $ === n || $.type === "ArrowFunctionExpression") {
             if (j) {
-              var st = this.startNodeAt(u, x);
-              st.expression = $, $ = this.finishNode(st, "ChainExpression");
+              var at = this.startNodeAt(u, x);
+              at.expression = $, $ = this.finishNode(at, "ChainExpression");
             }
             return $;
           }
           n = $;
         }
-      }, p.parseSubscript = function(n, u, x, A, N, H, j) {
-        var $ = this.options.ecmaVersion >= 11, st = $ && this.eat(I.questionDot);
-        A && st && this.raise(this.lastTokStart, "Optional chaining cannot appear in the callee of new expressions");
+      }, p.parseSubscript = function(n, u, x, A, N, W, j) {
+        var $ = this.options.ecmaVersion >= 11, at = $ && this.eat(I.questionDot);
+        A && at && this.raise(this.lastTokStart, "Optional chaining cannot appear in the callee of new expressions");
         var mt = this.eat(I.bracketL);
-        if (mt || st && this.type !== I.parenL && this.type !== I.backQuote || this.eat(I.dot)) {
+        if (mt || at && this.type !== I.parenL && this.type !== I.backQuote || this.eat(I.dot)) {
           var wt = this.startNodeAt(u, x);
-          wt.object = n, mt ? (wt.property = this.parseExpression(), this.expect(I.bracketR)) : this.type === I.privateId && n.type !== "Super" ? wt.property = this.parsePrivateIdent() : wt.property = this.parseIdent(this.options.allowReserved !== "never"), wt.computed = !!mt, $ && (wt.optional = st), n = this.finishNode(wt, "MemberExpression");
+          wt.object = n, mt ? (wt.property = this.parseExpression(), this.expect(I.bracketR)) : this.type === I.privateId && n.type !== "Super" ? wt.property = this.parsePrivateIdent() : wt.property = this.parseIdent(this.options.allowReserved !== "never"), wt.computed = !!mt, $ && (wt.optional = at), n = this.finishNode(wt, "MemberExpression");
         } else if (!A && this.eat(I.parenL)) {
-          var qt = new r(), oe = this.yieldPos, Se = this.awaitPos, Te = this.awaitIdentPos;
+          var Ut = new r(), ue = this.yieldPos, Se = this.awaitPos, Te = this.awaitIdentPos;
           this.yieldPos = 0, this.awaitPos = 0, this.awaitIdentPos = 0;
-          var ze = this.parseExprList(I.parenR, this.options.ecmaVersion >= 8, !1, qt);
-          if (N && !st && !this.canInsertSemicolon() && this.eat(I.arrow))
-            return this.checkPatternErrors(qt, !1), this.checkYieldAwaitInDefaultParams(), this.awaitIdentPos > 0 && this.raise(this.awaitIdentPos, "Cannot use 'await' as identifier inside an async function"), this.yieldPos = oe, this.awaitPos = Se, this.awaitIdentPos = Te, this.parseArrowExpression(this.startNodeAt(u, x), ze, !0, j);
-          this.checkExpressionErrors(qt, !0), this.yieldPos = oe || this.yieldPos, this.awaitPos = Se || this.awaitPos, this.awaitIdentPos = Te || this.awaitIdentPos;
+          var ze = this.parseExprList(I.parenR, this.options.ecmaVersion >= 8, !1, Ut);
+          if (N && !at && !this.canInsertSemicolon() && this.eat(I.arrow))
+            return this.checkPatternErrors(Ut, !1), this.checkYieldAwaitInDefaultParams(), this.awaitIdentPos > 0 && this.raise(this.awaitIdentPos, "Cannot use 'await' as identifier inside an async function"), this.yieldPos = ue, this.awaitPos = Se, this.awaitIdentPos = Te, this.parseArrowExpression(this.startNodeAt(u, x), ze, !0, j);
+          this.checkExpressionErrors(Ut, !0), this.yieldPos = ue || this.yieldPos, this.awaitPos = Se || this.awaitPos, this.awaitIdentPos = Te || this.awaitIdentPos;
           var Le = this.startNodeAt(u, x);
-          Le.callee = n, Le.arguments = ze, $ && (Le.optional = st), n = this.finishNode(Le, "CallExpression");
+          Le.callee = n, Le.arguments = ze, $ && (Le.optional = at), n = this.finishNode(Le, "CallExpression");
         } else if (this.type === I.backQuote) {
-          (st || H) && this.raise(this.start, "Optional chaining cannot appear in the tag of tagged template expressions");
+          (at || W) && this.raise(this.start, "Optional chaining cannot appear in the tag of tagged template expressions");
           var Oe = this.startNodeAt(u, x);
           Oe.tag = n, Oe.quasi = this.parseTemplate({ isTagged: !0 }), n = this.finishNode(Oe, "TaggedTemplateExpression");
         }
@@ -1103,19 +1103,19 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           case I._this:
             return x = this.startNode(), this.next(), this.finishNode(x, "ThisExpression");
           case I.name:
-            var N = this.start, H = this.startLoc, j = this.containsEsc, $ = this.parseIdent(!1);
+            var N = this.start, W = this.startLoc, j = this.containsEsc, $ = this.parseIdent(!1);
             if (this.options.ecmaVersion >= 8 && !j && $.name === "async" && !this.canInsertSemicolon() && this.eat(I._function))
-              return this.overrideContext(m.f_expr), this.parseFunction(this.startNodeAt(N, H), 0, !1, !0, u);
+              return this.overrideContext(m.f_expr), this.parseFunction(this.startNodeAt(N, W), 0, !1, !0, u);
             if (A && !this.canInsertSemicolon()) {
               if (this.eat(I.arrow))
-                return this.parseArrowExpression(this.startNodeAt(N, H), [$], !1, u);
+                return this.parseArrowExpression(this.startNodeAt(N, W), [$], !1, u);
               if (this.options.ecmaVersion >= 8 && $.name === "async" && this.type === I.name && !j && (!this.potentialArrowInForAwait || this.value !== "of" || this.containsEsc))
-                return $ = this.parseIdent(!1), (this.canInsertSemicolon() || !this.eat(I.arrow)) && this.unexpected(), this.parseArrowExpression(this.startNodeAt(N, H), [$], !0, u);
+                return $ = this.parseIdent(!1), (this.canInsertSemicolon() || !this.eat(I.arrow)) && this.unexpected(), this.parseArrowExpression(this.startNodeAt(N, W), [$], !0, u);
             }
             return $;
           case I.regexp:
-            var st = this.value;
-            return x = this.parseLiteral(st.value), x.regex = { pattern: st.pattern, flags: st.flags }, x;
+            var at = this.value;
+            return x = this.parseLiteral(at.value), x.regex = { pattern: at.pattern, flags: at.flags }, x;
           case I.num:
           case I.string:
             return this.parseLiteral(this.value);
@@ -1173,23 +1173,23 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var n = this.parseExpression();
         return this.expect(I.parenR), n;
       }, p.parseParenAndDistinguishExpression = function(n, u) {
-        var x = this.start, A = this.startLoc, N, H = this.options.ecmaVersion >= 8;
+        var x = this.start, A = this.startLoc, N, W = this.options.ecmaVersion >= 8;
         if (this.options.ecmaVersion >= 6) {
           this.next();
-          var j = this.start, $ = this.startLoc, st = [], mt = !0, wt = !1, qt = new r(), oe = this.yieldPos, Se = this.awaitPos, Te;
+          var j = this.start, $ = this.startLoc, at = [], mt = !0, wt = !1, Ut = new r(), ue = this.yieldPos, Se = this.awaitPos, Te;
           for (this.yieldPos = 0, this.awaitPos = 0; this.type !== I.parenR; )
-            if (mt ? mt = !1 : this.expect(I.comma), H && this.afterTrailingComma(I.parenR, !0)) {
+            if (mt ? mt = !1 : this.expect(I.comma), W && this.afterTrailingComma(I.parenR, !0)) {
               wt = !0;
               break;
             } else if (this.type === I.ellipsis) {
-              Te = this.start, st.push(this.parseParenItem(this.parseRestBinding())), this.type === I.comma && this.raise(this.start, "Comma is not permitted after the rest element");
+              Te = this.start, at.push(this.parseParenItem(this.parseRestBinding())), this.type === I.comma && this.raise(this.start, "Comma is not permitted after the rest element");
               break;
             } else
-              st.push(this.parseMaybeAssign(!1, qt, this.parseParenItem));
+              at.push(this.parseMaybeAssign(!1, Ut, this.parseParenItem));
           var ze = this.lastTokEnd, Le = this.lastTokEndLoc;
           if (this.expect(I.parenR), n && !this.canInsertSemicolon() && this.eat(I.arrow))
-            return this.checkPatternErrors(qt, !1), this.checkYieldAwaitInDefaultParams(), this.yieldPos = oe, this.awaitPos = Se, this.parseParenArrowList(x, A, st, u);
-          (!st.length || wt) && this.unexpected(this.lastTokStart), Te && this.unexpected(Te), this.checkExpressionErrors(qt, !0), this.yieldPos = oe || this.yieldPos, this.awaitPos = Se || this.awaitPos, st.length > 1 ? (N = this.startNodeAt(j, $), N.expressions = st, this.finishNodeAt(N, "SequenceExpression", ze, Le)) : N = st[0];
+            return this.checkPatternErrors(Ut, !1), this.checkYieldAwaitInDefaultParams(), this.yieldPos = ue, this.awaitPos = Se, this.parseParenArrowList(x, A, at, u);
+          (!at.length || wt) && this.unexpected(this.lastTokStart), Te && this.unexpected(Te), this.checkExpressionErrors(Ut, !0), this.yieldPos = ue || this.yieldPos, this.awaitPos = Se || this.awaitPos, at.length > 1 ? (N = this.startNodeAt(j, $), N.expressions = at, this.finishNodeAt(N, "SequenceExpression", ze, Le)) : N = at[0];
         } else
           N = this.parseParenExpression();
         if (this.options.preserveParens) {
@@ -1211,8 +1211,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           var x = this.containsEsc;
           return n.property = this.parseIdent(!0), n.property.name !== "target" && this.raiseRecoverable(n.property.start, "The only valid meta property for new is 'new.target'"), x && this.raiseRecoverable(n.start, "'new.target' must not contain escaped characters"), this.allowNewDotTarget || this.raiseRecoverable(n.start, "'new.target' can only be used in functions and class static block"), this.finishNode(n, "MetaProperty");
         }
-        var A = this.start, N = this.startLoc, H = this.type === I._import;
-        return n.callee = this.parseSubscripts(this.parseExprAtom(), A, N, !0, !1), H && n.callee.type === "ImportExpression" && this.raise(A, "Cannot use new with import()"), this.eat(I.parenL) ? n.arguments = this.parseExprList(I.parenR, this.options.ecmaVersion >= 8, !1) : n.arguments = c, this.finishNode(n, "NewExpression");
+        var A = this.start, N = this.startLoc, W = this.type === I._import;
+        return n.callee = this.parseSubscripts(this.parseExprAtom(), A, N, !0, !1), W && n.callee.type === "ImportExpression" && this.raise(A, "Cannot use new with import()"), this.eat(I.parenL) ? n.arguments = this.parseExprList(I.parenR, this.options.ecmaVersion >= 8, !1) : n.arguments = c, this.finishNode(n, "NewExpression");
       }, p.parseTemplateElement = function(n) {
         var u = n.isTagged, x = this.startNode();
         return this.type === I.invalidTemplate ? (u || this.raiseRecoverable(this.start, "Bad escape sequence in untagged template literal"), x.value = {
@@ -1234,7 +1234,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           this.type === I.eof && this.raise(this.pos, "Unterminated template literal"), this.expect(I.dollarBraceL), x.expressions.push(this.parseExpression()), this.expect(I.braceR), x.quasis.push(A = this.parseTemplateElement({ isTagged: u }));
         return this.next(), this.finishNode(x, "TemplateLiteral");
       }, p.isAsyncProp = function(n) {
-        return !n.computed && n.key.type === "Identifier" && n.key.name === "async" && (this.type === I.name || this.type === I.num || this.type === I.string || this.type === I.bracketL || this.type.keyword || this.options.ecmaVersion >= 9 && this.type === I.star) && !Rt.test(this.input.slice(this.lastTokEnd, this.start));
+        return !n.computed && n.key.type === "Identifier" && n.key.name === "async" && (this.type === I.name || this.type === I.num || this.type === I.string || this.type === I.bracketL || this.type.keyword || this.options.ecmaVersion >= 9 && this.type === I.star) && !zt.test(this.input.slice(this.lastTokEnd, this.start));
       }, p.parseObj = function(n, u) {
         var x = this.startNode(), A = !0, N = {};
         for (x.properties = [], this.next(); !this.eat(I.braceR); ) {
@@ -1242,32 +1242,32 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             A = !1;
           else if (this.expect(I.comma), this.options.ecmaVersion >= 5 && this.afterTrailingComma(I.braceR))
             break;
-          var H = this.parseProperty(n, u);
-          n || this.checkPropClash(H, N, u), x.properties.push(H);
+          var W = this.parseProperty(n, u);
+          n || this.checkPropClash(W, N, u), x.properties.push(W);
         }
         return this.finishNode(x, n ? "ObjectPattern" : "ObjectExpression");
       }, p.parseProperty = function(n, u) {
-        var x = this.startNode(), A, N, H, j;
+        var x = this.startNode(), A, N, W, j;
         if (this.options.ecmaVersion >= 9 && this.eat(I.ellipsis))
           return n ? (x.argument = this.parseIdent(!1), this.type === I.comma && this.raise(this.start, "Comma is not permitted after the rest element"), this.finishNode(x, "RestElement")) : (x.argument = this.parseMaybeAssign(!1, u), this.type === I.comma && u && u.trailingComma < 0 && (u.trailingComma = this.start), this.finishNode(x, "SpreadElement"));
-        this.options.ecmaVersion >= 6 && (x.method = !1, x.shorthand = !1, (n || u) && (H = this.start, j = this.startLoc), n || (A = this.eat(I.star)));
+        this.options.ecmaVersion >= 6 && (x.method = !1, x.shorthand = !1, (n || u) && (W = this.start, j = this.startLoc), n || (A = this.eat(I.star)));
         var $ = this.containsEsc;
-        return this.parsePropertyName(x), !n && !$ && this.options.ecmaVersion >= 8 && !A && this.isAsyncProp(x) ? (N = !0, A = this.options.ecmaVersion >= 9 && this.eat(I.star), this.parsePropertyName(x, u)) : N = !1, this.parsePropertyValue(x, n, A, N, H, j, u, $), this.finishNode(x, "Property");
-      }, p.parsePropertyValue = function(n, u, x, A, N, H, j, $) {
+        return this.parsePropertyName(x), !n && !$ && this.options.ecmaVersion >= 8 && !A && this.isAsyncProp(x) ? (N = !0, A = this.options.ecmaVersion >= 9 && this.eat(I.star), this.parsePropertyName(x, u)) : N = !1, this.parsePropertyValue(x, n, A, N, W, j, u, $), this.finishNode(x, "Property");
+      }, p.parsePropertyValue = function(n, u, x, A, N, W, j, $) {
         if ((x || A) && this.type === I.colon && this.unexpected(), this.eat(I.colon))
           n.value = u ? this.parseMaybeDefault(this.start, this.startLoc) : this.parseMaybeAssign(!1, j), n.kind = "init";
         else if (this.options.ecmaVersion >= 6 && this.type === I.parenL)
           u && this.unexpected(), n.kind = "init", n.method = !0, n.value = this.parseMethod(x, A);
         else if (!u && !$ && this.options.ecmaVersion >= 5 && !n.computed && n.key.type === "Identifier" && (n.key.name === "get" || n.key.name === "set") && this.type !== I.comma && this.type !== I.braceR && this.type !== I.eq) {
           (x || A) && this.unexpected(), n.kind = n.key.name, this.parsePropertyName(n), n.value = this.parseMethod(!1);
-          var st = n.kind === "get" ? 0 : 1;
-          if (n.value.params.length !== st) {
+          var at = n.kind === "get" ? 0 : 1;
+          if (n.value.params.length !== at) {
             var mt = n.value.start;
             n.kind === "get" ? this.raiseRecoverable(mt, "getter should have no params") : this.raiseRecoverable(mt, "setter should have exactly one param");
           } else
             n.kind === "set" && n.value.params[0].type === "RestElement" && this.raiseRecoverable(n.value.params[0].start, "Setter cannot use rest params");
         } else
-          this.options.ecmaVersion >= 6 && !n.computed && n.key.type === "Identifier" ? ((x || A) && this.unexpected(), this.checkUnreserved(n.key), n.key.name === "await" && !this.awaitIdentPos && (this.awaitIdentPos = N), n.kind = "init", u ? n.value = this.parseMaybeDefault(N, H, this.copyNode(n.key)) : this.type === I.eq && j ? (j.shorthandAssign < 0 && (j.shorthandAssign = this.start), n.value = this.parseMaybeDefault(N, H, this.copyNode(n.key))) : n.value = this.copyNode(n.key), n.shorthand = !0) : this.unexpected();
+          this.options.ecmaVersion >= 6 && !n.computed && n.key.type === "Identifier" ? ((x || A) && this.unexpected(), this.checkUnreserved(n.key), n.key.name === "await" && !this.awaitIdentPos && (this.awaitIdentPos = N), n.kind = "init", u ? n.value = this.parseMaybeDefault(N, W, this.copyNode(n.key)) : this.type === I.eq && j ? (j.shorthandAssign < 0 && (j.shorthandAssign = this.start), n.value = this.parseMaybeDefault(N, W, this.copyNode(n.key))) : n.value = this.copyNode(n.key), n.shorthand = !0) : this.unexpected();
       }, p.parsePropertyName = function(n) {
         if (this.options.ecmaVersion >= 6) {
           if (this.eat(I.bracketL))
@@ -1278,20 +1278,20 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }, p.initFunction = function(n) {
         n.id = null, this.options.ecmaVersion >= 6 && (n.generator = n.expression = !1), this.options.ecmaVersion >= 8 && (n.async = !1);
       }, p.parseMethod = function(n, u, x) {
-        var A = this.startNode(), N = this.yieldPos, H = this.awaitPos, j = this.awaitIdentPos;
-        return this.initFunction(A), this.options.ecmaVersion >= 6 && (A.generator = n), this.options.ecmaVersion >= 8 && (A.async = !!u), this.yieldPos = 0, this.awaitPos = 0, this.awaitIdentPos = 0, this.enterScope(di(u, A.generator) | li | (x ? fi : 0)), this.expect(I.parenL), A.params = this.parseBindingList(I.parenR, !1, this.options.ecmaVersion >= 8), this.checkYieldAwaitInDefaultParams(), this.parseFunctionBody(A, !1, !0, !1), this.yieldPos = N, this.awaitPos = H, this.awaitIdentPos = j, this.finishNode(A, "FunctionExpression");
+        var A = this.startNode(), N = this.yieldPos, W = this.awaitPos, j = this.awaitIdentPos;
+        return this.initFunction(A), this.options.ecmaVersion >= 6 && (A.generator = n), this.options.ecmaVersion >= 8 && (A.async = !!u), this.yieldPos = 0, this.awaitPos = 0, this.awaitIdentPos = 0, this.enterScope(ci(u, A.generator) | hi | (x ? li : 0)), this.expect(I.parenL), A.params = this.parseBindingList(I.parenR, !1, this.options.ecmaVersion >= 8), this.checkYieldAwaitInDefaultParams(), this.parseFunctionBody(A, !1, !0, !1), this.yieldPos = N, this.awaitPos = W, this.awaitIdentPos = j, this.finishNode(A, "FunctionExpression");
       }, p.parseArrowExpression = function(n, u, x, A) {
-        var N = this.yieldPos, H = this.awaitPos, j = this.awaitIdentPos;
-        return this.enterScope(di(x, !1) | bi), this.initFunction(n), this.options.ecmaVersion >= 8 && (n.async = !!x), this.yieldPos = 0, this.awaitPos = 0, this.awaitIdentPos = 0, n.params = this.toAssignableList(u, !0), this.parseFunctionBody(n, !0, !1, A), this.yieldPos = N, this.awaitPos = H, this.awaitIdentPos = j, this.finishNode(n, "ArrowFunctionExpression");
+        var N = this.yieldPos, W = this.awaitPos, j = this.awaitIdentPos;
+        return this.enterScope(ci(x, !1) | xi), this.initFunction(n), this.options.ecmaVersion >= 8 && (n.async = !!x), this.yieldPos = 0, this.awaitPos = 0, this.awaitIdentPos = 0, n.params = this.toAssignableList(u, !0), this.parseFunctionBody(n, !0, !1, A), this.yieldPos = N, this.awaitPos = W, this.awaitIdentPos = j, this.finishNode(n, "ArrowFunctionExpression");
       }, p.parseFunctionBody = function(n, u, x, A) {
-        var N = u && this.type !== I.braceL, H = this.strict, j = !1;
+        var N = u && this.type !== I.braceL, W = this.strict, j = !1;
         if (N)
           n.body = this.parseMaybeAssign(A), n.expression = !0, this.checkParams(n, !1);
         else {
           var $ = this.options.ecmaVersion >= 7 && !this.isSimpleParamList(n.params);
-          (!H || $) && (j = this.strictDirective(this.end), j && $ && this.raiseRecoverable(n.start, "Illegal 'use strict' directive in function with non-simple parameter list"));
-          var st = this.labels;
-          this.labels = [], j && (this.strict = !0), this.checkParams(n, !H && !j && !u && !x && this.isSimpleParamList(n.params)), this.strict && n.id && this.checkLValSimple(n.id, pi), n.body = this.parseBlock(!1, void 0, j && !H), n.expression = !1, this.adaptDirectivePrologue(n.body.body), this.labels = st;
+          (!W || $) && (j = this.strictDirective(this.end), j && $ && this.raiseRecoverable(n.start, "Illegal 'use strict' directive in function with non-simple parameter list"));
+          var at = this.labels;
+          this.labels = [], j && (this.strict = !0), this.checkParams(n, !W && !j && !u && !x && this.isSimpleParamList(n.params)), this.strict && n.id && this.checkLValSimple(n.id, di), n.body = this.parseBlock(!1, void 0, j && !W), n.expression = !1, this.adaptDirectivePrologue(n.body.body), this.labels = at;
         }
         this.exitScope();
       }, p.isSimpleParamList = function(n) {
@@ -1303,13 +1303,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return !0;
       }, p.checkParams = function(n, u) {
         for (var x = /* @__PURE__ */ Object.create(null), A = 0, N = n.params; A < N.length; A += 1) {
-          var H = N[A];
-          this.checkLValInnerPattern(H, ei, u ? null : x);
+          var W = N[A];
+          this.checkLValInnerPattern(W, ti, u ? null : x);
         }
       }, p.parseExprList = function(n, u, x, A) {
-        for (var N = [], H = !0; !this.eat(n); ) {
-          if (H)
-            H = !1;
+        for (var N = [], W = !0; !this.eat(n); ) {
+          if (W)
+            W = !1;
           else if (this.expect(I.comma), u && this.afterTrailingComma(n))
             break;
           var j = void 0;
@@ -1355,26 +1355,26 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }, C.exitScope = function() {
         this.scopeStack.pop();
       }, C.treatFunctionsAsVarInScope = function(n) {
-        return n.flags & zt || !this.inModule && n.flags & Be;
+        return n.flags & qt || !this.inModule && n.flags & Be;
       }, C.declareName = function(n, u, x) {
         var A = !1;
-        if (u === Ft) {
+        if (u === Dt) {
           var N = this.currentScope();
           A = N.lexical.indexOf(n) > -1 || N.functions.indexOf(n) > -1 || N.var.indexOf(n) > -1, N.lexical.push(n), this.inModule && N.flags & Be && delete this.undefinedExports[n];
         } else if (u === Ht) {
-          var H = this.currentScope();
-          H.lexical.push(n);
-        } else if (u === ii) {
+          var W = this.currentScope();
+          W.lexical.push(n);
+        } else if (u === ei) {
           var j = this.currentScope();
           this.treatFunctionsAsVar ? A = j.lexical.indexOf(n) > -1 : A = j.lexical.indexOf(n) > -1 || j.var.indexOf(n) > -1, j.functions.push(n);
         } else
           for (var $ = this.scopeStack.length - 1; $ >= 0; --$) {
-            var st = this.scopeStack[$];
-            if (st.lexical.indexOf(n) > -1 && !(st.flags & He && st.lexical[0] === n) || !this.treatFunctionsAsVarInScope(st) && st.functions.indexOf(n) > -1) {
+            var at = this.scopeStack[$];
+            if (at.lexical.indexOf(n) > -1 && !(at.flags & He && at.lexical[0] === n) || !this.treatFunctionsAsVarInScope(at) && at.functions.indexOf(n) > -1) {
               A = !0;
               break;
             }
-            if (st.var.push(n), this.inModule && st.flags & Be && delete this.undefinedExports[n], st.flags & ci)
+            if (at.var.push(n), this.inModule && at.flags & Be && delete this.undefinedExports[n], at.flags & fi)
               break;
           }
         A && this.raiseRecoverable(x, "Identifier '" + n + "' has already been declared");
@@ -1385,13 +1385,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }, C.currentVarScope = function() {
         for (var n = this.scopeStack.length - 1; ; n--) {
           var u = this.scopeStack[n];
-          if (u.flags & ci)
+          if (u.flags & fi)
             return u;
         }
       }, C.currentThisScope = function() {
         for (var n = this.scopeStack.length - 1; ; n--) {
           var u = this.scopeStack[n];
-          if (u.flags & ci && !(u.flags & bi))
+          if (u.flags & fi && !(u.flags & xi))
             return u;
         }
       };
@@ -1416,32 +1416,32 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           u[x] = n[x];
         return u;
       };
-      var M = "ASCII ASCII_Hex_Digit AHex Alphabetic Alpha Any Assigned Bidi_Control Bidi_C Bidi_Mirrored Bidi_M Case_Ignorable CI Cased Changes_When_Casefolded CWCF Changes_When_Casemapped CWCM Changes_When_Lowercased CWL Changes_When_NFKC_Casefolded CWKCF Changes_When_Titlecased CWT Changes_When_Uppercased CWU Dash Default_Ignorable_Code_Point DI Deprecated Dep Diacritic Dia Emoji Emoji_Component Emoji_Modifier Emoji_Modifier_Base Emoji_Presentation Extender Ext Grapheme_Base Gr_Base Grapheme_Extend Gr_Ext Hex_Digit Hex IDS_Binary_Operator IDSB IDS_Trinary_Operator IDST ID_Continue IDC ID_Start IDS Ideographic Ideo Join_Control Join_C Logical_Order_Exception LOE Lowercase Lower Math Noncharacter_Code_Point NChar Pattern_Syntax Pat_Syn Pattern_White_Space Pat_WS Quotation_Mark QMark Radical Regional_Indicator RI Sentence_Terminal STerm Soft_Dotted SD Terminal_Punctuation Term Unified_Ideograph UIdeo Uppercase Upper Variation_Selector VS White_Space space XID_Continue XIDC XID_Start XIDS", R = M + " Extended_Pictographic", T = R, V = T + " EBase EComp EMod EPres ExtPict", F = V, q = {
+      var M = "ASCII ASCII_Hex_Digit AHex Alphabetic Alpha Any Assigned Bidi_Control Bidi_C Bidi_Mirrored Bidi_M Case_Ignorable CI Cased Changes_When_Casefolded CWCF Changes_When_Casemapped CWCM Changes_When_Lowercased CWL Changes_When_NFKC_Casefolded CWKCF Changes_When_Titlecased CWT Changes_When_Uppercased CWU Dash Default_Ignorable_Code_Point DI Deprecated Dep Diacritic Dia Emoji Emoji_Component Emoji_Modifier Emoji_Modifier_Base Emoji_Presentation Extender Ext Grapheme_Base Gr_Base Grapheme_Extend Gr_Ext Hex_Digit Hex IDS_Binary_Operator IDSB IDS_Trinary_Operator IDST ID_Continue IDC ID_Start IDS Ideographic Ideo Join_Control Join_C Logical_Order_Exception LOE Lowercase Lower Math Noncharacter_Code_Point NChar Pattern_Syntax Pat_Syn Pattern_White_Space Pat_WS Quotation_Mark QMark Radical Regional_Indicator RI Sentence_Terminal STerm Soft_Dotted SD Terminal_Punctuation Term Unified_Ideograph UIdeo Uppercase Upper Variation_Selector VS White_Space space XID_Continue XIDC XID_Start XIDS", V = M + " Extended_Pictographic", T = V, R = T + " EBase EComp EMod EPres ExtPict", F = R, q = {
         9: M,
-        10: R,
+        10: V,
         11: T,
-        12: V,
+        12: R,
         13: F
-      }, U = "Cased_Letter LC Close_Punctuation Pe Connector_Punctuation Pc Control Cc cntrl Currency_Symbol Sc Dash_Punctuation Pd Decimal_Number Nd digit Enclosing_Mark Me Final_Punctuation Pf Format Cf Initial_Punctuation Pi Letter L Letter_Number Nl Line_Separator Zl Lowercase_Letter Ll Mark M Combining_Mark Math_Symbol Sm Modifier_Letter Lm Modifier_Symbol Sk Nonspacing_Mark Mn Number N Open_Punctuation Ps Other C Other_Letter Lo Other_Number No Other_Punctuation Po Other_Symbol So Paragraph_Separator Zp Private_Use Co Punctuation P punct Separator Z Space_Separator Zs Spacing_Mark Mc Surrogate Cs Symbol S Titlecase_Letter Lt Unassigned Cn Uppercase_Letter Lu", G = "Adlam Adlm Ahom Anatolian_Hieroglyphs Hluw Arabic Arab Armenian Armn Avestan Avst Balinese Bali Bamum Bamu Bassa_Vah Bass Batak Batk Bengali Beng Bhaiksuki Bhks Bopomofo Bopo Brahmi Brah Braille Brai Buginese Bugi Buhid Buhd Canadian_Aboriginal Cans Carian Cari Caucasian_Albanian Aghb Chakma Cakm Cham Cham Cherokee Cher Common Zyyy Coptic Copt Qaac Cuneiform Xsux Cypriot Cprt Cyrillic Cyrl Deseret Dsrt Devanagari Deva Duployan Dupl Egyptian_Hieroglyphs Egyp Elbasan Elba Ethiopic Ethi Georgian Geor Glagolitic Glag Gothic Goth Grantha Gran Greek Grek Gujarati Gujr Gurmukhi Guru Han Hani Hangul Hang Hanunoo Hano Hatran Hatr Hebrew Hebr Hiragana Hira Imperial_Aramaic Armi Inherited Zinh Qaai Inscriptional_Pahlavi Phli Inscriptional_Parthian Prti Javanese Java Kaithi Kthi Kannada Knda Katakana Kana Kayah_Li Kali Kharoshthi Khar Khmer Khmr Khojki Khoj Khudawadi Sind Lao Laoo Latin Latn Lepcha Lepc Limbu Limb Linear_A Lina Linear_B Linb Lisu Lisu Lycian Lyci Lydian Lydi Mahajani Mahj Malayalam Mlym Mandaic Mand Manichaean Mani Marchen Marc Masaram_Gondi Gonm Meetei_Mayek Mtei Mende_Kikakui Mend Meroitic_Cursive Merc Meroitic_Hieroglyphs Mero Miao Plrd Modi Mongolian Mong Mro Mroo Multani Mult Myanmar Mymr Nabataean Nbat New_Tai_Lue Talu Newa Newa Nko Nkoo Nushu Nshu Ogham Ogam Ol_Chiki Olck Old_Hungarian Hung Old_Italic Ital Old_North_Arabian Narb Old_Permic Perm Old_Persian Xpeo Old_South_Arabian Sarb Old_Turkic Orkh Oriya Orya Osage Osge Osmanya Osma Pahawh_Hmong Hmng Palmyrene Palm Pau_Cin_Hau Pauc Phags_Pa Phag Phoenician Phnx Psalter_Pahlavi Phlp Rejang Rjng Runic Runr Samaritan Samr Saurashtra Saur Sharada Shrd Shavian Shaw Siddham Sidd SignWriting Sgnw Sinhala Sinh Sora_Sompeng Sora Soyombo Soyo Sundanese Sund Syloti_Nagri Sylo Syriac Syrc Tagalog Tglg Tagbanwa Tagb Tai_Le Tale Tai_Tham Lana Tai_Viet Tavt Takri Takr Tamil Taml Tangut Tang Telugu Telu Thaana Thaa Thai Thai Tibetan Tibt Tifinagh Tfng Tirhuta Tirh Ugaritic Ugar Vai Vaii Warang_Citi Wara Yi Yiii Zanabazar_Square Zanb", Q = G + " Dogra Dogr Gunjala_Gondi Gong Hanifi_Rohingya Rohg Makasar Maka Medefaidrin Medf Old_Sogdian Sogo Sogdian Sogd", tt = Q + " Elymaic Elym Nandinagari Nand Nyiakeng_Puachue_Hmong Hmnp Wancho Wcho", it = tt + " Chorasmian Chrs Diak Dives_Akuru Khitan_Small_Script Kits Yezi Yezidi", ot = it + " Cypro_Minoan Cpmn Old_Uyghur Ougr Tangsa Tnsa Toto Vithkuqi Vith", X = {
-        9: G,
+      }, U = "Cased_Letter LC Close_Punctuation Pe Connector_Punctuation Pc Control Cc cntrl Currency_Symbol Sc Dash_Punctuation Pd Decimal_Number Nd digit Enclosing_Mark Me Final_Punctuation Pf Format Cf Initial_Punctuation Pi Letter L Letter_Number Nl Line_Separator Zl Lowercase_Letter Ll Mark M Combining_Mark Math_Symbol Sm Modifier_Letter Lm Modifier_Symbol Sk Nonspacing_Mark Mn Number N Open_Punctuation Ps Other C Other_Letter Lo Other_Number No Other_Punctuation Po Other_Symbol So Paragraph_Separator Zp Private_Use Co Punctuation P punct Separator Z Space_Separator Zs Spacing_Mark Mc Surrogate Cs Symbol S Titlecase_Letter Lt Unassigned Cn Uppercase_Letter Lu", H = "Adlam Adlm Ahom Anatolian_Hieroglyphs Hluw Arabic Arab Armenian Armn Avestan Avst Balinese Bali Bamum Bamu Bassa_Vah Bass Batak Batk Bengali Beng Bhaiksuki Bhks Bopomofo Bopo Brahmi Brah Braille Brai Buginese Bugi Buhid Buhd Canadian_Aboriginal Cans Carian Cari Caucasian_Albanian Aghb Chakma Cakm Cham Cham Cherokee Cher Common Zyyy Coptic Copt Qaac Cuneiform Xsux Cypriot Cprt Cyrillic Cyrl Deseret Dsrt Devanagari Deva Duployan Dupl Egyptian_Hieroglyphs Egyp Elbasan Elba Ethiopic Ethi Georgian Geor Glagolitic Glag Gothic Goth Grantha Gran Greek Grek Gujarati Gujr Gurmukhi Guru Han Hani Hangul Hang Hanunoo Hano Hatran Hatr Hebrew Hebr Hiragana Hira Imperial_Aramaic Armi Inherited Zinh Qaai Inscriptional_Pahlavi Phli Inscriptional_Parthian Prti Javanese Java Kaithi Kthi Kannada Knda Katakana Kana Kayah_Li Kali Kharoshthi Khar Khmer Khmr Khojki Khoj Khudawadi Sind Lao Laoo Latin Latn Lepcha Lepc Limbu Limb Linear_A Lina Linear_B Linb Lisu Lisu Lycian Lyci Lydian Lydi Mahajani Mahj Malayalam Mlym Mandaic Mand Manichaean Mani Marchen Marc Masaram_Gondi Gonm Meetei_Mayek Mtei Mende_Kikakui Mend Meroitic_Cursive Merc Meroitic_Hieroglyphs Mero Miao Plrd Modi Mongolian Mong Mro Mroo Multani Mult Myanmar Mymr Nabataean Nbat New_Tai_Lue Talu Newa Newa Nko Nkoo Nushu Nshu Ogham Ogam Ol_Chiki Olck Old_Hungarian Hung Old_Italic Ital Old_North_Arabian Narb Old_Permic Perm Old_Persian Xpeo Old_South_Arabian Sarb Old_Turkic Orkh Oriya Orya Osage Osge Osmanya Osma Pahawh_Hmong Hmng Palmyrene Palm Pau_Cin_Hau Pauc Phags_Pa Phag Phoenician Phnx Psalter_Pahlavi Phlp Rejang Rjng Runic Runr Samaritan Samr Saurashtra Saur Sharada Shrd Shavian Shaw Siddham Sidd SignWriting Sgnw Sinhala Sinh Sora_Sompeng Sora Soyombo Soyo Sundanese Sund Syloti_Nagri Sylo Syriac Syrc Tagalog Tglg Tagbanwa Tagb Tai_Le Tale Tai_Tham Lana Tai_Viet Tavt Takri Takr Tamil Taml Tangut Tang Telugu Telu Thaana Thaa Thai Thai Tibetan Tibt Tifinagh Tfng Tirhuta Tirh Ugaritic Ugar Vai Vaii Warang_Citi Wara Yi Yiii Zanabazar_Square Zanb", Q = H + " Dogra Dogr Gunjala_Gondi Gong Hanifi_Rohingya Rohg Makasar Maka Medefaidrin Medf Old_Sogdian Sogo Sogdian Sogd", tt = Q + " Elymaic Elym Nandinagari Nand Nyiakeng_Puachue_Hmong Hmnp Wancho Wcho", nt = tt + " Chorasmian Chrs Diak Dives_Akuru Khitan_Small_Script Kits Yezi Yezidi", ot = nt + " Cypro_Minoan Cpmn Old_Uyghur Ougr Tangsa Tnsa Toto Vithkuqi Vith", X = {
+        9: H,
         10: Q,
         11: tt,
-        12: it,
+        12: nt,
         13: ot
       }, K = {};
-      function rt(n) {
+      function st(n) {
         var u = K[n] = {
-          binary: me(q[n] + " " + U),
+          binary: ve(q[n] + " " + U),
           nonBinary: {
-            General_Category: me(U),
-            Script: me(X[n])
+            General_Category: ve(U),
+            Script: ve(X[n])
           }
         };
         u.nonBinary.Script_Extensions = u.nonBinary.Script, u.nonBinary.gc = u.nonBinary.General_Category, u.nonBinary.sc = u.nonBinary.Script, u.nonBinary.scx = u.nonBinary.Script_Extensions;
       }
       for (var ht = 0, lt = [9, 10, 11, 12, 13]; ht < lt.length; ht += 1) {
         var vt = lt[ht];
-        rt(vt);
+        st(vt);
       }
       var J = dt.prototype, gt = function(u) {
         this.parser = u, this.validFlags = "gim" + (u.options.ecmaVersion >= 6 ? "uy" : "") + (u.options.ecmaVersion >= 9 ? "s" : "") + (u.options.ecmaVersion >= 13 ? "d" : ""), this.unicodeProperties = K[u.options.ecmaVersion >= 13 ? 13 : u.options.ecmaVersion], this.source = "", this.flags = "", this.start = 0, this.switchU = !1, this.switchN = !1, this.pos = 0, this.lastIntValue = 0, this.lastStringValue = "", this.lastAssertionIsQuantifiable = !1, this.numCapturingParens = 0, this.maxBackReference = 0, this.groupNames = [], this.backReferenceNames = [];
@@ -1456,18 +1456,18 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var A = this.source, N = A.length;
         if (u >= N)
           return -1;
-        var H = A.charCodeAt(u);
-        if (!(x || this.switchU) || H <= 55295 || H >= 57344 || u + 1 >= N)
-          return H;
+        var W = A.charCodeAt(u);
+        if (!(x || this.switchU) || W <= 55295 || W >= 57344 || u + 1 >= N)
+          return W;
         var j = A.charCodeAt(u + 1);
-        return j >= 56320 && j <= 57343 ? (H << 10) + j - 56613888 : H;
+        return j >= 56320 && j <= 57343 ? (W << 10) + j - 56613888 : W;
       }, gt.prototype.nextIndex = function(u, x) {
         x === void 0 && (x = !1);
         var A = this.source, N = A.length;
         if (u >= N)
           return N;
-        var H = A.charCodeAt(u), j;
-        return !(x || this.switchU) || H <= 55295 || H >= 57344 || u + 1 >= N || (j = A.charCodeAt(u + 1)) < 56320 || j > 57343 ? u + 1 : u + 2;
+        var W = A.charCodeAt(u), j;
+        return !(x || this.switchU) || W <= 55295 || W >= 57344 || u + 1 >= N || (j = A.charCodeAt(u + 1)) < 56320 || j > 57343 ? u + 1 : u + 2;
       }, gt.prototype.current = function(u) {
         return u === void 0 && (u = !1), this.at(this.pos, u);
       }, gt.prototype.lookahead = function(u) {
@@ -1589,8 +1589,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return !1;
       }, J.regexp_eatRegExpIdentifierName = function(n) {
         if (n.lastStringValue = "", this.regexp_eatRegExpIdentifierStart(n)) {
-          for (n.lastStringValue += Et(n.lastIntValue); this.regexp_eatRegExpIdentifierPart(n); )
-            n.lastStringValue += Et(n.lastIntValue);
+          for (n.lastStringValue += Tt(n.lastIntValue); this.regexp_eatRegExpIdentifierPart(n); )
+            n.lastStringValue += Tt(n.lastIntValue);
           return !0;
         }
         return !1;
@@ -1599,14 +1599,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return n.advance(x), A === 92 && this.regexp_eatRegExpUnicodeEscapeSequence(n, x) && (A = n.lastIntValue), yt(A) ? (n.lastIntValue = A, !0) : (n.pos = u, !1);
       };
       function yt(n) {
-        return Dt(n, !0) || n === 36 || n === 95;
+        return Ft(n, !0) || n === 36 || n === 95;
       }
       J.regexp_eatRegExpIdentifierPart = function(n) {
         var u = n.pos, x = this.options.ecmaVersion >= 11, A = n.current(x);
         return n.advance(x), A === 92 && this.regexp_eatRegExpUnicodeEscapeSequence(n, x) && (A = n.lastIntValue), ie(A) ? (n.lastIntValue = A, !0) : (n.pos = u, !1);
       };
       function ie(n) {
-        return at(n, !0) || n === 36 || n === 95 || n === 8204 || n === 8205;
+        return ut(n, !0) || n === 36 || n === 95 || n === 8204 || n === 8205;
       }
       J.regexp_eatAtomEscape = function(n) {
         return this.regexp_eatBackReference(n) || this.regexp_eatCharacterClassEscape(n) || this.regexp_eatCharacterEscape(n) || n.switchN && this.regexp_eatKGroupName(n) ? !0 : (n.switchU && (n.current() === 99 && n.raise("Invalid unicode escape"), n.raise("Invalid escape")), !1);
@@ -1639,15 +1639,15 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
         return !1;
       }, J.regexp_eatZero = function(n) {
-        return n.current() === 48 && !ue(n.lookahead()) ? (n.lastIntValue = 0, n.advance(), !0) : !1;
+        return n.current() === 48 && !ae(n.lookahead()) ? (n.lastIntValue = 0, n.advance(), !0) : !1;
       }, J.regexp_eatControlEscape = function(n) {
         var u = n.current();
         return u === 116 ? (n.lastIntValue = 9, n.advance(), !0) : u === 110 ? (n.lastIntValue = 10, n.advance(), !0) : u === 118 ? (n.lastIntValue = 11, n.advance(), !0) : u === 102 ? (n.lastIntValue = 12, n.advance(), !0) : u === 114 ? (n.lastIntValue = 13, n.advance(), !0) : !1;
       }, J.regexp_eatControlLetter = function(n) {
         var u = n.current();
-        return $t(u) ? (n.lastIntValue = u % 32, n.advance(), !0) : !1;
+        return Jt(u) ? (n.lastIntValue = u % 32, n.advance(), !0) : !1;
       };
-      function $t(n) {
+      function Jt(n) {
         return n >= 65 && n <= 90 || n >= 97 && n <= 122;
       }
       J.regexp_eatRegExpUnicodeEscapeSequence = function(n, u) {
@@ -1657,23 +1657,23 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           if (this.regexp_eatFixedHexDigits(n, 4)) {
             var N = n.lastIntValue;
             if (A && N >= 55296 && N <= 56319) {
-              var H = n.pos;
+              var W = n.pos;
               if (n.eat(92) && n.eat(117) && this.regexp_eatFixedHexDigits(n, 4)) {
                 var j = n.lastIntValue;
                 if (j >= 56320 && j <= 57343)
                   return n.lastIntValue = (N - 55296) * 1024 + (j - 56320) + 65536, !0;
               }
-              n.pos = H, n.lastIntValue = N;
+              n.pos = W, n.lastIntValue = N;
             }
             return !0;
           }
-          if (A && n.eat(123) && this.regexp_eatHexDigits(n) && n.eat(125) && ae(n.lastIntValue))
+          if (A && n.eat(123) && this.regexp_eatHexDigits(n) && n.eat(125) && se(n.lastIntValue))
             return !0;
           A && n.raise("Invalid unicode escape"), n.pos = x;
         }
         return !1;
       };
-      function ae(n) {
+      function se(n) {
         return n >= 0 && n <= 1114111;
       }
       J.regexp_eatIdentityEscape = function(n) {
@@ -1693,7 +1693,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return !1;
       }, J.regexp_eatCharacterClassEscape = function(n) {
         var u = n.current();
-        if (Xt(u))
+        if (Zt(u))
           return n.lastIntValue = -1, n.advance(), !0;
         if (n.switchU && this.options.ecmaVersion >= 9 && (u === 80 || u === 112)) {
           if (n.lastIntValue = -1, n.advance(), n.eat(123) && this.regexp_eatUnicodePropertyValueExpression(n) && n.eat(125))
@@ -1702,7 +1702,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
         return !1;
       };
-      function Xt(n) {
+      function Zt(n) {
         return n === 100 || n === 68 || n === 115 || n === 83 || n === 119 || n === 87;
       }
       J.regexp_eatUnicodePropertyValueExpression = function(n) {
@@ -1720,26 +1720,26 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
         return !1;
       }, J.regexp_validateUnicodePropertyNameAndValue = function(n, u, x) {
-        nt(n.unicodeProperties.nonBinary, u) || n.raise("Invalid property name"), n.unicodeProperties.nonBinary[u].test(x) || n.raise("Invalid property value");
+        rt(n.unicodeProperties.nonBinary, u) || n.raise("Invalid property name"), n.unicodeProperties.nonBinary[u].test(x) || n.raise("Invalid property value");
       }, J.regexp_validateUnicodePropertyNameOrValue = function(n, u) {
         n.unicodeProperties.binary.test(u) || n.raise("Invalid property name");
       }, J.regexp_eatUnicodePropertyName = function(n) {
         var u = 0;
         for (n.lastStringValue = ""; Mt(u = n.current()); )
-          n.lastStringValue += Et(u), n.advance();
+          n.lastStringValue += Tt(u), n.advance();
         return n.lastStringValue !== "";
       };
       function Mt(n) {
-        return $t(n) || n === 95;
+        return Jt(n) || n === 95;
       }
       J.regexp_eatUnicodePropertyValue = function(n) {
         var u = 0;
-        for (n.lastStringValue = ""; Kt(u = n.current()); )
-          n.lastStringValue += Et(u), n.advance();
+        for (n.lastStringValue = ""; Xt(u = n.current()); )
+          n.lastStringValue += Tt(u), n.advance();
         return n.lastStringValue !== "";
       };
-      function Kt(n) {
-        return Mt(n) || ue(n);
+      function Xt(n) {
+        return Mt(n) || ae(n);
       }
       J.regexp_eatLoneUnicodePropertyNameOrValue = function(n) {
         return this.regexp_eatUnicodePropertyValue(n);
@@ -1785,7 +1785,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return this.regexp_eatCharacterClassEscape(n) || this.regexp_eatCharacterEscape(n);
       }, J.regexp_eatClassControlLetter = function(n) {
         var u = n.current();
-        return ue(u) || u === 95 ? (n.lastIntValue = u % 32, n.advance(), !0) : !1;
+        return ae(u) || u === 95 ? (n.lastIntValue = u % 32, n.advance(), !0) : !1;
       }, J.regexp_eatHexEscapeSequence = function(n) {
         var u = n.pos;
         if (n.eat(120)) {
@@ -1796,23 +1796,23 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return !1;
       }, J.regexp_eatDecimalDigits = function(n) {
         var u = n.pos, x = 0;
-        for (n.lastIntValue = 0; ue(x = n.current()); )
+        for (n.lastIntValue = 0; ae(x = n.current()); )
           n.lastIntValue = 10 * n.lastIntValue + (x - 48), n.advance();
         return n.pos !== u;
       };
-      function ue(n) {
+      function ae(n) {
         return n >= 48 && n <= 57;
       }
       J.regexp_eatHexDigits = function(n) {
         var u = n.pos, x = 0;
-        for (n.lastIntValue = 0; te(x = n.current()); )
-          n.lastIntValue = 16 * n.lastIntValue + _e(x), n.advance();
+        for (n.lastIntValue = 0; $t(x = n.current()); )
+          n.lastIntValue = 16 * n.lastIntValue + ge(x), n.advance();
         return n.pos !== u;
       };
-      function te(n) {
+      function $t(n) {
         return n >= 48 && n <= 57 || n >= 65 && n <= 70 || n >= 97 && n <= 102;
       }
-      function _e(n) {
+      function ge(n) {
         return n >= 65 && n <= 70 ? 10 + (n - 65) : n >= 97 && n <= 102 ? 10 + (n - 97) : n - 48;
       }
       J.regexp_eatLegacyOctalEscapeSequence = function(n) {
@@ -1838,19 +1838,19 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         n.lastIntValue = 0;
         for (var A = 0; A < u; ++A) {
           var N = n.current();
-          if (!te(N))
+          if (!$t(N))
             return n.pos = x, !1;
-          n.lastIntValue = 16 * n.lastIntValue + _e(N), n.advance();
+          n.lastIntValue = 16 * n.lastIntValue + ge(N), n.advance();
         }
         return !0;
       };
-      var ce = function(u) {
+      var fe = function(u) {
         this.type = u.type, this.value = u.value, this.start = u.start, this.end = u.end, u.options.locations && (this.loc = new We(u, u.startLoc, u.endLoc)), u.options.ranges && (this.range = [u.start, u.end]);
       }, St = dt.prototype;
       St.next = function(n) {
-        !n && this.type.keyword && this.containsEsc && this.raiseRecoverable(this.start, "Escape sequence in keyword " + this.type.keyword), this.options.onToken && this.options.onToken(new ce(this)), this.lastTokEnd = this.end, this.lastTokStart = this.start, this.lastTokEndLoc = this.endLoc, this.lastTokStartLoc = this.startLoc, this.nextToken();
+        !n && this.type.keyword && this.containsEsc && this.raiseRecoverable(this.start, "Escape sequence in keyword " + this.type.keyword), this.options.onToken && this.options.onToken(new fe(this)), this.lastTokEnd = this.end, this.lastTokStart = this.start, this.lastTokEndLoc = this.endLoc, this.lastTokStartLoc = this.startLoc, this.nextToken();
       }, St.getToken = function() {
-        return this.next(), new ce(this);
+        return this.next(), new fe(this);
       }, typeof Symbol < "u" && (St[Symbol.iterator] = function() {
         var n = this;
         return {
@@ -1870,7 +1870,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return n.override(this);
         this.readToken(this.fullCharCodeAtPos());
       }, St.readToken = function(n) {
-        return Dt(n, this.options.ecmaVersion >= 6) || n === 92 ? this.readWord() : this.getTokenFromCode(n);
+        return Ft(n, this.options.ecmaVersion >= 6) || n === 92 ? this.readWord() : this.getTokenFromCode(n);
       }, St.fullCharCodeAtPos = function() {
         var n = this.input.charCodeAt(this.pos);
         if (n <= 55295 || n >= 56320)
@@ -1891,7 +1891,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           this.curPosition()
         );
       }, St.skipLineComment = function(n) {
-        for (var u = this.pos, x = this.options.onComment && this.curPosition(), A = this.input.charCodeAt(this.pos += n); this.pos < this.input.length && !jt(A); )
+        for (var u = this.pos, x = this.options.onComment && this.curPosition(), A = this.input.charCodeAt(this.pos += n); this.pos < this.input.length && !Gt(A); )
           A = this.input.charCodeAt(++this.pos);
         this.options.onComment && this.options.onComment(
           !1,
@@ -1968,7 +1968,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return n === 61 ? this.finishOp(I.assign, 2) : this.finishOp(I.bitwiseXOR, 1);
       }, St.readToken_plus_min = function(n) {
         var u = this.input.charCodeAt(this.pos + 1);
-        return u === n ? u === 45 && !this.inModule && this.input.charCodeAt(this.pos + 2) === 62 && (this.lastTokEnd === 0 || Rt.test(this.input.slice(this.lastTokEnd, this.pos))) ? (this.skipLineComment(3), this.skipSpace(), this.nextToken()) : this.finishOp(I.incDec, 2) : u === 61 ? this.finishOp(I.assign, 2) : this.finishOp(I.plusMin, 1);
+        return u === n ? u === 45 && !this.inModule && this.input.charCodeAt(this.pos + 2) === 62 && (this.lastTokEnd === 0 || zt.test(this.input.slice(this.lastTokEnd, this.pos))) ? (this.skipLineComment(3), this.skipSpace(), this.nextToken()) : this.finishOp(I.incDec, 2) : u === 61 ? this.finishOp(I.assign, 2) : this.finishOp(I.plusMin, 1);
       }, St.readToken_lt_gt = function(n) {
         var u = this.input.charCodeAt(this.pos + 1), x = 1;
         return u === n ? (x = n === 62 && this.input.charCodeAt(this.pos + 2) === 62 ? 3 : 2, this.input.charCodeAt(this.pos + x) === 61 ? this.finishOp(I.assign, x + 1) : this.finishOp(I.bitShift, x)) : u === 33 && n === 60 && !this.inModule && this.input.charCodeAt(this.pos + 2) === 45 && this.input.charCodeAt(this.pos + 3) === 45 ? (this.skipLineComment(4), this.skipSpace(), this.nextToken()) : (u === 61 && (x = 2), this.finishOp(I.relational, x));
@@ -1996,9 +1996,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return this.finishOp(I.question, 1);
       }, St.readToken_numberSign = function() {
         var n = this.options.ecmaVersion, u = 35;
-        if (n >= 13 && (++this.pos, u = this.fullCharCodeAtPos(), Dt(u, !0) || u === 92))
+        if (n >= 13 && (++this.pos, u = this.fullCharCodeAtPos(), Ft(u, !0) || u === 92))
           return this.finishToken(I.privateId, this.readWord1());
-        this.raise(this.pos, "Unexpected character '" + Et(u) + "'");
+        this.raise(this.pos, "Unexpected character '" + Tt(u) + "'");
       }, St.getTokenFromCode = function(n) {
         switch (n) {
           case 46:
@@ -2074,7 +2074,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           case 35:
             return this.readToken_numberSign();
         }
-        this.raise(this.pos, "Unexpected character '" + Et(n) + "'");
+        this.raise(this.pos, "Unexpected character '" + Tt(n) + "'");
       }, St.finishOp = function(n, u) {
         var x = this.input.slice(this.pos, this.pos + u);
         return this.pos += u, this.finishToken(n, x);
@@ -2082,7 +2082,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         for (var n, u, x = this.pos; ; ) {
           this.pos >= this.input.length && this.raise(x, "Unterminated regular expression");
           var A = this.input.charAt(this.pos);
-          if (Rt.test(A) && this.raise(x, "Unterminated regular expression"), n)
+          if (zt.test(A) && this.raise(x, "Unterminated regular expression"), n)
             n = !1;
           else {
             if (A === "[")
@@ -2097,40 +2097,40 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
         var N = this.input.slice(x, this.pos);
         ++this.pos;
-        var H = this.pos, j = this.readWord1();
-        this.containsEsc && this.unexpected(H);
+        var W = this.pos, j = this.readWord1();
+        this.containsEsc && this.unexpected(W);
         var $ = this.regexpState || (this.regexpState = new gt(this));
         $.reset(x, N, j), this.validateRegExpFlags($), this.validateRegExpPattern($);
-        var st = null;
+        var at = null;
         try {
-          st = new RegExp(N, j);
+          at = new RegExp(N, j);
         } catch {
         }
-        return this.finishToken(I.regexp, { pattern: N, flags: j, value: st });
+        return this.finishToken(I.regexp, { pattern: N, flags: j, value: at });
       }, St.readInt = function(n, u, x) {
-        for (var A = this.options.ecmaVersion >= 12 && u === void 0, N = x && this.input.charCodeAt(this.pos) === 48, H = this.pos, j = 0, $ = 0, st = 0, mt = u == null ? 1 / 0 : u; st < mt; ++st, ++this.pos) {
-          var wt = this.input.charCodeAt(this.pos), qt = void 0;
+        for (var A = this.options.ecmaVersion >= 12 && u === void 0, N = x && this.input.charCodeAt(this.pos) === 48, W = this.pos, j = 0, $ = 0, at = 0, mt = u == null ? 1 / 0 : u; at < mt; ++at, ++this.pos) {
+          var wt = this.input.charCodeAt(this.pos), Ut = void 0;
           if (A && wt === 95) {
-            N && this.raiseRecoverable(this.pos, "Numeric separator is not allowed in legacy octal numeric literals"), $ === 95 && this.raiseRecoverable(this.pos, "Numeric separator must be exactly one underscore"), st === 0 && this.raiseRecoverable(this.pos, "Numeric separator is not allowed at the first of digits"), $ = wt;
+            N && this.raiseRecoverable(this.pos, "Numeric separator is not allowed in legacy octal numeric literals"), $ === 95 && this.raiseRecoverable(this.pos, "Numeric separator must be exactly one underscore"), at === 0 && this.raiseRecoverable(this.pos, "Numeric separator is not allowed at the first of digits"), $ = wt;
             continue;
           }
-          if (wt >= 97 ? qt = wt - 97 + 10 : wt >= 65 ? qt = wt - 65 + 10 : wt >= 48 && wt <= 57 ? qt = wt - 48 : qt = 1 / 0, qt >= n)
+          if (wt >= 97 ? Ut = wt - 97 + 10 : wt >= 65 ? Ut = wt - 65 + 10 : wt >= 48 && wt <= 57 ? Ut = wt - 48 : Ut = 1 / 0, Ut >= n)
             break;
-          $ = wt, j = j * n + qt;
+          $ = wt, j = j * n + Ut;
         }
-        return A && $ === 95 && this.raiseRecoverable(this.pos - 1, "Numeric separator is not allowed at the last of digits"), this.pos === H || u != null && this.pos - H !== u ? null : j;
+        return A && $ === 95 && this.raiseRecoverable(this.pos - 1, "Numeric separator is not allowed at the last of digits"), this.pos === W || u != null && this.pos - W !== u ? null : j;
       };
-      function de(n, u) {
+      function ce(n, u) {
         return u ? parseInt(n, 8) : parseFloat(n.replace(/_/g, ""));
       }
-      function pe(n) {
+      function de(n) {
         return typeof BigInt != "function" ? null : BigInt(n.replace(/_/g, ""));
       }
       St.readRadixNumber = function(n) {
         var u = this.pos;
         this.pos += 2;
         var x = this.readInt(n);
-        return x == null && this.raise(this.start + 2, "Expected number in radix " + n), this.options.ecmaVersion >= 11 && this.input.charCodeAt(this.pos) === 110 ? (x = pe(this.input.slice(u, this.pos)), ++this.pos) : Dt(this.fullCharCodeAtPos()) && this.raise(this.pos, "Identifier directly after number"), this.finishToken(I.num, x);
+        return x == null && this.raise(this.start + 2, "Expected number in radix " + n), this.options.ecmaVersion >= 11 && this.input.charCodeAt(this.pos) === 110 ? (x = de(this.input.slice(u, this.pos)), ++this.pos) : Ft(this.fullCharCodeAtPos()) && this.raise(this.pos, "Identifier directly after number"), this.finishToken(I.num, x);
       }, St.readNumber = function(n) {
         var u = this.pos;
         !n && this.readInt(10, void 0, !0) === null && this.raise(u, "Invalid number");
@@ -2138,12 +2138,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         x && this.strict && this.raise(u, "Invalid number");
         var A = this.input.charCodeAt(this.pos);
         if (!x && !n && this.options.ecmaVersion >= 11 && A === 110) {
-          var N = pe(this.input.slice(u, this.pos));
-          return ++this.pos, Dt(this.fullCharCodeAtPos()) && this.raise(this.pos, "Identifier directly after number"), this.finishToken(I.num, N);
+          var N = de(this.input.slice(u, this.pos));
+          return ++this.pos, Ft(this.fullCharCodeAtPos()) && this.raise(this.pos, "Identifier directly after number"), this.finishToken(I.num, N);
         }
-        x && /[89]/.test(this.input.slice(u, this.pos)) && (x = !1), A === 46 && !x && (++this.pos, this.readInt(10), A = this.input.charCodeAt(this.pos)), (A === 69 || A === 101) && !x && (A = this.input.charCodeAt(++this.pos), (A === 43 || A === 45) && ++this.pos, this.readInt(10) === null && this.raise(u, "Invalid number")), Dt(this.fullCharCodeAtPos()) && this.raise(this.pos, "Identifier directly after number");
-        var H = de(this.input.slice(u, this.pos), x);
-        return this.finishToken(I.num, H);
+        x && /[89]/.test(this.input.slice(u, this.pos)) && (x = !1), A === 46 && !x && (++this.pos, this.readInt(10), A = this.input.charCodeAt(this.pos)), (A === 69 || A === 101) && !x && (A = this.input.charCodeAt(++this.pos), (A === 43 || A === 45) && ++this.pos, this.readInt(10) === null && this.raise(u, "Invalid number")), Ft(this.fullCharCodeAtPos()) && this.raise(this.pos, "Identifier directly after number");
+        var W = ce(this.input.slice(u, this.pos), x);
+        return this.finishToken(I.num, W);
       }, St.readCodePoint = function() {
         var n = this.input.charCodeAt(this.pos), u;
         if (n === 123) {
@@ -2159,7 +2159,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           var A = this.input.charCodeAt(this.pos);
           if (A === n)
             break;
-          A === 92 ? (u += this.input.slice(x, this.pos), u += this.readEscapedChar(!1), x = this.pos) : A === 8232 || A === 8233 ? (this.options.ecmaVersion < 10 && this.raise(this.start, "Unterminated string constant"), ++this.pos, this.options.locations && (this.curLine++, this.lineStart = this.pos)) : (jt(A) && this.raise(this.start, "Unterminated string constant"), ++this.pos);
+          A === 92 ? (u += this.input.slice(x, this.pos), u += this.readEscapedChar(!1), x = this.pos) : A === 8232 || A === 8233 ? (this.options.ecmaVersion < 10 && this.raise(this.start, "Unterminated string constant"), ++this.pos, this.options.locations && (this.curLine++, this.lineStart = this.pos)) : (Gt(A) && this.raise(this.start, "Unterminated string constant"), ++this.pos);
         }
         return u += this.input.slice(x, this.pos++), this.finishToken(I.string, u);
       };
@@ -2187,7 +2187,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             return this.pos === this.start && (this.type === I.template || this.type === I.invalidTemplate) ? x === 36 ? (this.pos += 2, this.finishToken(I.dollarBraceL)) : (++this.pos, this.finishToken(I.backQuote)) : (n += this.input.slice(u, this.pos), this.finishToken(I.template, n));
           if (x === 92)
             n += this.input.slice(u, this.pos), n += this.readEscapedChar(!0), u = this.pos;
-          else if (jt(x)) {
+          else if (Gt(x)) {
             switch (n += this.input.slice(u, this.pos), ++this.pos, x) {
               case 13:
                 this.input.charCodeAt(this.pos) === 10 && ++this.pos;
@@ -2227,7 +2227,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           case 120:
             return String.fromCharCode(this.readHexChar(2));
           case 117:
-            return Et(this.readCodePoint());
+            return Tt(this.readCodePoint());
           case 116:
             return "	";
           case 98:
@@ -2260,7 +2260,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                 n ? "Octal literal in template string" : "Octal literal in strict mode"
               ), String.fromCharCode(N);
             }
-            return jt(u) ? "" : String.fromCharCode(u);
+            return Gt(u) ? "" : String.fromCharCode(u);
         }
       }, St.readHexChar = function(n) {
         var u = this.pos, x = this.readInt(16, n);
@@ -2269,14 +2269,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         this.containsEsc = !1;
         for (var n = "", u = !0, x = this.pos, A = this.options.ecmaVersion >= 6; this.pos < this.input.length; ) {
           var N = this.fullCharCodeAtPos();
-          if (at(N, A))
+          if (ut(N, A))
             this.pos += N <= 65535 ? 1 : 2;
           else if (N === 92) {
             this.containsEsc = !0, n += this.input.slice(x, this.pos);
-            var H = this.pos;
+            var W = this.pos;
             this.input.charCodeAt(++this.pos) !== 117 && this.invalidStringToken(this.pos, "Expecting Unicode escape sequence \\uXXXX"), ++this.pos;
             var j = this.readCodePoint();
-            (u ? Dt : at)(j, A) || this.invalidStringToken(H, "Invalid Unicode escape"), n += Et(j), x = this.pos;
+            (u ? Ft : ut)(j, A) || this.invalidStringToken(W, "Invalid Unicode escape"), n += Tt(j), x = this.pos;
           } else
             break;
           u = !1;
@@ -2286,11 +2286,11 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var n = this.readWord1(), u = I.name;
         return this.keywords.test(n) && (u = Bt[n]), this.finishToken(u, n);
       };
-      var xe = "8.8.0";
+      var me = "8.8.0";
       dt.acorn = {
         Parser: dt,
-        version: xe,
-        defaultOptions: Je,
+        version: me,
+        defaultOptions: Qe,
         Position: Ne,
         SourceLocation: We,
         getLineInfo: Fe,
@@ -2300,26 +2300,26 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         keywordTypes: Bt,
         TokContext: w,
         tokContexts: m,
-        isIdentifierChar: at,
-        isIdentifierStart: Dt,
-        Token: ce,
-        isNewLine: jt,
-        lineBreak: Rt,
+        isIdentifierChar: ut,
+        isIdentifierStart: Ft,
+        Token: fe,
+        isNewLine: Gt,
+        lineBreak: zt,
         lineBreakG: Ee,
         nonASCIIwhitespace: Ue
       };
-      function ni(n, u) {
+      function ii(n, u) {
         return dt.parse(n, u);
       }
-      function yi(n, u, x) {
+      function bi(n, u, x) {
         return dt.parseExpressionAt(n, u, x);
       }
-      function wi(n, u) {
+      function yi(n, u) {
         return dt.tokenizer(n, u);
       }
-      W.Node = S, W.Parser = dt, W.Position = Ne, W.SourceLocation = We, W.TokContext = w, W.Token = ce, W.TokenType = xt, W.defaultOptions = Je, W.getLineInfo = Fe, W.isIdentifierChar = at, W.isIdentifierStart = Dt, W.isNewLine = jt, W.keywordTypes = Bt, W.lineBreak = Rt, W.lineBreakG = Ee, W.nonASCIIwhitespace = Ue, W.parse = ni, W.parseExpressionAt = yi, W.tokContexts = m, W.tokTypes = I, W.tokenizer = wi, W.version = xe, Object.defineProperty(W, "__esModule", { value: !0 });
+      G.Node = S, G.Parser = dt, G.Position = Ne, G.SourceLocation = We, G.TokContext = w, G.Token = fe, G.TokenType = xt, G.defaultOptions = Qe, G.getLineInfo = Fe, G.isIdentifierChar = ut, G.isIdentifierStart = Ft, G.isNewLine = Gt, G.keywordTypes = Bt, G.lineBreak = zt, G.lineBreakG = Ee, G.nonASCIIwhitespace = Ue, G.parse = ii, G.parseExpressionAt = bi, G.tokContexts = m, G.tokTypes = I, G.tokenizer = yi, G.version = me, Object.defineProperty(G, "__esModule", { value: !0 });
     });
-  }(Ti, Ti.exports)), Ti.exports;
+  }(Ei, Ei.exports)), Ei.exports;
 }
 /*!
  * Paper.js v0.12.15 - The Swiss Army Knife of Vector Graphics Scripting.
@@ -2352,10 +2352,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
  * created by Marijn Haverbeke and released under an MIT license.
  *
  */
-(function(ne) {
-  (function(ct, W) {
-    ct = ct || _n;
-    var ut = ct.window, et = ct.document, O = new function() {
+(function(te) {
+  (function(pt, G) {
+    pt = pt || _n;
+    var et = pt.window, it = pt.document, O = new function() {
       var t = /^(statics|enumerable|beans|preserve)$/, e = [], i = e.slice, r = Object.create, s = Object.getOwnPropertyDescriptor, a = Object.defineProperty, h = e.forEach || function(g, d) {
         for (var w = 0, m = this.length; w < m; w++)
           g.call(d, this[w], w, this);
@@ -2380,8 +2380,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var p = {};
         function y(S, E) {
           E = E || (E = s(d, S)) && (E.get ? E : E.value), typeof E == "string" && E[0] === "#" && (E = g[E.substring(1)] || E);
-          var L = typeof E == "function", M = E, R = k || L && !E.base ? E && E.get ? S in g : g[S] : null, T;
-          (!k || !R) && (L && R && (E.base = R), L && m !== !1 && (T = S.match(/^([gs]et|is)(([A-Z])(.*))$/)) && (p[T[3].toLowerCase() + T[4]] = T[2]), (!M || L || !M.get || typeof M.get != "function" || !v.isPlainObject(M)) && (M = { value: M, writable: !0 }), (s(g, S) || { configurable: !0 }).configurable && (M.configurable = !0, M.enumerable = w != null ? w : !T), a(g, S, M));
+          var L = typeof E == "function", M = E, V = k || L && !E.base ? E && E.get ? S in g : g[S] : null, T;
+          (!k || !V) && (L && V && (E.base = V), L && m !== !1 && (T = S.match(/^([gs]et|is)(([A-Z])(.*))$/)) && (p[T[3].toLowerCase() + T[4]] = T[2]), (!M || L || !M.get || typeof M.get != "function" || !v.isPlainObject(M)) && (M = { value: M, writable: !0 }), (s(g, S) || { configurable: !0 }).configurable && (M.configurable = !0, M.enumerable = w != null ? w : !T), a(g, S, M));
         }
         if (d) {
           for (var c in d)
@@ -2456,7 +2456,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             return d && (d === Object || d === v || d.name === "Object");
           },
           pick: function(g, d) {
-            return g !== W ? g : d;
+            return g !== G ? g : d;
           },
           slice: function(g, d, w) {
             return i.call(g, d, w);
@@ -2464,13 +2464,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
       });
     }();
-    ne.exports = O, O.inject({
+    te.exports = O, O.inject({
       enumerable: !1,
       toString: function() {
         return this._id != null ? (this._class || "Object") + (this._name ? " '" + this._name + "'" : " @" + this._id) : "{ " + O.each(this, function(t, e) {
           if (!/^_/.test(e)) {
             var i = typeof t;
-            this.push(e + ": " + (i === "number" ? Tt.instance.number(t) : i === "string" ? "'" + t + "'" : t));
+            this.push(e + ": " + (i === "number" ? Et.instance.number(t) : i === "string" ? "'" + t + "'" : t));
           }
         }, []).join(", ") + " }";
       },
@@ -2537,7 +2537,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           if (f = O.create(a), h && (f.__read = !0), f = f.initialize.apply(f, o > 0 || o + r < l ? O.slice(t, o, o + r) : t) || f, h) {
             t.__index = o + f.__read;
             var _ = f.__filtered;
-            _ && (t.__filtered = _, f.__filtered = W), f.__read = W;
+            _ && (t.__filtered = _, f.__filtered = G), f.__read = G;
           }
           return f;
         },
@@ -2553,14 +2553,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return s;
         },
         readNamed: function(t, e, i, r, s) {
-          var a = this.getNamed(t, e), h = a !== W;
+          var a = this.getNamed(t, e), h = a !== G;
           if (h) {
             var o = t.__filtered;
             if (!o) {
               var l = this.getSource(t);
               o = t.__filtered = O.create(l), o.__unfiltered = l;
             }
-            o[e] = W;
+            o[e] = G;
           }
           return this.read(h ? [a] : t, i, r, s);
         },
@@ -2569,13 +2569,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return i && Object.keys(i).forEach(function(a) {
             if (a in e) {
               var h = r.readNamed(t, a);
-              h !== W && (e[a] = h), s = !0;
+              h !== G && (e[a] = h), s = !0;
             }
           }), s;
         },
         getSource: function(t) {
           var e = t.__source;
-          if (e === W) {
+          if (e === G) {
             var i = t.length === 1 && t[0];
             e = t.__source = i && O.isPlainObject(i) ? i : null;
           }
@@ -2594,7 +2594,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           function a(_) {
             if (!(i && _ in i) && !(s && _ in s)) {
               var v = e[_];
-              v !== W && (t[_] = v);
+              v !== G && (t[_] = v);
             }
           }
           if (r) {
@@ -2610,7 +2610,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         serialize: function(t, e, i, r) {
           e = e || {};
           var s = !r, a;
-          if (s && (e.formatter = new Tt(e.precision), r = {
+          if (s && (e.formatter = new Et(e.precision), r = {
             length: 0,
             definitions: {},
             references: {},
@@ -2702,7 +2702,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return t;
         },
         splice: function(t, e, i, r) {
-          var s = e && e.length, a = i === W;
+          var s = e && e.length, a = i === G;
           i = a ? t.length : i, i > t.length && (i = t.length);
           for (var h = 0; h < s; h++)
             e[h]._index = i + h;
@@ -2711,7 +2711,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           var o = [i, r];
           e && O.push(o, e);
           for (var l = t.splice.apply(t, o), h = 0, f = l.length; h < f; h++)
-            l[h]._index = W;
+            l[h]._index = G;
           for (var h = i + s, f = t.length; h < f; h++)
             t[h]._index = h;
           return l;
@@ -2731,7 +2731,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
       }
     });
-    var Qt = {
+    var Yt = {
       on: function(t, e) {
         if (typeof t != "string")
           O.each(t, function(a, h) {
@@ -2805,7 +2805,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return t.base.apply(this, arguments);
         }
       }
-    }, Gt = O.extend({
+    }, Nt = O.extend({
       _class: "PaperScope",
       initialize: function t() {
         dt = this, this.settings = new O({
@@ -2816,14 +2816,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }), this.project = null, this.projects = [], this.tools = [], this._id = t._id++, t._scopes[this._id] = this;
         var e = t.prototype;
         if (!this.support) {
-          var i = Ft.getContext(1, 1) || {};
+          var i = Dt.getContext(1, 1) || {};
           e.support = {
             nativeDash: "setLineDash" in i || "mozDash" in i,
-            nativeBlendModes: ii.nativeModes
-          }, Ft.release(i);
+            nativeBlendModes: ei.nativeModes
+          }, Dt.release(i);
         }
         if (!this.agent) {
-          var r = ct.navigator.userAgent.toLowerCase(), s = (/(darwin|win|mac|linux|freebsd|sunos)/.exec(r) || [])[0], a = s === "darwin" ? "mac" : s, h = e.agent = e.browser = { platform: a };
+          var r = pt.navigator.userAgent.toLowerCase(), s = (/(darwin|win|mac|linux|freebsd|sunos)/.exec(r) || [])[0], a = s === "darwin" ? "mac" : s, h = e.agent = e.browser = { platform: a };
           a && (h[a] = !0), r.replace(
             /(opera|chrome|safari|webkit|firefox|msie|trident|atom|node|jsdom)\/?\s*([.\d]+)(?:.*version\/([.\d]+))?(?:.*rv\:v?([.\d]+))?/g,
             function(o, l, f, _, v) {
@@ -2845,7 +2845,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       },
       execute: function(t, e) {
         var i = dt.PaperScript.execute(t, this, e);
-        return Ut.updateFocus(), i;
+        return Wt.updateFocus(), i;
       },
       install: function(t) {
         var e = this;
@@ -2864,7 +2864,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return dt = this, this.project = new kt(t), this;
       },
       createCanvas: function(t, e) {
-        return Ft.getCanvas(t, e);
+        return Dt.getCanvas(t, e);
       },
       activate: function() {
         dt = this;
@@ -2876,7 +2876,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           e[i].remove();
       },
       remove: function() {
-        this.clear(), delete Gt._scopes[this._id];
+        this.clear(), delete Nt._scopes[this._id];
       },
       statics: new function() {
         function t(e) {
@@ -2894,7 +2894,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           hasAttribute: t("has")
         };
       }()
-    }), ve = O.extend(Qt, {
+    }), _e = O.extend(Yt, {
       initialize: function(t) {
         this._scope = dt, this._index = this._scope[this._list].push(this) - 1, (t || !this._scope[this._reference]) && this.activate();
       },
@@ -2913,7 +2913,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       getView: function() {
         return this._scope.getView();
       }
-    }), Wt = {
+    }), xe = {
       findItemBoundsCollisions: function(t, e, i) {
         function r(h) {
           for (var o = new Array(h.length), l = 0; l < h.length; l++) {
@@ -2960,17 +2960,17 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       },
       findBoundsCollisions: function(t, e, i, r, s) {
         var a = !e || t === e, h = a ? t : t.concat(e), o = t.length, l = h.length;
-        function f(tt, it, ot) {
+        function f(tt, nt, ot) {
           for (var X = 0, K = tt.length; X < K; ) {
-            var rt = K + X >>> 1;
-            h[tt[rt]][it] < ot ? X = rt + 1 : K = rt;
+            var st = K + X >>> 1;
+            h[tt[st]][nt] < ot ? X = st + 1 : K = st;
           }
           return X - 1;
         }
         for (var _ = r ? 1 : 0, v = _ + 2, g = r ? 0 : 1, d = g + 2, w = new Array(l), m = 0; m < l; m++)
           w[m] = m;
-        w.sort(function(tt, it) {
-          return h[tt][_] - h[it][_];
+        w.sort(function(tt, nt) {
+          return h[tt][_] - h[nt][_];
         });
         for (var k = [], p = new Array(o), m = 0; m < l; m++) {
           var y = w[m], c = h[y], b = a ? y : y - o, C = y < o, P = a || !C, S = C ? [] : null;
@@ -2987,28 +2987,28 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                 p[M].push(b);
               }
             } else
-              for (var R = c[d], T = c[g], L = 0; L < k.length; L++) {
-                var M = k[L], V = h[M], F = M < o, q = a || M >= o;
-                (s || (C && q || P && F) && R >= V[g] - i && T <= V[d] + i) && (C && q && S.push(
+              for (var V = c[d], T = c[g], L = 0; L < k.length; L++) {
+                var M = k[L], R = h[M], F = M < o, q = a || M >= o;
+                (s || (C && q || P && F) && V >= R[g] - i && T <= R[d] + i) && (C && q && S.push(
                   a ? M : M - o
                 ), P && F && p[M].push(b));
               }
           }
           if (C && (t === e && S.push(y), p[y] = S), k.length) {
-            var U = c[v], G = f(k, v, U);
-            k.splice(G + 1, 0, y);
+            var U = c[v], H = f(k, v, U);
+            k.splice(H + 1, 0, y);
           } else
             k.push(y);
         }
         for (var m = 0; m < p.length; m++) {
           var Q = p[m];
-          Q && Q.sort(function(it, ot) {
-            return it - ot;
+          Q && Q.sort(function(nt, ot) {
+            return nt - ot;
           });
         }
         return p;
       }
-    }, Tt = O.extend({
+    }, Et = O.extend({
       initialize: function(t) {
         this.precision = O.pick(t, 5), this.multiplier = Math.pow(10, this.precision);
       },
@@ -3028,8 +3028,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return this.point(t, e) + (e || ",") + this.size(t, e);
       }
     });
-    Tt.instance = new Tt();
-    var pt = new function() {
+    Et.instance = new Et();
+    var ct = new function() {
       var t = [
         [0.5773502691896257],
         [0, 0.7745966692414834],
@@ -3070,8 +3070,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }
       function f(v, g, d) {
         function w(E) {
-          var L = E * 134217729, M = E - L, R = M + L, T = E - R;
-          return [R, T];
+          var L = E * 134217729, M = E - L, V = M + L, T = E - V;
+          return [V, T];
         }
         var m = g * g - v * d, k = g * g + v * d;
         if (i(m) * 3 < k) {
@@ -3140,8 +3140,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         solveCubic: function(v, g, d, w, m, k, p) {
           var y = _(i(v), i(g), i(d), i(w)), c, b, C, P, S;
           y && (v *= y, g *= y, d *= y, w *= y);
-          function E(G) {
-            c = G;
+          function E(H) {
+            c = H;
             var Q = v * c;
             b = Q + g, C = b * c + d, P = (Q + b) * c + C, S = C * c + w;
           }
@@ -3151,19 +3151,19 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             b = g, C = d, c = 0;
           else {
             E(-(g / v) / 3);
-            var L = S / v, M = s(i(L), 1 / 3), R = L < 0 ? -1 : 1, T = -P / v, V = T > 0 ? 1.324717957244746 * Math.max(M, r(T)) : M, F = c - R * V;
+            var L = S / v, M = s(i(L), 1 / 3), V = L < 0 ? -1 : 1, T = -P / v, R = T > 0 ? 1.324717957244746 * Math.max(M, r(T)) : M, F = c - V * R;
             if (F !== c) {
               do
                 E(F), F = P === 0 ? c : c - S / P / (1 + o);
-              while (R * F > R * c);
+              while (V * F > V * c);
               i(v) * c * c > i(w / c) && (C = -w / c, b = (C - d) / c);
             }
           }
-          var q = pt.solveQuadratic(v, b, C, m, k, p), U = k == null;
+          var q = ct.solveQuadratic(v, b, C, m, k, p), U = k == null;
           return isFinite(c) && (q === 0 || q > 0 && c !== m[0] && c !== m[1]) && (U || c > k - h && c < p + h) && (m[q++] = U ? c : l(c, k, p)), q;
         }
       };
-    }(), Nt = {
+    }(), Vt = {
       _id: 1,
       _pools: {},
       get: function(t) {
@@ -3200,7 +3200,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return new z(this.x, this.y);
       },
       toString: function() {
-        var t = Tt.instance;
+        var t = Et.instance;
         return "{ x: " + t.number(this.x) + ", y: " + t.number(this.y) + " }";
       },
       _serialize: function(t) {
@@ -3219,7 +3219,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           );
         } else {
           var i = t / this.getLength();
-          pt.isZero(i) && this.getAngle(), this._set(
+          ct.isZero(i) && this.getAngle(), this._set(
             this.x * i,
             this.y * i
           );
@@ -3236,7 +3236,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       getAngleInRadians: function() {
         if (arguments.length) {
           var t = z.read(arguments), e = this.getLength() * t.getLength();
-          if (pt.isZero(e))
+          if (ct.isZero(e))
             return NaN;
           var i = this.dot(t) / e;
           return Math.acos(i < -1 ? -1 : i > 1 ? 1 : i);
@@ -3266,7 +3266,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return a ? s : Math.sqrt(s);
       },
       normalize: function(t) {
-        t === W && (t = 1);
+        t === G && (t = 1);
         var e = this.getLength(), i = e !== 0 ? t / e : 0, r = new z(this.x * i, this.y * i);
         return i >= 0 && (r._angle = this._angle), r;
       },
@@ -3323,7 +3323,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return z.isOrthogonal(this.x, this.y, t.x, t.y);
       },
       isZero: function() {
-        var t = pt.isZero;
+        var t = ct.isZero;
         return t(this.x) && t(this.y);
       },
       isNaN: function() {
@@ -3377,7 +3377,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       this[t] = function() {
         return new z(e(this.x), e(this.y));
       };
-    }, {})), Dt = z.extend({
+    }, {})), Ft = z.extend({
       initialize: function(e, i, r, s) {
         this._x = e, this._y = i, this._owner = r, this._setter = s;
       },
@@ -3405,7 +3405,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       _getSelection: function() {
         return this._setter === "setPosition" ? 4 : 0;
       }
-    }), at = O.extend({
+    }), ut = O.extend({
       _class: "Size",
       _readIndex: !0,
       initialize: function(e, i) {
@@ -3429,10 +3429,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return t === this || t && (this.width === t.width && this.height === t.height || Array.isArray(t) && this.width === t[0] && this.height === t[1]) || !1;
       },
       clone: function() {
-        return new at(this.width, this.height);
+        return new ut(this.width, this.height);
       },
       toString: function() {
-        var t = Tt.instance;
+        var t = Et.instance;
         return "{ width: " + t.number(this.width) + ", height: " + t.number(this.height) + " }";
       },
       _serialize: function(t) {
@@ -3443,30 +3443,30 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         ];
       },
       add: function() {
-        var t = at.read(arguments);
-        return new at(this.width + t.width, this.height + t.height);
+        var t = ut.read(arguments);
+        return new ut(this.width + t.width, this.height + t.height);
       },
       subtract: function() {
-        var t = at.read(arguments);
-        return new at(this.width - t.width, this.height - t.height);
+        var t = ut.read(arguments);
+        return new ut(this.width - t.width, this.height - t.height);
       },
       multiply: function() {
-        var t = at.read(arguments);
-        return new at(this.width * t.width, this.height * t.height);
+        var t = ut.read(arguments);
+        return new ut(this.width * t.width, this.height * t.height);
       },
       divide: function() {
-        var t = at.read(arguments);
-        return new at(this.width / t.width, this.height / t.height);
+        var t = ut.read(arguments);
+        return new ut(this.width / t.width, this.height / t.height);
       },
       modulo: function() {
-        var t = at.read(arguments);
-        return new at(this.width % t.width, this.height % t.height);
+        var t = ut.read(arguments);
+        return new ut(this.width % t.width, this.height % t.height);
       },
       negate: function() {
-        return new at(-this.width, -this.height);
+        return new ut(-this.width, -this.height);
       },
       isZero: function() {
-        var t = pt.isZero;
+        var t = ct.isZero;
         return t(this.width) && t(this.height);
       },
       isNaN: function() {
@@ -3474,27 +3474,27 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       },
       statics: {
         min: function(t, e) {
-          return new at(
+          return new ut(
             Math.min(t.width, e.width),
             Math.min(t.height, e.height)
           );
         },
         max: function(t, e) {
-          return new at(
+          return new ut(
             Math.max(t.width, e.width),
             Math.max(t.height, e.height)
           );
         },
         random: function() {
-          return new at(Math.random(), Math.random());
+          return new ut(Math.random(), Math.random());
         }
       }
     }, O.each(["round", "ceil", "floor", "abs"], function(t) {
       var e = Math[t];
       this[t] = function() {
-        return new at(e(this.width), e(this.height));
+        return new ut(e(this.width), e(this.height));
       };
-    }, {})), xt = at.extend({
+    }, {})), xt = ut.extend({
       initialize: function(e, i, r, s) {
         this._width = e, this._height = i, this._owner = r, this._setter = s;
       },
@@ -3519,18 +3519,18 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       beans: !0,
       initialize: function(e, i, r, s) {
         var a = arguments, h = typeof e, o;
-        if (h === "number" ? (this._set(e, i, r, s), o = 4) : h === "undefined" || e === null ? (this._set(0, 0, 0, 0), o = e === null ? 1 : 0) : a.length === 1 && (Array.isArray(e) ? (this._set.apply(this, e), o = 1) : e.x !== W || e.width !== W ? (this._set(
+        if (h === "number" ? (this._set(e, i, r, s), o = 4) : h === "undefined" || e === null ? (this._set(0, 0, 0, 0), o = e === null ? 1 : 0) : a.length === 1 && (Array.isArray(e) ? (this._set.apply(this, e), o = 1) : e.x !== G || e.width !== G ? (this._set(
           e.x || 0,
           e.y || 0,
           e.width || 0,
           e.height || 0
-        ), o = 1) : e.from === W && e.to === W && (this._set(0, 0, 0, 0), O.readSupported(a, this) && (o = 1))), o === W) {
+        ), o = 1) : e.from === G && e.to === G && (this._set(0, 0, 0, 0), O.readSupported(a, this) && (o = 1))), o === G) {
           var l = z.readNamed(a, "from"), f = O.peek(a), _ = l.x, v = l.y, g, d;
-          if (f && f.x !== W || O.hasNamed(a, "to")) {
+          if (f && f.x !== G || O.hasNamed(a, "to")) {
             var w = z.readNamed(a, "to");
             g = w.x - _, d = w.y - v, g < 0 && (_ = w.x, g = -g), d < 0 && (v = w.y, d = -d);
           } else {
-            var m = at.read(a);
+            var m = ut.read(a);
             g = m.width, d = m.height;
           }
           this._set(_, v, g, d), o = a.__index;
@@ -3550,7 +3550,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return e === this || e && this.x === e.x && this.y === e.y && this.width === e.width && this.height === e.height || !1;
       },
       toString: function() {
-        var t = Tt.instance;
+        var t = Et.instance;
         return "{ x: " + t.number(this.x) + ", y: " + t.number(this.y) + ", width: " + t.number(this.width) + ", height: " + t.number(this.height) + " }";
       },
       _serialize: function(t) {
@@ -3563,7 +3563,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         ];
       },
       getPoint: function(t) {
-        var e = t ? z : Dt;
+        var e = t ? z : Ft;
         return new e(this.x, this.y, this, "setPoint");
       },
       setPoint: function() {
@@ -3571,13 +3571,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         this.x = t.x, this.y = t.y;
       },
       getSize: function(t) {
-        var e = t ? at : xt;
+        var e = t ? ut : xt;
         return new e(this.width, this.height, this, "setSize");
       },
       _fw: 1,
       _fh: 1,
       setSize: function() {
-        var t = at.read(arguments), e = this._sx, i = this._sy, r = t.width, s = t.height;
+        var t = ut.read(arguments), e = this._sx, i = this._sy, r = t.width, s = t.height;
         e && (this.x += (this.width - r) * e), i && (this.y += (this.height - s) * i), this.width = r, this.height = s, this._fw = this._fh = 1;
       },
       getLeft: function() {
@@ -3633,7 +3633,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         this._fh || this._sy === 0.5 ? this.y = t - this.height / 2 : (this._sy && (this.y += (t - this.y) * 2 * this._sy), this.height = (t - this.y) * 2), this._sy = 0.5, this._fh = 0;
       },
       getCenter: function(t) {
-        var e = t ? z : Dt;
+        var e = t ? z : Ft;
         return new e(this.getCenterX(), this.getCenterY(), this, "setCenter");
       },
       setCenter: function() {
@@ -3647,7 +3647,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return this.width === 0 || this.height === 0;
       },
       contains: function(t) {
-        return t && t.width !== W || (Array.isArray(t) ? t : arguments).length === 4 ? this._containsRectangle(ft.read(arguments)) : this._containsPoint(z.read(arguments));
+        return t && t.width !== G || (Array.isArray(t) ? t : arguments).length === 4 ? this._containsRectangle(ft.read(arguments)) : this._containsPoint(z.read(arguments));
       },
       _containsPoint: function(t) {
         var e = t.x, i = t.y;
@@ -3674,7 +3674,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return new ft(e, i, r - e, s - i);
       },
       expand: function() {
-        var t = at.read(arguments), e = t.width, i = t.height;
+        var t = ut.read(arguments), e = t.width, i = t.height;
         return new ft(
           this.x - e / 2,
           this.y - i / 2,
@@ -3685,7 +3685,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       scale: function(t, e) {
         return this.expand(
           this.width * t - this.width,
-          this.height * (e === W ? t : e) - this.height
+          this.height * (e === G ? t : e) - this.height
         );
       }
     }, O.each(
@@ -3704,7 +3704,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         e >= 4 && (t[1] += r ? "Y" : "X");
         var s = t[r ? 0 : 1], a = t[r ? 1 : 0], h = "get" + s, o = "get" + a, l = "set" + s, f = "set" + a, _ = "get" + i, v = "set" + i;
         this[_] = function(g) {
-          var d = g ? z : Dt;
+          var d = g ? z : Ft;
           return new d(this[h](), this[o](), this, v);
         }, this[v] = function() {
           var g = z.read(arguments);
@@ -3714,7 +3714,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       {
         beans: !0
       }
-    )), se = ft.extend(
+    )), re = ft.extend(
       {
         initialize: function(e, i, r, s, a, h) {
           this._set(e, i, r, s, !0), this._owner = a, this._setter = h;
@@ -3817,7 +3817,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return t === this || t && this._a === t._a && this._b === t._b && this._c === t._c && this._d === t._d && this._tx === t._tx && this._ty === t._ty;
       },
       toString: function() {
-        var t = Tt.instance;
+        var t = Et.instance;
         return "[[" + [
           t.number(this._a),
           t.number(this._c),
@@ -4068,7 +4068,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         intersect: function(t, e, i, r, s, a, h, o, l, f) {
           l || (i -= t, r -= e, h -= s, o -= a);
           var _ = i * o - r * h;
-          if (!pt.isMachineZero(_)) {
+          if (!ct.isMachineZero(_)) {
             var v = t - s, g = e - a, d = (h * g - o * v) / _, w = (i * g - r * v) / _, m = 1e-12, k = -m, p = 1 + m;
             if (f || k < d && d < p && k < w && w < p)
               return f || (d = d <= 0 ? 0 : d >= 1 ? 1 : d), new z(
@@ -4080,7 +4080,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         getSide: function(t, e, i, r, s, a, h, o) {
           h || (i -= t, r -= e);
           var l = s - t, f = a - e, _ = l * r - f * i;
-          return !o && pt.isMachineZero(_) && (_ = (l * i + l * i) / (i * i + r * r), _ >= 0 && _ <= 1 && (_ = 0)), _ < 0 ? -1 : _ > 0 ? 1 : 0;
+          return !o && ct.isMachineZero(_) && (_ = (l * i + l * i) / (i * i + r * r), _ >= 0 && _ <= 1 && (_ = 0)), _ < 0 ? -1 : _ > 0 ? 1 : 0;
         },
         getSignedDistance: function(t, e, i, r, s, a, h) {
           return h || (i -= t, r -= e), i === 0 ? r > 0 ? s - t : t - s : r === 0 ? i < 0 ? a - e : e - a : ((s - t) * r - (a - e) * i) / (r > i ? r * Math.sqrt(1 + i * i / (r * r)) : i * Math.sqrt(1 + r * r / (i * i)));
@@ -4091,15 +4091,15 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           );
         }
       }
-    }), kt = ve.extend({
+    }), kt = _e.extend({
       _class: "Project",
       _list: "projects",
       _reference: "project",
       _compactSerialize: !0,
       initialize: function(e) {
-        ve.call(this, !0), this._children = [], this._namedChildren = {}, this._activeLayer = null, this._currentStyle = new Be(null, null, this), this._view = Ut.create(
+        _e.call(this, !0), this._children = [], this._namedChildren = {}, this._activeLayer = null, this._currentStyle = new Be(null, null, this), this._view = Wt.create(
           this,
-          e || Ft.getCanvas(1, 1)
+          e || Dt.getCanvas(1, 1)
         ), this._selectionItems = {}, this._selectionCount = 0, this._updateVersion = 0;
       },
       _serialize: function(t, e) {
@@ -4180,7 +4180,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           t[e].setFullySelected(!1);
       },
       addLayer: function(t) {
-        return this.insertLayer(W, t);
+        return this.insertLayer(G, t);
       },
       insertLayer: function(t, e) {
         if (e instanceof Ee) {
@@ -4193,7 +4193,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       },
       _insertItem: function(t, e, i) {
         return e = this.insertLayer(t, e) || (this._activeLayer || this._insertItem(
-          W,
+          G,
           new Ee(I.NO_INSERT),
           !0
         )).insertChild(t, e), i && e.activate && e.activate(), e;
@@ -4246,7 +4246,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
       }
     }), I = O.extend(
-      Qt,
+      Yt,
       {
         statics: {
           extend: function t(e) {
@@ -4336,7 +4336,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         },
         _initialize: function(t, e) {
           var i = t && O.isPlainObject(t), r = i && t.internal === !0, s = this._matrix = new At(), a = i && t.project || dt.project, h = dt.settings;
-          return this._id = r ? null : Nt.get(), this._parent = this._index = null, this._applyMatrix = this._canApplyMatrix && h.applyMatrix, e && s.translate(e), s._owner = this, this._style = new Be(a._currentStyle, this, a), r || i && t.insert == !1 || !h.insertItems && !(i && t.insert === !0) ? this._setProject(a) : (i && t.parent || a)._insertItem(W, this, !0), i && t !== I.NO_INSERT && this.set(t, {
+          return this._id = r ? null : Vt.get(), this._parent = this._index = null, this._applyMatrix = this._canApplyMatrix && h.applyMatrix, e && s.translate(e), s._owner = this, this._style = new Be(a._currentStyle, this, a), r || i && t.insert == !1 || !h.insertItems && !(i && t.insert === !0) ? this._setProject(a) : (i && t.parent || a)._insertItem(G, this, !0), i && t !== I.NO_INSERT && this.set(t, {
             internal: !0,
             insert: !0,
             project: !0,
@@ -4356,11 +4356,11 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               ));
             }
           }
-          return s(this._serializeFields), this instanceof Rt || s(this._style._defaults), [this._class, i];
+          return s(this._serializeFields), this instanceof zt || s(this._style._defaults), [this._class, i];
         },
         _changed: function(t) {
           var e = this._symbol, i = this._parent || e, r = this._project;
-          t & 8 && (this._bounds = this._position = this._decomposed = W), t & 16 && (this._globalMatrix = W), i && t & 72 && I._clearBoundsCache(i), t & 2 && I._clearBoundsCache(this), r && r._changed(t, this), e && e._changed(t);
+          t & 8 && (this._bounds = this._position = this._decomposed = G), t & 16 && (this._globalMatrix = G), i && t & 72 && I._clearBoundsCache(i), t & 2 && I._clearBoundsCache(this), r && r._changed(t, this), e && e._changed(t);
         },
         getId: function() {
           return this._id;
@@ -4378,7 +4378,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             var i = e._children, r = e._namedChildren;
             (r[t] = r[t] || []).push(this), t in i || (i[t] = this);
           }
-          this._name = t || W, this._changed(256);
+          this._name = t || G, this._changed(256);
         },
         getStyle: function() {
           return this._style;
@@ -4462,7 +4462,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           this._data = t;
         },
         getPosition: function(t) {
-          var e = t ? z : Dt, i = this._position || (this._position = this._getPositionFromBounds());
+          var e = t ? z : Ft, i = this._position || (this._position = this._getPositionFromBounds());
           return new e(i.x, i.y, this, "setPosition");
         },
         setPosition: function() {
@@ -4473,10 +4473,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         },
         getPivot: function() {
           var t = this._pivot;
-          return t ? new Dt(t.x, t.y, this, "setPivot") : null;
+          return t ? new Ft(t.x, t.y, this, "setPivot") : null;
         },
         setPivot: function() {
-          this._pivot = z.read(arguments, 0, { clone: !0, readNull: !0 }), this._position = W;
+          this._pivot = z.read(arguments, 0, { clone: !0, readNull: !0 }), this._position = G;
         }
       },
       O.each(
@@ -4500,7 +4500,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             );
             (!r.stroke || this.getStrokeScaling()) && (r.cacheItem = this);
             var s = this._getCachedBounds(i && t, r).rect;
-            return arguments.length ? s : new se(
+            return arguments.length ? s : new re(
               s.x,
               s.y,
               s.width,
@@ -4568,10 +4568,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             _clearBoundsCache: function(t) {
               var e = t._boundsCache;
               if (e) {
-                t._bounds = t._position = t._boundsCache = W;
+                t._bounds = t._position = t._boundsCache = G;
                 for (var i = 0, r = e.list, s = r.length; i < s; i++) {
                   var a = r[i];
-                  a !== t && (a._bounds = a._position = W, a._boundsCache && I._clearBoundsCache(a));
+                  a !== t && (a._bounds = a._position = G, a._boundsCache && I._clearBoundsCache(a));
                 }
               }
             },
@@ -4615,12 +4615,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         },
         getScaling: function() {
           var t = this._decompose(), e = t && t.scaling;
-          return new Dt(e ? e.x : 1, e ? e.y : 1, this, "setScaling");
+          return new Ft(e ? e.x : 1, e ? e.y : 1, this, "setScaling");
         },
         setScaling: function() {
           var t = this.getScaling(), e = z.read(arguments, 0, { clone: !0, readNull: !0 });
           if (t && e && !t.equals(e)) {
-            var i = this.getRotation(), r = this._decomposed, s = new At(), a = pt.isZero;
+            var i = this.getRotation(), r = this._decomposed, s = new At(), a = ct.isZero;
             if (a(t.x) || a(t.y))
               s.translate(r.translation), i && s.rotate(i), s.scale(e.x, e.y), this._matrix.set(s);
             else {
@@ -4733,9 +4733,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         },
         clone: function(t) {
           var e = new this.constructor(I.NO_INSERT), i = this._children, r = O.pick(
-            t ? t.insert : W,
-            t === W || t === !0
-          ), s = O.pick(t ? t.deep : W, !0);
+            t ? t.insert : G,
+            t === G || t === !0
+          ), s = O.pick(t ? t.deep : G, !0);
           i && e.copyAttributes(this), (!i || s) && e.copyContent(this), i || e.copyAttributes(this), r && e.insertAbove(this);
           var a = this._name, h = this._parent;
           if (a && h) {
@@ -4769,14 +4769,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         rasterize: function(t, e) {
           var i, r, s;
           O.isPlainObject(t) ? (i = t.resolution, r = t.insert, s = t.raster) : (i = t, r = e), s ? s.matrix.reset(!0) : s = new Ce(I.NO_INSERT);
-          var a = this.getStrokeBounds(), h = (i || this.getView().getResolution()) / 72, o = a.getTopLeft().floor(), l = a.getBottomRight().ceil(), f = new at(l.subtract(o)), _ = f.multiply(h);
+          var a = this.getStrokeBounds(), h = (i || this.getView().getResolution()) / 72, o = a.getTopLeft().floor(), l = a.getBottomRight().ceil(), f = new ut(l.subtract(o)), _ = f.multiply(h);
           if (s.setSize(_, !0), !_.isZero()) {
             var v = s.getContext(!0), g = new At().scale(h).translate(o.negate());
             v.save(), g.applyToContext(v), this.draw(v, new O({ matrices: [g] })), v.restore();
           }
           return s.transform(
             new At().translate(o.add(f.divide(2))).scale(1 / h)
-          ), (r === W || r) && s.insertAbove(this), s;
+          ), (r === G || r) && s.insertAbove(this), s;
         },
         contains: function() {
           var t = this._matrix;
@@ -4796,7 +4796,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return ft.read(arguments).contains(this.getBounds());
         },
         _asPathItem: function() {
-          return new Et.Rectangle({
+          return new Tt.Rectangle({
             rectangle: this.getInternalBounds(),
             matrix: this._matrix,
             insert: !1
@@ -4851,8 +4851,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         _hitTest: function(t, e, i) {
           if (this._locked || !this._visible || this._guide && !e.guides || this.isEmpty())
             return null;
-          var r = this._matrix, s = i ? i.appended(r) : this.getGlobalMatrix().prepend(this.getView()._matrix), a = Math.max(e.tolerance, 1e-12), h = e._tolerancePadding = new at(
-            Et._getStrokePadding(
+          var r = this._matrix, s = i ? i.appended(r) : this.getGlobalMatrix().prepend(this.getView()._matrix), a = Math.max(e.tolerance, 1e-12), h = e._tolerancePadding = new ut(
+            Tt._getStrokePadding(
               a,
               r._shiftless().invert()
             )
@@ -4955,7 +4955,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                 inside: !!l,
                 overlapping: !!o,
                 rect: g,
-                path: o && new Et.Rectangle({
+                path: o && new Tt.Rectangle({
                   rectangle: g,
                   insert: !1
                 })
@@ -4988,7 +4988,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return e !== this ? this.addChild(e) : e;
         },
         addChild: function(t) {
-          return this.insertChild(W, t);
+          return this.insertChild(G, t);
         },
         insertChild: function(t, e) {
           var i = e ? this.insertChildren(t, [e]) : null;
@@ -5032,7 +5032,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         },
         bringToFront: function() {
           var t = this._getOwner();
-          return t ? t._insertItem(W, this) : null;
+          return t ? t._insertItem(G, this) : null;
         },
         appendTop: "#addChild",
         appendBottom: function(t) {
@@ -5041,7 +5041,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         moveAbove: "#insertAbove",
         moveBelow: "#insertBelow",
         addTo: function(t) {
-          return t._insertItem(W, this);
+          return t._insertItem(G, this);
         },
         copyTo: function(t) {
           return this.clone(!1).addTo(t);
@@ -5249,7 +5249,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           t = ft.read(arguments);
           var i = this.getBounds(), r = i.height / i.width, s = t.height / t.width, a = (e ? r > s : r < s) ? t.width / i.width : t.height / i.height, h = new ft(
             new z(),
-            new at(i.width * a, i.height * a)
+            new ut(i.width * a, i.height * a)
           );
           h.setCenter(t.getCenter()), this.setBounds(h);
         }
@@ -5277,14 +5277,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             var r = e.matrices, s = e.viewMatrix, a = this._matrix, h = r[r.length - 1].appended(a);
             if (!!h.isInvertible()) {
               s = s ? s.appended(h) : h, r.push(h), e.updateMatrix && (this._globalMatrix = h);
-              var o = this._blendMode, l = pt.clamp(this._opacity, 0, 1), f = o === "normal", _ = ii.nativeModes[o], v = f && l === 1 || e.dontStart || e.clip || (_ || f && l < 1) && this._canComposite(), g = e.pixelRatio || 1, d, w, m;
+              var o = this._blendMode, l = ct.clamp(this._opacity, 0, 1), f = o === "normal", _ = ei.nativeModes[o], v = f && l === 1 || e.dontStart || e.clip || (_ || f && l < 1) && this._canComposite(), g = e.pixelRatio || 1, d, w, m;
               if (!v) {
                 var k = this.getStrokeBounds(s);
                 if (!k.width || !k.height) {
                   r.pop();
                   return;
                 }
-                m = e.offset, w = e.offset = k.getTopLeft().floor(), d = t, t = Ft.getContext(k.getSize().ceil().add(1).multiply(g)), g !== 1 && t.scale(g, g);
+                m = e.offset, w = e.offset = k.getTopLeft().floor(), d = t, t = Dt.getContext(k.getSize().ceil().add(1).multiply(g)), g !== 1 && t.scale(g, g);
               }
               t.save();
               var p = i ? i.appended(a) : this._canScaleStroke && !this.getStrokeScaling(!0) && s, y = !v && e.clipItem, c = !p || y;
@@ -5293,13 +5293,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                 var b = e.offset;
                 b && t.translate(-b.x, -b.y);
               }
-              this._draw(t, e, s, p), t.restore(), r.pop(), e.clip && !e.dontFinish && t.clip(this.getFillRule()), v || (ii.process(
+              this._draw(t, e, s, p), t.restore(), r.pop(), e.clip && !e.dontFinish && t.clip(this.getFillRule()), v || (ei.process(
                 o,
                 t,
                 d,
                 l,
                 w.subtract(m).multiply(g)
-              ), Ft.release(t), e.offset = m);
+              ), Dt.release(t), e.offset = m);
             }
           }
         },
@@ -5360,7 +5360,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       {
         tween: function(t, e, i) {
           i || (i = e, e = t, t = null, i || (i = e, e = null));
-          var r = i && i.easing, s = i && i.start, a = i != null && (typeof i == "number" ? i : i.duration), h = new ti(this, t, e, a, r, s);
+          var r = i && i.easing, s = i && i.start, a = i != null && (typeof i == "number" ? i : i.duration), h = new $e(this, t, e, a, r, s);
           function o(l) {
             h._handleFrame(l.time * 1e3), h.running || this.off("frame", o);
           }
@@ -5373,7 +5373,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return this.tween(t, null, e);
         }
       }
-    ), Rt = I.extend({
+    ), zt = I.extend({
       _class: "Group",
       _selectBounds: !1,
       _selectChildren: !0,
@@ -5384,11 +5384,11 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         this._children = [], this._namedChildren = {}, this._initialize(e) || this.addChildren(Array.isArray(e) ? e : arguments);
       },
       _changed: function t(e) {
-        t.base.call(this, e), e & 2050 && (this._clipItem = W);
+        t.base.call(this, e), e & 2050 && (this._clipItem = G);
       },
       _getClipItem: function() {
         var t = this._clipItem;
-        if (t === W) {
+        if (t === G) {
           t = null;
           for (var e = this._children, i = 0, r = e.length; i < r; i++)
             if (e[i]._clipMask) {
@@ -5431,10 +5431,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           o !== r && o.draw(t, e);
         }
       }
-    }), Ee = Rt.extend({
+    }), Ee = zt.extend({
       _class: "Layer",
       initialize: function() {
-        Rt.apply(this, arguments);
+        zt.apply(this, arguments);
       },
       _getOwner: function() {
         return this._parent || this._index != null && this._project;
@@ -5447,7 +5447,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       },
       _hitTestSelf: function() {
       }
-    }), jt = I.extend(
+    }), Gt = I.extend(
       {
         _class: "Shape",
         _applyMatrix: !1,
@@ -5480,12 +5480,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return new xt(t.width, t.height, this, "setSize");
         },
         setSize: function() {
-          var t = at.read(arguments);
+          var t = ut.read(arguments);
           if (!this._size)
             this._size = t.clone();
           else if (!this._size.equals(t)) {
             var e = this._type, i = t.width, r = t.height;
-            e === "rectangle" ? this._radius.set(at.min(this._radius, t.divide(2).abs())) : e === "circle" ? (i = r = (i + r) / 2, this._radius = i / 2) : e === "ellipse" && this._radius._set(i / 2, r / 2), this._size._set(i, r), this._changed(9);
+            e === "rectangle" ? this._radius.set(ut.min(this._radius, t.divide(2).abs())) : e === "circle" ? (i = r = (i + r) / 2, this._radius = i / 2) : e === "ellipse" && this._radius._set(i / 2, r / 2), this._size._set(i, r), this._changed(9);
           }
         },
         getRadius: function() {
@@ -5499,13 +5499,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               return;
             var i = t * 2;
             this._radius = t, this._size._set(i, i);
-          } else if (t = at.read(arguments), !this._radius)
+          } else if (t = ut.read(arguments), !this._radius)
             this._radius = t.clone();
           else {
             if (this._radius.equals(t))
               return;
             if (this._radius.set(t), e === "rectangle") {
-              var i = at.max(this._size, t.multiply(2));
+              var i = ut.max(this._size, t.multiply(2));
               this._size.set(i);
             } else
               e === "ellipse" && this._size._set(t.width * 2, t.height * 2);
@@ -5516,13 +5516,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return !1;
         },
         toPath: function(t) {
-          var e = new Et[O.capitalize(this._type)]({
+          var e = new Tt[O.capitalize(this._type)]({
             center: new z(),
             size: this._size,
             radius: this._radius,
             insert: !1
           });
-          return e.copyAttributes(this), dt.settings.applyMatrix && e.setApplyMatrix(!0), (t === W || t) && e.insertAbove(this), e;
+          return e.copyAttributes(this), dt.settings.applyMatrix && e.setApplyMatrix(!0), (t === G || t) && e.insertAbove(this), e;
         },
         toShape: "#clone",
         _asPathItem: function() {
@@ -5585,7 +5585,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         },
         _getBounds: function(t, e) {
           var i = new ft(this._size).setCenter(0, 0), r = this._style, s = e.stroke && r.hasStroke() && r.getStrokeWidth();
-          return t && (i = t._transformBounds(i)), s ? i.expand(Et._getStrokePadding(
+          return t && (i = t._transformBounds(i)), s ? i.expand(Tt._getStrokePadding(
             s,
             this._getStrokeMatrix(t, e)
           )) : i;
@@ -5620,7 +5620,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             var o = !1, l = this._style, f = s.stroke && l.hasStroke(), _ = s.fill && l.hasFill();
             if (f || _) {
               var v = this._type, g = this._radius, d = f ? l.getStrokeWidth() / 2 : 0, w = s._tolerancePadding.add(
-                Et._getStrokePadding(
+                Tt._getStrokePadding(
                   d,
                   !l.getStrokeScaling() && h
                 )
@@ -5648,7 +5648,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       {
         statics: new function() {
           function t(e, i, r, s, a) {
-            var h = O.create(jt.prototype);
+            var h = O.create(Gt.prototype);
             return h._type = e, h._size = r, h._radius = s, h._initialize(O.getNamed(a), i), h;
           }
           return {
@@ -5657,14 +5657,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               return t(
                 "circle",
                 i,
-                new at(r * 2),
+                new ut(r * 2),
                 r,
                 e
               );
             },
             Rectangle: function() {
-              var e = arguments, i = ft.readNamed(e, "rectangle"), r = at.min(
-                at.readNamed(e, "radius"),
+              var e = arguments, i = ft.readNamed(e, "rectangle"), r = ut.min(
+                ut.readNamed(e, "radius"),
                 i.getSize(!0).divide(2)
               );
               return t(
@@ -5676,7 +5676,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               );
             },
             Ellipse: function() {
-              var e = arguments, i = jt._readEllipse(e), r = i.radius;
+              var e = arguments, i = Gt._readEllipse(e), r = i.radius;
               return t(
                 "ellipse",
                 i.center,
@@ -5688,7 +5688,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             _readEllipse: function(e) {
               var i, r;
               if (O.hasNamed(e, "radius"))
-                i = z.readNamed(e, "center"), r = at.readNamed(e, "radius");
+                i = z.readNamed(e, "center"), r = ut.readNamed(e, "radius");
               else {
                 var s = ft.readNamed(e, "rectangle");
                 i = s.getCenter(!0), r = s.getSize(!0).divide(2);
@@ -5713,20 +5713,20 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       initialize: function(e, i) {
         if (!this._initialize(
           e,
-          i !== W && z.read(arguments)
+          i !== G && z.read(arguments)
         )) {
-          var r, s = typeof e, a = s === "string" ? et.getElementById(e) : s === "object" ? e : null;
+          var r, s = typeof e, a = s === "string" ? it.getElementById(e) : s === "object" ? e : null;
           if (a && a !== I.NO_INSERT) {
             if (a.getContext || a.naturalHeight != null)
               r = a;
             else if (a) {
-              var h = at.read(arguments);
-              h.isZero() || (r = Ft.getCanvas(h));
+              var h = ut.read(arguments);
+              h.isZero() || (r = Dt.getCanvas(h));
             }
           }
           r ? this.setImage(r) : this.setSource(e);
         }
-        this._size || (this._size = new at(), this._loaded = !1);
+        this._size || (this._size = new ut(), this._loaded = !1);
       },
       _equals: function(t) {
         return this.getSource() === t.getSource();
@@ -5736,7 +5736,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         if (e)
           this._setImage(e);
         else if (i) {
-          var r = Ft.getCanvas(t._size);
+          var r = Dt.getCanvas(t._size);
           r.getContext("2d").drawImage(i, 0, 0), this._setImage(r);
         }
         this._crossOrigin = t._crossOrigin;
@@ -5751,12 +5751,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         );
       },
       setSize: function(t, e) {
-        var i = at.read(arguments);
+        var i = ut.read(arguments);
         if (i.equals(this._size))
           e && this.clear();
         else if (i.width > 0 && i.height > 0) {
           var r = !e && this.getElement();
-          this._setImage(Ft.getCanvas(i)), r && this.getContext(!0).drawImage(
+          this._setImage(Dt.getCanvas(i)), r && this.getContext(!0).drawImage(
             r,
             0,
             0,
@@ -5764,7 +5764,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             i.height
           );
         } else
-          this._canvas && Ft.release(this._canvas), this._size = i.clone();
+          this._canvas && Dt.release(this._canvas), this._size = i.clone();
       },
       getWidth: function() {
         return this._size ? this._size.width : 0;
@@ -5787,7 +5787,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       },
       getResolution: function() {
         var t = this._matrix, e = new z(0, 0).transform(t), i = new z(1, 0).transform(t).subtract(e), r = new z(0, 1).transform(t).subtract(e);
-        return new at(
+        return new ut(
           72 / i.getLength(),
           72 / r.getLength()
         );
@@ -5802,7 +5802,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           var s = e.getView(), a = r && r.type || "load";
           s && e.responds(a) && (dt = s._scope, e.emit(a, new He(r)));
         }
-        this._setImage(t), this._loaded ? setTimeout(i, 0) : t && Zt.add(t, {
+        this._setImage(t), this._loaded ? setTimeout(i, 0) : t && jt.add(t, {
           load: function(r) {
             e._setImage(t), i(r);
           },
@@ -5810,18 +5810,18 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         });
       },
       _setImage: function(t) {
-        this._canvas && Ft.release(this._canvas), t && t.getContext ? (this._image = null, this._canvas = t, this._loaded = !0) : (this._image = t, this._canvas = null, this._loaded = !!(t && t.src && t.complete)), this._size = new at(
+        this._canvas && Dt.release(this._canvas), t && t.getContext ? (this._image = null, this._canvas = t, this._loaded = !0) : (this._image = t, this._canvas = null, this._loaded = !!(t && t.src && t.complete)), this._size = new ut(
           t ? t.naturalWidth || t.width : 0,
           t ? t.naturalHeight || t.height : 0
         ), this._context = null, this._changed(1033);
       },
       getCanvas: function() {
         if (!this._canvas) {
-          var t = Ft.getContext(this._size);
+          var t = Dt.getContext(this._size);
           try {
             this._image && t.drawImage(this._image, 0, 0), this._canvas = t.canvas;
           } catch {
-            Ft.release(t);
+            Dt.release(t);
           }
         }
         return this._canvas;
@@ -5838,7 +5838,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return t && t.src || this.toDataURL();
       },
       setSource: function(t) {
-        var e = new ct.Image(), i = this._crossOrigin;
+        var e = new pt.Image(), i = this._crossOrigin;
         i && (e.crossOrigin = i), t && (e.src = t), this.setImage(e);
       },
       getCrossOrigin: function() {
@@ -5862,7 +5862,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
     }, {
       beans: !1,
       getSubCanvas: function() {
-        var t = ft.read(arguments), e = Ft.getContext(t.getSize());
+        var t = ft.read(arguments), e = Dt.getContext(t.getSize());
         return e.drawImage(
           this.getCanvas(),
           t.x,
@@ -5892,11 +5892,11 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       },
       getAverageColor: function(t) {
         var e, i;
-        if (t ? t instanceof me ? (i = t, e = t.getBounds()) : typeof t == "object" && ("width" in t ? e = new ft(t) : "x" in t && (e = new ft(t.x - 0.5, t.y - 0.5, 1, 1))) : e = this.getBounds(), !e)
+        if (t ? t instanceof ve ? (i = t, e = t.getBounds()) : typeof t == "object" && ("width" in t ? e = new ft(t) : "x" in t && (e = new ft(t.x - 0.5, t.y - 0.5, 1, 1))) : e = this.getBounds(), !e)
           return null;
         var r = 32, s = Math.min(e.width, r), a = Math.min(e.height, r), h = Ce._sampleContext;
-        h ? h.clearRect(0, 0, r + 1, r + 1) : h = Ce._sampleContext = Ft.getContext(
-          new at(r)
+        h ? h.clearRect(0, 0, r + 1, r + 1) : h = Ce._sampleContext = Dt.getContext(
+          new ut(r)
         ), h.save();
         var o = new At().scale(s / e.width, a / e.height).translate(-e.x, -e.y);
         o.applyToContext(h), i && i.draw(h, new O({ clip: !0, matrices: [o] })), this._matrix.applyToContext(h);
@@ -5913,18 +5913,18 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
         for (var d = 0; d < 3; d++)
           v[d] /= g;
-        return g ? Jt.read(v) : null;
+        return g ? Qt.read(v) : null;
       },
       getPixel: function() {
         var t = z.read(arguments), e = this.getContext().getImageData(t.x, t.y, 1, 1).data;
-        return new Jt(
+        return new Qt(
           "rgb",
           [e[0] / 255, e[1] / 255, e[2] / 255],
           e[3] / 255
         );
       },
       setPixel: function() {
-        var t = arguments, e = z.read(t), i = Jt.read(t), r = i._convert("rgb"), s = i._alpha, a = this.getContext(!0), h = a.createImageData(1, 1), o = h.data;
+        var t = arguments, e = z.read(t), i = Qt.read(t), r = i._convert("rgb"), s = i._alpha, a = this.getContext(!0), h = a.createImageData(1, 1), o = h.data;
         o[0] = r[0] * 255, o[1] = r[1] * 255, o[2] = r[2] * 255, o[3] = s != null ? s * 255 : 255, a.putImageData(h, e.x, e.y);
       },
       clear: function() {
@@ -5932,7 +5932,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         this.getContext(!0).clearRect(0, 0, t.width + 1, t.height + 1);
       },
       createImageData: function() {
-        var t = at.read(arguments);
+        var t = ut.read(arguments);
         return this.getContext().createImageData(t.width, t.height);
       },
       getImageData: function() {
@@ -5968,9 +5968,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       _draw: function(t, e, i) {
         var r = this.getElement();
         if (r && r.width > 0 && r.height > 0) {
-          t.globalAlpha = pt.clamp(this._opacity, 0, 1), this._setStyles(t, e, i);
+          t.globalAlpha = ct.clamp(this._opacity, 0, 1), this._setStyles(t, e, i);
           var s = this._smoothing, a = s === "off";
-          zt.setPrefixed(
+          qt.setPrefixed(
             t,
             a ? "imageSmoothingEnabled" : "imageSmoothingQuality",
             a ? !1 : s
@@ -5995,7 +5995,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       initialize: function(e, i) {
         this._initialize(
           e,
-          i !== W && z.read(arguments, 1)
+          i !== G && z.read(arguments, 1)
         ) || this.setDefinition(e instanceof ee ? e : new ee(e));
       },
       _equals: function(t) {
@@ -6029,7 +6029,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
     }), ee = O.extend({
       _class: "SymbolDefinition",
       initialize: function(e, i) {
-        this._id = Nt.get(), this.project = dt.project, e && this.setItem(e, i);
+        this._id = Vt.get(), this.project = dt.project, e && this.setItem(e, i);
       },
       _serialize: function(t, e) {
         return e.add(this, function() {
@@ -6091,7 +6091,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       _selection: 0,
       initialize: function(e, i, r, s, a, h) {
         var o = arguments.length, l, f, _, v;
-        o > 0 && (e == null || typeof e == "object" ? o === 1 && e && "point" in e ? (l = e.point, f = e.handleIn, _ = e.handleOut, v = e.selection) : (l = e, f = i, _ = r, v = s) : (l = [e, i], f = r !== W ? [r, s] : null, _ = a !== W ? [a, h] : null)), new oi(l, this, "_point"), new oi(f, this, "_handleIn"), new oi(_, this, "_handleOut"), v && this.setSelection(v);
+        o > 0 && (e == null || typeof e == "object" ? o === 1 && e && "point" in e ? (l = e.point, f = e.handleIn, _ = e.handleOut, v = e.selection) : (l = e, f = i, _ = r, v = s) : (l = [e, i], f = r !== G ? [r, s] : null, _ = a !== G ? [a, h] : null)), new ui(l, this, "_point"), new ui(f, this, "_handleIn"), new ui(_, this, "_handleOut"), v && this.setSelection(v);
       },
       _serialize: function(t, e) {
         var i = this._point, r = this._selection, s = r || this.hasHandles() ? [i, this._handleIn, this._handleOut] : i;
@@ -6150,7 +6150,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         this._changeSelection(7, t);
       },
       getIndex: function() {
-        return this._index !== W ? this._index : null;
+        return this._index !== G ? this._index : null;
       },
       getPath: function() {
         return this._path || null;
@@ -6170,7 +6170,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       smooth: function(t, e, i) {
         var r = t || {}, s = r.type, a = r.factor, h = this.getPrevious(), o = this.getNext(), l = (h || this)._point, f = this._point, _ = (o || this)._point, v = l.getDistance(f), g = f.getDistance(_);
         if (!s || s === "catmull-rom") {
-          var d = a === W ? 0.5 : a, w = Math.pow(v, d), m = w * w, k = Math.pow(g, d), p = k * k;
+          var d = a === G ? 0.5 : a, w = Math.pow(v, d), m = w * w, k = Math.pow(g, d), p = k * k;
           if (!e && h) {
             var y = 2 * p + 3 * k * w + m, c = 3 * k * (k + w);
             this.setHandleIn(c !== 0 ? new z(
@@ -6187,7 +6187,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }
         } else if (s === "geometric") {
           if (h && o) {
-            var b = l.subtract(_), C = a === W ? 0.4 : a, P = C * v / (v + g);
+            var b = l.subtract(_), C = a === G ? 0.4 : a, P = C * v / (v + g);
             e || this.setHandleIn(b.multiply(P)), i || this.setHandleOut(b.multiply(P - C));
           }
         } else
@@ -6247,16 +6247,16 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var r = this._point, s = !i || !this._handleIn.isZero() ? this._handleIn : null, a = !i || !this._handleOut.isZero() ? this._handleOut : null, h = r._x, o = r._y, l = 2;
         return e[0] = h, e[1] = o, s && (e[l++] = s._x + h, e[l++] = s._y + o), a && (e[l++] = a._x + h, e[l++] = a._y + o), t && (t._transformCoordinates(e, e, l / 2), h = e[0], o = e[1], i ? (r._x = h, r._y = o, l = 2, s && (s._x = e[l++] - h, s._y = e[l++] - o), a && (a._x = e[l++] - h, a._y = e[l++] - o)) : (s || (e[l++] = h, e[l++] = o), a || (e[l++] = h, e[l++] = o))), e;
       }
-    }), oi = z.extend({
+    }), ui = z.extend({
       initialize: function(e, i, r) {
         var s, a, h;
         if (!e)
           s = a = 0;
-        else if ((s = e[0]) !== W)
+        else if ((s = e[0]) !== G)
           a = e[1];
         else {
           var o = e;
-          (s = o.x) === W && (o = z.read(arguments), s = o.x), a = o.y, h = o.selected;
+          (s = o.x) === G && (o = z.read(arguments), s = o.x), a = o.y, h = o.selected;
         }
         this._x = s, this._y = a, this._owner = i, i[r] = this, h && this.setSelected(!0);
       },
@@ -6276,7 +6276,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         this._y = t, this._owner._changed(this);
       },
       isZero: function() {
-        var t = pt.isZero;
+        var t = ct.isZero;
         return t(this._x) && t(this._y);
       },
       isSelected: function() {
@@ -6289,7 +6289,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var t = this._owner;
         return this === t._point ? 1 : this === t._handleIn ? 2 : this === t._handleOut ? 4 : 0;
       }
-    }), nt = O.extend(
+    }), rt = O.extend(
       {
         _class: "Curve",
         beans: !0,
@@ -6311,17 +6311,17 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           );
         },
         _changed: function() {
-          this._length = this._bounds = W;
+          this._length = this._bounds = G;
         },
         clone: function() {
-          return new nt(this._segment1, this._segment2);
+          return new rt(this._segment1, this._segment2);
         },
         toString: function() {
           var t = ["point1: " + this._segment1._point];
           return this._segment1._handleOut.isZero() || t.push("handle1: " + this._segment1._handleOut), this._segment2._handleIn.isZero() || t.push("handle2: " + this._segment2._handleIn), t.push("point2: " + this._segment2._point), "{ " + t.join(", ") + " }";
         },
         classify: function() {
-          return nt.classify(this.getValues());
+          return rt.classify(this.getValues());
         },
         remove: function() {
           var t = !1;
@@ -6389,7 +6389,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           this.getPoint1().setSelected(t), this.getHandle1().setSelected(t), this.getHandle2().setSelected(t), this.getPoint2().setSelected(t);
         },
         getValues: function(t) {
-          return nt.getValues(this._segment1, this._segment2, t);
+          return rt.getValues(this._segment1, this._segment2, t);
         },
         getPoints: function() {
           for (var t = this.getValues(), e = [], i = 0; i < 8; i += 2)
@@ -6399,19 +6399,19 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       },
       {
         getLength: function() {
-          return this._length == null && (this._length = nt.getLength(this.getValues(), 0, 1)), this._length;
+          return this._length == null && (this._length = rt.getLength(this.getValues(), 0, 1)), this._length;
         },
         getArea: function() {
-          return nt.getArea(this.getValues());
+          return rt.getArea(this.getValues());
         },
         getLine: function() {
           return new Bt(this._segment1._point, this._segment2._point);
         },
         getPart: function(t, e) {
-          return new nt(nt.getPart(this.getValues(), t, e));
+          return new rt(rt.getPart(this.getValues(), t, e));
         },
         getPartLength: function(t, e) {
-          return nt.getLength(this.getValues(), t, e);
+          return rt.getLength(this.getValues(), t, e);
         },
         divideAt: function(t) {
           return this.divideAtTime(t && t.curve === this ? t.time : this.getTimeAt(t));
@@ -6419,14 +6419,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         divideAtTime: function(t, e) {
           var i = 1e-8, r = 1 - i, s = null;
           if (t >= i && t <= r) {
-            var a = nt.subdivide(this.getValues(), t), h = a[0], o = a[1], l = e || this.hasHandles(), f = this._segment1, _ = this._segment2, v = this._path;
+            var a = rt.subdivide(this.getValues(), t), h = a[0], o = a[1], l = e || this.hasHandles(), f = this._segment1, _ = this._segment2, v = this._path;
             l && (f._handleOut._set(h[2] - h[0], h[3] - h[1]), _._handleIn._set(o[4] - o[6], o[5] - o[7]));
             var g = h[6], d = h[7], w = new _t(
               new z(g, d),
               l && new z(h[4] - g, h[5] - d),
               l && new z(o[2] - g, o[3] - d)
             );
-            v ? (v.insert(f._index + 1, w), s = this.getNext()) : (this._segment2 = w, this._changed(), s = new nt(w, _));
+            v ? (v.insert(f._index + 1, w), s = this.getNext()) : (this._segment2 = w, this._changed(), s = new rt(w, _));
           }
           return s;
         },
@@ -6438,13 +6438,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return this.splitAt(this.getLocationAtTime(t));
         },
         divide: function(t, e) {
-          return this.divideAtTime(t === W ? 0.5 : e ? t : this.getTimeAt(t));
+          return this.divideAtTime(t === G ? 0.5 : e ? t : this.getTimeAt(t));
         },
         split: function(t, e) {
-          return this.splitAtTime(t === W ? 0.5 : e ? t : this.getTimeAt(t));
+          return this.splitAtTime(t === G ? 0.5 : e ? t : this.getTimeAt(t));
         },
         reversed: function() {
-          return new nt(this._segment2.reversed(), this._segment1.reversed());
+          return new rt(this._segment2.reversed(), this._segment1.reversed());
         },
         clearHandles: function() {
           this._segment1._handleOut._set(0, 0), this._segment2._handleIn._set(0, 0);
@@ -6465,7 +6465,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           },
           subdivide: function(t, e) {
             var i = t[0], r = t[1], s = t[2], a = t[3], h = t[4], o = t[5], l = t[6], f = t[7];
-            e === W && (e = 0.5);
+            e === G && (e = 0.5);
             var _ = 1 - e, v = _ * i + e * s, g = _ * r + e * a, d = _ * s + e * h, w = _ * a + e * o, m = _ * h + e * l, k = _ * o + e * f, p = _ * v + e * d, y = _ * g + e * w, c = _ * d + e * m, b = _ * w + e * k, C = _ * p + e * c, P = _ * y + e * b;
             return [
               [i, r, v, g, p, y, C, P],
@@ -6474,16 +6474,16 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           },
           getMonoCurves: function(t, e) {
             var i = [], r = e ? 0 : 1, s = t[r + 0], a = t[r + 2], h = t[r + 4], o = t[r + 6];
-            if (s >= a == a >= h && a >= h == h >= o || nt.isStraight(t))
+            if (s >= a == a >= h && a >= h == h >= o || rt.isStraight(t))
               i.push(t);
             else {
-              var l = 3 * (a - h) - s + o, f = 2 * (s + h) - 4 * a, _ = a - s, v = 1e-8, g = 1 - v, d = [], w = pt.solveQuadratic(l, f, _, d, v, g);
+              var l = 3 * (a - h) - s + o, f = 2 * (s + h) - 4 * a, _ = a - s, v = 1e-8, g = 1 - v, d = [], w = ct.solveQuadratic(l, f, _, d, v, g);
               if (!w)
                 i.push(t);
               else {
                 d.sort();
-                var m = d[0], k = nt.subdivide(t, m);
-                i.push(k[0]), w > 1 && (m = (d[1] - m) / (1 - m), k = nt.subdivide(k[1], m), i.push(k[0])), i.push(k[1]);
+                var m = d[0], k = rt.subdivide(t, m);
+                i.push(k[0]), w > 1 && (m = (d[1] - m) / (1 - m), k = rt.subdivide(k[1], m), i.push(k[0])), i.push(k[1]);
               }
             }
             return i;
@@ -6492,7 +6492,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             var h = t[e], o = t[e + 2], l = t[e + 4], f = t[e + 6], _ = 0;
             if (!(h < i && f < i && o < i && l < i || h > i && f > i && o > i && l > i)) {
               var v = 3 * (o - h), g = 3 * (l - o) - v, d = f - h - v - g;
-              _ = pt.solveCubic(d, g, v, h - i, r, s, a);
+              _ = ct.solveCubic(d, g, v, h - i, r, s, a);
             }
             return _;
           },
@@ -6500,20 +6500,20 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             var i = new z(t[0], t[1]), r = new z(t[6], t[7]), s = 1e-12, a = 1e-7, h = e.isClose(i, s) ? 0 : e.isClose(r, s) ? 1 : null;
             if (h === null)
               for (var o = [e.x, e.y], l = [], f = 0; f < 2; f++)
-                for (var _ = nt.solveCubic(t, f, o[f], l, 0, 1), v = 0; v < _; v++) {
+                for (var _ = rt.solveCubic(t, f, o[f], l, 0, 1), v = 0; v < _; v++) {
                   var g = l[v];
-                  if (e.isClose(nt.getPoint(t, g), a))
+                  if (e.isClose(rt.getPoint(t, g), a))
                     return g;
                 }
             return e.isClose(i, a) ? 0 : e.isClose(r, a) ? 1 : null;
           },
           getNearestTime: function(t, e) {
-            if (nt.isStraight(t)) {
+            if (rt.isStraight(t)) {
               var i = t[0], r = t[1], s = t[6], a = t[7], h = s - i, o = a - r, l = h * h + o * o;
               if (l === 0)
                 return 0;
               var f = ((e.x - i) * h + (e.y - r) * o) / l;
-              return f < 1e-12 ? 0 : f > 0.999999999999 ? 1 : nt.getTimeOf(
+              return f < 1e-12 ? 0 : f > 0.999999999999 ? 1 : rt.getTimeOf(
                 t,
                 new z(i + f * h, r + f * o)
               );
@@ -6521,7 +6521,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             var _ = 100, v = 1 / 0, g = 0;
             function d(k) {
               if (k >= 0 && k <= 1) {
-                var p = e.getDistance(nt.getPoint(t, k), !0);
+                var p = e.getDistance(rt.getPoint(t, k), !0);
                 if (p < v)
                   return v = p, g = k, !0;
               }
@@ -6538,7 +6538,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               var s = e;
               e = i, i = s;
             }
-            return e > 0 && (t = nt.subdivide(t, e)[1]), i < 1 && (t = nt.subdivide(t, (i - e) / (1 - e))[0]), r ? [t[6], t[7], t[4], t[5], t[2], t[3], t[0], t[1]] : t;
+            return e > 0 && (t = rt.subdivide(t, e)[1]), i < 1 && (t = rt.subdivide(t, (i - e) / (1 - e))[0]), r ? [t[6], t[7], t[4], t[5], t[2], t[3], t[0], t[1]] : t;
           },
           isFlatEnough: function(t, e) {
             var i = t[0], r = t[1], s = t[2], a = t[3], h = t[4], o = t[5], l = t[6], f = t[7], _ = 3 * s - 2 * i - l, v = 3 * a - 2 * r - f, g = 3 * h - 2 * l - i, d = 3 * o - 2 * f - r;
@@ -6550,7 +6550,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           },
           getBounds: function(t) {
             for (var e = t.slice(0, 2), i = e.slice(), r = [0, 0], s = 0; s < 2; s++)
-              nt._addBounds(
+              rt._addBounds(
                 t[s],
                 t[s + 2],
                 t[s + 4],
@@ -6574,7 +6574,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               if (e < t != e < r && i < t != i < r)
                 f(t, 0), f(r, 0);
               else {
-                var g = 3 * (e - i) - t + r, d = 2 * (t + i) - 4 * e, w = e - t, m = pt.solveQuadratic(g, d, w, l), k = 1e-8, p = 1 - k;
+                var g = 3 * (e - i) - t + r, d = 2 * (t + i) - 4 * e, w = e - t, m = ct.solveQuadratic(g, d, w, l), k = 1e-8, p = 1 - k;
                 f(r, 0);
                 for (var y = 0; y < m; y++) {
                   var c = l[y], b = 1 - c;
@@ -6593,7 +6593,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           this[t] = function() {
             this._bounds || (this._bounds = {});
             var e = this._bounds[t];
-            return e || (e = this._bounds[t] = Et[t](
+            return e || (e = this._bounds[t] = Tt[t](
               [this._segment1, this._segment2],
               !1,
               this._path
@@ -6671,12 +6671,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return t != null && t >= 0 && t <= 1 ? new be(this, t) : null;
         },
         getTimeAt: function(t, e) {
-          return nt.getTimeAt(this.getValues(), t, e);
+          return rt.getTimeAt(this.getValues(), t, e);
         },
         getParameterAt: "#getTimeAt",
         getTimesWithTangent: function() {
           var t = z.read(arguments);
-          return t.isZero() ? [] : nt.getTimesWithTangent(this.getValues(), t);
+          return t.isZero() ? [] : rt.getTimesWithTangent(this.getValues(), t);
         },
         getOffsetAtTime: function(t) {
           return this.getPartLength(0, t);
@@ -6689,11 +6689,11 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return t ? t.getOffset() : null;
         },
         getTimeOf: function() {
-          return nt.getTimeOf(this.getValues(), z.read(arguments));
+          return rt.getTimeOf(this.getValues(), z.read(arguments));
         },
         getParameterOf: "#getTimeOf",
         getNearestLocation: function() {
-          var t = z.read(arguments), e = this.getValues(), i = nt.getNearestTime(e, t), r = nt.getPoint(e, i);
+          var t = z.read(arguments), e = this.getValues(), i = rt.getNearestTime(e, t), r = rt.getPoint(e, i);
           return new be(this, i, r, null, t.getDistance(r));
         },
         getNearestPoint: function() {
@@ -6715,9 +6715,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           function(e) {
             this[e + "At"] = function(i, r) {
               var s = this.getValues();
-              return nt[e](s, r ? i : nt.getTimeAt(s, i));
+              return rt[e](s, r ? i : rt.getTimeAt(s, i));
             }, this[e + "AtTime"] = function(i) {
-              return nt[e](this.getValues(), i);
+              return rt[e](this.getValues(), i);
             };
           },
           {
@@ -6741,7 +6741,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         function i(r, s, a, h) {
           if (s == null || s < 0 || s > 1)
             return null;
-          var o = r[0], l = r[1], f = r[2], _ = r[3], v = r[4], g = r[5], d = r[6], w = r[7], m = pt.isZero;
+          var o = r[0], l = r[1], f = r[2], _ = r[3], v = r[4], g = r[5], d = r[6], w = r[7], m = ct.isZero;
           m(f - o) && m(_ - l) && (f = o, _ = l), m(v - d) && m(g - w) && (v = d, g = w);
           var k = 3 * (f - o), p = 3 * (v - f) - k, y = d - o - k - p, c = 3 * (_ - l), b = 3 * (g - _) - c, C = w - l - c - b, P, S;
           if (a === 0)
@@ -6754,21 +6754,21 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               M && (P /= M, S /= M);
             }
             if (a === 3) {
-              var v = 6 * y * s + 2 * p, g = 6 * C * s + 2 * b, R = Math.pow(P * P + S * S, 3 / 2);
-              P = R !== 0 ? (P * g - S * v) / R : 0, S = 0;
+              var v = 6 * y * s + 2 * p, g = 6 * C * s + 2 * b, V = Math.pow(P * P + S * S, 3 / 2);
+              P = V !== 0 ? (P * g - S * v) / V : 0, S = 0;
             }
           }
           return a === 2 ? new z(S, -P) : new z(P, S);
         }
         return { statics: {
           classify: function(r) {
-            var s = r[0], a = r[1], h = r[2], o = r[3], l = r[4], f = r[5], _ = r[6], v = r[7], g = s * (v - f) + a * (l - _) + _ * f - v * l, d = h * (a - v) + o * (_ - s) + s * v - a * _, w = l * (o - a) + f * (s - h) + h * a - o * s, m = 3 * w, k = m - d, p = k - d + g, y = Math.sqrt(p * p + k * k + m * m), c = y !== 0 ? 1 / y : 0, b = pt.isZero, C = "serpentine";
+            var s = r[0], a = r[1], h = r[2], o = r[3], l = r[4], f = r[5], _ = r[6], v = r[7], g = s * (v - f) + a * (l - _) + _ * f - v * l, d = h * (a - v) + o * (_ - s) + s * v - a * _, w = l * (o - a) + f * (s - h) + h * a - o * s, m = 3 * w, k = m - d, p = k - d + g, y = Math.sqrt(p * p + k * k + m * m), c = y !== 0 ? 1 / y : 0, b = ct.isZero, C = "serpentine";
             p *= c, k *= c, m *= c;
-            function P(M, R, T) {
-              var V = R !== W, F = V && R > 0 && R < 1, q = V && T > 0 && T < 1;
-              return V && (!(F || q) || M === "loop" && !(F && q)) && (M = "arch", F = q = !1), {
+            function P(M, V, T) {
+              var R = V !== G, F = R && V > 0 && V < 1, q = R && T > 0 && T < 1;
+              return R && (!(F || q) || M === "loop" && !(F && q)) && (M = "arch", F = q = !1), {
                 type: M,
-                roots: F || q ? F && q ? R < T ? [R, T] : [T, R] : [F ? R : T] : null
+                roots: F || q ? F && q ? V < T ? [V, T] : [T, V] : [F ? V : T] : null
               };
             }
             if (b(p))
@@ -6784,13 +6784,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             );
           },
           getLength: function(r, s, a, h) {
-            if (s === W && (s = 0), a === W && (a = 1), nt.isStraight(r)) {
+            if (s === G && (s = 0), a === G && (a = 1), rt.isStraight(r)) {
               var o = r;
-              a < 1 && (o = nt.subdivide(o, a)[0], s /= a), s > 0 && (o = nt.subdivide(o, s)[1]);
+              a < 1 && (o = rt.subdivide(o, a)[0], s /= a), s > 0 && (o = rt.subdivide(o, s)[1]);
               var l = o[6] - o[0], f = o[7] - o[1];
               return Math.sqrt(l * l + f * f);
             }
-            return pt.integrate(
+            return ct.integrate(
               h || t(r),
               s,
               a,
@@ -6798,23 +6798,23 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             );
           },
           getTimeAt: function(r, s, a) {
-            if (a === W && (a = s < 0 ? 1 : 0), s === 0)
+            if (a === G && (a = s < 0 ? 1 : 0), s === 0)
               return a;
-            var h = Math.abs, o = 1e-12, l = s > 0, f = l ? a : 0, _ = l ? 1 : a, v = t(r), g = nt.getLength(r, f, _, v), d = h(s) - g;
+            var h = Math.abs, o = 1e-12, l = s > 0, f = l ? a : 0, _ = l ? 1 : a, v = t(r), g = rt.getLength(r, f, _, v), d = h(s) - g;
             if (h(d) < o)
               return l ? _ : f;
             if (d > o)
               return null;
             var w = s / g, m = 0;
             function k(p) {
-              return m += pt.integrate(
+              return m += ct.integrate(
                 v,
                 a,
                 p,
                 e(a, p)
               ), a = p, m - s;
             }
-            return pt.findRoot(
+            return ct.findRoot(
               k,
               v,
               a + w,
@@ -6844,7 +6844,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           },
           getPeaks: function(r) {
             var s = r[0], a = r[1], h = r[2], o = r[3], l = r[4], f = r[5], _ = r[6], v = r[7], g = -s + 3 * h - 3 * l + _, d = 3 * s - 6 * h + 3 * l, w = -3 * s + 3 * h, m = -a + 3 * o - 3 * f + v, k = 3 * a - 6 * o + 3 * f, p = -3 * a + 3 * o, y = 1e-8, c = 1 - y, b = [];
-            return pt.solveCubic(
+            return ct.solveCubic(
               9 * (g * g + m * m),
               9 * (g * d + k * m),
               2 * (d * d + k * k) + 3 * (w * g + p * m),
@@ -6867,34 +6867,34 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         function e(d, w, m, k, p, y, c, b, C, P, S, E, L) {
           if (++C >= 4096 || ++b >= 40)
             return C;
-          var M = 1e-9, R = w[0], T = w[1], V = w[6], F = w[7], q = Bt.getSignedDistance, U = q(R, T, V, F, w[2], w[3]), G = q(R, T, V, F, w[4], w[5]), Q = U * G > 0 ? 3 / 4 : 4 / 9, tt = Q * Math.min(0, U, G), it = Q * Math.max(0, U, G), ot = q(R, T, V, F, d[0], d[1]), X = q(R, T, V, F, d[2], d[3]), K = q(R, T, V, F, d[4], d[5]), rt = q(R, T, V, F, d[6], d[7]), ht = i(ot, X, K, rt), lt = ht[0], vt = ht[1], J, gt;
-          if (U === 0 && G === 0 && ot === 0 && X === 0 && K === 0 && rt === 0 || (J = r(lt, vt, tt, it)) == null || (gt = r(
+          var M = 1e-9, V = w[0], T = w[1], R = w[6], F = w[7], q = Bt.getSignedDistance, U = q(V, T, R, F, w[2], w[3]), H = q(V, T, R, F, w[4], w[5]), Q = U * H > 0 ? 3 / 4 : 4 / 9, tt = Q * Math.min(0, U, H), nt = Q * Math.max(0, U, H), ot = q(V, T, R, F, d[0], d[1]), X = q(V, T, R, F, d[2], d[3]), K = q(V, T, R, F, d[4], d[5]), st = q(V, T, R, F, d[6], d[7]), ht = i(ot, X, K, st), lt = ht[0], vt = ht[1], J, gt;
+          if (U === 0 && H === 0 && ot === 0 && X === 0 && K === 0 && st === 0 || (J = r(lt, vt, tt, nt)) == null || (gt = r(
             lt.reverse(),
             vt.reverse(),
             tt,
-            it
+            nt
           )) == null)
             return C;
           var It = P + (S - P) * J, yt = P + (S - P) * gt;
           if (Math.max(L - E, yt - It) < M) {
-            var ie = (It + yt) / 2, $t = (E + L) / 2;
+            var ie = (It + yt) / 2, Jt = (E + L) / 2;
             t(
               p,
               y,
               c ? k : m,
-              c ? $t : ie,
+              c ? Jt : ie,
               c ? m : k,
-              c ? ie : $t
+              c ? ie : Jt
             );
           } else {
-            d = nt.getPart(d, J, gt);
-            var ae = L - E;
+            d = rt.getPart(d, J, gt);
+            var se = L - E;
             if (gt - J > 0.8)
-              if (yt - It > ae) {
-                var Xt = nt.subdivide(d, 0.5), ie = (It + yt) / 2;
+              if (yt - It > se) {
+                var Zt = rt.subdivide(d, 0.5), ie = (It + yt) / 2;
                 C = e(
                   w,
-                  Xt[0],
+                  Zt[0],
                   k,
                   m,
                   p,
@@ -6908,7 +6908,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                   ie
                 ), C = e(
                   w,
-                  Xt[1],
+                  Zt[1],
                   k,
                   m,
                   p,
@@ -6922,9 +6922,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                   yt
                 );
               } else {
-                var Xt = nt.subdivide(w, 0.5), $t = (E + L) / 2;
+                var Zt = rt.subdivide(w, 0.5), Jt = (E + L) / 2;
                 C = e(
-                  Xt[0],
+                  Zt[0],
                   d,
                   k,
                   m,
@@ -6934,11 +6934,11 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                   b,
                   C,
                   E,
-                  $t,
+                  Jt,
                   It,
                   yt
                 ), C = e(
-                  Xt[1],
+                  Zt[1],
                   d,
                   k,
                   m,
@@ -6947,14 +6947,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                   !c,
                   b,
                   C,
-                  $t,
+                  Jt,
                   L,
                   It,
                   yt
                 );
               }
             else
-              ae === 0 || ae >= M ? C = e(
+              se === 0 || se >= M ? C = e(
                 w,
                 d,
                 k,
@@ -7012,30 +7012,30 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return null;
         }
         function a(d, w, m, k, p) {
-          var y = pt.isZero;
+          var y = ct.isZero;
           if (y(k) && y(p)) {
-            var c = nt.getTimeOf(d, new z(w, m));
+            var c = rt.getTimeOf(d, new z(w, m));
             return c === null ? [] : [c];
           }
           for (var b = Math.atan2(-p, k), C = Math.sin(b), P = Math.cos(b), S = [], E = [], L = 0; L < 8; L += 2) {
-            var M = d[L] - w, R = d[L + 1] - m;
+            var M = d[L] - w, V = d[L + 1] - m;
             S.push(
-              M * P - R * C,
-              M * C + R * P
+              M * P - V * C,
+              M * C + V * P
             );
           }
-          return nt.solveCubic(S, 1, 0, E, 0, 1), E;
+          return rt.solveCubic(S, 1, 0, E, 0, 1), E;
         }
         function h(d, w, m, k, p, y, c) {
           for (var b = w[0], C = w[1], P = w[6], S = w[7], E = a(d, b, C, P - b, S - C), L = 0, M = E.length; L < M; L++) {
-            var R = E[L], T = nt.getPoint(d, R), V = nt.getTimeOf(w, T);
-            V !== null && t(
+            var V = E[L], T = rt.getPoint(d, V), R = rt.getTimeOf(w, T);
+            R !== null && t(
               p,
               y,
               c ? k : m,
-              c ? V : R,
+              c ? R : V,
               c ? m : k,
-              c ? R : V
+              c ? V : R
             );
           }
         }
@@ -7054,9 +7054,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             p,
             y,
             m,
-            nt.getTimeOf(d, c),
+            rt.getTimeOf(d, c),
             k,
-            nt.getTimeOf(w, c)
+            rt.getTimeOf(w, c)
           );
         }
         function l(d, w, m, k, p, y) {
@@ -7077,8 +7077,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                 );
               }
             else {
-              var L = nt.isStraight(d), M = nt.isStraight(w), R = L && M, T = L && !M, V = p.length;
-              if ((R ? o : L || M ? h : e)(
+              var L = rt.isStraight(d), M = rt.isStraight(w), V = L && M, T = L && !M, R = p.length;
+              if ((V ? o : L || M ? h : e)(
                 T ? w : d,
                 T ? d : w,
                 T ? k : m,
@@ -7092,9 +7092,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                 1,
                 0,
                 1
-              ), !R || p.length === V)
+              ), !V || p.length === R)
                 for (var S = 0; S < 4; S++) {
-                  var F = S >> 1, q = S & 1, U = F * 6, G = q * 6, Q = new z(d[U], d[U + 1]), tt = new z(w[G], w[G + 1]);
+                  var F = S >> 1, q = S & 1, U = F * 6, H = q * 6, Q = new z(d[U], d[U + 1]), tt = new z(w[H], w[H + 1]);
                   Q.isClose(tt, c) && t(
                     p,
                     y,
@@ -7109,7 +7109,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return p;
         }
         function f(d, w, m, k) {
-          var p = nt.classify(d);
+          var p = rt.classify(d);
           if (p.type === "loop") {
             var y = p.roots;
             t(
@@ -7131,25 +7131,25 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           if (!b)
             for (var M = 0; M < P; M++)
               E[M] = w[M].getValues(p);
-          for (var R = Wt.findCurveBoundsCollisions(
+          for (var V = xe.findCurveBoundsCollisions(
             S,
             E,
             c
           ), T = 0; T < C; T++) {
-            var V = d[T], F = S[T];
-            b && f(F, V, L, m);
-            var q = R[T];
+            var R = d[T], F = S[T];
+            b && f(F, R, L, m);
+            var q = V[T];
             if (q)
               for (var U = 0; U < q.length; U++) {
                 if (y && L.length)
                   return L;
-                var G = q[U];
-                if (!b || G > T) {
-                  var Q = w[G], tt = E[G];
+                var H = q[U];
+                if (!b || H > T) {
+                  var Q = w[H], tt = E[H];
                   l(
                     F,
                     tt,
-                    V,
+                    R,
                     Q,
                     L,
                     m
@@ -7160,24 +7160,24 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return L;
         }
         function v(d, w) {
-          function m(rt) {
-            var ht = rt[6] - rt[0], lt = rt[7] - rt[1];
+          function m(st) {
+            var ht = st[6] - st[0], lt = st[7] - st[1];
             return ht * ht + lt * lt;
           }
-          var k = Math.abs, p = Bt.getDistance, y = 1e-8, c = 1e-7, b = nt.isStraight(d), C = nt.isStraight(w), P = b && C, S = m(d) < m(w), E = S ? w : d, L = S ? d : w, M = E[0], R = E[1], T = E[6] - M, V = E[7] - R;
-          if (p(M, R, T, V, L[0], L[1], !0) < c && p(M, R, T, V, L[6], L[7], !0) < c)
-            !P && p(M, R, T, V, E[2], E[3], !0) < c && p(M, R, T, V, E[4], E[5], !0) < c && p(M, R, T, V, L[2], L[3], !0) < c && p(M, R, T, V, L[4], L[5], !0) < c && (b = C = P = !0);
+          var k = Math.abs, p = Bt.getDistance, y = 1e-8, c = 1e-7, b = rt.isStraight(d), C = rt.isStraight(w), P = b && C, S = m(d) < m(w), E = S ? w : d, L = S ? d : w, M = E[0], V = E[1], T = E[6] - M, R = E[7] - V;
+          if (p(M, V, T, R, L[0], L[1], !0) < c && p(M, V, T, R, L[6], L[7], !0) < c)
+            !P && p(M, V, T, R, E[2], E[3], !0) < c && p(M, V, T, R, E[4], E[5], !0) < c && p(M, V, T, R, L[2], L[3], !0) < c && p(M, V, T, R, L[4], L[5], !0) < c && (b = C = P = !0);
           else if (P)
             return null;
           if (b ^ C)
             return null;
           for (var F = [d, w], q = [], U = 0; U < 4 && q.length < 2; U++) {
-            var G = U & 1, Q = G ^ 1, tt = U >> 1, it = nt.getTimeOf(F[G], new z(
+            var H = U & 1, Q = H ^ 1, tt = U >> 1, nt = rt.getTimeOf(F[H], new z(
               F[Q][tt ? 6 : 0],
               F[Q][tt ? 7 : 1]
             ));
-            if (it != null) {
-              var ot = G ? [tt, it] : [it, tt];
+            if (nt != null) {
+              var ot = H ? [tt, nt] : [nt, tt];
               (!q.length || k(ot[0] - q[0][0]) > y && k(ot[1] - q[0][1]) > y) && q.push(ot);
             }
             if (U > 2 && !q.length)
@@ -7186,27 +7186,27 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           if (q.length !== 2)
             q = null;
           else if (!P) {
-            var X = nt.getPart(d, q[0][0], q[1][0]), K = nt.getPart(w, q[0][1], q[1][1]);
+            var X = rt.getPart(d, q[0][0], q[1][0]), K = rt.getPart(w, q[0][1], q[1][1]);
             (k(K[2] - X[2]) > c || k(K[3] - X[3]) > c || k(K[4] - X[4]) > c || k(K[5] - X[5]) > c) && (q = null);
           }
           return q;
         }
         function g(d, w) {
-          var m = d[0], k = d[1], p = d[2], y = d[3], c = d[4], b = d[5], C = d[6], P = d[7], S = w.normalize(), E = S.x, L = S.y, M = 3 * C - 9 * c + 9 * p - 3 * m, R = 3 * P - 9 * b + 9 * y - 3 * k, T = 6 * c - 12 * p + 6 * m, V = 6 * b - 12 * y + 6 * k, F = 3 * p - 3 * m, q = 3 * y - 3 * k, U = 2 * M * L - 2 * R * E, G = [];
-          if (Math.abs(U) < pt.CURVETIME_EPSILON) {
-            var Q = M * q - R * F, U = M * V - R * T;
+          var m = d[0], k = d[1], p = d[2], y = d[3], c = d[4], b = d[5], C = d[6], P = d[7], S = w.normalize(), E = S.x, L = S.y, M = 3 * C - 9 * c + 9 * p - 3 * m, V = 3 * P - 9 * b + 9 * y - 3 * k, T = 6 * c - 12 * p + 6 * m, R = 6 * b - 12 * y + 6 * k, F = 3 * p - 3 * m, q = 3 * y - 3 * k, U = 2 * M * L - 2 * V * E, H = [];
+          if (Math.abs(U) < ct.CURVETIME_EPSILON) {
+            var Q = M * q - V * F, U = M * R - V * T;
             if (U != 0) {
               var tt = -Q / U;
-              tt >= 0 && tt <= 1 && G.push(tt);
+              tt >= 0 && tt <= 1 && H.push(tt);
             }
           } else {
-            var it = (T * T - 4 * M * F) * L * L + (-2 * T * V + 4 * R * F + 4 * M * q) * E * L + (V * V - 4 * R * q) * E * E, ot = T * L - V * E;
-            if (it >= 0 && U != 0) {
-              var X = Math.sqrt(it), K = -(ot + X) / U, rt = (-ot + X) / U;
-              K >= 0 && K <= 1 && G.push(K), rt >= 0 && rt <= 1 && G.push(rt);
+            var nt = (T * T - 4 * M * F) * L * L + (-2 * T * R + 4 * V * F + 4 * M * q) * E * L + (R * R - 4 * V * q) * E * E, ot = T * L - R * E;
+            if (nt >= 0 && U != 0) {
+              var X = Math.sqrt(nt), K = -(ot + X) / U, st = (-ot + X) / U;
+              K >= 0 && K <= 1 && H.push(K), st >= 0 && st <= 1 && H.push(st);
             }
           }
-          return G;
+          return H;
         }
         return {
           getIntersections: function(d) {
@@ -7321,7 +7321,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return i;
         },
         toString: function() {
-          var t = [], e = this.getPoint(), i = Tt.instance;
+          var t = [], e = this.getPoint(), i = Et.instance;
           e && t.push("point: " + e);
           var r = this.getIndex();
           r != null && t.push("index: " + r);
@@ -7348,12 +7348,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             return !1;
           var v = [];
           function g(E, L) {
-            var M = E.getValues(), R = nt.classify(M).roots || nt.getPeaks(M), T = R.length, V = nt.getLength(
+            var M = E.getValues(), V = rt.classify(M).roots || rt.getPeaks(M), T = V.length, R = rt.getLength(
               M,
-              L && T ? R[T - 1] : 0,
-              !L && T ? R[0] : 1
+              L && T ? V[T - 1] : 0,
+              !L && T ? V[0] : 1
             );
-            v.push(T ? V : V / 32);
+            v.push(T ? R : R / 32);
           }
           function d(E, L, M) {
             return L < M ? E > L && E < M : E > L || E < M;
@@ -7366,7 +7366,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return !!this._overlap;
         }
       },
-      O.each(nt._evaluateMethods, function(t) {
+      O.each(rt._evaluateMethods, function(t) {
         var e = t + "At";
         this[t] = function() {
           var i = this.getCurve(), r = this.getTime();
@@ -7409,7 +7409,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }
         } };
       }()
-    ), me = I.extend({
+    ), ve = I.extend({
       _class: "PathItem",
       _selectBounds: !1,
       _canScaleStroke: !0,
@@ -7424,7 +7424,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             r = s && Array.isArray(s[0]);
           } else
             e && (r = (e.match(/m/gi) || []).length > 1 || /z\s*\S+/i.test(e));
-          var a = r ? we : Et;
+          var a = r ? we : Tt;
           return new a(t);
         }
       },
@@ -7503,7 +7503,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               for (var p = 0; p < m; p += 7)
                 this.arcTo(
                   h = f(p + 5),
-                  new at(+i[p], +i[p + 1]),
+                  new ut(+i[p], +i[p + 1]),
                   +i[p + 2],
                   +i[p + 4],
                   +i[p + 3]
@@ -7530,7 +7530,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return s || this.getBounds(a).intersects(
           t.getBounds(h),
           1e-12
-        ) ? nt.getIntersections(
+        ) ? rt.getIntersections(
           this.getCurves(),
           !s && t.getCurves(),
           e,
@@ -7561,7 +7561,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           throw new Error("Invalid operands in interpolate() call: " + t + ", " + e);
         var l = o.length, f = h.length;
         if (l < f)
-          for (var _ = r ? _t : Et, v = l; v < f; v++)
+          for (var _ = r ? _t : Tt, v = l; v < f; v++)
             this.add(new _());
         else
           l > f && this[r ? "removeSegments" : "removeChildren"](f, l);
@@ -7574,7 +7574,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         if (t) {
           var i = this._children || [this], r = t._children ? t._children.slice() : [t], s = i.length, a = r.length, h = [], o = 0;
           e = !0;
-          for (var l = Wt.findItemBoundsCollisions(i, r, pt.GEOMETRIC_EPSILON), f = s - 1; f >= 0 && e; f--) {
+          for (var l = xe.findItemBoundsCollisions(i, r, ct.GEOMETRIC_EPSILON), f = s - 1; f >= 0 && e; f--) {
             var _ = i[f];
             e = !1;
             var v = l[f];
@@ -7586,7 +7586,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
         return e;
       }
-    }), Et = me.extend(
+    }), Tt = ve.extend(
       {
         _class: "Path",
         _serializeFields: {
@@ -7595,8 +7595,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         },
         initialize: function(e) {
           this._closed = !1, this._segments = [], this._version = 0;
-          var i = arguments, r = Array.isArray(e) ? typeof e[0] == "object" ? e : i : e && e.size === W && (e.x !== W || e.point !== W) ? i : null;
-          r && r.length > 0 ? this.setSegments(r) : (this._curves = W, this._segmentSelection = 0, !r && typeof e == "string" && (this.setPathData(e), e = null)), this._initialize(!r && e);
+          var i = arguments, r = Array.isArray(e) ? typeof e[0] == "object" ? e : i : e && e.size === G && (e.x !== G || e.point !== G) ? i : null;
+          r && r.length > 0 ? this.setSegments(r) : (this._curves = G, this._segmentSelection = 0, !r && typeof e == "string" && (this.setPathData(e), e = null)), this._initialize(!r && e);
         },
         _equals: function(t) {
           return this._closed === t._closed && O.equals(this._segments, t._segments);
@@ -7606,13 +7606,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         },
         _changed: function t(e) {
           if (t.base.call(this, e), e & 8) {
-            if (this._length = this._area = W, e & 32)
+            if (this._length = this._area = G, e & 32)
               this._version++;
             else if (this._curves)
               for (var i = 0, r = this._curves.length; i < r; i++)
                 this._curves[i]._changed();
           } else
-            e & 64 && (this._bounds = W);
+            e & 64 && (this._bounds = G);
         },
         getStyle: function() {
           var t = this._parent;
@@ -7623,7 +7623,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         },
         setSegments: function(t) {
           var e = this.isFullySelected(), i = t && t.length;
-          if (this._segments.length = 0, this._segmentSelection = 0, this._curves = W, i) {
+          if (this._segments.length = 0, this._segmentSelection = 0, this._curves = G, i) {
             var r = t[i - 1];
             typeof r == "boolean" && (this.setClosed(r), i--), this._add(_t.readList(t, 0, {}, i));
           }
@@ -7641,7 +7641,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             var i = this._countCurves();
             t = this._curves = new Array(i);
             for (var r = 0; r < i; r++)
-              t[r] = new nt(
+              t[r] = new rt(
                 this,
                 e[r],
                 e[r + 1] || e[0]
@@ -7663,7 +7663,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           if (this._closed != (t = !!t)) {
             if (this._closed = t, this._curves) {
               var e = this._curves.length = this._countCurves();
-              t && (this._curves[e - 1] = new nt(
+              t && (this._curves[e - 1] = new rt(
                 this,
                 this._segments[e - 1],
                 this._segments[0]
@@ -7676,7 +7676,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       {
         beans: !0,
         getPathData: function(t, e) {
-          var i = this._segments, r = i.length, s = new Tt(e), a = new Array(6), h = !0, o, l, f, _, v, g, d, w, m = [];
+          var i = this._segments, r = i.length, s = new Et(e), a = new Array(6), h = !0, o, l, f, _, v, g, d, w, m = [];
           function k(y, c) {
             if (y._transformCoordinates(t, a), o = a[0], l = a[1], h)
               m.push("M" + s.pair(o, l)), h = !1;
@@ -7721,7 +7721,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             var _ = this._countCurves(), v = h > 0 && h + s - 1 === _ ? h - 1 : h, g = v, d = Math.min(v + s, _);
             t._curves && (r.splice.apply(r, [v, 0].concat(t._curves)), g += t._curves.length);
             for (var o = g; o < d; o++)
-              r.splice(o, 0, new nt(this, null, null));
+              r.splice(o, 0, new rt(this, null, null));
             this._adjustCurves(v, d);
           }
           return this._changed(41), t;
@@ -7802,7 +7802,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             t = 0;
             for (var r = 0, s = e.length; r < s; r++) {
               var a = r + 1 === s;
-              t += nt.getArea(nt.getValues(
+              t += rt.getArea(rt.getValues(
                 e[r],
                 e[a ? 0 : r + 1],
                 null,
@@ -7845,12 +7845,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           if (i >= 0 && i < h.length) {
             r >= s && h[i++].divideAtTime(r);
             var o = this.removeSegments(i, this._segments.length, !0), l;
-            return this._closed ? (this.setClosed(!1), l = this) : (l = new Et(I.NO_INSERT), l.insertAbove(this), l.copyAttributes(this)), l._add(o, 0), this.addSegment(o[0]), l;
+            return this._closed ? (this.setClosed(!1), l = this) : (l = new Tt(I.NO_INSERT), l.insertAbove(this), l.copyAttributes(this)), l._add(o, 0), this.addSegment(o[0]), l;
           }
           return null;
         },
         split: function(t, e) {
-          var i, r = e === W ? t : (i = this.getCurves()[t]) && i.getLocationAtTime(e);
+          var i, r = e === G ? t : (i = this.getCurves()[t]) && i.getLocationAtTime(e);
           return r != null ? this.splitAt(r) : null;
         },
         join: function(t, e) {
@@ -7904,12 +7904,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               var gt = lt.path;
               if (gt && gt !== e)
                 throw new Error(lt._class + " " + J + " of " + gt + " is not part of " + e);
-              vt && lt instanceof nt && J++;
+              vt && lt instanceof rt && J++;
             } else
               J = typeof lt == "number" ? lt : vt;
             return Math.min(J < 0 && h ? J % a : J < 0 ? J + a : J, a - 1);
           }
-          var l = h && i.from === W && i.to === W, f = o(i.from, 0), _ = o(i.to, a - 1);
+          var l = h && i.from === G && i.to === G, f = o(i.from, 0), _ = o(i.to, a - 1);
           if (f > _)
             if (h)
               f -= a;
@@ -7923,17 +7923,17 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               return;
             for (var b = 0, C = f - p; b <= m; b++, C++)
               c[b] = s[(C < 0 ? C + a : C) % a]._point;
-            for (var P = c[0]._x + 2 * c[1]._x, S = c[0]._y + 2 * c[1]._y, E = 2, L = m - 1, M = [P], R = [S], T = [E], V = [], F = [], b = 1; b < m; b++) {
-              var q = b < L, U = q || g ? 1 : 2, G = q ? 4 : g ? 2 : 7, Q = q ? 4 : g ? 3 : 8, tt = q ? 2 : g ? 0 : 1, it = U / E;
-              E = T[b] = G - it, P = M[b] = Q * c[b]._x + tt * c[b + 1]._x - it * P, S = R[b] = Q * c[b]._y + tt * c[b + 1]._y - it * S;
+            for (var P = c[0]._x + 2 * c[1]._x, S = c[0]._y + 2 * c[1]._y, E = 2, L = m - 1, M = [P], V = [S], T = [E], R = [], F = [], b = 1; b < m; b++) {
+              var q = b < L, U = q || g ? 1 : 2, H = q ? 4 : g ? 2 : 7, Q = q ? 4 : g ? 3 : 8, tt = q ? 2 : g ? 0 : 1, nt = U / E;
+              E = T[b] = H - nt, P = M[b] = Q * c[b]._x + tt * c[b + 1]._x - nt * P, S = V[b] = Q * c[b]._y + tt * c[b + 1]._y - nt * S;
             }
-            V[L] = M[L] / T[L], F[L] = R[L] / T[L];
+            R[L] = M[L] / T[L], F[L] = V[L] / T[L];
             for (var b = m - 2; b >= 0; b--)
-              V[b] = (M[b] - V[b + 1]) / T[b], F[b] = (R[b] - F[b + 1]) / T[b];
-            V[m] = (3 * c[m]._x - V[L]) / 2, F[m] = (3 * c[m]._y - F[L]) / 2;
+              R[b] = (M[b] - R[b + 1]) / T[b], F[b] = (V[b] - F[b + 1]) / T[b];
+            R[m] = (3 * c[m]._x - R[L]) / 2, F[m] = (3 * c[m]._y - F[L]) / 2;
             for (var b = p, ot = m - y, C = f; b <= ot; b++, C++) {
-              var X = s[C < 0 ? C + a : C], K = X._point, rt = V[b] - K._x, ht = F[b] - K._y;
-              (l || b < ot) && X.setHandleOut(rt, ht), (l || b > p) && X.setHandleIn(-rt, -ht);
+              var X = s[C < 0 ? C + a : C], K = X._point, st = R[b] - K._x, ht = F[b] - K._y;
+              (l || b < ot) && X.setHandleOut(st, ht), (l || b > p) && X.setHandleIn(-st, -ht);
             }
           } else
             for (var b = f; b <= _; b++)
@@ -7966,24 +7966,24 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                 new Bt(c, k, !0),
                 !0
               );
-              return b && pt.isZero(m.getLength() / b.subtract(y).getLength() - p) && pt.isZero(k.getLength() / b.subtract(c).getLength() - p);
+              return b && ct.isZero(m.getLength() / b.subtract(y).getLength() - p) && ct.isZero(k.getLength() / b.subtract(c).getLength() - p);
             }
             return !1;
           }
           function f(g, d) {
             return e[g]._point.getDistance(e[d]._point);
           }
-          if (!this.hasHandles() && e.length === 4 && h(0, 2) && h(1, 3) && o(1) ? (i = jt.Rectangle, r = new at(f(0, 3), f(0, 1)), a = e[1]._point.add(e[2]._point).divide(2)) : e.length === 8 && l(0) && l(2) && l(4) && l(6) && h(1, 5) && h(3, 7) ? (i = jt.Rectangle, r = new at(f(1, 6), f(0, 3)), s = r.subtract(new at(
+          if (!this.hasHandles() && e.length === 4 && h(0, 2) && h(1, 3) && o(1) ? (i = Gt.Rectangle, r = new ut(f(0, 3), f(0, 1)), a = e[1]._point.add(e[2]._point).divide(2)) : e.length === 8 && l(0) && l(2) && l(4) && l(6) && h(1, 5) && h(3, 7) ? (i = Gt.Rectangle, r = new ut(f(1, 6), f(0, 3)), s = r.subtract(new ut(
             f(0, 7),
             f(1, 2)
-          )).divide(2), a = e[3]._point.add(e[4]._point).divide(2)) : e.length === 4 && l(0) && l(1) && l(2) && l(3) && (pt.isZero(f(0, 2) - f(1, 3)) ? (i = jt.Circle, s = f(0, 2) / 2) : (i = jt.Ellipse, s = new at(f(2, 0) / 2, f(3, 1) / 2)), a = e[1]._point), i) {
+          )).divide(2), a = e[3]._point.add(e[4]._point).divide(2)) : e.length === 4 && l(0) && l(1) && l(2) && l(3) && (ct.isZero(f(0, 2) - f(1, 3)) ? (i = Gt.Circle, s = f(0, 2) / 2) : (i = Gt.Ellipse, s = new ut(f(2, 0) / 2, f(3, 1) / 2)), a = e[1]._point), i) {
             var _ = this.getPosition(!0), v = new i({
               center: _,
               size: r,
               radius: s,
               insert: !1
             });
-            return v.copyAttributes(this, !0), v._matrix.prepend(this._matrix), v.rotate(a.subtract(_).getAngle() + 90), (t === W || t) && v.insertAbove(this), v;
+            return v.copyAttributes(this, !0), v._matrix.prepend(this._matrix), v.rotate(a.subtract(_).getAngle() + 90), (t === G || t) && v.insertAbove(this), v;
           }
           return null;
         },
@@ -7997,14 +7997,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           for (var h = i[0].getValues(), o = [], l = 0, f, _ = 0, v, g = 0; g < a; g++) {
             var k = r[g].getValues();
             o.push(k);
-            var d = nt.getOverlaps(h, k);
+            var d = rt.getOverlaps(h, k);
             if (d) {
               f = !g && d[0][0] > 0 ? a - 1 : g, v = d[0][1];
               break;
             }
           }
           for (var w = Math.abs, m = 1e-8, k = o[f], p; h && k; ) {
-            var d = nt.getOverlaps(h, k);
+            var d = rt.getOverlaps(h, k);
             if (d) {
               var y = d[0][0];
               if (w(y - _) < m) {
@@ -8024,33 +8024,33 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         _hitTestSelf: function(t, e, i, r) {
           var s = this, a = this.getStyle(), h = this._segments, o = h.length, l = this._closed, f = e._tolerancePadding, _ = f, v, g, d, w, m, k, p = e.stroke && a.hasStroke(), y = e.fill && a.hasFill(), c = e.curves, b = p ? a.getStrokeWidth() / 2 : y && e.tolerance > 0 || c ? 0 : null;
           b !== null && (b > 0 ? (v = a.getStrokeJoin(), g = a.getStrokeCap(), d = a.getMiterLimit(), _ = _.add(
-            Et._getStrokePadding(b, r)
+            Tt._getStrokePadding(b, r)
           )) : v = g = "round");
-          function C(V, F) {
-            return t.subtract(V).divide(F).length <= 1;
+          function C(R, F) {
+            return t.subtract(R).divide(F).length <= 1;
           }
-          function P(V, F, q) {
+          function P(R, F, q) {
             if (!e.selected || F.isSelected()) {
-              var U = V._point;
+              var U = R._point;
               if (F !== U && (F = F.add(U)), C(F, _))
                 return new ye(q, s, {
-                  segment: V,
+                  segment: R,
                   point: F
                 });
             }
           }
-          function S(V, F) {
-            return (F || e.segments) && P(V, V._point, "segment") || !F && e.handles && (P(V, V._handleIn, "handle-in") || P(V, V._handleOut, "handle-out"));
+          function S(R, F) {
+            return (F || e.segments) && P(R, R._point, "segment") || !F && e.handles && (P(R, R._handleIn, "handle-in") || P(R, R._handleOut, "handle-out"));
           }
-          function E(V) {
-            w.add(V);
+          function E(R) {
+            w.add(R);
           }
-          function L(V) {
-            var F = l || V._index > 0 && V._index < o - 1;
+          function L(R) {
+            var F = l || R._index > 0 && R._index < o - 1;
             if ((F ? v : g) === "round")
-              return C(V._point, _);
-            if (w = new Et({ internal: !0, closed: !0 }), F ? V.isSmooth() || Et._addBevelJoin(
-              V,
+              return C(R._point, _);
+            if (w = new Tt({ internal: !0, closed: !0 }), F ? R.isSmooth() || Tt._addBevelJoin(
+              R,
               v,
               b,
               d,
@@ -8058,8 +8058,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               r,
               E,
               !0
-            ) : g === "square" && Et._addSquareCap(
-              V,
+            ) : g === "square" && Tt._addSquareCap(
+              R,
               g,
               b,
               null,
@@ -8081,8 +8081,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }
           if (b !== null) {
             if (m = this.getNearestLocation(t), m) {
-              var R = m.getTime();
-              R === 0 || R === 1 && o > 1 ? L(m.getSegment()) || (m = null) : C(m.getPoint(), _) || (m = null);
+              var V = m.getTime();
+              V === 0 || V === 1 && o > 1 ? L(m.getSegment()) || (m = null) : C(m.getPoint(), _) || (m = null);
             }
             if (!m && v === "miter" && o > 1)
               for (var M = 0; M < o; M++) {
@@ -8100,7 +8100,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
       },
       O.each(
-        nt._evaluateMethods,
+        rt._evaluateMethods,
         function(t) {
           this[t + "At"] = function(e) {
             var i = this.getLocationAt(e);
@@ -8277,18 +8277,18 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             else if (O.remain(e) <= 2)
               o = h, h = z.read(e);
             else if (!a.equals(h)) {
-              var m = at.read(e), k = pt.isZero;
+              var m = ut.read(e), k = ct.isZero;
               if (k(m.width) || k(m.height))
                 return this.lineTo(h);
-              var p = O.read(e), f = !!O.read(e), y = !!O.read(e), w = a.add(h).divide(2), c = a.subtract(w).rotate(-p), b = c.x, C = c.y, P = i(m.width), S = i(m.height), E = P * P, L = S * S, M = b * b, R = C * C, T = r(M / E + R / L);
-              if (T > 1 && (P *= T, S *= T, E = P * P, L = S * S), T = (E * L - E * R - L * M) / (E * R + L * M), i(T) < 1e-12 && (T = 0), T < 0)
+              var p = O.read(e), f = !!O.read(e), y = !!O.read(e), w = a.add(h).divide(2), c = a.subtract(w).rotate(-p), b = c.x, C = c.y, P = i(m.width), S = i(m.height), E = P * P, L = S * S, M = b * b, V = C * C, T = r(M / E + V / L);
+              if (T > 1 && (P *= T, S *= T, E = P * P, L = S * S), T = (E * L - E * V - L * M) / (E * V + L * M), i(T) < 1e-12 && (T = 0), T < 0)
                 throw new Error(
                   "Cannot create an arc with the given arguments"
                 );
               _ = new z(P * C / S, -S * b / P).multiply((y === f ? -1 : 1) * r(T)).rotate(p).add(w), d = new At().translate(_).rotate(p).scale(P, S), g = d._inverseTransform(a), v = g.getDirectedAngle(d._inverseTransform(h)), !f && v > 0 ? v -= 360 : f && v < 0 && (v += 360);
             }
             if (o) {
-              var V = new Bt(
+              var R = new Bt(
                 a.add(o).divide(2),
                 o.subtract(a).rotate(90),
                 !0
@@ -8297,7 +8297,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                 h.subtract(o).rotate(90),
                 !0
               ), q = new Bt(a, h), U = q.getSide(o);
-              if (_ = V.intersect(F, !0), !_) {
+              if (_ = R.intersect(F, !0), !_) {
                 if (!U)
                   return this.lineTo(h);
                 throw new Error(
@@ -8305,21 +8305,21 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                 );
               }
               g = a.subtract(_), v = g.getDirectedAngle(h.subtract(_));
-              var G = q.getSide(_, !0);
-              G === 0 ? v = U * i(v) : U === G && (v += v < 0 ? 360 : -360);
+              var H = q.getSide(_, !0);
+              H === 0 ? v = U * i(v) : U === H && (v += v < 0 ? 360 : -360);
             }
             if (v) {
-              for (var Q = 1e-7, tt = i(v), it = tt >= 360 ? 4 : Math.ceil((tt - Q) / 90), ot = v / it, X = ot * Math.PI / 360, K = 4 / 3 * Math.sin(X) / (1 + Math.cos(X)), rt = [], ht = 0; ht <= it; ht++) {
+              for (var Q = 1e-7, tt = i(v), nt = tt >= 360 ? 4 : Math.ceil((tt - Q) / 90), ot = v / nt, X = ot * Math.PI / 360, K = 4 / 3 * Math.sin(X) / (1 + Math.cos(X)), st = [], ht = 0; ht <= nt; ht++) {
                 var c = h, lt = null;
-                if (ht < it && (lt = g.rotate(90).multiply(K), d ? (c = d._transformPoint(g), lt = d._transformPoint(g.add(lt)).subtract(c)) : c = _.add(g)), !ht)
+                if (ht < nt && (lt = g.rotate(90).multiply(K), d ? (c = d._transformPoint(g), lt = d._transformPoint(g.add(lt)).subtract(c)) : c = _.add(g)), !ht)
                   s.setHandleOut(lt);
                 else {
                   var vt = g.rotate(-90).multiply(K);
-                  d && (vt = d._transformPoint(g.add(vt)).subtract(c)), rt.push(new _t(c, vt, lt));
+                  d && (vt = d._transformPoint(g.add(vt)).subtract(c)), st.push(new _t(c, vt, lt));
                 }
                 g = g.rotate(ot);
               }
-              this._add(rt);
+              this._add(st);
             }
           },
           lineBy: function() {
@@ -8354,7 +8354,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       {
         _getBounds: function(t, e) {
           var i = e.handle ? "getHandleBounds" : e.stroke ? "getStrokeBounds" : "getBounds";
-          return Et[i](this._segments, this._closed, this, t, e);
+          return Tt[i](this._segments, this._closed, this, t, e);
         },
         statics: {
           getBounds: function(t, e, i, r, s, a) {
@@ -8365,7 +8365,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             function g(m) {
               m._transformCoordinates(r, o);
               for (var k = 0; k < 2; k++)
-                nt._addBounds(
+                rt._addBounds(
                   l[k],
                   l[k + 4],
                   o[k + 2],
@@ -8384,10 +8384,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             return e && g(h), new ft(f[0], f[1], _[0] - f[0], _[1] - f[1]);
           },
           getStrokeBounds: function(t, e, i, r, s) {
-            var a = i.getStyle(), h = a.hasStroke(), o = a.getStrokeWidth(), l = h && i._getStrokeMatrix(r, s), f = h && Et._getStrokePadding(
+            var a = i.getStyle(), h = a.hasStroke(), o = a.getStrokeWidth(), l = h && i._getStrokeMatrix(r, s), f = h && Tt._getStrokePadding(
               o,
               l
-            ), _ = Et.getBounds(
+            ), _ = Tt.getBounds(
               t,
               e,
               i,
@@ -8397,7 +8397,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             );
             if (!h)
               return _;
-            var v = o / 2, g = a.getStrokeJoin(), d = a.getStrokeCap(), w = a.getMiterLimit(), m = new ft(new at(f));
+            var v = o / 2, g = a.getStrokeJoin(), d = a.getStrokeCap(), w = a.getMiterLimit(), m = new ft(new ut(f));
             function k(P) {
               _ = _.include(P);
             }
@@ -8407,7 +8407,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               );
             }
             function y(P, S) {
-              S === "round" || P.isSmooth() ? p(P) : Et._addBevelJoin(
+              S === "round" || P.isSmooth() ? p(P) : Tt._addBevelJoin(
                 P,
                 S,
                 v,
@@ -8418,7 +8418,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               );
             }
             function c(P, S) {
-              S === "round" ? p(P) : Et._addSquareCap(
+              S === "round" ? p(P) : Tt._addSquareCap(
                 P,
                 S,
                 v,
@@ -8468,14 +8468,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             var a = i.getStyle(), h = s.stroke && a.hasStroke(), o, l;
             if (h) {
               var f = i._getStrokeMatrix(r, s), _ = a.getStrokeWidth() / 2, v = _;
-              a.getStrokeJoin() === "miter" && (v = _ * a.getMiterLimit()), a.getStrokeCap() === "square" && (v = Math.max(v, _ * Math.SQRT2)), o = Et._getStrokePadding(_, f), l = Et._getStrokePadding(v, f);
+              a.getStrokeJoin() === "miter" && (v = _ * a.getMiterLimit()), a.getStrokeCap() === "square" && (v = Math.max(v, _ * Math.SQRT2)), o = Tt._getStrokePadding(_, f), l = Tt._getStrokePadding(v, f);
             }
             for (var g = new Array(6), d = 1 / 0, w = -d, m = d, k = w, p = 0, y = t.length; p < y; p++) {
               var c = t[p];
               c._transformCoordinates(r, g);
               for (var b = 0; b < 6; b += 2) {
-                var C = b ? o : l, P = C ? C[0] : 0, S = C ? C[1] : 0, E = g[b], L = g[b + 1], M = E - P, R = E + P, T = L - S, V = L + S;
-                M < d && (d = M), R > w && (w = R), T < m && (m = T), V > k && (k = V);
+                var C = b ? o : l, P = C ? C[0] : 0, S = C ? C[1] : 0, E = g[b], L = g[b + 1], M = E - P, V = E + P, T = L - S, R = L + S;
+                M < d && (d = M), V > w && (w = V), T < m && (m = T), R > k && (k = R);
               }
             }
             return new ft(d, m, w - d, k - m);
@@ -8483,7 +8483,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
       }
     );
-    Et.inject({ statics: new function() {
+    Tt.inject({ statics: new function() {
       var t = 0.5522847498307936, e = [
         new _t([-1, 0], [0, t], [0, -t]),
         new _t([0, -1], [-t, 0], [t, 0]),
@@ -8491,7 +8491,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         new _t([0, 1], [t, 0], [-t, 0])
       ];
       function i(s, a, h) {
-        var o = O.getNamed(h), l = new Et(o && o.insert == !1 && I.NO_INSERT);
+        var o = O.getNamed(h), l = new Tt(o && o.insert == !1 && I.NO_INSERT);
         return l._add(s), l._closed = a, l.set(o, { insert: !0 });
       }
       function r(s, a, h) {
@@ -8515,10 +8515,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         },
         Circle: function() {
           var s = arguments, a = z.readNamed(s, "center"), h = O.readNamed(s, "radius");
-          return r(a, new at(h), s);
+          return r(a, new ut(h), s);
         },
         Rectangle: function() {
-          var s = arguments, a = ft.readNamed(s, "rectangle"), h = at.readNamed(
+          var s = arguments, a = ft.readNamed(s, "rectangle"), h = ut.readNamed(
             s,
             "radius",
             0,
@@ -8532,7 +8532,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               new _t(_)
             ];
           else {
-            h = at.min(h, a.getSize(!0).divide(2));
+            h = ut.min(h, a.getSize(!0).divide(2));
             var g = h.width, d = h.height, w = g * t, m = d * t;
             v = [
               new _t(o.add(g, 0), null, [-w, 0]),
@@ -8549,12 +8549,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         },
         RoundRectangle: "#Rectangle",
         Ellipse: function() {
-          var s = arguments, a = jt._readEllipse(s);
+          var s = arguments, a = Gt._readEllipse(s);
           return r(a.center, a.radius, s);
         },
         Oval: "#Ellipse",
         Arc: function() {
-          var s = arguments, a = z.readNamed(s, "from"), h = z.readNamed(s, "through"), o = z.readNamed(s, "to"), l = O.getNamed(s), f = new Et(l && l.insert == !1 && I.NO_INSERT);
+          var s = arguments, a = z.readNamed(s, "from"), h = z.readNamed(s, "through"), o = z.readNamed(s, "to"), l = O.getNamed(s), f = new Tt(l && l.insert == !1 && I.NO_INSERT);
           return f.moveTo(a), f.arcTo(h, o), f.set(l);
         },
         RegularPolygon: function() {
@@ -8571,7 +8571,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
       };
     }() });
-    var we = me.extend(
+    var we = ve.extend(
       {
         _class: "CompoundPath",
         _serializeFields: {
@@ -8586,7 +8586,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           s && typeof s[0] == "number" && (r = [r]);
           for (var a = i.length - 1; a >= 0; a--) {
             var h = r[a];
-            r === i && !(h instanceof Et) && (r = O.slice(r)), Array.isArray(h) ? r[a] = new Et({ segments: h, insert: !1 }) : h instanceof we && (r.splice.apply(r, [a, 1].concat(h.removeChildren())), h.remove());
+            r === i && !(h instanceof Tt) && (r = O.slice(r)), Array.isArray(h) ? r[a] = new Tt({ segments: h, insert: !1 }) : h instanceof we && (r.splice.apply(r, [a, 1].concat(h.removeChildren())), h.remove());
           }
           return t.base.call(this, e, r);
         },
@@ -8596,7 +8596,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             s.isEmpty() && s.remove();
           }
           if (!i.length) {
-            var s = new Et(I.NO_INSERT);
+            var s = new Tt(I.NO_INSERT);
             return s.copyAttributes(this), s.insertAbove(this), this.remove(), s;
           }
           return t.base.call(this);
@@ -8653,7 +8653,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return t.base.call(
             this,
             e,
-            i.class === Et || i.type === "path" ? i : O.set({}, i, { fill: !1 }),
+            i.class === Tt || i.type === "path" ? i : O.set({}, i, { fill: !1 }),
             r
           );
         },
@@ -8705,7 +8705,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           },
           {
             moveTo: function() {
-              var e = t(this), i = e && e.isEmpty() ? e : new Et(I.NO_INSERT);
+              var e = t(this), i = e && e.isEmpty() ? e : new Tt(I.NO_INSERT);
               i !== e && this.addChild(i), i.moveTo.apply(i, arguments);
             },
             moveBy: function() {
@@ -8726,7 +8726,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         };
       }, {})
     );
-    me.inject(new function() {
+    ve.inject(new function() {
       var t = Math.min, e = Math.max, i = Math.abs, r = {
         unite: { 1: !0, 2: !0 },
         intersect: { 2: !0 },
@@ -8761,11 +8761,11 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         S[c] = !0, P && (S.subtract || S.exclude) ^ (P.isClockwise() ^ C.isClockwise()) && P.reverse();
         var E = d(be.expand(
           C.getIntersections(P, o)
-        )), L = s(C), M = P && s(P), R = [], T = [], V;
+        )), L = s(C), M = P && s(P), V = [], T = [], R;
         function F(lt) {
           for (var vt = 0, J = lt.length; vt < J; vt++) {
             var gt = lt[vt];
-            O.push(R, gt._segments), O.push(T, gt.getCurves()), gt._overlapsOnly = !0;
+            O.push(V, gt._segments), O.push(T, gt.getCurves()), gt._overlapsOnly = !0;
           }
         }
         function q(lt) {
@@ -8775,59 +8775,59 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
         if (E.length) {
           F(L), M && F(M);
-          for (var U = new Array(T.length), G = 0, Q = T.length; G < Q; G++)
-            U[G] = T[G].getValues();
-          for (var tt = Wt.findCurveBoundsCollisions(
+          for (var U = new Array(T.length), H = 0, Q = T.length; H < Q; H++)
+            U[H] = T[H].getValues();
+          for (var tt = xe.findCurveBoundsCollisions(
             U,
             U,
             0,
             !0
-          ), it = {}, G = 0; G < T.length; G++) {
-            var ot = T[G], X = ot._path._id, K = it[X] = it[X] || {};
+          ), nt = {}, H = 0; H < T.length; H++) {
+            var ot = T[H], X = ot._path._id, K = nt[X] = nt[X] || {};
             K[ot.getIndex()] = {
-              hor: q(tt[G].hor),
-              ver: q(tt[G].ver)
+              hor: q(tt[H].hor),
+              ver: q(tt[H].ver)
             };
           }
-          for (var G = 0, Q = E.length; G < Q; G++)
+          for (var H = 0, Q = E.length; H < Q; H++)
             m(
-              E[G]._segment,
+              E[H]._segment,
               C,
               P,
-              it,
+              nt,
               S
             );
-          for (var G = 0, Q = R.length; G < Q; G++) {
-            var rt = R[G], ht = rt._intersection;
-            rt._winding || m(
-              rt,
+          for (var H = 0, Q = V.length; H < Q; H++) {
+            var st = V[H], ht = st._intersection;
+            st._winding || m(
+              st,
               C,
               P,
-              it,
+              nt,
               S
-            ), ht && ht._overlap || (rt._path._overlapsOnly = !1);
+            ), ht && ht._overlap || (st._path._overlapsOnly = !1);
           }
-          V = k(R, S);
+          R = k(V, S);
         } else
-          V = g(
+          R = g(
             M ? L.concat(M) : L.slice(),
             function(lt) {
               return !!S[lt];
             }
           );
-        return h(V, !0, p, y, b);
+        return h(R, !0, p, y, b);
       }
       function f(p, y, c) {
         var b = a(p), C = a(y), P = b.getIntersections(C, o), S = c === "subtract", E = c === "divide", L = {}, M = [];
-        function R(F) {
+        function V(F) {
           if (!L[F._id] && (E || C.contains(F.getPointAt(F.getLength() / 2)) ^ S))
             return M.unshift(F), L[F._id] = !0;
         }
         for (var T = P.length - 1; T >= 0; T--) {
-          var V = P[T].split();
-          V && (R(V) && V.getFirstSegment().setHandleIn(0, 0), b.getLastSegment().setHandleOut(0, 0));
+          var R = P[T].split();
+          R && (V(R) && R.getFirstSegment().setHandleIn(0, 0), b.getLastSegment().setHandleOut(0, 0));
         }
-        return R(b), h(M, !1, p, y);
+        return V(b), h(M, !1, p, y);
       }
       function _(p, y) {
         for (var c = p; c; ) {
@@ -8850,38 +8850,38 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       function g(p, y, c) {
         var b = p && p.length;
         if (b) {
-          var C = O.each(p, function(tt, it) {
+          var C = O.each(p, function(tt, nt) {
             this[tt._id] = {
               container: null,
               winding: tt.isClockwise() ? 1 : -1,
-              index: it
+              index: nt
             };
-          }, {}), P = p.slice().sort(function(tt, it) {
-            return i(it.getArea()) - i(tt.getArea());
-          }), S = P[0], E = Wt.findItemBoundsCollisions(
+          }, {}), P = p.slice().sort(function(tt, nt) {
+            return i(nt.getArea()) - i(tt.getArea());
+          }), S = P[0], E = xe.findItemBoundsCollisions(
             P,
             null,
-            pt.GEOMETRIC_EPSILON
+            ct.GEOMETRIC_EPSILON
           );
           c == null && (c = S.isClockwise());
           for (var L = 0; L < b; L++) {
-            var M = P[L], R = C[M._id], T = 0, V = E[L];
-            if (V) {
-              for (var F = null, q = V.length - 1; q >= 0; q--)
-                if (V[q] < L) {
+            var M = P[L], V = C[M._id], T = 0, R = E[L];
+            if (R) {
+              for (var F = null, q = R.length - 1; q >= 0; q--)
+                if (R[q] < L) {
                   F = F || M.getInteriorPoint();
-                  var U = P[V[q]];
+                  var U = P[R[q]];
                   if (U.contains(F)) {
-                    var G = C[U._id];
-                    T = G.winding, R.winding += T, R.container = G.exclude ? G.container : U;
+                    var H = C[U._id];
+                    T = H.winding, V.winding += T, V.container = H.exclude ? H.container : U;
                     break;
                   }
                 }
             }
-            if (y(R.winding) === y(T))
-              R.exclude = !0, p[R.index] = null;
+            if (y(V.winding) === y(T))
+              V.exclude = !0, p[V.index] = null;
             else {
-              var Q = R.container;
+              var Q = V.container;
               M.setClockwise(
                 Q ? !Q.isClockwise() : c
               );
@@ -8891,96 +8891,96 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return p;
       }
       function d(p, y, c) {
-        var b = y && [], C = 1e-8, P = 1 - C, S = !1, E = c || [], L = c && {}, M, R, T;
-        function V(vt) {
+        var b = y && [], C = 1e-8, P = 1 - C, S = !1, E = c || [], L = c && {}, M, V, T;
+        function R(vt) {
           return vt._path._id + "." + vt._segment1._index;
         }
         for (var F = (c && c.length) - 1; F >= 0; F--) {
           var q = c[F];
-          q._path && (L[V(q)] = !0);
+          q._path && (L[R(q)] = !0);
         }
         for (var F = p.length - 1; F >= 0; F--) {
-          var U = p[F], G = U._time, Q = G, tt = y && !y(U), q = U._curve, it;
-          if (q && (q !== R ? (S = !q.hasHandles() || L && L[V(q)], M = [], T = null, R = q) : T >= C && (G /= T)), tt) {
+          var U = p[F], H = U._time, Q = H, tt = y && !y(U), q = U._curve, nt;
+          if (q && (q !== V ? (S = !q.hasHandles() || L && L[R(q)], M = [], T = null, V = q) : T >= C && (H /= T)), tt) {
             M && M.push(U);
             continue;
           } else
             y && b.unshift(U);
-          if (T = Q, G < C)
-            it = q._segment1;
-          else if (G > P)
-            it = q._segment2;
+          if (T = Q, H < C)
+            nt = q._segment1;
+          else if (H > P)
+            nt = q._segment2;
           else {
-            var ot = q.divideAtTime(G, !0);
-            S && E.push(q, ot), it = ot._segment1;
+            var ot = q.divideAtTime(H, !0);
+            S && E.push(q, ot), nt = ot._segment1;
             for (var X = M.length - 1; X >= 0; X--) {
               var K = M[X];
-              K._time = (K._time - G) / (1 - G);
+              K._time = (K._time - H) / (1 - H);
             }
           }
-          U._setSegment(it);
-          var rt = it._intersection, ht = U._intersection;
-          if (rt) {
-            _(rt, ht);
-            for (var lt = rt; lt; )
-              _(lt._intersection, rt), lt = lt._next;
+          U._setSegment(nt);
+          var st = nt._intersection, ht = U._intersection;
+          if (st) {
+            _(st, ht);
+            for (var lt = st; lt; )
+              _(lt._intersection, st), lt = lt._next;
           } else
-            it._intersection = ht;
+            nt._intersection = ht;
         }
         return c || v(E), b || p;
       }
       function w(p, y, c, b, C) {
-        var P = Array.isArray(y) ? y : y[c ? "hor" : "ver"], S = c ? 1 : 0, E = S ^ 1, L = [p.x, p.y], M = L[S], R = L[E], T = 1e-9, V = 1e-6, F = M - T, q = M + T, U = 0, G = 0, Q = 0, tt = 0, it = !1, ot = !1, X = 1, K = [], rt, ht;
+        var P = Array.isArray(y) ? y : y[c ? "hor" : "ver"], S = c ? 1 : 0, E = S ^ 1, L = [p.x, p.y], M = L[S], V = L[E], T = 1e-9, R = 1e-6, F = M - T, q = M + T, U = 0, H = 0, Q = 0, tt = 0, nt = !1, ot = !1, X = 1, K = [], st, ht;
         function lt(Mt) {
-          var Kt = Mt[E + 0], ue = Mt[E + 6];
-          if (!(R < t(Kt, ue) || R > e(Kt, ue))) {
-            var te = Mt[S + 0], _e = Mt[S + 2], ke = Mt[S + 4], ce = Mt[S + 6];
-            if (Kt === ue) {
-              (te < q && ce > F || ce < q && te > F) && (it = !0);
+          var Xt = Mt[E + 0], ae = Mt[E + 6];
+          if (!(V < t(Xt, ae) || V > e(Xt, ae))) {
+            var $t = Mt[S + 0], ge = Mt[S + 2], ke = Mt[S + 4], fe = Mt[S + 6];
+            if (Xt === ae) {
+              ($t < q && fe > F || fe < q && $t > F) && (nt = !0);
               return;
             }
-            var St = R === Kt ? 0 : R === ue || F > e(te, _e, ke, ce) || q < t(te, _e, ke, ce) ? 1 : nt.solveCubic(Mt, E, R, K, 0, 1) > 0 ? K[0] : 1, de = St === 0 ? te : St === 1 ? ce : nt.getPoint(Mt, St)[c ? "y" : "x"], pe = Kt > ue ? 1 : -1, Ie = rt[E] > rt[E + 6] ? 1 : -1, xe = rt[S + 6];
-            return R !== Kt ? (de < F ? Q += pe : de > q ? tt += pe : it = !0, de > M - V && de < M + V && (X /= 2)) : (pe !== Ie ? te < F ? Q += pe : te > q && (tt += pe) : te != xe && (xe < q && de > q ? (tt += pe, it = !0) : xe > F && de < F && (Q += pe, it = !0)), X /= 4), rt = Mt, !C && de > F && de < q && nt.getTangent(Mt, St)[c ? "x" : "y"] === 0 && w(p, y, !c, b, !0);
+            var St = V === Xt ? 0 : V === ae || F > e($t, ge, ke, fe) || q < t($t, ge, ke, fe) ? 1 : rt.solveCubic(Mt, E, V, K, 0, 1) > 0 ? K[0] : 1, ce = St === 0 ? $t : St === 1 ? fe : rt.getPoint(Mt, St)[c ? "y" : "x"], de = Xt > ae ? 1 : -1, Ie = st[E] > st[E + 6] ? 1 : -1, me = st[S + 6];
+            return V !== Xt ? (ce < F ? Q += de : ce > q ? tt += de : nt = !0, ce > M - R && ce < M + R && (X /= 2)) : (de !== Ie ? $t < F ? Q += de : $t > q && (tt += de) : $t != me && (me < q && ce > q ? (tt += de, nt = !0) : me > F && ce < F && (Q += de, nt = !0)), X /= 4), st = Mt, !C && ce > F && ce < q && rt.getTangent(Mt, St)[c ? "x" : "y"] === 0 && w(p, y, !c, b, !0);
           }
         }
         function vt(Mt) {
-          var Kt = Mt[E + 0], ue = Mt[E + 2], te = Mt[E + 4], _e = Mt[E + 6];
-          if (R <= e(Kt, ue, te, _e) && R >= t(Kt, ue, te, _e)) {
-            for (var ke = Mt[S + 0], ce = Mt[S + 2], St = Mt[S + 4], de = Mt[S + 6], pe = F > e(ke, ce, St, de) || q < t(ke, ce, St, de) ? [Mt] : nt.getMonoCurves(Mt, c), Ie, xe = 0, ni = pe.length; xe < ni; xe++)
-              if (Ie = lt(pe[xe]))
+          var Xt = Mt[E + 0], ae = Mt[E + 2], $t = Mt[E + 4], ge = Mt[E + 6];
+          if (V <= e(Xt, ae, $t, ge) && V >= t(Xt, ae, $t, ge)) {
+            for (var ke = Mt[S + 0], fe = Mt[S + 2], St = Mt[S + 4], ce = Mt[S + 6], de = F > e(ke, fe, St, ce) || q < t(ke, fe, St, ce) ? [Mt] : rt.getMonoCurves(Mt, c), Ie, me = 0, ii = de.length; me < ii; me++)
+              if (Ie = lt(de[me]))
                 return Ie;
           }
         }
         for (var J = 0, gt = P.length; J < gt; J++) {
-          var It = P[J], yt = It._path, ie = It.getValues(), $t;
-          if ((!J || P[J - 1]._path !== yt) && (rt = null, yt._closed || (ht = nt.getValues(
+          var It = P[J], yt = It._path, ie = It.getValues(), Jt;
+          if ((!J || P[J - 1]._path !== yt) && (st = null, yt._closed || (ht = rt.getValues(
             yt.getLastCurve().getSegment2(),
             It.getSegment1(),
             null,
             !b
-          ), ht[E] !== ht[E + 6] && (rt = ht)), !rt)) {
-            rt = ie;
-            for (var ae = yt.getLastCurve(); ae && ae !== It; ) {
-              var Xt = ae.getValues();
-              if (Xt[E] !== Xt[E + 6]) {
-                rt = Xt;
+          ), ht[E] !== ht[E + 6] && (st = ht)), !st)) {
+            st = ie;
+            for (var se = yt.getLastCurve(); se && se !== It; ) {
+              var Zt = se.getValues();
+              if (Zt[E] !== Zt[E + 6]) {
+                st = Zt;
                 break;
               }
-              ae = ae.getPrevious();
+              se = se.getPrevious();
             }
           }
-          if ($t = vt(ie))
-            return $t;
+          if (Jt = vt(ie))
+            return Jt;
           if (J + 1 === gt || P[J + 1]._path !== yt) {
-            if (ht && ($t = vt(ht)))
-              return $t;
-            it && !Q && !tt && (Q = tt = yt.isClockwise(b) ^ c ? 1 : -1), U += Q, G += tt, Q = tt = 0, it && (ot = !0, it = !1), ht = null;
+            if (ht && (Jt = vt(ht)))
+              return Jt;
+            nt && !Q && !tt && (Q = tt = yt.isClockwise(b) ^ c ? 1 : -1), U += Q, H += tt, Q = tt = 0, nt && (ot = !0, nt = !1), ht = null;
           }
         }
-        return U = i(U), G = i(G), {
-          winding: e(U, G),
+        return U = i(U), H = i(H), {
+          winding: e(U, H),
           windingL: U,
-          windingR: G,
+          windingR: H,
           quality: X,
           onPath: ot
         };
@@ -8995,13 +8995,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }
           p = p.getNext();
         } while (p && !p._intersection && p !== S);
-        for (var R = [0.5, 0.25, 0.75], T = { winding: 0, quality: -1 }, V = 1e-3, F = 1 - V, q = 0; q < R.length && T.quality < 0.5; q++)
-          for (var M = E * R[q], U = 0, G = P.length; U < G; U++) {
+        for (var V = [0.5, 0.25, 0.75], T = { winding: 0, quality: -1 }, R = 1e-3, F = 1 - R, q = 0; q < V.length && T.quality < 0.5; q++)
+          for (var M = E * V[q], U = 0, H = P.length; U < H; U++) {
             var Q = P[U], tt = Q.length;
             if (M <= tt) {
-              var L = Q.curve, it = L._path, ot = it._parent, X = ot instanceof we ? ot : it, K = pt.clamp(L.getTimeAt(M), V, F), rt = L.getPointAtTime(K), ht = i(L.getTangentAtTime(K).y) < Math.SQRT1_2, lt = null;
+              var L = Q.curve, nt = L._path, ot = nt._parent, X = ot instanceof we ? ot : nt, K = ct.clamp(L.getTimeAt(M), R, F), st = L.getPointAtTime(K), ht = i(L.getTangentAtTime(K).y) < Math.SQRT1_2, lt = null;
               if (C.subtract && c) {
-                var vt = X === y ? c : y, J = vt._getWinding(rt, ht, !0);
+                var vt = X === y ? c : y, J = vt._getWinding(st, ht, !0);
                 if (X === y && J.winding || X === c && !J.winding) {
                   if (J.quality < 1)
                     continue;
@@ -9009,8 +9009,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                 }
               }
               lt = lt || w(
-                rt,
-                b[it._id][L.getIndex()],
+                st,
+                b[nt._id][L.getIndex()],
                 ht,
                 !0
               ), lt.quality > T.quality && (T = lt);
@@ -9040,65 +9040,65 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             It[yt]._visited = !0;
         }
         function E(gt, It) {
-          var yt = gt._intersection, ie = yt, $t = [];
+          var yt = gt._intersection, ie = yt, Jt = [];
           It && (b = [gt]);
-          function ae(Xt, Mt) {
-            for (; Xt && Xt !== Mt; ) {
-              var Kt = Xt._segment, ue = Kt && Kt._path;
-              if (ue) {
-                var te = Kt.getNext() || ue.getFirstSegment(), _e = te._intersection;
-                Kt !== gt && (P(Kt) || P(te) || te && C(Kt) && (C(te) || _e && C(_e._segment))) && $t.push(Kt), It && b.push(Kt);
+          function se(Zt, Mt) {
+            for (; Zt && Zt !== Mt; ) {
+              var Xt = Zt._segment, ae = Xt && Xt._path;
+              if (ae) {
+                var $t = Xt.getNext() || ae.getFirstSegment(), ge = $t._intersection;
+                Xt !== gt && (P(Xt) || P($t) || $t && C(Xt) && (C($t) || ge && C(ge._segment))) && Jt.push(Xt), It && b.push(Xt);
               }
-              Xt = Xt._next;
+              Zt = Zt._next;
             }
           }
           if (yt) {
-            for (ae(yt); yt && yt._previous; )
+            for (se(yt); yt && yt._previous; )
               yt = yt._previous;
-            ae(yt, ie);
+            se(yt, ie);
           }
-          return $t;
+          return Jt;
         }
         p.sort(function(gt, It) {
-          var yt = gt._intersection, ie = It._intersection, $t = !!(yt && yt._overlap), ae = !!(ie && ie._overlap), Xt = gt._path, Mt = It._path;
-          return $t ^ ae ? $t ? 1 : -1 : !yt ^ !ie ? yt ? 1 : -1 : Xt !== Mt ? Xt._id - Mt._id : gt._index - It._index;
+          var yt = gt._intersection, ie = It._intersection, Jt = !!(yt && yt._overlap), se = !!(ie && ie._overlap), Zt = gt._path, Mt = It._path;
+          return Jt ^ se ? Jt ? 1 : -1 : !yt ^ !ie ? yt ? 1 : -1 : Zt !== Mt ? Zt._id - Mt._id : gt._index - It._index;
         });
         for (var L = 0, M = p.length; L < M; L++) {
-          var R = p[L], T = C(R), V = null, F = !1, q = !0, U = [], G, Q, tt;
-          if (T && R._path._overlapsOnly) {
-            var it = R._path, ot = R._intersection._segment._path;
-            it.compare(ot) && (it.getArea() && c.push(it.clone(!1)), S(it), S(ot), T = !1);
+          var V = p[L], T = C(V), R = null, F = !1, q = !0, U = [], H, Q, tt;
+          if (T && V._path._overlapsOnly) {
+            var nt = V._path, ot = V._intersection._segment._path;
+            nt.compare(ot) && (nt.getArea() && c.push(nt.clone(!1)), S(nt), S(ot), T = !1);
           }
           for (; T; ) {
-            var X = !V, K = E(R, X), rt = K.shift(), F = !X && (P(R) || P(rt)), ht = !F && rt;
-            if (X && (V = new Et(I.NO_INSERT), G = null), F) {
-              (R.isFirst() || R.isLast()) && (q = R._path._closed), R._visited = !0;
+            var X = !R, K = E(V, X), st = K.shift(), F = !X && (P(V) || P(st)), ht = !F && st;
+            if (X && (R = new Tt(I.NO_INSERT), H = null), F) {
+              (V.isFirst() || V.isLast()) && (q = V._path._closed), V._visited = !0;
               break;
             }
-            if (ht && G && (U.push(G), G = null), G || (ht && K.push(R), G = {
-              start: V._segments.length,
+            if (ht && H && (U.push(H), H = null), H || (ht && K.push(V), H = {
+              start: R._segments.length,
               crossings: K,
               visited: Q = [],
               handleIn: tt
-            }), ht && (R = rt), !C(R)) {
-              V.removeSegments(G.start);
+            }), ht && (V = st), !C(V)) {
+              R.removeSegments(H.start);
               for (var lt = 0, vt = Q.length; lt < vt; lt++)
                 Q[lt]._visited = !1;
               Q.length = 0;
               do
-                R = G && G.crossings.shift(), (!R || !R._path) && (R = null, G = U.pop(), G && (Q = G.visited, tt = G.handleIn));
-              while (G && !C(R));
-              if (!R)
+                V = H && H.crossings.shift(), (!V || !V._path) && (V = null, H = U.pop(), H && (Q = H.visited, tt = H.handleIn));
+              while (H && !C(V));
+              if (!V)
                 break;
             }
-            var J = R.getNext();
-            V.add(new _t(
-              R._point,
+            var J = V.getNext();
+            R.add(new _t(
+              V._point,
               tt,
-              J && R._handleOut
-            )), R._visited = !0, Q.push(R), R = J || R._path.getFirstSegment(), tt = J && J._handleIn;
+              J && V._handleOut
+            )), V._visited = !0, Q.push(V), V = J || V._path.getFirstSegment(), tt = J && J._handleIn;
           }
-          F && (q && (V.getFirstSegment().setHandleIn(tt), V.setClosed(q)), V.getArea() !== 0 && c.push(V));
+          F && (q && (R.getFirstSegment().setHandleIn(tt), R.setClosed(q)), R.getArea() !== 0 && c.push(R));
         }
         return c;
       }
@@ -9126,27 +9126,27 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         },
         resolveCrossings: function() {
           var p = this._children, y = p || [this];
-          function c(G, Q) {
-            var tt = G && G._intersection;
+          function c(H, Q) {
+            var tt = H && H._intersection;
             return tt && tt._overlap && tt._path === Q;
           }
-          var b = !1, C = !1, P = this.getIntersections(null, function(G) {
-            return G.hasOverlap() && (b = !0) || G.isCrossing() && (C = !0);
+          var b = !1, C = !1, P = this.getIntersections(null, function(H) {
+            return H.hasOverlap() && (b = !0) || H.isCrossing() && (C = !0);
           }), S = b && C && [];
           if (P = be.expand(P), b)
-            for (var E = d(P, function(G) {
-              return G.hasOverlap();
+            for (var E = d(P, function(H) {
+              return H.hasOverlap();
             }, S), L = E.length - 1; L >= 0; L--) {
-              var M = E[L], R = M._path, T = M._segment, V = T.getPrevious(), F = T.getNext();
-              c(V, R) && c(F, R) && (T.remove(), V._handleOut._set(0, 0), F._handleIn._set(0, 0), V !== T && !V.getCurve().hasLength() && (F._handleIn.set(V._handleIn), V.remove()));
+              var M = E[L], V = M._path, T = M._segment, R = T.getPrevious(), F = T.getNext();
+              c(R, V) && c(F, V) && (T.remove(), R._handleOut._set(0, 0), F._handleIn._set(0, 0), R !== T && !R.getCurve().hasLength() && (F._handleIn.set(R._handleIn), R.remove()));
             }
-          C && (d(P, b && function(G) {
-            var Q = G.getCurve(), tt = G.getSegment(), it = G._intersection, ot = it._curve, X = it._segment;
+          C && (d(P, b && function(H) {
+            var Q = H.getCurve(), tt = H.getSegment(), nt = H._intersection, ot = nt._curve, X = nt._segment;
             if (Q && ot && Q._path && ot._path)
               return !0;
             tt && (tt._intersection = null), X && (X._intersection = null);
-          }, S), S && v(S), y = k(O.each(y, function(G) {
-            O.push(this, G._segments);
+          }, S), S && v(S), y = k(O.each(y, function(H) {
+            O.push(this, H._segments);
           }, [])));
           var q = y.length, U;
           return q > 1 && p ? (y !== p && this.setChildren(y), U = this) : q === 1 && !p && (y[0] !== this && this.setSegments(y[0].removeSegments()), U = this), U || (U = new we(I.NO_INSERT), U.addChildren(y), U = U.reduce(), U.copyAttributes(this), this.replaceWith(U)), U;
@@ -9159,19 +9159,19 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               return !!(p ? b : b & 1);
             },
             y
-          )) : y !== W && this.setClockwise(y), this;
+          )) : y !== G && this.setClockwise(y), this;
         },
         getInteriorPoint: function() {
           var p = this.getBounds(), y = p.getCenter(!0);
           if (!this.contains(y)) {
             for (var c = this.getCurves(), b = y.y, C = [], P = [], S = 0, E = c.length; S < E; S++) {
-              var L = c[S].getValues(), M = L[1], R = L[3], T = L[5], V = L[7];
-              if (b >= t(M, R, T, V) && b <= e(M, R, T, V))
-                for (var F = nt.getMonoCurves(L), q = 0, U = F.length; q < U; q++) {
-                  var G = F[q], Q = G[1], tt = G[7];
+              var L = c[S].getValues(), M = L[1], V = L[3], T = L[5], R = L[7];
+              if (b >= t(M, V, T, R) && b <= e(M, V, T, R))
+                for (var F = rt.getMonoCurves(L), q = 0, U = F.length; q < U; q++) {
+                  var H = F[q], Q = H[1], tt = H[7];
                   if (Q !== tt && (b >= Q && b <= tt || b >= tt && b <= Q)) {
-                    var it = b === Q ? G[0] : b === tt ? G[6] : nt.solveCubic(G, 1, b, P, 0, 1) === 1 ? nt.getPoint(G, P[0]).x : (G[0] + G[6]) / 2;
-                    C.push(it);
+                    var nt = b === Q ? H[0] : b === tt ? H[6] : rt.solveCubic(H, 1, b, P, 0, 1) === 1 ? rt.getPoint(H, P[0]).x : (H[0] + H[6]) / 2;
+                    C.push(nt);
                   }
                 }
             }
@@ -9189,12 +9189,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         initialize: function(t, e, i, r, s) {
           var a = [], h = [], o = 0, l = 1 / (i || 32), f = t._segments, _ = f[0], v;
           function g(k, p) {
-            var y = nt.getValues(k, p, s);
+            var y = rt.getValues(k, p, s);
             a.push(y), d(y, k._index, 0, 1);
           }
           function d(k, p, y, c) {
-            if (c - y > l && !(r && nt.isStraight(k)) && !nt.isFlatEnough(k, e || 0.25)) {
-              var b = nt.subdivide(k, 0.5), C = (y + c) / 2;
+            if (c - y > l && !(r && rt.isStraight(k)) && !rt.isFlatEnough(k, e || 0.25)) {
+              var b = rt.subdivide(k, 0.5), C = (y + c) / 2;
               d(b[0], p, y, C), d(b[1], p, C, c);
             } else {
               var P = k[6] - k[0], S = k[7] - k[1], E = Math.sqrt(P * P + S * S);
@@ -9231,7 +9231,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         },
         drawPart: function(t, e, i) {
           for (var r = this._get(e), s = this._get(i), a = r.index, h = s.index; a <= h; a++) {
-            var o = nt.getPart(
+            var o = rt.getPart(
               this.curves[a],
               a === r.index ? r.time : 0,
               a === s.index ? s.time : 1
@@ -9241,11 +9241,11 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
       },
       O.each(
-        nt._evaluateMethods,
+        rt._evaluateMethods,
         function(t) {
           this[t + "At"] = function(e) {
             var i = this._get(e);
-            return nt[t](this.curves[i.index], i.time);
+            return rt[t](this.curves[i.index], i.time);
           };
         },
         {}
@@ -9305,22 +9305,22 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
         var E = _[0][0] * _[1][1] - _[1][0] * _[0][1], L, M;
         if (h(E) > a) {
-          var R = _[0][0] * v[1] - _[1][0] * v[0], T = v[0] * _[1][1] - v[1] * _[0][1];
-          L = T / E, M = R / E;
+          var V = _[0][0] * v[1] - _[1][0] * v[0], T = v[0] * _[1][1] - v[1] * _[0][1];
+          L = T / E, M = V / E;
         } else {
-          var V = _[0][0] + _[0][1], F = _[1][0] + _[1][1];
-          L = M = h(V) > a ? v[0] / V : h(F) > a ? v[1] / F : 0;
+          var R = _[0][0] + _[0][1], F = _[1][0] + _[1][1];
+          L = M = h(R) > a ? v[0] / R : h(F) > a ? v[1] / F : 0;
         }
-        var q = f.getDistance(l), U = a * q, G, Q;
+        var q = f.getDistance(l), U = a * q, H, Q;
         if (L < U || M < U)
           L = M = q / 3;
         else {
           var tt = f.subtract(l);
-          G = r.normalize(L), Q = s.normalize(M), G.dot(tt) - Q.dot(tt) > q * q && (L = M = q / 3, G = Q = null);
+          H = r.normalize(L), Q = s.normalize(M), H.dot(tt) - Q.dot(tt) > q * q && (L = M = q / 3, H = Q = null);
         }
         return [
           l,
-          l.add(G || r.normalize(L)),
+          l.add(H || r.normalize(L)),
           f.add(Q || s.normalize(M)),
           f
         ];
@@ -9339,7 +9339,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         for (var a = 0; a <= 1; a++)
           s[a] = r[a + 1].subtract(r[a]).multiply(2);
         var h = this.evaluate(3, t, i), o = this.evaluate(2, r, i), l = this.evaluate(1, s, i), f = h.subtract(e), _ = o.dot(o) + f.dot(l);
-        return pt.isMachineZero(_) ? i : i - f.dot(o) / _;
+        return ct.isMachineZero(_) ? i : i - f.dot(o) / _;
       },
       evaluate: function(t, e, i) {
         for (var r = e.slice(), s = 1; s <= t; s++)
@@ -9374,7 +9374,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       _boundsOptions: { stroke: !1, handle: !1 },
       initialize: function(e) {
         this._content = "", this._lines = [];
-        var i = e && O.isPlainObject(e) && e.x === W && e.y === W;
+        var i = e && O.isPlainObject(e) && e.x === G && e.y === G;
         this._initialize(i && e, !i && z.read(arguments));
       },
       _equals: function(t) {
@@ -9396,14 +9396,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       setCharacterStyle: "#setStyle",
       getParagraphStyle: "#getStyle",
       setParagraphStyle: "#setStyle"
-    }), Je = Fe.extend({
+    }), Qe = Fe.extend({
       _class: "PointText",
       initialize: function() {
         Fe.apply(this, arguments);
       },
       getPoint: function() {
         var t = this._matrix.getTranslation();
-        return new Dt(t.x, t.y, this, "setPoint");
+        return new Ft(t.x, t.y, this, "setPoint");
       },
       setPoint: function() {
         var t = z.read(arguments);
@@ -9432,7 +9432,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         );
         return t ? t._transformBounds(f, f) : f;
       }
-    }), Jt = O.extend(
+    }), Qt = O.extend(
       new function() {
         var t = {
           gray: ["gray"],
@@ -9477,8 +9477,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           } else {
             var y = i[o];
             if (!y)
-              if (ut) {
-                r || (r = Ft.getContext(1, 1), r.globalCompositeOperation = "copy"), r.fillStyle = "rgba(0,0,0,0)", r.fillStyle = o, r.fillRect(0, 0, 1, 1);
+              if (et) {
+                r || (r = Dt.getContext(1, 1), r.globalCompositeOperation = "copy"), r.fillStyle = "rgba(0,0,0,0)", r.fillStyle = o, r.fillRect(0, 0, 1, 1);
                 var c = r.getImageData(0, 0, 1, 1).data;
                 y = i[o] = [
                   c[0] / 255,
@@ -9549,7 +9549,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           e[l] = [], O.each(o, function(f, _) {
             var v = O.capitalize(f), g = /^(hue|saturation)$/.test(f), d = e[l][_] = l === "gradient" ? f === "gradient" ? function(w) {
               var m = this._components[0];
-              return w = $e.read(
+              return w = Je.read(
                 Array.isArray(w) ? w : arguments,
                 0,
                 { readNull: !0 }
@@ -9590,7 +9590,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                       var C = d[c];
                       C && (d[c] = C.clone());
                     }
-                } else if (l.constructor === $e)
+                } else if (l.constructor === Je)
                   g = "gradient", m = f;
                 else {
                   g = "hue" in l ? "lightness" in l ? "hsl" : "hsb" : "gradient" in l || "stops" in l || "radial" in l ? "gradient" : "gray" in l ? "gray" : "rgb";
@@ -9640,7 +9640,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             );
           },
           convert: function(o) {
-            return new Jt(o, this._convert(o), this._alpha);
+            return new Qt(o, this._convert(o), this._alpha);
           },
           getType: function() {
             return this._type;
@@ -9662,11 +9662,11 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             return this._alpha != null;
           },
           equals: function(o) {
-            var l = O.isPlainValue(o, !0) ? Jt.read(arguments) : o;
+            var l = O.isPlainValue(o, !0) ? Qt.read(arguments) : o;
             return l === this || l && this._class === l._class && this._type === l._type && this.getAlpha() === l.getAlpha() && O.equals(this._components, l._components) || !1;
           },
           toString: function() {
-            for (var o = this._properties, l = [], f = this._type === "gradient", _ = Tt.instance, v = 0, g = o.length; v < g; v++) {
+            for (var o = this._properties, l = [], f = this._type === "gradient", _ = Et.instance, v = 0, g = o.length; v < g; v++) {
               var d = this._components[v];
               d != null && l.push(o[v] + ": " + (f ? d : _.number(d)));
             }
@@ -9733,7 +9733,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             _types: t,
             random: function() {
               var o = Math.random;
-              return new Jt(o(), o(), o());
+              return new Qt(o(), o(), o());
             },
             _setOwner: function(o, l, f) {
               return o && (o._owner && l && o._owner !== l && (o = o.clone()), !o._owner ^ !l && (o._owner = l || null, o._setter = f || null)), o;
@@ -9758,10 +9758,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         };
         return O.each(t, function(e, i) {
           this[i] = function(r) {
-            r = Jt.read(arguments);
+            r = Qt.read(arguments);
             for (var s = this._type, a = this._components, h = r._convert(s), o = 0, l = a.length; o < l; o++)
               h[o] = e(a[o], h[o]);
-            return new Jt(
+            return new Qt(
               s,
               h,
               this._alpha != null ? e(this._alpha, r.getAlpha()) : null
@@ -9769,10 +9769,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           };
         }, {});
       }()
-    ), $e = O.extend({
+    ), Je = O.extend({
       _class: "Gradient",
       initialize: function(e, i) {
-        this._id = Nt.get(), e && O.isPlainObject(e) && (this.set(e), e = i = null), this._stops == null && this.setStops(e || ["white", "black"]), this._radial == null && this.setRadial(typeof i == "string" && i === "radial" || i || !1);
+        this._id = Vt.get(), e && O.isPlainObject(e) && (this.set(e), e = i = null), this._stops == null && this.setStops(e || ["white", "black"]), this._radial == null && this.setRadial(typeof i == "string" && i === "radial" || i || !1);
       },
       _serialize: function(t, e) {
         return e.add(this, function() {
@@ -9793,12 +9793,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       },
       _removeOwner: function(t) {
         var e = this._owners ? this._owners.indexOf(t) : -1;
-        e != -1 && (this._owners.splice(e, 1), this._owners.length || (this._owners = W));
+        e != -1 && (this._owners.splice(e, 1), this._owners.length || (this._owners = G));
       },
       clone: function() {
         for (var t = [], e = 0, i = this._stops.length; e < i; e++)
           t[e] = this._stops[e].clone();
-        return new $e(t, this._radial);
+        return new Je(t, this._radial);
       },
       getStops: function() {
         return this._stops;
@@ -9811,8 +9811,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var e = this._stops;
         if (e)
           for (var i = 0, r = e.length; i < r; i++)
-            e[i]._owner = W;
-        e = this._stops = hi.readList(t, 0, { clone: !0 });
+            e[i]._owner = G;
+        e = this._stops = oi.readList(t, 0, { clone: !0 });
         for (var i = 0, r = e.length; i < r; i++)
           e[i]._owner = this;
         this._changed();
@@ -9837,14 +9837,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
         return !1;
       }
-    }), hi = O.extend({
+    }), oi = O.extend({
       _class: "GradientStop",
       initialize: function(e, i) {
         var r = e, s = i;
-        typeof e == "object" && i === W && (Array.isArray(e) && typeof e[0] != "number" ? (r = e[0], s = e[1]) : ("color" in e || "offset" in e || "rampPoint" in e) && (r = e.color, s = e.offset || e.rampPoint || 0)), this.setColor(r), this.setOffset(s);
+        typeof e == "object" && i === G && (Array.isArray(e) && typeof e[0] != "number" ? (r = e[0], s = e[1]) : ("color" in e || "offset" in e || "rampPoint" in e) && (r = e.color, s = e.offset || e.rampPoint || 0)), this.setColor(r), this.setOffset(s);
       },
       clone: function() {
-        return new hi(this._color.clone(), this._offset);
+        return new oi(this._color.clone(), this._offset);
       },
       _serialize: function(t, e) {
         var i = this._color, r = this._offset;
@@ -9870,8 +9870,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return this._color;
       },
       setColor: function() {
-        Jt._setOwner(this._color, null), this._color = Jt._setOwner(
-          Jt.read(arguments, 0),
+        Qt._setOwner(this._color, null), this._color = Qt._setOwner(
+          Qt.read(arguments, 0),
           this,
           "setColor"
         ), this._changed();
@@ -9902,7 +9902,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         leading: null,
         justification: "left"
       }), i = O.set({}, e, {
-        fillColor: new Jt()
+        fillColor: new Qt()
       }), r = {
         strokeWidth: 193,
         strokeCap: 193,
@@ -9921,7 +9921,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         _class: "Style",
         beans: !0,
         initialize: function(o, l, f) {
-          this._values = {}, this._owner = l, this._project = l && l._project || f || dt.project, this._defaults = !l || l instanceof Rt ? e : l instanceof Fe ? i : t, o && this.set(o);
+          this._values = {}, this._owner = l, this._project = l && l._project || f || dt.project, this._defaults = !l || l instanceof zt ? e : l instanceof Fe ? i : t, o && this.set(o);
         }
       };
       return O.each(e, function(h, o) {
@@ -9933,7 +9933,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               k[y]._style[g](w);
           if ((o === "selectedColor" || !p) && o in this._defaults) {
             var b = this._values[o];
-            b !== w && (l && (b && (Jt._setOwner(b, null), b._canvasStyle = null), w && w.constructor === Jt && (w = Jt._setOwner(
+            b !== w && (l && (b && (Qt._setOwner(b, null), b._canvasStyle = null), w && w.constructor === Qt && (w = Qt._setOwner(
               w,
               m,
               p && g
@@ -9947,14 +9947,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               if (!c)
                 y = C;
               else if (!O.equals(y, C))
-                return W;
+                return G;
             }
           else if (o in this._defaults) {
             var y = this._values[o];
-            if (y === W)
+            if (y === G)
               y = this._defaults[o], y && y.clone && (y = y.clone());
             else {
-              var P = l ? Jt : f ? z : null;
+              var P = l ? Qt : f ? z : null;
               P && !(y && y.constructor === P) && (this._values[o] = y = P.read(
                 [y],
                 0,
@@ -9962,7 +9962,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               ));
             }
           }
-          return y && l && (y = Jt._setOwner(y, m, p && g)), y;
+          return y && l && (y = Qt._setOwner(y, m, p && g)), y;
         }, s[d] = function(w) {
           return this._style[d](w);
         }, s[g] = function(w) {
@@ -9993,7 +9993,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             var f = a[l], _ = h[l];
             if (!(s && l in h) && !O.equals(
               f,
-              _ === W ? o[l] : _
+              _ === G ? o[l] : _
             ))
               return !1;
           }
@@ -10030,7 +10030,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var e = t.base.call(this), i = this.getFontSize();
         return /pt|em|%|px/.test(i) && (i = this.getView().getPixelSize(i)), e != null ? e : i * 1.2;
       }
-    }), zt = new function() {
+    }), qt = new function() {
       function t(e, i, r, s) {
         for (var a = ["", "webkit", "moz", "Moz", "ms", "o"], h = i[0].toUpperCase() + i.substring(1), o = 0; o < 6; o++) {
           var l = a[o], f = l ? l + h : i;
@@ -10072,21 +10072,21 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           );
         },
         getOffset: function(e, i) {
-          return zt.getBounds(e, i).getPoint();
+          return qt.getBounds(e, i).getPoint();
         },
         getSize: function(e) {
-          return zt.getBounds(e, !0).getSize();
+          return qt.getBounds(e, !0).getSize();
         },
         isInvisible: function(e) {
-          return zt.getSize(e).equals(new at(0, 0));
+          return qt.getSize(e).equals(new ut(0, 0));
         },
         isInView: function(e) {
-          return !zt.isInvisible(e) && zt.getViewportBounds(e).intersects(
-            zt.getBounds(e, !0)
+          return !qt.isInvisible(e) && qt.getViewportBounds(e).intersects(
+            qt.getBounds(e, !0)
           );
         },
         isInserted: function(e) {
-          return et.body.contains(e);
+          return it.body.contains(e);
         },
         getPrefixed: function(e, i) {
           return e && t(e, i);
@@ -10099,12 +10099,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             t(e, i, !0, r);
         }
       };
-    }(), Zt = {
+    }(), jt = {
       add: function(t, e) {
         if (t)
           for (var i in e)
             for (var r = e[i], s = i.split(/[\s,]+/g), a = 0, h = s.length; a < h; a++) {
-              var o = s[a], l = t === et && (o === "touchstart" || o === "touchmove") ? { passive: !1 } : !1;
+              var o = s[a], l = t === it && (o === "touchstart" || o === "touchmove") ? { passive: !1 } : !1;
               t.addEventListener(o, r, l);
             }
       },
@@ -10117,8 +10117,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       getPoint: function(t) {
         var e = t.targetTouches ? t.targetTouches.length ? t.targetTouches[0] : t.changedTouches[0] : t;
         return new z(
-          e.pageX || e.clientX + et.documentElement.scrollLeft,
-          e.pageY || e.clientY + et.documentElement.scrollTop
+          e.pageX || e.clientX + it.documentElement.scrollLeft,
+          e.pageY || e.clientY + it.documentElement.scrollTop
         );
       },
       getTarget: function(t) {
@@ -10128,13 +10128,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return t.relatedTarget || t.toElement;
       },
       getOffset: function(t, e) {
-        return Zt.getPoint(t).subtract(zt.getOffset(
-          e || Zt.getTarget(t)
+        return jt.getPoint(t).subtract(qt.getOffset(
+          e || jt.getTarget(t)
         ));
       }
     };
-    Zt.requestAnimationFrame = new function() {
-      var t = zt.getPrefixed(ut, "requestAnimationFrame"), e = !1, i = [], r;
+    jt.requestAnimationFrame = new function() {
+      var t = qt.getPrefixed(et, "requestAnimationFrame"), e = !1, i = [], r;
       function s() {
         var a = i;
         i = [];
@@ -10146,8 +10146,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         i.push(a), t ? e || (t(s), e = !0) : r || (r = setInterval(s, 1e3 / 60));
       };
     }();
-    var Ut = O.extend(
-      Qt,
+    var Wt = O.extend(
+      Yt,
       {
         _class: "View",
         initialize: function t(e, i) {
@@ -10155,42 +10155,42 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             return i[v] || parseInt(i.getAttribute(v), 10);
           }
           function s() {
-            var v = zt.getSize(i);
-            return v.isNaN() || v.isZero() ? new at(r("width"), r("height")) : v;
+            var v = qt.getSize(i);
+            return v.isNaN() || v.isZero() ? new ut(r("width"), r("height")) : v;
           }
           var a;
-          if (ut && i) {
-            this._id = i.getAttribute("id"), this._id == null && i.setAttribute("id", this._id = "paper-view-" + t._id++), Zt.add(i, this._viewEvents);
+          if (et && i) {
+            this._id = i.getAttribute("id"), this._id == null && i.setAttribute("id", this._id = "paper-view-" + t._id++), jt.add(i, this._viewEvents);
             var h = "none";
-            if (zt.setPrefixed(i.style, {
+            if (qt.setPrefixed(i.style, {
               userDrag: h,
               userSelect: h,
               touchCallout: h,
               contentZooming: h,
               tapHighlightColor: "rgba(0,0,0,0)"
-            }), Gt.hasAttribute(i, "resize")) {
+            }), Nt.hasAttribute(i, "resize")) {
               var o = this;
-              Zt.add(ut, this._windowEvents = {
+              jt.add(et, this._windowEvents = {
                 resize: function() {
                   o.setViewSize(s());
                 }
               });
             }
-            if (a = s(), Gt.hasAttribute(i, "stats") && typeof Stats < "u") {
+            if (a = s(), Nt.hasAttribute(i, "stats") && typeof Stats < "u") {
               this._stats = new Stats();
-              var l = this._stats.domElement, f = l.style, _ = zt.getOffset(i);
-              f.position = "absolute", f.left = _.x + "px", f.top = _.y + "px", et.body.appendChild(l);
+              var l = this._stats.domElement, f = l.style, _ = qt.getOffset(i);
+              f.position = "absolute", f.left = _.x + "px", f.top = _.y + "px", it.body.appendChild(l);
             }
           } else
-            a = new at(i), i = null;
-          this._project = e, this._scope = e._scope, this._element = i, this._pixelRatio || (this._pixelRatio = ut && ut.devicePixelRatio || 1), this._setElementSize(a.width, a.height), this._viewSize = a, t._views.push(this), t._viewsById[this._id] = this, (this._matrix = new At())._owner = this, t._focused || (t._focused = this), this._frameItems = {}, this._frameItemCount = 0, this._itemEvents = { native: {}, virtual: {} }, this._autoUpdate = !dt.agent.node, this._needsUpdate = !1;
+            a = new ut(i), i = null;
+          this._project = e, this._scope = e._scope, this._element = i, this._pixelRatio || (this._pixelRatio = et && et.devicePixelRatio || 1), this._setElementSize(a.width, a.height), this._viewSize = a, t._views.push(this), t._viewsById[this._id] = this, (this._matrix = new At())._owner = this, t._focused || (t._focused = this), this._frameItems = {}, this._frameItemCount = 0, this._itemEvents = { native: {}, virtual: {} }, this._autoUpdate = !dt.agent.node, this._needsUpdate = !1;
         },
         remove: function() {
           if (!this._project)
             return !1;
-          Ut._focused === this && (Ut._focused = null), Ut._views.splice(Ut._views.indexOf(this), 1), delete Ut._viewsById[this._id];
+          Wt._focused === this && (Wt._focused = null), Wt._views.splice(Wt._views.indexOf(this), 1), delete Wt._viewsById[this._id];
           var t = this._project;
-          return t._view === this && (t._view = null), Zt.remove(this._element, this._viewEvents), Zt.remove(ut, this._windowEvents), this._element = this._project = null, this.off("frame"), this._animate = !1, this._frameItems = {}, !0;
+          return t._view === this && (t._view = null), jt.remove(this._element, this._viewEvents), jt.remove(et, this._windowEvents), this._element = this._project = null, this.off("frame"), this._animate = !1, this._frameItems = {}, !0;
         },
         _events: O.each(
           I._itemHandlers.concat(["onResize", "onKeyDown", "onKeyUp"]),
@@ -10225,11 +10225,11 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         requestUpdate: function() {
           if (!this._requested) {
             var t = this;
-            Zt.requestAnimationFrame(function() {
+            jt.requestAnimationFrame(function() {
               if (t._requested = !1, t._animate) {
                 t.requestUpdate();
                 var e = t._element;
-                (!zt.getPrefixed(et, "hidden") || Gt.getAttribute(e, "keepalive") === "true") && zt.isInView(e) && t._handleFrame();
+                (!qt.getPrefixed(it, "hidden") || Nt.getAttribute(e, "keepalive") === "true") && qt.isInView(e) && t._handleFrame();
               }
               t._autoUpdate && t.update();
             }), this._requested = !0;
@@ -10268,7 +10268,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }
         },
         _changed: function() {
-          this._project._changed(4097), this._bounds = this._decomposed = W;
+          this._project._changed(4097), this._bounds = this._decomposed = G;
         },
         getElement: function() {
           return this._element;
@@ -10284,7 +10284,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return new xt(t.width, t.height, this, "setViewSize");
         },
         setViewSize: function() {
-          var t = at.read(arguments), e = t.subtract(this._viewSize);
+          var t = ut.read(arguments), e = t.subtract(this._viewSize);
           e.isZero() || (this._setElementSize(t.width, t.height), this._viewSize.set(t), this._changed(), this.emit("resize", { size: t, delta: e }), this._autoUpdate && this.update());
         },
         _setElementSize: function(t, e) {
@@ -10300,16 +10300,16 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return this.getBounds().getSize();
         },
         isVisible: function() {
-          return zt.isInView(this._element);
+          return qt.isInView(this._element);
         },
         isInserted: function() {
-          return zt.isInserted(this._element);
+          return qt.isInserted(this._element);
         },
         getPixelSize: function(t) {
           var e = this._element, i;
           if (e) {
-            var r = e.parentNode, s = et.createElement("div");
-            s.style.fontSize = t, r.appendChild(s), i = parseFloat(zt.getStyles(s).fontSize), r.removeChild(s);
+            var r = e.parentNode, s = it.createElement("div");
+            s.style.fontSize = t, r.appendChild(s), i = parseFloat(qt.getStyles(s).fontSize), r.removeChild(s);
           } else
             i = parseFloat(i);
           return i;
@@ -10361,7 +10361,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         },
         getScaling: function() {
           var t = this._decompose().scaling;
-          return new Dt(t.x, t.y, this, "setScaling");
+          return new Ft(t.x, t.y, this, "setScaling");
         },
         setScaling: function() {
           var t = this.getScaling(), e = z.read(arguments, 0, { clone: !0, readNull: !0 });
@@ -10389,7 +10389,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return this._matrix._inverseTransform(z.read(arguments));
         },
         getEventPoint: function(t) {
-          return this.viewToProject(Zt.getOffset(t, this._element));
+          return this.viewToProject(jt.getOffset(t, this._element));
         }
       },
       {
@@ -10398,109 +10398,109 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           _viewsById: {},
           _id: 0,
           create: function(t, e) {
-            et && typeof e == "string" && (e = et.getElementById(e));
-            var i = ut ? bi : Ut;
+            it && typeof e == "string" && (e = it.getElementById(e));
+            var i = et ? xi : Wt;
             return new i(t, e);
           }
         }
       },
       new function() {
-        if (!ut)
+        if (!et)
           return;
         var t, e, i = !1, r = !1;
         function s(T) {
-          var V = Zt.getTarget(T);
-          return V.getAttribute && Ut._viewsById[V.getAttribute("id")];
+          var R = jt.getTarget(T);
+          return R.getAttribute && Wt._viewsById[R.getAttribute("id")];
         }
         function a() {
-          var T = Ut._focused;
+          var T = Wt._focused;
           if (!T || !T.isVisible()) {
-            for (var V = 0, F = Ut._views.length; V < F; V++)
-              if ((T = Ut._views[V]).isVisible()) {
-                Ut._focused = e = T;
+            for (var R = 0, F = Wt._views.length; R < F; R++)
+              if ((T = Wt._views[R]).isVisible()) {
+                Wt._focused = e = T;
                 break;
               }
           }
         }
-        function h(T, V, F) {
-          T._handleMouseEvent("mousemove", V, F);
+        function h(T, R, F) {
+          T._handleMouseEvent("mousemove", R, F);
         }
-        var o = ut.navigator, l, f, _;
-        o.pointerEnabled || o.msPointerEnabled ? (l = "pointerdown MSPointerDown", f = "pointermove MSPointerMove", _ = "pointerup pointercancel MSPointerUp MSPointerCancel") : (l = "touchstart", f = "touchmove", _ = "touchend touchcancel", "ontouchstart" in ut && o.userAgent.match(
+        var o = et.navigator, l, f, _;
+        o.pointerEnabled || o.msPointerEnabled ? (l = "pointerdown MSPointerDown", f = "pointermove MSPointerMove", _ = "pointerup pointercancel MSPointerUp MSPointerCancel") : (l = "touchstart", f = "touchmove", _ = "touchend touchcancel", "ontouchstart" in et && o.userAgent.match(
           /mobile|tablet|ip(ad|hone|od)|android|silk/i
         ) || (l += " mousedown", f += " mousemove", _ += " mouseup"));
         var v = {}, g = {
           mouseout: function(T) {
-            var V = Ut._focused, F = Zt.getRelatedTarget(T);
-            if (V && (!F || F.nodeName === "HTML")) {
-              var q = Zt.getOffset(T, V._element), U = q.x, G = Math.abs, Q = G(U), tt = 1 << 25, it = Q - tt;
-              q.x = G(it) < Q ? it * (U < 0 ? -1 : 1) : U, h(V, T, V.viewToProject(q));
+            var R = Wt._focused, F = jt.getRelatedTarget(T);
+            if (R && (!F || F.nodeName === "HTML")) {
+              var q = jt.getOffset(T, R._element), U = q.x, H = Math.abs, Q = H(U), tt = 1 << 25, nt = Q - tt;
+              q.x = H(nt) < Q ? nt * (U < 0 ? -1 : 1) : U, h(R, T, R.viewToProject(q));
             }
           },
           scroll: a
         };
         v[l] = function(T) {
-          var V = Ut._focused = s(T);
-          i || (i = !0, V._handleMouseEvent("mousedown", T));
+          var R = Wt._focused = s(T);
+          i || (i = !0, R._handleMouseEvent("mousedown", T));
         }, g[f] = function(T) {
-          var V = Ut._focused;
+          var R = Wt._focused;
           if (!r) {
             var F = s(T);
-            F ? V !== F && (V && h(V, T), t || (t = V), V = Ut._focused = e = F) : e && e === V && (t && !t.isInserted() && (t = null), V = Ut._focused = t, t = null, a());
+            F ? R !== F && (R && h(R, T), t || (t = R), R = Wt._focused = e = F) : e && e === R && (t && !t.isInserted() && (t = null), R = Wt._focused = t, t = null, a());
           }
-          V && h(V, T);
+          R && h(R, T);
         }, g[l] = function() {
           r = !0;
         }, g[_] = function(T) {
-          var V = Ut._focused;
-          V && i && V._handleMouseEvent("mouseup", T), r = i = !1;
-        }, Zt.add(et, g), Zt.add(ut, {
+          var R = Wt._focused;
+          R && i && R._handleMouseEvent("mouseup", T), r = i = !1;
+        }, jt.add(it, g), jt.add(et, {
           load: a
         });
         var d = !1, w = !1, m = {
           doubleclick: "click",
           mousedrag: "mousemove"
         }, k = !1, p, y, c, b, C, P, S, E;
-        function L(T, V, F, q, U, G, Q) {
-          var tt = !1, it;
+        function L(T, R, F, q, U, H, Q) {
+          var tt = !1, nt;
           function ot(X, K) {
             if (X.responds(K)) {
-              if (it || (it = new Ge(
+              if (nt || (nt = new Ge(
                 K,
                 q,
                 U,
-                V || X,
-                G ? U.subtract(G) : null
-              )), X.emit(K, it) && (d = !0, it.prevented && (w = !0), it.stopped))
+                R || X,
+                H ? U.subtract(H) : null
+              )), X.emit(K, nt) && (d = !0, nt.prevented && (w = !0), nt.stopped))
                 return tt = !0;
             } else {
-              var rt = m[K];
-              if (rt)
-                return ot(X, rt);
+              var st = m[K];
+              if (st)
+                return ot(X, st);
             }
           }
           for (; T && T !== Q && !ot(T, F); )
             T = T._parent;
           return tt;
         }
-        function M(T, V, F, q, U, G) {
+        function M(T, R, F, q, U, H) {
           return T._project.removeOn(F), w = d = !1, C && L(
             C,
             null,
             F,
             q,
             U,
-            G
-          ) || V && V !== C && !V.isDescendant(C) && L(V, null, F === "mousedrag" ? "mousemove" : F, q, U, G, C) || L(
+            H
+          ) || R && R !== C && !R.isDescendant(C) && L(R, null, F === "mousedrag" ? "mousemove" : F, q, U, H, C) || L(
             T,
-            C || V || T,
+            C || R || T,
             F,
             q,
             U,
-            G
+            H
           );
         }
-        var R = {
+        var V = {
           mousedown: {
             mousedown: 1,
             mousedrag: 1,
@@ -10522,32 +10522,32 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         };
         return {
           _viewEvents: v,
-          _handleMouseEvent: function(T, V, F) {
-            var q = this._itemEvents, U = q.native[T], G = T === "mousemove", Q = this._scope.tool, tt = this;
-            function it(vt) {
+          _handleMouseEvent: function(T, R, F) {
+            var q = this._itemEvents, U = q.native[T], H = T === "mousemove", Q = this._scope.tool, tt = this;
+            function nt(vt) {
               return q.virtual[vt] || tt.responds(vt) || Q && Q.responds(vt);
             }
-            G && i && it("mousedrag") && (T = "mousedrag"), F || (F = this.getEventPoint(V));
+            H && i && nt("mousedrag") && (T = "mousedrag"), F || (F = this.getEventPoint(R));
             var ot = this.getBounds().contains(F), X = U && ot && tt._project.hitTest(F, {
               tolerance: 0,
               fill: !0,
               stroke: !0
-            }), K = X && X.item || null, rt = !1, ht = {};
-            if (ht[T.substr(5)] = !0, U && K !== b && (b && L(b, null, "mouseleave", V, F), K && L(K, null, "mouseenter", V, F), b = K), k ^ ot && (L(
+            }), K = X && X.item || null, st = !1, ht = {};
+            if (ht[T.substr(5)] = !0, U && K !== b && (b && L(b, null, "mouseleave", R, F), K && L(K, null, "mouseenter", R, F), b = K), k ^ ot && (L(
               this,
               null,
               ot ? "mouseenter" : "mouseleave",
-              V,
+              R,
               F
-            ), rt = !0), (ot || ht.drag) && !F.equals(y) && (M(
+            ), st = !0), (ot || ht.drag) && !F.equals(y) && (M(
               this,
               K,
-              G ? T : "mousemove",
-              V,
+              H ? T : "mousemove",
+              R,
               F,
               y
-            ), rt = !0), k = ot, ht.down && ot || ht.up && p) {
-              if (M(this, K, T, V, F, p), ht.down) {
+            ), st = !0), k = ot, ht.down && ot || ht.up && p) {
+              if (M(this, K, T, R, F, p), ht.down) {
                 if (E = K === P && Date.now() - S < 300, c = P = K, !w && K) {
                   for (var lt = K; lt && !lt.responds("mousedrag"); )
                     lt = lt._parent;
@@ -10555,23 +10555,23 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                 }
                 p = F;
               } else
-                ht.up && (!w && K === c && (S = Date.now(), M(this, K, E ? "doubleclick" : "click", V, F, p), E = !1), c = C = null);
-              k = !1, rt = !0;
+                ht.up && (!w && K === c && (S = Date.now(), M(this, K, E ? "doubleclick" : "click", R, F, p), E = !1), c = C = null);
+              k = !1, st = !0;
             }
-            y = F, rt && Q && (d = Q._handleMouseEvent(T, V, F, ht) || d), V.cancelable !== !1 && (d && !ht.move || ht.down && it("mouseup")) && V.preventDefault();
+            y = F, st && Q && (d = Q._handleMouseEvent(T, R, F, ht) || d), R.cancelable !== !1 && (d && !ht.move || ht.down && nt("mouseup")) && R.preventDefault();
           },
-          _handleKeyEvent: function(T, V, F, q) {
-            var U = this._scope, G = U.tool, Q;
-            function tt(it) {
-              it.responds(T) && (dt = U, it.emit(T, Q = Q || new li(T, V, F, q)));
+          _handleKeyEvent: function(T, R, F, q) {
+            var U = this._scope, H = U.tool, Q;
+            function tt(nt) {
+              nt.responds(T) && (dt = U, nt.emit(T, Q = Q || new hi(T, R, F, q)));
             }
-            this.isVisible() && (tt(this), G && G.responds(T) && tt(G));
+            this.isVisible() && (tt(this), H && H.responds(T) && tt(H));
           },
-          _countItemEvent: function(T, V) {
+          _countItemEvent: function(T, R) {
             var F = this._itemEvents, q = F.native, U = F.virtual;
-            for (var G in R)
-              q[G] = (q[G] || 0) + (R[G][T] || 0) * V;
-            U[T] = (U[T] || 0) + V;
+            for (var H in V)
+              q[H] = (q[H] || 0) + (V[H][T] || 0) * R;
+            U[T] = (U[T] || 0) + R;
           },
           statics: {
             updateFocus: a,
@@ -10581,26 +10581,26 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }
         };
       }()
-    ), bi = Ut.extend({
+    ), xi = Wt.extend({
       _class: "CanvasView",
       initialize: function(e, i) {
-        if (!(i instanceof ut.HTMLCanvasElement)) {
-          var r = at.read(arguments, 1);
+        if (!(i instanceof et.HTMLCanvasElement)) {
+          var r = ut.read(arguments, 1);
           if (r.isZero())
             throw new Error(
               "Cannot create CanvasView with the provided argument: " + O.slice(arguments, 1)
             );
-          i = Ft.getCanvas(r);
+          i = Dt.getCanvas(r);
         }
         var s = this._context = i.getContext("2d");
-        if (s.save(), this._pixelRatio = 1, !/^off|false$/.test(Gt.getAttribute(i, "hidpi"))) {
-          var a = ut.devicePixelRatio || 1, h = zt.getPrefixed(
+        if (s.save(), this._pixelRatio = 1, !/^off|false$/.test(Nt.getAttribute(i, "hidpi"))) {
+          var a = et.devicePixelRatio || 1, h = qt.getPrefixed(
             s,
             "backingStorePixelRatio"
           ) || 1;
           this._pixelRatio = a / h;
         }
-        Ut.call(this, e, i), this._needsUpdate = !0;
+        Wt.call(this, e, i), this._needsUpdate = !0;
       },
       remove: function t() {
         return this._context.restore(), t.base.call(this);
@@ -10609,7 +10609,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var r = this._pixelRatio;
         if (t.base.call(this, e * r, i * r), r !== 1) {
           var s = this._element, a = this._context;
-          if (!Gt.hasAttribute(s, "resize")) {
+          if (!Nt.hasAttribute(s, "resize")) {
             var h = s.style;
             h.width = e + "px", h.height = i + "px";
           }
@@ -10662,9 +10662,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return this.event.timeStamp;
       },
       getModifiers: function() {
-        return fi.modifiers;
+        return li.modifiers;
       }
-    }), li = He.extend({
+    }), hi = He.extend({
       _class: "KeyEvent",
       initialize: function(e, i, r, s) {
         this.type = e, this.event = i, this.key = r, this.character = s;
@@ -10672,7 +10672,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       toString: function() {
         return "{ type: '" + this.type + "', key: '" + this.key + "', character: '" + this.character + "', modifiers: " + this.getModifiers() + " }";
       }
-    }), fi = new function() {
+    }), li = new function() {
       var t = {
         "	": "tab",
         " ": "space",
@@ -10708,10 +10708,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       });
       function o(f) {
         var _ = f.key || f.keyIdentifier;
-        return _ = /^U\+/.test(_) ? String.fromCharCode(parseInt(_.substr(2), 16)) : /^Arrow[A-Z]/.test(_) ? _.substr(5) : _ === "Unidentified" || _ === W ? String.fromCharCode(f.keyCode) : _, t[_] || (_.length > 1 ? O.hyphenate(_) : _.toLowerCase());
+        return _ = /^U\+/.test(_) ? String.fromCharCode(parseInt(_.substr(2), 16)) : /^Arrow[A-Z]/.test(_) ? _.substr(5) : _ === "Unidentified" || _ === G ? String.fromCharCode(f.keyCode) : _, t[_] || (_.length > 1 ? O.hyphenate(_) : _.toLowerCase());
       }
       function l(f, _, v, g) {
-        var d = Ut._focused, w;
+        var d = Wt._focused, w;
         if (i[_] = f, f ? r[_] = v : delete r[_], _.length > 1 && (w = O.camelize(_)) in h) {
           h[w] = f;
           var m = dt && dt.agent;
@@ -10732,7 +10732,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           v
         );
       }
-      return Zt.add(et, {
+      return jt.add(it, {
         keydown: function(f) {
           var _ = o(f), v = dt && dt.agent;
           _.length > 1 || v && v.chrome && (f.altKey || v.mac && f.metaKey || !v.mac && f.ctrlKey) ? l(
@@ -10752,7 +10752,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           var _ = o(f);
           _ in r && l(!1, _, r[_], f);
         }
-      }), Zt.add(ut, {
+      }), jt.add(et, {
         blur: function(f) {
           for (var _ in r)
             l(!1, _, r[_], f);
@@ -10771,7 +10771,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       toString: function() {
         return "{ type: '" + this.type + "', point: " + this.point + ", target: " + this.target + (this.delta ? ", delta: " + this.delta : "") + ", modifiers: " + this.getModifiers() + " }";
       }
-    }), ci = He.extend({
+    }), fi = He.extend({
       _class: "ToolEvent",
       _item: null,
       initialize: function(e, i, r) {
@@ -10833,7 +10833,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       toString: function() {
         return "{ type: " + this.type + ", point: " + this.getPoint() + ", count: " + this.getCount() + ", modifiers: " + this.getModifiers() + " }";
       }
-    }), di = ve.extend({
+    }), ci = _e.extend({
       _class: "Tool",
       _list: "tools",
       _reference: "tool",
@@ -10849,7 +10849,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         "onKeyUp"
       ],
       initialize: function(e) {
-        ve.call(this), this._moveCount = -1, this._downCount = -1, this.set(e);
+        _e.call(this), this._moveCount = -1, this._downCount = -1, this.set(e);
       },
       getMinDistance: function() {
         return this._minDistance;
@@ -10890,7 +10890,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return f._point = w, f._lastPoint = m || w, r.down && (f._moveCount = -1, f._downPoint = w, f._downCount++), !0;
         }
         function v() {
-          a && (l = f.emit(t, new ci(f, t, e)) || l);
+          a && (l = f.emit(t, new fi(f, t, e)) || l);
         }
         if (r.down)
           _(), v();
@@ -10901,7 +10901,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             v();
         return l;
       }
-    }), ti = O.extend(Qt, {
+    }), $e = O.extend(Yt, {
       _class: "Tween",
       statics: {
         easings: new O({
@@ -11034,9 +11034,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var i = this._getProperty(t, 1);
         i && (i[t[t.length - 1]] = e);
       }
-    }), ei = {
+    }), ti = {
       request: function(t) {
-        var e = new ct.XMLHttpRequest();
+        var e = new pt.XMLHttpRequest();
         return e.open(
           (t.method || "get").toUpperCase(),
           t.url,
@@ -11052,13 +11052,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             throw new Error(r);
         }, e.send(null);
       }
-    }, Ft = O.exports.CanvasProvider = {
+    }, Dt = O.exports.CanvasProvider = {
       canvases: [],
       getCanvas: function(t, e) {
-        if (!ut)
+        if (!et)
           return null;
         var i, r = !0;
-        typeof t == "object" && (e = t.height, t = t.width), this.canvases.length ? i = this.canvases.pop() : (i = et.createElement("canvas"), r = !1);
+        typeof t == "object" && (e = t.height, t = t.width), this.canvases.length ? i = this.canvases.pop() : (i = it.createElement("canvas"), r = !1);
         var s = i.getContext("2d");
         if (!s)
           throw new Error("Canvas " + i + " is unable to provide a 2D context.");
@@ -11072,7 +11072,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var e = t && t.canvas ? t.canvas : t;
         e && e.getContext && (e.getContext("2d").restore(), this.canvases.push(e));
       }
-    }, ii = new function() {
+    }, ei = new function() {
       var t = Math.min, e = Math.max, i = Math.abs, r, s, a, h, o, l, f, _, v, g, d;
       function w(C, P, S) {
         return 0.2989 * C + 0.587 * P + 0.114 * S;
@@ -11080,10 +11080,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       function m(C, P, S, M) {
         var L = M - w(C, P, S);
         v = C + L, g = P + L, d = S + L;
-        var M = w(v, g, d), R = t(v, g, d), T = e(v, g, d);
-        if (R < 0) {
-          var V = M - R;
-          v = M + (v - M) * M / V, g = M + (g - M) * M / V, d = M + (d - M) * M / V;
+        var M = w(v, g, d), V = t(v, g, d), T = e(v, g, d);
+        if (V < 0) {
+          var R = M - V;
+          v = M + (v - M) * M / R, g = M + (g - M) * M / R, d = M + (d - M) * M / R;
         }
         if (T > 255) {
           var F = 255 - M, q = T - M;
@@ -11094,8 +11094,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return e(C, P, S) - t(C, P, S);
       }
       function p(C, P, S, E) {
-        var L = [C, P, S], M = e(C, P, S), R = t(C, P, S), T;
-        R = R === C ? 0 : R === P ? 1 : 2, M = M === C ? 0 : M === P ? 1 : 2, T = t(R, M) === 0 ? e(R, M) === 1 ? 2 : 1 : 0, L[M] > L[R] ? (L[T] = (L[T] - L[R]) * E / (L[M] - L[R]), L[M] = E) : L[T] = L[M] = 0, L[R] = 0, v = L[0], g = L[1], d = L[2];
+        var L = [C, P, S], M = e(C, P, S), V = t(C, P, S), T;
+        V = V === C ? 0 : V === P ? 1 : 2, M = M === C ? 0 : M === P ? 1 : 2, T = t(V, M) === 0 ? e(V, M) === 1 ? 2 : 1 : 0, L[M] > L[V] ? (L[T] = (L[T] - L[V]) * E / (L[M] - L[V]), L[M] = E) : L[T] = L[M] = 0, L[V] = 0, v = L[0], g = L[1], d = L[2];
       }
       var y = {
         multiply: function() {
@@ -11171,7 +11171,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         "xor"
       ], function(C) {
         this[C] = !0;
-      }, {}), b = Ft.getContext(1, 1);
+      }, {}), b = Dt.getContext(1, 1);
       b && (O.each(y, function(C, P) {
         var S = P === "darken", E = !1;
         b.save();
@@ -11180,30 +11180,30 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         } catch {
         }
         b.restore(), c[P] = E;
-      }), Ft.release(b)), this.process = function(C, P, S, E, L) {
-        var M = P.canvas, R = C === "normal";
-        if (R || c[C])
-          S.save(), S.setTransform(1, 0, 0, 1, 0, 0), S.globalAlpha = E, R || (S.globalCompositeOperation = C), S.drawImage(M, L.x, L.y), S.restore();
+      }), Dt.release(b)), this.process = function(C, P, S, E, L) {
+        var M = P.canvas, V = C === "normal";
+        if (V || c[C])
+          S.save(), S.setTransform(1, 0, 0, 1, 0, 0), S.globalAlpha = E, V || (S.globalCompositeOperation = C), S.drawImage(M, L.x, L.y), S.restore();
         else {
           var T = y[C];
           if (!T)
             return;
-          for (var V = S.getImageData(
+          for (var R = S.getImageData(
             L.x,
             L.y,
             M.width,
             M.height
-          ), F = V.data, q = P.getImageData(
+          ), F = R.data, q = P.getImageData(
             0,
             0,
             M.width,
             M.height
-          ).data, U = 0, G = F.length; U < G; U += 4) {
+          ).data, U = 0, H = F.length; U < H; U += 4) {
             r = q[U], o = F[U], s = q[U + 1], l = F[U + 1], a = q[U + 2], f = F[U + 2], h = q[U + 3], _ = F[U + 3], T();
             var Q = h * E / 255, tt = 1 - Q;
             F[U] = Q * v + tt * o, F[U + 1] = Q * g + tt * l, F[U + 2] = Q * d + tt * f, F[U + 3] = h * E + tt * _;
           }
-          S.putImageData(V, L.x, L.y);
+          S.putImageData(R, L.x, L.y);
         }
       };
     }(), Ht = new function() {
@@ -11214,7 +11214,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         "xmlns:xlink": e + "/"
       };
       function s(o, l, f) {
-        return h(et.createElementNS(t, o), l, f);
+        return h(it.createElementNS(t, o), l, f);
       }
       function a(o, l) {
         var f = r[l], _ = f ? o.getAttributeNS(f, l) : o.getAttribute(l);
@@ -11235,7 +11235,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         get: a,
         set: h
       };
-    }(), pi = O.each({
+    }(), di = O.each({
       fillColor: ["fill", "color"],
       fillRule: ["fill-rule", "string"],
       strokeColor: ["stroke", "color"],
@@ -11246,7 +11246,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         true: "none",
         false: "non-scaling-stroke"
       }, function(t, e) {
-        return !e && (t instanceof me || t instanceof jt || t instanceof Fe);
+        return !e && (t instanceof ve || t instanceof Gt || t instanceof Fe);
       }],
       miterLimit: ["stroke-miterlimit", "number"],
       dashArray: ["stroke-dasharray", "array"],
@@ -11287,8 +11287,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         if (!y.isIdentity()) {
           var E = y.decompose();
           if (E) {
-            var L = [], M = E.rotation, R = E.scaling, T = E.skewing;
-            P && !P.isZero() && L.push("translate(" + t.point(P) + ")"), M && L.push("rotate(" + t.number(M) + ")"), (!pt.isZero(R.x - 1) || !pt.isZero(R.y - 1)) && L.push("scale(" + t.point(R) + ")"), T.x && L.push("skewX(" + t.number(T.x) + ")"), T.y && L.push("skewY(" + t.number(T.y) + ")"), C.transform = L.join(" ");
+            var L = [], M = E.rotation, V = E.scaling, T = E.skewing;
+            P && !P.isZero() && L.push("translate(" + t.point(P) + ")"), M && L.push("rotate(" + t.number(M) + ")"), (!ct.isZero(V.x - 1) || !ct.isZero(V.y - 1)) && L.push("scale(" + t.point(V) + ")"), T.x && L.push("skewX(" + t.number(T.x) + ")"), T.y && L.push("skewY(" + t.number(T.y) + ")"), C.transform = L.join(" ");
           } else
             C.transform = "matrix(" + y.getValues().join(",") + ")";
         }
@@ -11299,9 +11299,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           var L = C[S], M = k(L, c);
           if (M)
             if (L.isClipMask()) {
-              var R = Ht.create("clipPath");
-              R.appendChild(M), w(L, R, "clip"), Ht.set(P, {
-                "clip-path": "url(#" + R.id + ")"
+              var V = Ht.create("clipPath");
+              V.appendChild(M), w(L, V, "clip"), Ht.set(P, {
+                "clip-path": "url(#" + V.id + ")"
               });
             } else
               P.appendChild(M);
@@ -11323,17 +11323,17 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         if (b && S >= 2 && !y.hasHandles())
           if (S > 2) {
             E = y._closed ? "polygon" : "polyline";
-            for (var M = [], R = 0; R < S; R++)
-              M.push(t.point(P[R]._point));
+            for (var M = [], V = 0; V < S; V++)
+              M.push(t.point(P[V]._point));
             L.points = M.join(" ");
           } else {
             E = "line";
-            var T = P[0]._point, V = P[1]._point;
+            var T = P[0]._point, R = P[1]._point;
             L.set({
               x1: T.x,
               y1: T.y,
-              x2: V.x,
-              y2: V.y
+              x2: R.x,
+              y2: R.y
             });
           }
         else
@@ -11379,10 +11379,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               y2: S.y
             };
           E.gradientUnits = "userSpaceOnUse", c = Ht.create((C ? "radial" : "linear") + "Gradient", E, t);
-          for (var M = b._stops, R = 0, T = M.length; R < T; R++) {
-            var V = M[R], F = V._color, q = F.getAlpha(), U = V._offset;
+          for (var M = b._stops, V = 0, T = M.length; V < T; V++) {
+            var R = M[V], F = R._color, q = F.getAlpha(), U = R._offset;
             E = {
-              offset: U == null ? R / (T - 1) : U
+              offset: U == null ? V / (T - 1) : U
             }, F && (E["stop-color"] = F.toCSS(!0)), q < 1 && (E["stop-opacity"] = q), c.appendChild(
               Ht.create("stop", E, t)
             );
@@ -11411,20 +11411,20 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       };
       function v(y, c, b) {
         var C = {}, P = !b && y.getParent(), S = [];
-        return y._name != null && (C.id = y._name), O.each(pi, function(E) {
-          var L = E.get, M = E.type, R = y[L]();
-          if (E.exportFilter ? E.exportFilter(y, R) : !P || !O.equals(P[L](), R)) {
-            if (M === "color" && R != null) {
-              var T = R.getAlpha();
+        return y._name != null && (C.id = y._name), O.each(di, function(E) {
+          var L = E.get, M = E.type, V = y[L]();
+          if (E.exportFilter ? E.exportFilter(y, V) : !P || !O.equals(P[L](), V)) {
+            if (M === "color" && V != null) {
+              var T = V.getAlpha();
               T < 1 && (C[E.attribute + "-opacity"] = T);
             }
-            M === "style" ? S.push(E.attribute + ": " + R) : C[E.attribute] = R == null ? "none" : M === "color" ? R.gradient ? l(R) : R.toCSS(!0) : M === "array" ? R.join(",") : M === "lookup" ? E.toSVG[R] : R;
+            M === "style" ? S.push(E.attribute + ": " + V) : C[E.attribute] = V == null ? "none" : M === "color" ? V.gradient ? l(V) : V.toCSS(!0) : M === "array" ? V.join(",") : M === "lookup" ? E.toSVG[V] : V;
           }
         }), S.length && (C.style = S.join(";")), C.opacity === 1 && delete C.opacity, y._visible || (C.visibility = "hidden"), Ht.set(c, C, t);
       }
       var g;
       function d(y, c) {
-        return g || (g = { ids: {}, svgs: {} }), y && g.svgs[c + "-" + (y._id || y.__id || (y.__id = Nt.get("svg")))];
+        return g || (g = { ids: {}, svgs: {} }), y && g.svgs[c + "-" + (y._id || y.__id || (y.__id = Vt.get("svg")))];
       }
       function w(y, c, b) {
         g || d();
@@ -11442,7 +11442,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             )), C.appendChild(g.svgs[P]);
           g = null;
         }
-        return c.asString ? new ct.XMLSerializer().serializeToString(b) : b;
+        return c.asString ? new pt.XMLSerializer().serializeToString(b) : b;
       }
       function k(y, c, b) {
         var C = _[y._class], P = C && C(y, c);
@@ -11455,7 +11455,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return P && v(y, P, b);
       }
       function p(y) {
-        return y || (y = {}), t = new Tt(y.precision), y;
+        return y || (y = {}), t = new Et(y.precision), y;
       }
       I.inject({
         exportSVG: function(y) {
@@ -11470,14 +11470,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             "xmlns:xlink": Ht.xlink
           };
           E && (L.width = E.width, L.height = E.height, (E.x || E.x === 0 || E.y || E.y === 0) && (L.viewBox = t.rectangle(E)));
-          var M = Ht.create("svg", L, t), R = M;
-          S && !S.isIdentity() && (R = M.appendChild(Ht.create(
+          var M = Ht.create("svg", L, t), V = M;
+          S && !S.isIdentity() && (V = M.appendChild(Ht.create(
             "g",
             e(S),
             t
           )));
-          for (var T = 0, V = c.length; T < V; T++)
-            R.appendChild(k(c[T], y, !0));
+          for (var T = 0, R = c.length; T < R; T++)
+            V.appendChild(k(c[T], y, !0));
           return m(M, y);
         }
       });
@@ -11491,21 +11491,21 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return b = i(c, b || "x", !1, P, S, E), C = i(c, C || "y", !1, P, S, L), P && (b == null || C == null) ? null : new z(b, C);
       }
       function s(c, b, C, P, S) {
-        return b = i(c, b || "width", !1, P, S), C = i(c, C || "height", !1, P, S), P && (b == null || C == null) ? null : new at(b, C);
+        return b = i(c, b || "width", !1, P, S), C = i(c, C || "height", !1, P, S), P && (b == null || C == null) ? null : new ut(b, C);
       }
       function a(c, b, C) {
         return c === "none" ? null : b === "number" ? parseFloat(c) : b === "array" ? c ? c.split(/[\s,]+/g).map(parseFloat) : [] : b === "color" ? k(c) || c : b === "lookup" ? C[c] : c;
       }
       function h(c, b, C, P) {
-        var S = c.childNodes, E = b === "clippath", L = b === "defs", M = new Rt(), R = M._project, T = R._currentStyle, V = [];
-        if (!E && !L && (M = m(M, c, P), R._currentStyle = M._style.clone()), P)
+        var S = c.childNodes, E = b === "clippath", L = b === "defs", M = new zt(), V = M._project, T = V._currentStyle, R = [];
+        if (!E && !L && (M = m(M, c, P), V._currentStyle = M._style.clone()), P)
           for (var F = c.querySelectorAll("defs"), q = 0, U = F.length; q < U; q++)
             p(F[q], C, !1);
         for (var q = 0, U = S.length; q < U; q++) {
-          var G = S[q], Q;
-          G.nodeType === 1 && !/^defs$/i.test(G.nodeName) && (Q = p(G, C, !1)) && !(Q instanceof ee) && V.push(Q);
+          var H = S[q], Q;
+          H.nodeType === 1 && !/^defs$/i.test(H.nodeName) && (Q = p(H, C, !1)) && !(Q instanceof ee) && R.push(Q);
         }
-        return M.addChildren(V), E && (M = m(M.reduce(), c, P)), R._currentStyle = T, (E || L) && (M.remove(), M = null), M;
+        return M.addChildren(R), E && (M = m(M.reduce(), c, P)), V._currentStyle = T, (E || L) && (M.remove(), M = null), M;
       }
       function o(c, b) {
         for (var C = c.getAttribute("points").match(
@@ -11515,25 +11515,25 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             parseFloat(C[S]),
             parseFloat(C[S + 1])
           ));
-        var L = new Et(P);
+        var L = new Tt(P);
         return b === "polygon" && L.closePath(), L;
       }
       function l(c) {
-        return me.create(c.getAttribute("d"));
+        return ve.create(c.getAttribute("d"));
       }
       function f(c, b) {
         var C = (i(c, "href", !0) || "").substring(1), P = b === "radialgradient", S;
         if (C)
           S = t[C].getGradient(), S._radial ^ P && (S = S.clone(), S._radial = P);
         else {
-          for (var E = c.childNodes, L = [], M = 0, R = E.length; M < R; M++) {
+          for (var E = c.childNodes, L = [], M = 0, V = E.length; M < V; M++) {
             var T = E[M];
-            T.nodeType === 1 && L.push(m(new hi(), T));
+            T.nodeType === 1 && L.push(m(new oi(), T));
           }
-          S = new $e(L, P);
+          S = new Je(L, P);
         }
-        var V, F, q, U = i(c, "gradientUnits", !0) !== "userSpaceOnUse";
-        P ? (V = r(
+        var R, F, q, U = i(c, "gradientUnits", !0) !== "userSpaceOnUse";
+        P ? (R = r(
           c,
           "cx",
           "cy",
@@ -11541,10 +11541,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           U,
           "50%",
           "50%"
-        ), F = V.add(
+        ), F = R.add(
           i(c, "r", !1, !1, U, "50%"),
           0
-        ), q = r(c, "fx", "fy", !0, U)) : (V = r(
+        ), q = r(c, "fx", "fy", !0, U)) : (R = r(
           c,
           "x1",
           "y1",
@@ -11561,11 +11561,11 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           "100%",
           "0%"
         ));
-        var G = m(
-          new Jt(S, V, F, q),
+        var H = m(
+          new Qt(S, R, F, q),
           c
         );
-        return G._scaleToBounds = U, null;
+        return H._scaleToBounds = U, null;
       }
       var _ = {
         "#document": function(c, b, C, P) {
@@ -11604,31 +11604,31 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return C ? C instanceof ee ? C.place(P) : C.clone().translate(P) : null;
         },
         circle: function(c) {
-          return new jt.Circle(
+          return new Gt.Circle(
             r(c, "cx", "cy"),
             i(c, "r")
           );
         },
         ellipse: function(c) {
-          return new jt.Ellipse({
+          return new Gt.Ellipse({
             center: r(c, "cx", "cy"),
             radius: s(c, "rx", "ry")
           });
         },
         rect: function(c) {
-          return new jt.Rectangle(new ft(
+          return new Gt.Rectangle(new ft(
             r(c),
             s(c)
           ), s(c, "rx", "ry"));
         },
         line: function(c) {
-          return new Et.Line(
+          return new Tt.Line(
             r(c, "x1", "y1"),
             r(c, "x2", "y2")
           );
         },
         text: function(c) {
-          var b = new Je(r(c).add(
+          var b = new Qe(r(c).add(
             r(c, "dx", "dy")
           ));
           return b.setContent(c.textContent.trim() || ""), b;
@@ -11638,12 +11638,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       function v(c, b, C, P) {
         if (c.transform) {
           for (var S = (P.getAttribute(C) || "").split(/\)\s*/g), E = new At(), L = 0, M = S.length; L < M; L++) {
-            var R = S[L];
-            if (!R)
+            var V = S[L];
+            if (!V)
               break;
-            for (var T = R.split(/\(\s*/), V = T[0], F = T[1].split(/[\s,]+/g), q = 0, U = F.length; q < U; q++)
+            for (var T = V.split(/\(\s*/), R = T[0], F = T[1].split(/[\s,]+/g), q = 0, U = F.length; q < U; q++)
               F[q] = parseFloat(F[q]);
-            switch (V) {
+            switch (R) {
               case "matrix":
                 E.append(
                   new At(F[0], F[1], F[2], F[3], F[4], F[5])
@@ -11673,7 +11673,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var P = C === "fill-opacity" ? "getFillColor" : "getStrokeColor", S = c[P] && c[P]();
         S && S.setAlpha(parseFloat(b));
       }
-      var d = O.set(O.each(pi, function(c) {
+      var d = O.set(O.each(di, function(c) {
         this[c.attribute] = function(b, C) {
           if (b[c.set] && (b[c.set](a(C, c.type, c.fromSVG)), c.type === "color")) {
             var P = b[c.get]();
@@ -11690,10 +11690,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         "clip-path": function(c, b) {
           var C = k(b);
           if (C)
-            if (C = C.clone(), C.setClipMask(!0), c instanceof Rt)
+            if (C = C.clone(), C.setClipMask(!0), c instanceof zt)
               c.insertChild(0, C);
             else
-              return new Rt(C, c);
+              return new zt(C, c);
         },
         gradientTransform: v,
         transform: v,
@@ -11718,18 +11718,18 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }
         },
         viewBox: function(c, b, C, P, S) {
-          var E = new ft(a(b, "array")), L = s(P, null, null, !0), M, R;
-          if (c instanceof Rt) {
-            var T = L ? L.divide(E.getSize()) : 1, R = new At().scale(T).translate(E.getPoint().negate());
+          var E = new ft(a(b, "array")), L = s(P, null, null, !0), M, V;
+          if (c instanceof zt) {
+            var T = L ? L.divide(E.getSize()) : 1, V = new At().scale(T).translate(E.getPoint().negate());
             M = c;
           } else
             c instanceof ee && (L && E.setSize(L), M = c._item);
           if (M) {
             if (w(P, "overflow", S) !== "visible") {
-              var V = new jt.Rectangle(E);
-              V.setClipMask(!0), M.addChild(V);
+              var R = new Gt.Rectangle(E);
+              R.setClipMask(!0), M.addChild(R);
             }
-            R && M.transform(R);
+            V && M.transform(V);
           }
         }
       });
@@ -11739,36 +11739,36 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           var E = O.camelize(b);
           S = c.style[E], !S && C.node[E] !== C.parent[E] && (S = C.node[E]);
         }
-        return S ? S === "none" ? null : S : W;
+        return S ? S === "none" ? null : S : G;
       }
       function m(c, b, C) {
         var P = b.parentNode, S = {
-          node: zt.getStyles(b) || {},
-          parent: !C && !/^defs$/i.test(P.tagName) && zt.getStyles(P) || {}
+          node: qt.getStyles(b) || {},
+          parent: !C && !/^defs$/i.test(P.tagName) && qt.getStyles(P) || {}
         };
         return O.each(d, function(E, L) {
           var M = w(b, L, S);
-          c = M !== W && E(c, M, L, b, S) || c;
+          c = M !== G && E(c, M, L, b, S) || c;
         }), c;
       }
       function k(c) {
-        var b = c && c.match(/\((?:["'#]*)([^"')]+)/), C = b && b[1], P = C && t[ut ? C.replace(ut.location.href.split("#")[0] + "#", "") : C];
+        var b = c && c.match(/\((?:["'#]*)([^"')]+)/), C = b && b[1], P = C && t[et ? C.replace(et.location.href.split("#")[0] + "#", "") : C];
         return P && P._scaleToBounds && (P = P.clone(), P._scaleToBounds = !0), P;
       }
       function p(c, b, C) {
-        var P = c.nodeName.toLowerCase(), S = P !== "#document", E = et.body, L, M, R;
+        var P = c.nodeName.toLowerCase(), S = P !== "#document", E = it.body, L, M, V;
         C && S && (e = dt.getView().getSize(), e = s(c, null, null, !0) || e, L = Ht.create("svg", {
           style: "stroke-width: 1px; stroke-miterlimit: 10"
-        }), M = c.parentNode, R = c.nextSibling, L.appendChild(c), E.appendChild(L));
-        var T = dt.settings, V = T.applyMatrix, F = T.insertItems;
+        }), M = c.parentNode, V = c.nextSibling, L.appendChild(c), E.appendChild(L));
+        var T = dt.settings, R = T.applyMatrix, F = T.insertItems;
         T.applyMatrix = !1, T.insertItems = !1;
         var q = _[P], U = q && q(c, P, b, C) || null;
-        if (T.insertItems = F, T.applyMatrix = V, U) {
-          S && !(U instanceof Rt) && (U = m(U, c, C));
-          var G = b.onImport, Q = S && c.getAttribute("data-paper-data");
-          G && (U = G(c, U, b) || U), b.expandShapes && U instanceof jt && (U.remove(), U = U.toPath()), Q && (U._data = JSON.parse(Q));
+        if (T.insertItems = F, T.applyMatrix = R, U) {
+          S && !(U instanceof zt) && (U = m(U, c, C));
+          var H = b.onImport, Q = S && c.getAttribute("data-paper-data");
+          H && (U = H(c, U, b) || U), b.expandShapes && U instanceof Gt && (U.remove(), U = U.toPath()), Q && (U._data = JSON.parse(Q));
         }
-        return L && (E.removeChild(L), M && (R ? M.insertBefore(c, R) : M.appendChild(c))), C && (t = {}, U && O.pick(b.applyMatrix, V) && U.matrix.apply(!0, !0)), U;
+        return L && (E.removeChild(L), M && (V ? M.insertBefore(c, V) : M.appendChild(c))), C && (t = {}, U && O.pick(b.applyMatrix, R) && U.matrix.apply(!0, !0)), U;
       }
       function y(c, b, C) {
         if (!c)
@@ -11777,41 +11777,41 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var P = dt, S = null;
         function E(T) {
           try {
-            var V = typeof T == "object" ? T : new ct.DOMParser().parseFromString(
+            var R = typeof T == "object" ? T : new pt.DOMParser().parseFromString(
               T.trim(),
               "image/svg+xml"
             );
-            if (!V.nodeName)
-              throw V = null, new Error("Unsupported SVG source: " + c);
-            dt = P, S = p(V, b, !0), (!b || b.insert !== !1) && C._insertItem(W, S);
+            if (!R.nodeName)
+              throw R = null, new Error("Unsupported SVG source: " + c);
+            dt = P, S = p(R, b, !0), (!b || b.insert !== !1) && C._insertItem(G, S);
             var F = b.onLoad;
             F && F(S, T);
           } catch (q) {
             L(q);
           }
         }
-        function L(T, V) {
+        function L(T, R) {
           var F = b.onError;
           if (F)
-            F(T, V);
+            F(T, R);
           else
             throw new Error(T);
         }
         if (typeof c == "string" && !/^[\s\S]*</.test(c)) {
-          var M = et.getElementById(c);
-          M ? E(M) : ei.request({
+          var M = it.getElementById(c);
+          M ? E(M) : ti.request({
             url: c,
             async: !0,
             onLoad: E,
             onError: L
           });
         } else if (typeof File < "u" && c instanceof File) {
-          var R = new FileReader();
-          return R.onload = function() {
-            E(R.result);
-          }, R.onerror = function() {
-            L(R.error);
-          }, R.readAsText(c);
+          var V = new FileReader();
+          return V.onload = function() {
+            E(V.result);
+          }, V.onerror = function() {
+            L(V.error);
+          }, V.readAsText(c);
         } else
           E(c);
         return S;
@@ -11827,9 +11827,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       });
     }(), O.exports.PaperScript = function() {
       var t = this, e = t.acorn;
-      if (!e && typeof ur < "u")
+      if (!e && typeof sr < "u")
         try {
-          e = lr();
+          e = or();
         } catch {
         }
       if (!e) {
@@ -11837,8 +11837,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         e = i = r = {}, function(m, k) {
           if (typeof i == "object" && typeof r == "object")
             return k(i);
-          if (typeof W == "function" && W.amd)
-            return W(["exports"], k);
+          if (typeof G == "function" && G.amd)
+            return G(["exports"], k);
           k(m.acorn || (m.acorn = {}));
         }(this, function(m) {
           m.version = "0.5.0";
@@ -11867,8 +11867,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }
           var P = m.getLineInfo = function(B, D) {
             for (var Z = 1, Y = 0; ; ) {
-              ri.lastIndex = Y;
-              var bt = ri.exec(B);
+              ni.lastIndex = Y;
+              var bt = ni.exec(B);
               if (bt && bt.index < D)
                 ++Z, Y = bt.index + bt[0].length;
               else
@@ -11880,64 +11880,64 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             p = String(B), y = p.length, C(D), an();
             var Z = {};
             function Y(bt) {
-              return Q = L, Xe(bt), Z.start = E, Z.end = L, Z.startLoc = M, Z.endLoc = R, Z.type = T, Z.value = V, Z;
+              return Q = L, Xe(bt), Z.start = E, Z.end = L, Z.startLoc = M, Z.endLoc = V, Z.type = T, Z.value = R, Z;
             }
             return Y.jumpTo = function(bt, Ct) {
               if (S = bt, k.locations) {
-                q = 1, U = ri.lastIndex = 0;
-                for (var Pt; (Pt = ri.exec(p)) && Pt.index < bt; )
+                q = 1, U = ni.lastIndex = 0;
+                for (var Pt; (Pt = ni.exec(p)) && Pt.index < bt; )
                   ++q, U = Pt.index + Pt[0].length;
               }
-              F = Ct, si();
+              F = Ct, ri();
             }, Y;
           };
-          var S, E, L, M, R, T, V, F, q, U, G, Q, tt, it, ot, X;
+          var S, E, L, M, V, T, R, F, q, U, H, Q, tt, nt, ot, X;
           function K(B, D) {
             var Z = P(p, B);
             D += " (" + Z.line + ":" + Z.column + ")";
             var Y = new SyntaxError(D);
             throw Y.pos = B, Y.loc = Z, Y.raisedAt = S, Y;
           }
-          var rt = [], ht = { type: "num" }, lt = { type: "regexp" }, vt = { type: "string" }, J = { type: "name" }, gt = { type: "eof" }, It = { keyword: "break" }, yt = { keyword: "case", beforeExpr: !0 }, ie = { keyword: "catch" }, $t = { keyword: "continue" }, ae = { keyword: "debugger" }, Xt = { keyword: "default" }, Mt = { keyword: "do", isLoop: !0 }, Kt = { keyword: "else", beforeExpr: !0 }, ue = { keyword: "finally" }, te = { keyword: "for", isLoop: !0 }, _e = { keyword: "function" }, ke = { keyword: "if" }, ce = { keyword: "return", beforeExpr: !0 }, St = { keyword: "switch" }, de = { keyword: "throw", beforeExpr: !0 }, pe = { keyword: "try" }, Ie = { keyword: "var" }, xe = { keyword: "while", isLoop: !0 }, ni = { keyword: "with" }, yi = { keyword: "new", beforeExpr: !0 }, wi = { keyword: "this" }, n = { keyword: "null", atomValue: null }, u = { keyword: "true", atomValue: !0 }, x = { keyword: "false", atomValue: !1 }, A = { keyword: "in", binop: 7, beforeExpr: !0 }, N = {
+          var st = [], ht = { type: "num" }, lt = { type: "regexp" }, vt = { type: "string" }, J = { type: "name" }, gt = { type: "eof" }, It = { keyword: "break" }, yt = { keyword: "case", beforeExpr: !0 }, ie = { keyword: "catch" }, Jt = { keyword: "continue" }, se = { keyword: "debugger" }, Zt = { keyword: "default" }, Mt = { keyword: "do", isLoop: !0 }, Xt = { keyword: "else", beforeExpr: !0 }, ae = { keyword: "finally" }, $t = { keyword: "for", isLoop: !0 }, ge = { keyword: "function" }, ke = { keyword: "if" }, fe = { keyword: "return", beforeExpr: !0 }, St = { keyword: "switch" }, ce = { keyword: "throw", beforeExpr: !0 }, de = { keyword: "try" }, Ie = { keyword: "var" }, me = { keyword: "while", isLoop: !0 }, ii = { keyword: "with" }, bi = { keyword: "new", beforeExpr: !0 }, yi = { keyword: "this" }, n = { keyword: "null", atomValue: null }, u = { keyword: "true", atomValue: !0 }, x = { keyword: "false", atomValue: !1 }, A = { keyword: "in", binop: 7, beforeExpr: !0 }, N = {
             break: It,
             case: yt,
             catch: ie,
-            continue: $t,
-            debugger: ae,
-            default: Xt,
+            continue: Jt,
+            debugger: se,
+            default: Zt,
             do: Mt,
-            else: Kt,
-            finally: ue,
-            for: te,
-            function: _e,
+            else: Xt,
+            finally: ae,
+            for: $t,
+            function: ge,
             if: ke,
-            return: ce,
+            return: fe,
             switch: St,
-            throw: de,
-            try: pe,
+            throw: ce,
+            try: de,
             var: Ie,
-            while: xe,
-            with: ni,
+            while: me,
+            with: ii,
             null: n,
             true: u,
             false: x,
-            new: yi,
+            new: bi,
             in: A,
             instanceof: { keyword: "instanceof", binop: 7, beforeExpr: !0 },
-            this: wi,
+            this: yi,
             typeof: { keyword: "typeof", prefix: !0, beforeExpr: !0 },
             void: { keyword: "void", prefix: !0, beforeExpr: !0 },
             delete: { keyword: "delete", prefix: !0, beforeExpr: !0 }
-          }, H = { type: "[", beforeExpr: !0 }, j = { type: "]" }, $ = { type: "{", beforeExpr: !0 }, st = { type: "}" }, mt = { type: "(", beforeExpr: !0 }, wt = { type: ")" }, qt = { type: ",", beforeExpr: !0 }, oe = { type: ";", beforeExpr: !0 }, Se = { type: ":", beforeExpr: !0 }, Te = { type: "." }, ze = { type: "?", beforeExpr: !0 }, Le = { binop: 10, beforeExpr: !0 }, Oe = { isAssign: !0, beforeExpr: !0 }, je = { isAssign: !0, beforeExpr: !0 }, wn = { postfix: !0, prefix: !0, isUpdate: !0 }, Qi = { prefix: !0, beforeExpr: !0 }, Ji = { binop: 1, beforeExpr: !0 }, $i = { binop: 2, beforeExpr: !0 }, Sn = { binop: 3, beforeExpr: !0 }, Cn = { binop: 4, beforeExpr: !0 }, kn = { binop: 5, beforeExpr: !0 }, In = { binop: 6, beforeExpr: !0 }, Pn = { binop: 7, beforeExpr: !0 }, An = { binop: 8, beforeExpr: !0 }, En = { binop: 9, prefix: !0, beforeExpr: !0 }, Tn = { binop: 10, beforeExpr: !0 };
+          }, W = { type: "[", beforeExpr: !0 }, j = { type: "]" }, $ = { type: "{", beforeExpr: !0 }, at = { type: "}" }, mt = { type: "(", beforeExpr: !0 }, wt = { type: ")" }, Ut = { type: ",", beforeExpr: !0 }, ue = { type: ";", beforeExpr: !0 }, Se = { type: ":", beforeExpr: !0 }, Te = { type: "." }, ze = { type: "?", beforeExpr: !0 }, Le = { binop: 10, beforeExpr: !0 }, Oe = { isAssign: !0, beforeExpr: !0 }, je = { isAssign: !0, beforeExpr: !0 }, wn = { postfix: !0, prefix: !0, isUpdate: !0 }, Qi = { prefix: !0, beforeExpr: !0 }, Ji = { binop: 1, beforeExpr: !0 }, $i = { binop: 2, beforeExpr: !0 }, Sn = { binop: 3, beforeExpr: !0 }, Cn = { binop: 4, beforeExpr: !0 }, kn = { binop: 5, beforeExpr: !0 }, In = { binop: 6, beforeExpr: !0 }, Pn = { binop: 7, beforeExpr: !0 }, An = { binop: 8, beforeExpr: !0 }, En = { binop: 9, prefix: !0, beforeExpr: !0 }, Tn = { binop: 10, beforeExpr: !0 };
           m.tokTypes = {
-            bracketL: H,
+            bracketL: W,
             bracketR: j,
             braceL: $,
-            braceR: st,
+            braceR: at,
             parenL: mt,
             parenR: wt,
-            comma: qt,
-            semi: oe,
+            comma: Ut,
+            semi: ue,
             colon: Se,
             dot: Te,
             question: ze,
@@ -11951,7 +11951,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           };
           for (var tn in N)
             m.tokTypes["_" + tn] = N[tn];
-          function gi(B) {
+          function pi(B) {
             B = B.split(" ");
             var D = "", Z = [];
             t:
@@ -11963,17 +11963,17 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                   }
                 Z.push([B[Y]]);
               }
-            function Ct(Vt) {
-              if (Vt.length == 1)
-                return D += "return str === " + JSON.stringify(Vt[0]) + ";";
+            function Ct(Rt) {
+              if (Rt.length == 1)
+                return D += "return str === " + JSON.stringify(Rt[0]) + ";";
               D += "switch(str){";
-              for (var Ae = 0; Ae < Vt.length; ++Ae)
-                D += "case " + JSON.stringify(Vt[Ae]) + ":";
+              for (var Ae = 0; Ae < Rt.length; ++Ae)
+                D += "case " + JSON.stringify(Rt[Ae]) + ":";
               D += "return true}return false;";
             }
             if (Z.length > 3) {
-              Z.sort(function(Vt, Ae) {
-                return Ae.length - Vt.length;
+              Z.sort(function(Rt, Ae) {
+                return Ae.length - Rt.length;
               }), D += "switch(str.length){";
               for (var Y = 0; Y < Z.length; ++Y) {
                 var Pt = Z[Y];
@@ -11984,25 +11984,25 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               Ct(B);
             return new Function("str", D);
           }
-          var Ln = gi("abstract boolean byte char class double enum export extends final float goto implements import int interface long native package private protected public short static super synchronized throws transient volatile"), On = gi("class enum extends super const export import"), en = gi("implements interface let package private protected public static yield"), Si = gi("eval arguments"), Mn = gi("break case catch continue debugger default do else finally for function if return switch throw try var while with null true false instanceof typeof void delete new in this"), Nn = /[\u1680\u180e\u2000-\u200a\u202f\u205f\u3000\ufeff]/, nn = "\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u0527\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0\u08A2-\u08AC\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0977\u0979-\u097F\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C33\u0C35-\u0C39\u0C3D\u0C58\u0C59\u0C60\u0C61\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D60\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F4\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16EE-\u16F0\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191C\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19C1-\u19C7\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2160-\u2188\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005-\u3007\u3021-\u3029\u3031-\u3035\u3038-\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FCC\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA697\uA6A0-\uA6EF\uA717-\uA71F\uA722-\uA788\uA78B-\uA78E\uA790-\uA793\uA7A0-\uA7AA\uA7F8-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA80-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uABC0-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC", Bn = "\u0300-\u036F\u0483-\u0487\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u0620-\u0649\u0672-\u06D3\u06E7-\u06E8\u06FB-\u06FC\u0730-\u074A\u0800-\u0814\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0840-\u0857\u08E4-\u08FE\u0900-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962-\u0963\u0966-\u096F\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09D7\u09DF-\u09E0\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A66-\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2-\u0AE3\u0AE6-\u0AEF\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B56\u0B57\u0B5F-\u0B60\u0B66-\u0B6F\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0BE6-\u0BEF\u0C01-\u0C03\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62-\u0C63\u0C66-\u0C6F\u0C82\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2-\u0CE3\u0CE6-\u0CEF\u0D02\u0D03\u0D46-\u0D48\u0D57\u0D62-\u0D63\u0D66-\u0D6F\u0D82\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2\u0DF3\u0E34-\u0E3A\u0E40-\u0E45\u0E50-\u0E59\u0EB4-\u0EB9\u0EC8-\u0ECD\u0ED0-\u0ED9\u0F18\u0F19\u0F20-\u0F29\u0F35\u0F37\u0F39\u0F41-\u0F47\u0F71-\u0F84\u0F86-\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u1000-\u1029\u1040-\u1049\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F-\u109D\u135D-\u135F\u170E-\u1710\u1720-\u1730\u1740-\u1750\u1772\u1773\u1780-\u17B2\u17DD\u17E0-\u17E9\u180B-\u180D\u1810-\u1819\u1920-\u192B\u1930-\u193B\u1951-\u196D\u19B0-\u19C0\u19C8-\u19C9\u19D0-\u19D9\u1A00-\u1A15\u1A20-\u1A53\u1A60-\u1A7C\u1A7F-\u1A89\u1A90-\u1A99\u1B46-\u1B4B\u1B50-\u1B59\u1B6B-\u1B73\u1BB0-\u1BB9\u1BE6-\u1BF3\u1C00-\u1C22\u1C40-\u1C49\u1C5B-\u1C7D\u1CD0-\u1CD2\u1D00-\u1DBE\u1E01-\u1F15\u200C\u200D\u203F\u2040\u2054\u20D0-\u20DC\u20E1\u20E5-\u20F0\u2D81-\u2D96\u2DE0-\u2DFF\u3021-\u3028\u3099\u309A\uA640-\uA66D\uA674-\uA67D\uA69F\uA6F0-\uA6F1\uA7F8-\uA800\uA806\uA80B\uA823-\uA827\uA880-\uA881\uA8B4-\uA8C4\uA8D0-\uA8D9\uA8F3-\uA8F7\uA900-\uA909\uA926-\uA92D\uA930-\uA945\uA980-\uA983\uA9B3-\uA9C0\uAA00-\uAA27\uAA40-\uAA41\uAA4C-\uAA4D\uAA50-\uAA59\uAA7B\uAAE0-\uAAE9\uAAF2-\uAAF3\uABC0-\uABE1\uABEC\uABED\uABF0-\uABF9\uFB20-\uFB28\uFE00-\uFE0F\uFE20-\uFE26\uFE33\uFE34\uFE4D-\uFE4F\uFF10-\uFF19\uFF3F", rn = new RegExp("[" + nn + "]"), Vn = new RegExp("[" + nn + Bn + "]"), Ci = /[\n\r\u2028\u2029]/, ri = /\r\n|[\n\r\u2028\u2029]/g, ki = m.isIdentifierStart = function(B) {
+          var Ln = pi("abstract boolean byte char class double enum export extends final float goto implements import int interface long native package private protected public short static super synchronized throws transient volatile"), On = pi("class enum extends super const export import"), en = pi("implements interface let package private protected public static yield"), wi = pi("eval arguments"), Mn = pi("break case catch continue debugger default do else finally for function if return switch throw try var while with null true false instanceof typeof void delete new in this"), Nn = /[\u1680\u180e\u2000-\u200a\u202f\u205f\u3000\ufeff]/, nn = "\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u0527\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0\u08A2-\u08AC\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0977\u0979-\u097F\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C33\u0C35-\u0C39\u0C3D\u0C58\u0C59\u0C60\u0C61\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D60\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F4\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16EE-\u16F0\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191C\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19C1-\u19C7\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2160-\u2188\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005-\u3007\u3021-\u3029\u3031-\u3035\u3038-\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FCC\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA697\uA6A0-\uA6EF\uA717-\uA71F\uA722-\uA788\uA78B-\uA78E\uA790-\uA793\uA7A0-\uA7AA\uA7F8-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA80-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uABC0-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC", Bn = "\u0300-\u036F\u0483-\u0487\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u0620-\u0649\u0672-\u06D3\u06E7-\u06E8\u06FB-\u06FC\u0730-\u074A\u0800-\u0814\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0840-\u0857\u08E4-\u08FE\u0900-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962-\u0963\u0966-\u096F\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09D7\u09DF-\u09E0\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A66-\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2-\u0AE3\u0AE6-\u0AEF\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B56\u0B57\u0B5F-\u0B60\u0B66-\u0B6F\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0BE6-\u0BEF\u0C01-\u0C03\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62-\u0C63\u0C66-\u0C6F\u0C82\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2-\u0CE3\u0CE6-\u0CEF\u0D02\u0D03\u0D46-\u0D48\u0D57\u0D62-\u0D63\u0D66-\u0D6F\u0D82\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2\u0DF3\u0E34-\u0E3A\u0E40-\u0E45\u0E50-\u0E59\u0EB4-\u0EB9\u0EC8-\u0ECD\u0ED0-\u0ED9\u0F18\u0F19\u0F20-\u0F29\u0F35\u0F37\u0F39\u0F41-\u0F47\u0F71-\u0F84\u0F86-\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u1000-\u1029\u1040-\u1049\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F-\u109D\u135D-\u135F\u170E-\u1710\u1720-\u1730\u1740-\u1750\u1772\u1773\u1780-\u17B2\u17DD\u17E0-\u17E9\u180B-\u180D\u1810-\u1819\u1920-\u192B\u1930-\u193B\u1951-\u196D\u19B0-\u19C0\u19C8-\u19C9\u19D0-\u19D9\u1A00-\u1A15\u1A20-\u1A53\u1A60-\u1A7C\u1A7F-\u1A89\u1A90-\u1A99\u1B46-\u1B4B\u1B50-\u1B59\u1B6B-\u1B73\u1BB0-\u1BB9\u1BE6-\u1BF3\u1C00-\u1C22\u1C40-\u1C49\u1C5B-\u1C7D\u1CD0-\u1CD2\u1D00-\u1DBE\u1E01-\u1F15\u200C\u200D\u203F\u2040\u2054\u20D0-\u20DC\u20E1\u20E5-\u20F0\u2D81-\u2D96\u2DE0-\u2DFF\u3021-\u3028\u3099\u309A\uA640-\uA66D\uA674-\uA67D\uA69F\uA6F0-\uA6F1\uA7F8-\uA800\uA806\uA80B\uA823-\uA827\uA880-\uA881\uA8B4-\uA8C4\uA8D0-\uA8D9\uA8F3-\uA8F7\uA900-\uA909\uA926-\uA92D\uA930-\uA945\uA980-\uA983\uA9B3-\uA9C0\uAA00-\uAA27\uAA40-\uAA41\uAA4C-\uAA4D\uAA50-\uAA59\uAA7B\uAAE0-\uAAE9\uAAF2-\uAAF3\uABC0-\uABE1\uABEC\uABED\uABF0-\uABF9\uFB20-\uFB28\uFE00-\uFE0F\uFE20-\uFE26\uFE33\uFE34\uFE4D-\uFE4F\uFF10-\uFF19\uFF3F", rn = new RegExp("[" + nn + "]"), Rn = new RegExp("[" + nn + Bn + "]"), Si = /[\n\r\u2028\u2029]/, ni = /\r\n|[\n\r\u2028\u2029]/g, Ci = m.isIdentifierStart = function(B) {
             return B < 65 ? B === 36 : B < 91 ? !0 : B < 97 ? B === 95 : B < 123 ? !0 : B >= 170 && rn.test(String.fromCharCode(B));
           }, sn = m.isIdentifierChar = function(B) {
-            return B < 48 ? B === 36 : B < 58 ? !0 : B < 65 ? !1 : B < 91 ? !0 : B < 97 ? B === 95 : B < 123 ? !0 : B >= 170 && Vn.test(String.fromCharCode(B));
+            return B < 48 ? B === 36 : B < 58 ? !0 : B < 65 ? !1 : B < 91 ? !0 : B < 97 ? B === 95 : B < 123 ? !0 : B >= 170 && Rn.test(String.fromCharCode(B));
           };
           function Ze() {
             this.line = q, this.column = S - U;
           }
           function an() {
-            q = 1, S = U = 0, F = !0, si();
+            q = 1, S = U = 0, F = !0, ri();
           }
-          function he(B, D) {
-            L = S, k.locations && (R = new Ze()), T = B, si(), V = D, F = B.beforeExpr;
+          function oe(B, D) {
+            L = S, k.locations && (V = new Ze()), T = B, ri(), R = D, F = B.beforeExpr;
           }
-          function Rn() {
+          function Vn() {
             var B = k.onComment && k.locations && new Ze(), D = S, Z = p.indexOf("*/", S += 2);
             if (Z === -1 && K(S - 2, "Unterminated comment"), S = Z + 2, k.locations) {
-              ri.lastIndex = D;
-              for (var Y; (Y = ri.exec(p)) && Y.index < S; )
+              ni.lastIndex = D;
+              for (var Y; (Y = ni.exec(p)) && Y.index < S; )
                 ++q, U = Y.index + Y[0].length;
             }
             k.onComment && k.onComment(
@@ -12014,7 +12014,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               k.locations && new Ze()
             );
           }
-          function Bi() {
+          function Ni() {
             for (var B = S, D = k.onComment && k.locations && new Ze(), Z = p.charCodeAt(S += 2); S < y && Z !== 10 && Z !== 13 && Z !== 8232 && Z !== 8233; )
               ++S, Z = p.charCodeAt(S);
             k.onComment && k.onComment(
@@ -12026,7 +12026,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               k.locations && new Ze()
             );
           }
-          function si() {
+          function ri() {
             for (; S < y; ) {
               var B = p.charCodeAt(S);
               if (B === 32)
@@ -12042,9 +12042,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               else if (B === 47) {
                 var D = p.charCodeAt(S + 1);
                 if (D === 42)
-                  Rn();
+                  Vn();
                 else if (D === 47)
-                  Bi();
+                  Ni();
                 else
                   break;
               } else if (B === 160)
@@ -12057,60 +12057,60 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }
           function Fn() {
             var B = p.charCodeAt(S + 1);
-            return B >= 48 && B <= 57 ? on(!0) : (++S, he(Te));
+            return B >= 48 && B <= 57 ? on(!0) : (++S, oe(Te));
           }
           function zn() {
             var B = p.charCodeAt(S + 1);
-            return F ? (++S, un()) : B === 61 ? le(je, 2) : le(Le, 1);
+            return F ? (++S, un()) : B === 61 ? he(je, 2) : he(Le, 1);
           }
           function Dn() {
             var B = p.charCodeAt(S + 1);
-            return B === 61 ? le(je, 2) : le(Tn, 1);
+            return B === 61 ? he(je, 2) : he(Tn, 1);
           }
           function qn(B) {
             var D = p.charCodeAt(S + 1);
-            return D === B ? le(B === 124 ? Ji : $i, 2) : D === 61 ? le(je, 2) : le(B === 124 ? Sn : kn, 1);
+            return D === B ? he(B === 124 ? Ji : $i, 2) : D === 61 ? he(je, 2) : he(B === 124 ? Sn : kn, 1);
           }
           function Un() {
             var B = p.charCodeAt(S + 1);
-            return B === 61 ? le(je, 2) : le(Cn, 1);
+            return B === 61 ? he(je, 2) : he(Cn, 1);
           }
           function Wn(B) {
             var D = p.charCodeAt(S + 1);
-            return D === B ? D == 45 && p.charCodeAt(S + 2) == 62 && Ci.test(p.slice(Q, S)) ? (S += 3, Bi(), si(), Xe()) : le(wn, 2) : D === 61 ? le(je, 2) : le(En, 1);
+            return D === B ? D == 45 && p.charCodeAt(S + 2) == 62 && Si.test(p.slice(Q, S)) ? (S += 3, Ni(), ri(), Xe()) : he(wn, 2) : D === 61 ? he(je, 2) : he(En, 1);
           }
           function Hn(B) {
             var D = p.charCodeAt(S + 1), Z = 1;
-            return D === B ? (Z = B === 62 && p.charCodeAt(S + 2) === 62 ? 3 : 2, p.charCodeAt(S + Z) === 61 ? le(je, Z + 1) : le(An, Z)) : D == 33 && B == 60 && p.charCodeAt(S + 2) == 45 && p.charCodeAt(S + 3) == 45 ? (S += 4, Bi(), si(), Xe()) : (D === 61 && (Z = p.charCodeAt(S + 2) === 61 ? 3 : 2), le(Pn, Z));
+            return D === B ? (Z = B === 62 && p.charCodeAt(S + 2) === 62 ? 3 : 2, p.charCodeAt(S + Z) === 61 ? he(je, Z + 1) : he(An, Z)) : D == 33 && B == 60 && p.charCodeAt(S + 2) == 45 && p.charCodeAt(S + 3) == 45 ? (S += 4, Ni(), ri(), Xe()) : (D === 61 && (Z = p.charCodeAt(S + 2) === 61 ? 3 : 2), he(Pn, Z));
           }
           function Gn(B) {
             var D = p.charCodeAt(S + 1);
-            return D === 61 ? le(In, p.charCodeAt(S + 2) === 61 ? 3 : 2) : le(B === 61 ? Oe : Qi, 1);
+            return D === 61 ? he(In, p.charCodeAt(S + 2) === 61 ? 3 : 2) : he(B === 61 ? Oe : Qi, 1);
           }
           function jn(B) {
             switch (B) {
               case 46:
                 return Fn();
               case 40:
-                return ++S, he(mt);
+                return ++S, oe(mt);
               case 41:
-                return ++S, he(wt);
+                return ++S, oe(wt);
               case 59:
-                return ++S, he(oe);
+                return ++S, oe(ue);
               case 44:
-                return ++S, he(qt);
+                return ++S, oe(Ut);
               case 91:
-                return ++S, he(H);
+                return ++S, oe(W);
               case 93:
-                return ++S, he(j);
+                return ++S, oe(j);
               case 123:
-                return ++S, he($);
+                return ++S, oe($);
               case 125:
-                return ++S, he(st);
+                return ++S, oe(at);
               case 58:
-                return ++S, he(Se);
+                return ++S, oe(Se);
               case 63:
-                return ++S, he(ze);
+                return ++S, oe(ze);
               case 48:
                 var D = p.charCodeAt(S + 1);
                 if (D === 120 || D === 88)
@@ -12148,7 +12148,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               case 33:
                 return Gn(B);
               case 126:
-                return le(Qi, 1);
+                return he(Qi, 1);
             }
             return !1;
           }
@@ -12156,9 +12156,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             if (B ? S = E + 1 : E = S, k.locations && (M = new Ze()), B)
               return un();
             if (S >= y)
-              return he(gt);
+              return oe(gt);
             var D = p.charCodeAt(S);
-            if (ki(D) || D === 92)
+            if (Ci(D) || D === 92)
               return ln();
             var Z = jn(D);
             if (Z === !1) {
@@ -12169,15 +12169,15 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             }
             return Z;
           }
-          function le(B, D) {
+          function he(B, D) {
             var Z = p.slice(S, S + D);
-            S += D, he(B, Z);
+            S += D, oe(B, Z);
           }
           function un() {
             for (var bt = "", B, D, Z = S; ; ) {
               S >= y && K(Z, "Unterminated regular expression");
               var Y = p.charAt(S);
-              if (Ci.test(Y) && K(Z, "Unterminated regular expression"), B)
+              if (Si.test(Y) && K(Z, "Unterminated regular expression"), B)
                 B = !1;
               else {
                 if (Y === "[")
@@ -12196,32 +12196,32 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             Ct && !/^[gmsiy]*$/.test(Ct) && K(Z, "Invalid regexp flag");
             try {
               var Pt = new RegExp(bt, Ct);
-            } catch (Vt) {
-              Vt instanceof SyntaxError && K(Z, Vt.message), K(Vt);
+            } catch (Rt) {
+              Rt instanceof SyntaxError && K(Z, Rt.message), K(Rt);
             }
-            return he(lt, Pt);
+            return oe(lt, Pt);
           }
-          function _i(B, D) {
+          function gi(B, D) {
             for (var Z = S, Y = 0, bt = 0, Ct = D == null ? 1 / 0 : D; bt < Ct; ++bt) {
-              var Pt = p.charCodeAt(S), Vt;
-              if (Pt >= 97 ? Vt = Pt - 97 + 10 : Pt >= 65 ? Vt = Pt - 65 + 10 : Pt >= 48 && Pt <= 57 ? Vt = Pt - 48 : Vt = 1 / 0, Vt >= B)
+              var Pt = p.charCodeAt(S), Rt;
+              if (Pt >= 97 ? Rt = Pt - 97 + 10 : Pt >= 65 ? Rt = Pt - 65 + 10 : Pt >= 48 && Pt <= 57 ? Rt = Pt - 48 : Rt = 1 / 0, Rt >= B)
                 break;
-              ++S, Y = Y * B + Vt;
+              ++S, Y = Y * B + Rt;
             }
             return S === Z || D != null && S - Z !== D ? null : Y;
           }
           function Zn() {
             S += 2;
-            var B = _i(16);
-            return B == null && K(E + 2, "Expected hexadecimal number"), ki(p.charCodeAt(S)) && K(S, "Identifier directly after number"), he(ht, B);
+            var B = gi(16);
+            return B == null && K(E + 2, "Expected hexadecimal number"), Ci(p.charCodeAt(S)) && K(S, "Identifier directly after number"), oe(ht, B);
           }
           function on(B) {
             var D = S, Z = !1, Y = p.charCodeAt(S) === 48;
-            !B && _i(10) === null && K(D, "Invalid number"), p.charCodeAt(S) === 46 && (++S, _i(10), Z = !0);
+            !B && gi(10) === null && K(D, "Invalid number"), p.charCodeAt(S) === 46 && (++S, gi(10), Z = !0);
             var bt = p.charCodeAt(S);
-            (bt === 69 || bt === 101) && (bt = p.charCodeAt(++S), (bt === 43 || bt === 45) && ++S, _i(10) === null && K(D, "Invalid number"), Z = !0), ki(p.charCodeAt(S)) && K(S, "Identifier directly after number");
+            (bt === 69 || bt === 101) && (bt = p.charCodeAt(++S), (bt === 43 || bt === 45) && ++S, gi(10) === null && K(D, "Invalid number"), Z = !0), Ci(p.charCodeAt(S)) && K(S, "Identifier directly after number");
             var Ct = p.slice(D, S), Pt;
-            return Z ? Pt = parseFloat(Ct) : !Y || Ct.length === 1 ? Pt = parseInt(Ct, 10) : /[89]/.test(Ct) || X ? K(D, "Invalid number") : Pt = parseInt(Ct, 8), he(ht, Pt);
+            return Z ? Pt = parseFloat(Ct) : !Y || Ct.length === 1 ? Pt = parseInt(Ct, 10) : /[89]/.test(Ct) || X ? K(D, "Invalid number") : Pt = parseInt(Ct, 8), oe(ht, Pt);
           }
           function Xn(B) {
             S++;
@@ -12229,7 +12229,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               S >= y && K(E, "Unterminated string constant");
               var Z = p.charCodeAt(S);
               if (Z === B)
-                return ++S, he(vt, D);
+                return ++S, oe(vt, D);
               if (Z === 92) {
                 Z = p.charCodeAt(++S);
                 var Y = /^[0-7]+/.exec(p.slice(S, S + 3));
@@ -12247,13 +12247,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                       D += "\r";
                       break;
                     case 120:
-                      D += String.fromCharCode(Ii(2));
+                      D += String.fromCharCode(ki(2));
                       break;
                     case 117:
-                      D += String.fromCharCode(Ii(4));
+                      D += String.fromCharCode(ki(4));
                       break;
                     case 85:
-                      D += String.fromCharCode(Ii(8));
+                      D += String.fromCharCode(ki(8));
                       break;
                     case 116:
                       D += "	";
@@ -12283,40 +12283,40 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                 (Z === 13 || Z === 10 || Z === 8232 || Z === 8233) && K(E, "Unterminated string constant"), D += String.fromCharCode(Z), ++S;
             }
           }
-          function Ii(B) {
-            var D = _i(16, B);
+          function ki(B) {
+            var D = gi(16, B);
             return D === null && K(E, "Bad character escape sequence"), D;
           }
-          var ai;
+          var si;
           function hn() {
-            ai = !1;
+            si = !1;
             for (var B, D = !0, Z = S; ; ) {
               var Y = p.charCodeAt(S);
               if (sn(Y))
-                ai && (B += p.charAt(S)), ++S;
+                si && (B += p.charAt(S)), ++S;
               else if (Y === 92) {
-                ai || (B = p.slice(Z, S)), ai = !0, p.charCodeAt(++S) != 117 && K(S, "Expecting Unicode escape sequence \\uXXXX"), ++S;
-                var bt = Ii(4), Ct = String.fromCharCode(bt);
-                Ct || K(S - 1, "Invalid Unicode escape"), (D ? ki(bt) : sn(bt)) || K(S - 4, "Invalid Unicode escape"), B += Ct;
+                si || (B = p.slice(Z, S)), si = !0, p.charCodeAt(++S) != 117 && K(S, "Expecting Unicode escape sequence \\uXXXX"), ++S;
+                var bt = ki(4), Ct = String.fromCharCode(bt);
+                Ct || K(S - 1, "Invalid Unicode escape"), (D ? Ci(bt) : sn(bt)) || K(S - 4, "Invalid Unicode escape"), B += Ct;
               } else
                 break;
               D = !1;
             }
-            return ai ? B : p.slice(Z, S);
+            return si ? B : p.slice(Z, S);
           }
           function ln() {
             var B = hn(), D = J;
-            return !ai && Mn(B) && (D = N[B]), he(D, B);
+            return !si && Mn(B) && (D = N[B]), oe(D, B);
           }
           function Ot() {
-            G = E, Q = L, tt = R, Xe();
+            H = E, Q = L, tt = V, Xe();
           }
-          function Vi(B) {
+          function Bi(B) {
             if (X = B, S = E, k.locations)
               for (; S < U; )
                 U = p.lastIndexOf(`
 `, U - 2) + 1, --q;
-            si(), Xe();
+            ri(), Xe();
           }
           function fn() {
             this.type = null, this.start = E, this.end = null;
@@ -12324,7 +12324,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           function cn() {
             this.start = M, this.end = null, c !== null && (this.source = c);
           }
-          function fe() {
+          function le() {
             var B = new fn();
             return k.locations && (B.loc = new cn()), k.directSourceFile && (B.sourceFile = k.directSourceFile), k.ranges && (B.range = [E, 0]), B;
           }
@@ -12338,256 +12338,256 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           function Ri(B) {
             return k.ecmaVersion >= 5 && B.type === "ExpressionStatement" && B.expression.type === "Literal" && B.expression.value === "use strict";
           }
-          function Yt(B) {
+          function Kt(B) {
             if (T === B)
               return Ot(), !0;
           }
-          function Pi() {
-            return !k.strictSemicolons && (T === gt || T === st || Ci.test(p.slice(Q, E)));
+          function Ii() {
+            return !k.strictSemicolons && (T === gt || T === at || Si.test(p.slice(Q, E)));
           }
           function Ke() {
-            !Yt(oe) && !Pi() && Ve();
+            !Kt(ue) && !Ii() && Re();
           }
-          function re(B) {
-            T === B ? Ot() : Ve();
+          function ne(B) {
+            T === B ? Ot() : Re();
           }
-          function Ve() {
+          function Re() {
             K(E, "Unexpected token");
           }
-          function Ai(B) {
-            B.type !== "Identifier" && B.type !== "MemberExpression" && K(B.start, "Assigning to rvalue"), X && B.type === "Identifier" && Si(B.name) && K(B.start, "Assigning to " + B.name + " in strict mode");
+          function Pi(B) {
+            B.type !== "Identifier" && B.type !== "MemberExpression" && K(B.start, "Assigning to rvalue"), X && B.type === "Identifier" && wi(B.name) && K(B.start, "Assigning to " + B.name + " in strict mode");
           }
           function Kn(B) {
-            G = Q = S, k.locations && (tt = new Ze()), it = X = null, ot = [], Xe();
-            var D = B || fe(), Z = !0;
+            H = Q = S, k.locations && (tt = new Ze()), nt = X = null, ot = [], Xe();
+            var D = B || le(), Z = !0;
             for (B || (D.body = []); T !== gt; ) {
               var Y = Pe();
-              D.body.push(Y), Z && Ri(Y) && Vi(!0), Z = !1;
+              D.body.push(Y), Z && Ri(Y) && Bi(!0), Z = !1;
             }
             return Lt(D, "Program");
           }
-          var Fi = { kind: "loop" }, Yn = { kind: "switch" };
+          var Vi = { kind: "loop" }, Yn = { kind: "switch" };
           function Pe() {
-            (T === Le || T === je && V == "/=") && Xe(!0);
-            var B = T, D = fe();
+            (T === Le || T === je && R == "/=") && Xe(!0);
+            var B = T, D = le();
             switch (B) {
               case It:
-              case $t:
+              case Jt:
                 Ot();
                 var Z = B === It;
-                Yt(oe) || Pi() ? D.label = null : T !== J ? Ve() : (D.label = qe(), Ke());
+                Kt(ue) || Ii() ? D.label = null : T !== J ? Re() : (D.label = qe(), Ke());
                 for (var Y = 0; Y < ot.length; ++Y) {
                   var bt = ot[Y];
                   if ((D.label == null || bt.name === D.label.name) && (bt.kind != null && (Z || bt.kind === "loop") || D.label && Z))
                     break;
                 }
                 return Y === ot.length && K(D.start, "Unsyntactic " + B.keyword), Lt(D, Z ? "BreakStatement" : "ContinueStatement");
-              case ae:
+              case se:
                 return Ot(), Ke(), Lt(D, "DebuggerStatement");
               case Mt:
-                return Ot(), ot.push(Fi), D.body = Pe(), ot.pop(), re(xe), D.test = vi(), Ke(), Lt(D, "DoWhileStatement");
-              case te:
-                if (Ot(), ot.push(Fi), re(mt), T === oe)
-                  return zi(D, null);
+                return Ot(), ot.push(Vi), D.body = Pe(), ot.pop(), ne(me), D.test = _i(), Ke(), Lt(D, "DoWhileStatement");
+              case $t:
+                if (Ot(), ot.push(Vi), ne(mt), T === ue)
+                  return Fi(D, null);
                 if (T === Ie) {
-                  var Ct = fe();
-                  return Ot(), pn(Ct, !0), Lt(Ct, "VariableDeclaration"), Ct.declarations.length === 1 && Yt(A) ? dn(D, Ct) : zi(D, Ct);
+                  var Ct = le();
+                  return Ot(), pn(Ct, !0), Lt(Ct, "VariableDeclaration"), Ct.declarations.length === 1 && Kt(A) ? dn(D, Ct) : Fi(D, Ct);
                 }
-                var Ct = ge(!1, !0);
-                return Yt(A) ? (Ai(Ct), dn(D, Ct)) : zi(D, Ct);
-              case _e:
-                return Ot(), Hi(D, !0);
+                var Ct = pe(!1, !0);
+                return Kt(A) ? (Pi(Ct), dn(D, Ct)) : Fi(D, Ct);
+              case ge:
+                return Ot(), Wi(D, !0);
               case ke:
-                return Ot(), D.test = vi(), D.consequent = Pe(), D.alternate = Yt(Kt) ? Pe() : null, Lt(D, "IfStatement");
-              case ce:
-                return !it && !k.allowReturnOutsideFunction && K(E, "'return' outside of function"), Ot(), Yt(oe) || Pi() ? D.argument = null : (D.argument = ge(), Ke()), Lt(D, "ReturnStatement");
+                return Ot(), D.test = _i(), D.consequent = Pe(), D.alternate = Kt(Xt) ? Pe() : null, Lt(D, "IfStatement");
+              case fe:
+                return !nt && !k.allowReturnOutsideFunction && K(E, "'return' outside of function"), Ot(), Kt(ue) || Ii() ? D.argument = null : (D.argument = pe(), Ke()), Lt(D, "ReturnStatement");
               case St:
-                Ot(), D.discriminant = vi(), D.cases = [], re($), ot.push(Yn);
-                for (var Pt, Vt; T != st; )
-                  if (T === yt || T === Xt) {
+                Ot(), D.discriminant = _i(), D.cases = [], ne($), ot.push(Yn);
+                for (var Pt, Rt; T != at; )
+                  if (T === yt || T === Zt) {
                     var Ae = T === yt;
-                    Pt && Lt(Pt, "SwitchCase"), D.cases.push(Pt = fe()), Pt.consequent = [], Ot(), Ae ? Pt.test = ge() : (Vt && K(G, "Multiple default clauses"), Vt = !0, Pt.test = null), re(Se);
+                    Pt && Lt(Pt, "SwitchCase"), D.cases.push(Pt = le()), Pt.consequent = [], Ot(), Ae ? Pt.test = pe() : (Rt && K(H, "Multiple default clauses"), Rt = !0, Pt.test = null), ne(Se);
                   } else
-                    Pt || Ve(), Pt.consequent.push(Pe());
+                    Pt || Re(), Pt.consequent.push(Pe());
                 return Pt && Lt(Pt, "SwitchCase"), Ot(), ot.pop(), Lt(D, "SwitchStatement");
+              case ce:
+                return Ot(), Si.test(p.slice(Q, E)) && K(Q, "Illegal newline after throw"), D.argument = pe(), Ke(), Lt(D, "ThrowStatement");
               case de:
-                return Ot(), Ci.test(p.slice(Q, E)) && K(Q, "Illegal newline after throw"), D.argument = ge(), Ke(), Lt(D, "ThrowStatement");
-              case pe:
-                if (Ot(), D.block = mi(), D.handler = null, T === ie) {
-                  var Ye = fe();
-                  Ot(), re(mt), Ye.param = qe(), X && Si(Ye.param.name) && K(Ye.param.start, "Binding " + Ye.param.name + " in strict mode"), re(wt), Ye.guard = null, Ye.body = mi(), D.handler = Lt(Ye, "CatchClause");
+                if (Ot(), D.block = vi(), D.handler = null, T === ie) {
+                  var Ye = le();
+                  Ot(), ne(mt), Ye.param = qe(), X && wi(Ye.param.name) && K(Ye.param.start, "Binding " + Ye.param.name + " in strict mode"), ne(wt), Ye.guard = null, Ye.body = vi(), D.handler = Lt(Ye, "CatchClause");
                 }
-                return D.guardedHandlers = rt, D.finalizer = Yt(ue) ? mi() : null, !D.handler && !D.finalizer && K(D.start, "Missing catch or finally clause"), Lt(D, "TryStatement");
+                return D.guardedHandlers = st, D.finalizer = Kt(ae) ? vi() : null, !D.handler && !D.finalizer && K(D.start, "Missing catch or finally clause"), Lt(D, "TryStatement");
               case Ie:
                 return Ot(), pn(D), Ke(), Lt(D, "VariableDeclaration");
-              case xe:
-                return Ot(), D.test = vi(), ot.push(Fi), D.body = Pe(), ot.pop(), Lt(D, "WhileStatement");
-              case ni:
-                return X && K(E, "'with' in strict mode"), Ot(), D.object = vi(), D.body = Pe(), Lt(D, "WithStatement");
+              case me:
+                return Ot(), D.test = _i(), ot.push(Vi), D.body = Pe(), ot.pop(), Lt(D, "WhileStatement");
+              case ii:
+                return X && K(E, "'with' in strict mode"), Ot(), D.object = _i(), D.body = Pe(), Lt(D, "WithStatement");
               case $:
-                return mi();
-              case oe:
+                return vi();
+              case ue:
                 return Ot(), Lt(D, "EmptyStatement");
               default:
-                var ji = V, Ei = ge();
-                if (B === J && Ei.type === "Identifier" && Yt(Se)) {
+                var Gi = R, Ai = pe();
+                if (B === J && Ai.type === "Identifier" && Kt(Se)) {
                   for (var Y = 0; Y < ot.length; ++Y)
-                    ot[Y].name === ji && K(Ei.start, "Label '" + ji + "' is already declared");
+                    ot[Y].name === Gi && K(Ai.start, "Label '" + Gi + "' is already declared");
                   var ir = T.isLoop ? "loop" : T === St ? "switch" : null;
-                  return ot.push({ name: ji, kind: ir }), D.body = Pe(), ot.pop(), D.label = Ei, Lt(D, "LabeledStatement");
+                  return ot.push({ name: Gi, kind: ir }), D.body = Pe(), ot.pop(), D.label = Ai, Lt(D, "LabeledStatement");
                 } else
-                  return D.expression = Ei, Ke(), Lt(D, "ExpressionStatement");
+                  return D.expression = Ai, Ke(), Lt(D, "ExpressionStatement");
             }
           }
-          function vi() {
-            re(mt);
-            var B = ge();
-            return re(wt), B;
+          function _i() {
+            ne(mt);
+            var B = pe();
+            return ne(wt), B;
           }
-          function mi(B) {
-            var D = fe(), Z = !0, Y = !1, bt;
-            for (D.body = [], re($); !Yt(st); ) {
+          function vi(B) {
+            var D = le(), Z = !0, Y = !1, bt;
+            for (D.body = [], ne($); !Kt(at); ) {
               var Ct = Pe();
-              D.body.push(Ct), Z && B && Ri(Ct) && (bt = Y, Vi(Y = !0)), Z = !1;
+              D.body.push(Ct), Z && B && Ri(Ct) && (bt = Y, Bi(Y = !0)), Z = !1;
             }
-            return Y && !bt && Vi(!1), Lt(D, "BlockStatement");
+            return Y && !bt && Bi(!1), Lt(D, "BlockStatement");
           }
-          function zi(B, D) {
-            return B.init = D, re(oe), B.test = T === oe ? null : ge(), re(oe), B.update = T === wt ? null : ge(), re(wt), B.body = Pe(), ot.pop(), Lt(B, "ForStatement");
+          function Fi(B, D) {
+            return B.init = D, ne(ue), B.test = T === ue ? null : pe(), ne(ue), B.update = T === wt ? null : pe(), ne(wt), B.body = Pe(), ot.pop(), Lt(B, "ForStatement");
           }
           function dn(B, D) {
-            return B.left = D, B.right = ge(), re(wt), B.body = Pe(), ot.pop(), Lt(B, "ForInStatement");
+            return B.left = D, B.right = pe(), ne(wt), B.body = Pe(), ot.pop(), Lt(B, "ForInStatement");
           }
           function pn(B, D) {
             for (B.declarations = [], B.kind = "var"; ; ) {
-              var Z = fe();
-              if (Z.id = qe(), X && Si(Z.id.name) && K(Z.id.start, "Binding " + Z.id.name + " in strict mode"), Z.init = Yt(Oe) ? ge(!0, D) : null, B.declarations.push(Lt(Z, "VariableDeclarator")), !Yt(qt))
+              var Z = le();
+              if (Z.id = qe(), X && wi(Z.id.name) && K(Z.id.start, "Binding " + Z.id.name + " in strict mode"), Z.init = Kt(Oe) ? pe(!0, D) : null, B.declarations.push(Lt(Z, "VariableDeclarator")), !Kt(Ut))
                 break;
             }
             return B;
           }
-          function ge(B, D) {
-            var Z = Di(D);
-            if (!B && T === qt) {
+          function pe(B, D) {
+            var Z = zi(D);
+            if (!B && T === Ut) {
               var Y = De(Z);
-              for (Y.expressions = [Z]; Yt(qt); )
-                Y.expressions.push(Di(D));
+              for (Y.expressions = [Z]; Kt(Ut); )
+                Y.expressions.push(zi(D));
               return Lt(Y, "SequenceExpression");
             }
             return Z;
           }
-          function Di(B) {
+          function zi(B) {
             var D = Qn(B);
             if (T.isAssign) {
               var Z = De(D);
-              return Z.operator = V, Z.left = D, Ot(), Z.right = Di(B), Ai(D), Lt(Z, "AssignmentExpression");
+              return Z.operator = R, Z.left = D, Ot(), Z.right = zi(B), Pi(D), Lt(Z, "AssignmentExpression");
             }
             return D;
           }
           function Qn(B) {
             var D = Jn(B);
-            if (Yt(ze)) {
+            if (Kt(ze)) {
               var Z = De(D);
-              return Z.test = D, Z.consequent = ge(!0), re(Se), Z.alternate = ge(!0, B), Lt(Z, "ConditionalExpression");
+              return Z.test = D, Z.consequent = pe(!0), ne(Se), Z.alternate = pe(!0, B), Lt(Z, "ConditionalExpression");
             }
             return D;
           }
           function Jn(B) {
-            return qi(Ui(), -1, B);
+            return Di(qi(), -1, B);
           }
-          function qi(B, D, Z) {
+          function Di(B, D, Z) {
             var Y = T.binop;
             if (Y != null && (!Z || T !== A) && Y > D) {
               var bt = De(B);
-              bt.left = B, bt.operator = V;
+              bt.left = B, bt.operator = R;
               var Ct = T;
-              Ot(), bt.right = qi(Ui(), Y, Z);
+              Ot(), bt.right = Di(qi(), Y, Z);
               var Pt = Lt(bt, Ct === Ji || Ct === $i ? "LogicalExpression" : "BinaryExpression");
-              return qi(Pt, D, Z);
+              return Di(Pt, D, Z);
             }
             return B;
           }
-          function Ui() {
+          function qi() {
             if (T.prefix) {
-              var B = fe(), D = T.isUpdate;
-              return B.operator = V, B.prefix = !0, F = !0, Ot(), B.argument = Ui(), D ? Ai(B.argument) : X && B.operator === "delete" && B.argument.type === "Identifier" && K(B.start, "Deleting local variable in strict mode"), Lt(B, D ? "UpdateExpression" : "UnaryExpression");
+              var B = le(), D = T.isUpdate;
+              return B.operator = R, B.prefix = !0, F = !0, Ot(), B.argument = qi(), D ? Pi(B.argument) : X && B.operator === "delete" && B.argument.type === "Identifier" && K(B.start, "Deleting local variable in strict mode"), Lt(B, D ? "UpdateExpression" : "UnaryExpression");
             }
-            for (var Z = $n(); T.postfix && !Pi(); ) {
+            for (var Z = $n(); T.postfix && !Ii(); ) {
               var B = De(Z);
-              B.operator = V, B.prefix = !1, B.argument = Z, Ai(Z), Ot(), Z = Lt(B, "UpdateExpression");
+              B.operator = R, B.prefix = !1, B.argument = Z, Pi(Z), Ot(), Z = Lt(B, "UpdateExpression");
             }
             return Z;
           }
           function $n() {
-            return xi(Wi());
+            return mi(Ui());
           }
-          function xi(B, D) {
-            if (Yt(Te)) {
+          function mi(B, D) {
+            if (Kt(Te)) {
               var Z = De(B);
-              return Z.object = B, Z.property = qe(!0), Z.computed = !1, xi(Lt(Z, "MemberExpression"), D);
-            } else if (Yt(H)) {
+              return Z.object = B, Z.property = qe(!0), Z.computed = !1, mi(Lt(Z, "MemberExpression"), D);
+            } else if (Kt(W)) {
               var Z = De(B);
-              return Z.object = B, Z.property = ge(), Z.computed = !0, re(j), xi(Lt(Z, "MemberExpression"), D);
-            } else if (!D && Yt(mt)) {
+              return Z.object = B, Z.property = pe(), Z.computed = !0, ne(j), mi(Lt(Z, "MemberExpression"), D);
+            } else if (!D && Kt(mt)) {
               var Z = De(B);
-              return Z.callee = B, Z.arguments = Gi(wt, !1), xi(Lt(Z, "CallExpression"), D);
+              return Z.callee = B, Z.arguments = Hi(wt, !1), mi(Lt(Z, "CallExpression"), D);
             } else
               return B;
           }
-          function Wi() {
+          function Ui() {
             switch (T) {
-              case wi:
-                var Y = fe();
+              case yi:
+                var Y = le();
                 return Ot(), Lt(Y, "ThisExpression");
               case J:
                 return qe();
               case ht:
               case vt:
               case lt:
-                var Y = fe();
-                return Y.value = V, Y.raw = p.slice(E, L), Ot(), Lt(Y, "Literal");
+                var Y = le();
+                return Y.value = R, Y.raw = p.slice(E, L), Ot(), Lt(Y, "Literal");
               case n:
               case u:
               case x:
-                var Y = fe();
+                var Y = le();
                 return Y.value = T.atomValue, Y.raw = T.keyword, Ot(), Lt(Y, "Literal");
               case mt:
                 var B = M, D = E;
                 Ot();
-                var Z = ge();
-                return Z.start = D, Z.end = L, k.locations && (Z.loc.start = B, Z.loc.end = R), k.ranges && (Z.range = [D, L]), re(wt), Z;
-              case H:
-                var Y = fe();
-                return Ot(), Y.elements = Gi(j, !0, !0), Lt(Y, "ArrayExpression");
+                var Z = pe();
+                return Z.start = D, Z.end = L, k.locations && (Z.loc.start = B, Z.loc.end = V), k.ranges && (Z.range = [D, L]), ne(wt), Z;
+              case W:
+                var Y = le();
+                return Ot(), Y.elements = Hi(j, !0, !0), Lt(Y, "ArrayExpression");
               case $:
                 return er();
-              case _e:
-                var Y = fe();
-                return Ot(), Hi(Y, !1);
-              case yi:
+              case ge:
+                var Y = le();
+                return Ot(), Wi(Y, !1);
+              case bi:
                 return tr();
               default:
-                Ve();
+                Re();
             }
           }
           function tr() {
-            var B = fe();
-            return Ot(), B.callee = xi(Wi(), !0), Yt(mt) ? B.arguments = Gi(wt, !1) : B.arguments = rt, Lt(B, "NewExpression");
+            var B = le();
+            return Ot(), B.callee = mi(Ui(), !0), Kt(mt) ? B.arguments = Hi(wt, !1) : B.arguments = st, Lt(B, "NewExpression");
           }
           function er() {
-            var B = fe(), D = !0, Z = !1;
-            for (B.properties = [], Ot(); !Yt(st); ) {
+            var B = le(), D = !0, Z = !1;
+            for (B.properties = [], Ot(); !Kt(at); ) {
               if (D)
                 D = !1;
-              else if (re(qt), k.allowTrailingCommas && Yt(st))
+              else if (ne(Ut), k.allowTrailingCommas && Kt(at))
                 break;
               var Y = { key: gn() }, bt = !1, Ct;
-              if (Yt(Se) ? (Y.value = ge(!0), Ct = Y.kind = "init") : k.ecmaVersion >= 5 && Y.key.type === "Identifier" && (Y.key.name === "get" || Y.key.name === "set") ? (bt = Z = !0, Ct = Y.kind = Y.key.name, Y.key = gn(), T !== mt && Ve(), Y.value = Hi(fe(), !1)) : Ve(), Y.key.type === "Identifier" && (X || Z))
+              if (Kt(Se) ? (Y.value = pe(!0), Ct = Y.kind = "init") : k.ecmaVersion >= 5 && Y.key.type === "Identifier" && (Y.key.name === "get" || Y.key.name === "set") ? (bt = Z = !0, Ct = Y.kind = Y.key.name, Y.key = gn(), T !== mt && Re(), Y.value = Wi(le(), !1)) : Re(), Y.key.type === "Identifier" && (X || Z))
                 for (var Pt = 0; Pt < B.properties.length; ++Pt) {
-                  var Vt = B.properties[Pt];
-                  if (Vt.key.name === Y.key.name) {
-                    var Ae = Ct == Vt.kind || bt && Vt.kind === "init" || Ct === "init" && (Vt.kind === "get" || Vt.kind === "set");
-                    Ae && !X && Ct === "init" && Vt.kind === "init" && (Ae = !1), Ae && K(Y.key.start, "Redefinition of property");
+                  var Rt = B.properties[Pt];
+                  if (Rt.key.name === Y.key.name) {
+                    var Ae = Ct == Rt.kind || bt && Rt.kind === "init" || Ct === "init" && (Rt.kind === "get" || Rt.kind === "set");
+                    Ae && !X && Ct === "init" && Rt.kind === "init" && (Ae = !1), Ae && K(Y.key.start, "Redefinition of property");
                   }
                 }
               B.properties.push(Y);
@@ -12595,36 +12595,36 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             return Lt(B, "ObjectExpression");
           }
           function gn() {
-            return T === ht || T === vt ? Wi() : qe(!0);
+            return T === ht || T === vt ? Ui() : qe(!0);
           }
-          function Hi(B, D) {
-            T === J ? B.id = qe() : D ? Ve() : B.id = null, B.params = [];
+          function Wi(B, D) {
+            T === J ? B.id = qe() : D ? Re() : B.id = null, B.params = [];
             var Z = !0;
-            for (re(mt); !Yt(wt); )
-              Z ? Z = !1 : re(qt), B.params.push(qe());
-            var Y = it, bt = ot;
-            if (it = !0, ot = [], B.body = mi(!0), it = Y, ot = bt, X || B.body.body.length && Ri(B.body.body[0]))
+            for (ne(mt); !Kt(wt); )
+              Z ? Z = !1 : ne(Ut), B.params.push(qe());
+            var Y = nt, bt = ot;
+            if (nt = !0, ot = [], B.body = vi(!0), nt = Y, ot = bt, X || B.body.body.length && Ri(B.body.body[0]))
               for (var Ct = B.id ? -1 : 0; Ct < B.params.length; ++Ct) {
                 var Pt = Ct < 0 ? B.id : B.params[Ct];
-                if ((en(Pt.name) || Si(Pt.name)) && K(Pt.start, "Defining '" + Pt.name + "' in strict mode"), Ct >= 0)
-                  for (var Vt = 0; Vt < Ct; ++Vt)
-                    Pt.name === B.params[Vt].name && K(Pt.start, "Argument name clash in strict mode");
+                if ((en(Pt.name) || wi(Pt.name)) && K(Pt.start, "Defining '" + Pt.name + "' in strict mode"), Ct >= 0)
+                  for (var Rt = 0; Rt < Ct; ++Rt)
+                    Pt.name === B.params[Rt].name && K(Pt.start, "Argument name clash in strict mode");
               }
             return Lt(B, D ? "FunctionDeclaration" : "FunctionExpression");
           }
-          function Gi(B, D, Z) {
-            for (var Y = [], bt = !0; !Yt(B); ) {
+          function Hi(B, D, Z) {
+            for (var Y = [], bt = !0; !Kt(B); ) {
               if (bt)
                 bt = !1;
-              else if (re(qt), D && k.allowTrailingCommas && Yt(B))
+              else if (ne(Ut), D && k.allowTrailingCommas && Kt(B))
                 break;
-              Z && T === qt ? Y.push(null) : Y.push(ge(!0));
+              Z && T === Ut ? Y.push(null) : Y.push(pe(!0));
             }
             return Y;
           }
           function qe(B) {
-            var D = fe();
-            return B && k.forbidReserved == "everywhere" && (B = !1), T === J ? (!B && (k.forbidReserved && (k.ecmaVersion === 3 ? Ln : On)(V) || X && en(V)) && p.slice(E, L).indexOf("\\") == -1 && K(E, "The keyword '" + V + "' is reserved"), D.name = V) : B && T.keyword ? D.name = T.keyword : Ve(), F = !1, Ot(), Lt(D, "Identifier");
+            var D = le();
+            return B && k.forbidReserved == "everywhere" && (B = !1), T === J ? (!B && (k.forbidReserved && (k.ecmaVersion === 3 ? Ln : On)(R) || X && en(R)) && p.slice(E, L).indexOf("\\") == -1 && K(E, "The keyword '" + R + "' is reserved"), D.name = R) : B && T.keyword ? D.name = T.keyword : Re(), F = !1, Ot(), Lt(D, "Identifier");
           }
         }), e.version || (e = null);
       }
@@ -12653,7 +12653,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }
         }
       );
-      z.inject(o), at.inject(o), Jt.inject(o);
+      z.inject(o), ut.inject(o), Qt.inject(o);
       function l(m, k, p) {
         var y = a[k];
         if (m && m[y]) {
@@ -12694,7 +12694,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         k = k || {};
         var p = [];
         function y(X) {
-          for (var K = 0, rt = p.length; K < rt; K++) {
+          for (var K = 0, st = p.length; K < st; K++) {
             var ht = p[K];
             if (ht[0] >= X)
               break;
@@ -12715,19 +12715,19 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           );
         }
         function C(X, K) {
-          for (var rt = y(X.range[0]), ht = y(X.range[1]), lt = 0, vt = p.length - 1; vt >= 0; vt--)
-            if (rt > p[vt][0]) {
+          for (var st = y(X.range[0]), ht = y(X.range[1]), lt = 0, vt = p.length - 1; vt >= 0; vt--)
+            if (st > p[vt][0]) {
               lt = vt + 1;
               break;
             }
-          p.splice(lt, 0, [rt, K.length - ht + rt]), m = m.substring(0, rt) + K + m.substring(ht);
+          p.splice(lt, 0, [st, K.length - ht + st]), m = m.substring(0, st) + K + m.substring(ht);
         }
         function P(X, K) {
           switch (X.type) {
             case "UnaryExpression":
               if (X.operator in h && X.argument.type !== "Literal") {
-                var rt = c(X.argument);
-                C(X, '$__("' + X.operator + '", ' + rt + ")");
+                var st = c(X.argument);
+                C(X, '$__("' + X.operator + '", ' + st + ")");
               }
               break;
             case "BinaryExpression":
@@ -12744,8 +12744,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               var gt = K && K.type;
               if (!(gt === "ForStatement" || gt === "BinaryExpression" && /^[=!<>]/.test(K.operator) || gt === "MemberExpression" && K.computed)) {
                 if (X.type === "UpdateExpression") {
-                  var rt = c(X.argument), It = "__$__(" + rt + ', "' + X.operator[0] + '", 1)', yt = rt + " = " + It;
-                  X.prefix ? yt = "(" + yt + ")" : (gt === "AssignmentExpression" || gt === "VariableDeclarator" || gt === "BinaryExpression") && (c(K.left || K.id) === rt && (yt = It), yt = rt + "; " + yt), C(X, yt);
+                  var st = c(X.argument), It = "__$__(" + st + ', "' + X.operator[0] + '", 1)', yt = st + " = " + It;
+                  X.prefix ? yt = "(" + yt + ")" : (gt === "AssignmentExpression" || gt === "VariableDeclarator" || gt === "BinaryExpression") && (c(K.left || K.id) === st && (yt = It), yt = st + "; " + yt), C(X, yt);
                 } else if (/^.=$/.test(X.operator) && X.left.type !== "Literal") {
                   var ht = c(X.left), lt = c(X.right), It = ht + " = __$__(" + ht + ', "' + X.operator[0] + '", ' + lt + ")";
                   C(X, /^\(.*\)$/.test(c(X)) ? "(" + It + ")" : It);
@@ -12762,7 +12762,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               }, "module.exports = ");
               break;
             case "ExportNamedDeclaration":
-              var K = X.declaration, rt = X.specifiers;
+              var K = X.declaration, st = X.specifiers;
               if (K) {
                 var ht = K.declarations;
                 ht && (ht.forEach(function(vt) {
@@ -12773,8 +12773,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                     K.start + K.kind.length
                   ]
                 }, ""));
-              } else if (rt) {
-                var lt = rt.map(function(vt) {
+              } else if (st) {
+                var lt = st.map(function(vt) {
                   var J = c(vt);
                   return "module.exports." + J + " = " + J + "; ";
                 }).join("");
@@ -12783,73 +12783,73 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               break;
           }
         }
-        function E(X, K, rt) {
+        function E(X, K, st) {
           if (X) {
             for (var ht in X)
               if (ht !== "range" && ht !== "loc") {
                 var lt = X[ht];
                 if (Array.isArray(lt))
                   for (var vt = 0, J = lt.length; vt < J; vt++)
-                    E(lt[vt], X, rt);
+                    E(lt[vt], X, st);
                 else
-                  lt && typeof lt == "object" && E(lt, X, rt);
+                  lt && typeof lt == "object" && E(lt, X, st);
               }
-            rt.operatorOverloading !== !1 && P(X, K), rt.moduleExports !== !1 && S(X);
+            st.operatorOverloading !== !1 && P(X, K), st.moduleExports !== !1 && S(X);
           }
         }
         function L(X) {
-          var K = "", rt = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+          var K = "", st = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
           for (X = (Math.abs(X) << 1) + (X < 0 ? 1 : 0); X || !K; ) {
             var ht = X & 31;
-            X >>= 5, X && (ht |= 32), K += rt[ht];
+            X >>= 5, X && (ht |= 32), K += st[ht];
           }
           return K;
         }
-        var M = k.url || "", R = k.sourceMaps, T = k.paperFeatures || {}, V = k.source || m, F = k.offset || 0, q = dt.agent, U = q.versionNumber, G = !1, Q = /\r\n|\n|\r/mg, tt;
-        if (R && (q.chrome && U >= 30 || q.webkit && U >= 537.76 || q.firefox && U >= 23 || q.node)) {
+        var M = k.url || "", V = k.sourceMaps, T = k.paperFeatures || {}, R = k.source || m, F = k.offset || 0, q = dt.agent, U = q.versionNumber, H = !1, Q = /\r\n|\n|\r/mg, tt;
+        if (V && (q.chrome && U >= 30 || q.webkit && U >= 537.76 || q.firefox && U >= 23 || q.node)) {
           if (q.node)
             F -= 2;
-          else if (ut && M && !ut.location.href.indexOf(M)) {
-            var it = et.getElementsByTagName("html")[0].innerHTML;
-            F = it.substr(0, it.indexOf(m) + 1).match(
+          else if (et && M && !et.location.href.indexOf(M)) {
+            var nt = it.getElementsByTagName("html")[0].innerHTML;
+            F = nt.substr(0, nt.indexOf(m) + 1).match(
               Q
             ).length + 1;
           }
-          G = F > 0 && !(q.chrome && U >= 36 || q.safari && U >= 600 || q.firefox && U >= 40 || q.node);
-          var ot = ["AA" + L(G ? 0 : F) + "A"];
-          ot.length = (m.match(Q) || []).length + 1 + (G ? F : 0), tt = {
+          H = F > 0 && !(q.chrome && U >= 36 || q.safari && U >= 600 || q.firefox && U >= 40 || q.node);
+          var ot = ["AA" + L(H ? 0 : F) + "A"];
+          ot.length = (m.match(Q) || []).length + 1 + (H ? F : 0), tt = {
             version: 3,
             file: M,
             names: [],
             mappings: ot.join(";AACA"),
             sourceRoot: "",
             sources: [M],
-            sourcesContent: [V]
+            sourcesContent: [R]
           };
         }
         return (T.operatorOverloading !== !1 || T.moduleExports !== !1) && E(s(m, {
           ranges: !0,
           preserveParens: !0,
           sourceType: "module"
-        }), null, T), tt && (G && (m = new Array(F + 1).join(`
-`) + m), /^(inline|both)$/.test(R) && (m += `
-//# sourceMappingURL=data:application/json;base64,` + ct.btoa(unescape(encodeURIComponent(
+        }), null, T), tt && (H && (m = new Array(F + 1).join(`
+`) + m), /^(inline|both)$/.test(V) && (m += `
+//# sourceMappingURL=data:application/json;base64,` + pt.btoa(unescape(encodeURIComponent(
           JSON.stringify(tt)
         )))), m += `
 //# sourceURL=` + (M || "paperscript")), {
           url: M,
-          source: V,
+          source: R,
           code: m,
           map: tt
         };
       }
       function v(m, k, p) {
         dt = k;
-        var y = k.getView(), c = /\btool\.\w+|\s+on(?:Key|Mouse)(?:Up|Down|Move|Drag)\b/.test(m) && !/\bnew\s+Tool\b/.test(m) ? new di() : null, b = c ? c._events : [], C = ["onFrame", "onResize"].concat(b), P = [], S = [], E, L = typeof m == "object" ? m : _(m, p);
+        var y = k.getView(), c = /\btool\.\w+|\s+on(?:Key|Mouse)(?:Up|Down|Move|Drag)\b/.test(m) && !/\bnew\s+Tool\b/.test(m) ? new ci() : null, b = c ? c._events : [], C = ["onFrame", "onResize"].concat(b), P = [], S = [], E, L = typeof m == "object" ? m : _(m, p);
         m = L.code;
-        function M(U, G) {
+        function M(U, H) {
           for (var Q in U)
-            (G || !/^_/.test(Q)) && new RegExp("([\\b\\s\\W]|^)" + Q.replace(/\$/g, "\\$") + "\\b").test(m) && (P.push(Q), S.push(U[Q]));
+            (H || !/^_/.test(Q)) && new RegExp("([\\b\\s\\W]|^)" + Q.replace(/\$/g, "\\$") + "\\b").test(m) && (P.push(Q), S.push(U[Q]));
         }
         M(
           { __$__: l, $__: f, paper: k, tool: c },
@@ -12862,32 +12862,32 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         F && (m += `
 ` + F), m += `
 return module.exports;`;
-        var R = dt.agent;
-        if (et && (R.chrome || R.firefox && R.versionNumber < 40)) {
-          var T = et.createElement("script"), V = et.head || et.getElementsByTagName("head")[0];
-          R.firefox && (m = `
-` + m), T.appendChild(et.createTextNode(
+        var V = dt.agent;
+        if (it && (V.chrome || V.firefox && V.versionNumber < 40)) {
+          var T = it.createElement("script"), R = it.head || it.getElementsByTagName("head")[0];
+          V.firefox && (m = `
+` + m), T.appendChild(it.createTextNode(
             "document.__paperscript__ = function(" + P + ") {" + m + `
 }`
-          )), V.appendChild(T), E = et.__paperscript__, delete et.__paperscript__, V.removeChild(T);
+          )), R.appendChild(T), E = it.__paperscript__, delete it.__paperscript__, R.removeChild(T);
         } else
           E = Function(P, m);
         var F = E && E.apply(k, S), q = F || {};
         return O.each(b, function(U) {
-          var G = q[U];
-          G && (c[U] = G);
+          var H = q[U];
+          H && (c[U] = H);
         }), y && (q.onResize && y.setOnResize(q.onResize), y.emit("resize", {
           size: y.size,
           delta: new z()
         }), q.onFrame && y.setOnFrame(q.onFrame), y.requestUpdate()), F;
       }
       function g(m) {
-        if (/^text\/(?:x-|)paperscript$/.test(m.type) && Gt.getAttribute(m, "ignore") !== "true") {
-          var k = Gt.getAttribute(m, "canvas"), p = et.getElementById(k), y = m.src || m.getAttribute("data-src"), c = Gt.hasAttribute(m, "async"), b = "data-paper-scope";
+        if (/^text\/(?:x-|)paperscript$/.test(m.type) && Nt.getAttribute(m, "ignore") !== "true") {
+          var k = Nt.getAttribute(m, "canvas"), p = it.getElementById(k), y = m.src || m.getAttribute("data-src"), c = Nt.hasAttribute(m, "async"), b = "data-paper-scope";
           if (!p)
             throw new Error('Unable to find canvas with id "' + k + '"');
-          var C = Gt.get(p.getAttribute(b)) || new Gt().setup(p);
-          return p.setAttribute(b, C._id), y ? ei.request({
+          var C = Nt.get(p.getAttribute(b)) || new Nt().setup(p);
+          return p.setAttribute(b, C._id), y ? ti.request({
             url: y,
             async: c,
             mimeType: "text/plain",
@@ -12899,14 +12899,14 @@ return module.exports;`;
       }
       function d() {
         O.each(
-          et && et.getElementsByTagName("script"),
+          it && it.getElementsByTagName("script"),
           g
         );
       }
       function w(m) {
         return m ? g(m) : d();
       }
-      return ut && (et.readyState === "complete" ? setTimeout(d) : Zt.add(ut, { load: d })), {
+      return et && (it.readyState === "complete" ? setTimeout(d) : jt.add(et, { load: d })), {
         compile: _,
         execute: v,
         load: w,
@@ -12915,21 +12915,21 @@ return module.exports;`;
         calculateUnary: f
       };
     }.call(this);
-    var dt = new (Gt.inject(O.exports, {
+    var dt = new (Nt.inject(O.exports, {
       Base: O,
-      Numerical: pt,
-      Key: fi,
-      DomEvent: Zt,
-      DomElement: zt,
-      document: et,
-      window: ut,
+      Numerical: ct,
+      Key: li,
+      DomEvent: jt,
+      DomElement: qt,
+      document: it,
+      window: et,
       Symbol: ee,
       PlacedSymbol: Ue
     }))();
-    return dt.agent.node && _n(dt), typeof W == "function" && W.amd ? W("paper", dt) : ne && (ne.exports = dt), dt;
+    return dt.agent.node && _n(dt), typeof G == "function" && G.amd ? G("paper", dt) : te && (te.exports = dt), dt;
   }).call(bn, typeof self == "object" ? self : null);
 })(yn);
-const Me = yn.exports, fr = ["id"], mn = {
+const Me = yn.exports, hr = ["id"], mn = {
   __name: "ImageRuler",
   props: {
     image: Object,
@@ -12943,32 +12943,32 @@ const Me = yn.exports, fr = ["id"], mn = {
     imageLoaded: Boolean,
     config: Object
   },
-  setup(ne) {
-    const ct = ne, W = ui(() => "#" + ct.position + "Ruler"), ut = Mi(null), et = ui(() => ({
-      pixelsPerInch: ct.config.pixelsPerInch || 72,
+  setup(te) {
+    const pt = te, G = ai(() => "#" + pt.position + "Ruler"), et = Oi(null), it = ai(() => ({
+      pixelsPerInch: pt.config.pixelsPerInch || 72,
       spaceAddend: 15,
       subUnitBase: 2,
       subUnitExponent: 2,
       levelToLevelMultiplier: 0.5,
       ticksPerUnit: Math.pow(2, 2),
-      masterTickQty: Math.pow(2, 2) * ct.xWidth,
-      rulerWidth: Math.round(15 + 0.3 * ct.config.pixelsPerInch)
-    })), O = ui(() => {
-      let Tt = {
+      masterTickQty: Math.pow(2, 2) * pt.xWidth,
+      rulerWidth: Math.round(15 + 0.3 * pt.config.pixelsPerInch)
+    })), O = ai(() => {
+      let Et = {
         left: {
           x: {
             position: "absolute",
             bottom: 0,
             right: 0,
-            height: `${et.value.rulerWidth}px`,
-            transform: `translateX(-${et.value.rulerWidth}px)`
+            height: `${it.value.rulerWidth}px`,
+            transform: `translateX(-${it.value.rulerWidth}px)`
           },
           y: {
             position: "absolute",
             bottom: 0,
             right: 0,
-            width: `${et.value.rulerWidth}px`,
-            transform: `translateY(-${et.value.rulerWidth}px)`
+            width: `${it.value.rulerWidth}px`,
+            transform: `translateY(-${it.value.rulerWidth}px)`
           }
         },
         right: {
@@ -12976,32 +12976,32 @@ const Me = yn.exports, fr = ["id"], mn = {
             position: "absolute",
             bottom: 0,
             left: 0,
-            height: `${et.value.rulerWidth}px`,
-            transform: `translateX(${et.value.rulerWidth}px)`
+            height: `${it.value.rulerWidth}px`,
+            transform: `translateX(${it.value.rulerWidth}px)`
           },
           y: {
             position: "absolute",
             bottom: 0,
             left: 0,
-            width: `${et.value.rulerWidth}px`,
-            transform: `translateY(-${et.value.rulerWidth}px)`
+            width: `${it.value.rulerWidth}px`,
+            transform: `translateY(-${it.value.rulerWidth}px)`
           }
         }
-      }, pt = {
+      }, ct = {
         left: {
           x: {
             position: "absolute",
             bottom: 0,
             right: 0,
-            height: `${et.value.rulerWidth}px`,
-            transform: `translateX(-${et.value.rulerWidth}px)`
+            height: `${it.value.rulerWidth}px`,
+            transform: `translateX(-${it.value.rulerWidth}px)`
           },
           y: {
             position: "absolute",
             bottom: 0,
             right: 0,
-            width: `${et.value.rulerWidth}px`,
-            transform: `translateY(-${et.value.rulerWidth}px)`
+            width: `${it.value.rulerWidth}px`,
+            transform: `translateY(-${it.value.rulerWidth}px)`
           }
         },
         right: {
@@ -13009,32 +13009,32 @@ const Me = yn.exports, fr = ["id"], mn = {
             position: "absolute",
             bottom: 0,
             right: 0,
-            height: `${et.value.rulerWidth}px`,
-            transform: `translateX(-${et.value.rulerWidth}px)`
+            height: `${it.value.rulerWidth}px`,
+            transform: `translateX(-${it.value.rulerWidth}px)`
           },
           y: {
             position: "absolute",
             bottom: 0,
             left: 0,
-            width: `${et.value.rulerWidth}px`,
-            transform: `translateY(-${et.value.rulerWidth}px)`
+            width: `${it.value.rulerWidth}px`,
+            transform: `translateY(-${it.value.rulerWidth}px)`
           }
         }
-      }, Nt = {
+      }, Vt = {
         left: {
           x: {
             position: "absolute",
             top: 0,
             left: 0,
-            height: `${et.value.rulerWidth}px`,
-            transform: `translateX(${et.value.rulerWidth}px)`
+            height: `${it.value.rulerWidth}px`,
+            transform: `translateX(${it.value.rulerWidth}px)`
           },
           y: {
             position: "absolute",
             top: 0,
             left: 0,
-            width: `${et.value.rulerWidth}px`,
-            transform: `translateY(${et.value.rulerWidth}px)`
+            width: `${it.value.rulerWidth}px`,
+            transform: `translateY(${it.value.rulerWidth}px)`
           }
         },
         right: {
@@ -13042,84 +13042,84 @@ const Me = yn.exports, fr = ["id"], mn = {
             position: "absolute",
             top: 0,
             right: 0,
-            height: `${et.value.rulerWidth}px`,
-            transform: `translateX(-${et.value.rulerWidth}px)`
+            height: `${it.value.rulerWidth}px`,
+            transform: `translateX(-${it.value.rulerWidth}px)`
           },
           y: {
             position: "absolute",
             top: 0,
             right: 0,
-            width: `${et.value.rulerWidth}px`,
-            transform: `translateY(${et.value.rulerWidth}px)`
+            width: `${it.value.rulerWidth}px`,
+            transform: `translateY(${it.value.rulerWidth}px)`
           }
         }
       }, z = { left: { x: {}, y: {} }, right: { x: {}, y: {} } };
-      return ct.comparison === "Facing Up" && (z = Tt), (ct.comparison === "Back-to-Back" || ct.comparison === "Back") && (z = pt), ct.comparison === "Facing In" && (z = Nt), z[ct.position][ct.axis];
-    }), Qt = () => {
-      let Tt = [], pt = 0;
-      for (let Nt = 0; Nt <= et.value.subUnitExponent; Nt++) {
+      return pt.comparison === "Facing Up" && (z = Et), (pt.comparison === "Back-to-Back" || pt.comparison === "Back") && (z = ct), pt.comparison === "Facing In" && (z = Vt), z[pt.position][pt.axis];
+    }), Yt = () => {
+      let Et = [], ct = 0;
+      for (let Vt = 0; Vt <= it.value.subUnitExponent; Vt++) {
         let z = Math.floor(
-          (ct.axis === "x" ? ct.xWidth : ct.yHeight) * Math.pow(et.value.subUnitBase, Nt)
-        ), Dt = et.value.ticksPerUnit / Math.pow(et.value.subUnitBase, Nt);
-        for (let at = 0; at <= z; at++) {
-          pt = Dt * at;
-          let xt = ct.xHeight * et.value.pixelsPerInch * Math.pow(et.value.levelToLevelMultiplier, Nt), ft = ct.yWidth * et.value.pixelsPerInch * Math.pow(et.value.levelToLevelMultiplier, Nt), se = et.value.pixelsPerInch / Math.pow(et.value.subUnitBase, Nt), At = at === z, Bt = se * at, kt = Bt, I = 0, Rt = xt;
-          if (ct.axis === "y" && (Bt = ct.position === "left" ? 0 : ct.yWidth * et.value.pixelsPerInch + et.value.spaceAddend, kt = ct.position === "left" ? ft : Bt - ft, I = se * at, Rt = I), ["Facing In"].includes(ct.comparison) && (ct.axis === "y" && (Bt = ct.position === "left" ? ct.yWidth * et.value.pixelsPerInch + et.value.spaceAddend : 0, kt = ct.position === "left" ? Bt - ft : ft, I = se * at, Rt = I), ct.axis === "x" && (Bt = se * at, kt = Bt, I = ct.yWidth * et.value.pixelsPerInch + et.value.spaceAddend, Rt = I - xt)), Tt[pt] === void 0) {
-            let Ee = new Me.Point(Bt, I), jt = new Me.Point(kt, Rt), Ce = new Me.Path.Line(Ee, jt);
-            Ce.strokeColor = "black", Ce.strokeWidth = "1", Tt[pt] = !0, Nt === 0 && (ct.axis === "x" && ve(Bt, Rt, At, at, z), ct.axis === "y" && Gt(kt, I, at, z));
+          (pt.axis === "x" ? pt.xWidth : pt.yHeight) * Math.pow(it.value.subUnitBase, Vt)
+        ), Ft = it.value.ticksPerUnit / Math.pow(it.value.subUnitBase, Vt);
+        for (let ut = 0; ut <= z; ut++) {
+          ct = Ft * ut;
+          let xt = pt.xHeight * it.value.pixelsPerInch * Math.pow(it.value.levelToLevelMultiplier, Vt), ft = pt.yWidth * it.value.pixelsPerInch * Math.pow(it.value.levelToLevelMultiplier, Vt), re = it.value.pixelsPerInch / Math.pow(it.value.subUnitBase, Vt), At = ut === z, Bt = re * ut, kt = Bt, I = 0, zt = xt;
+          if (pt.axis === "y" && (Bt = pt.position === "left" ? 0 : pt.yWidth * it.value.pixelsPerInch + it.value.spaceAddend, kt = pt.position === "left" ? ft : Bt - ft, I = re * ut, zt = I), ["Facing In"].includes(pt.comparison) && (pt.axis === "y" && (Bt = pt.position === "left" ? pt.yWidth * it.value.pixelsPerInch + it.value.spaceAddend : 0, kt = pt.position === "left" ? Bt - ft : ft, I = re * ut, zt = I), pt.axis === "x" && (Bt = re * ut, kt = Bt, I = pt.yWidth * it.value.pixelsPerInch + it.value.spaceAddend, zt = I - xt)), Et[ct] === void 0) {
+            let Ee = new Me.Point(Bt, I), Gt = new Me.Point(kt, zt), Ce = new Me.Path.Line(Ee, Gt);
+            Ce.strokeColor = "black", Ce.strokeWidth = "1", Et[ct] = !0, Vt === 0 && (pt.axis === "x" && _e(Bt, zt, At, ut, z), pt.axis === "y" && Nt(kt, I, ut, z));
           }
         }
       }
       Me.view.draw();
-    }, Gt = (Tt, pt, Nt, z) => {
-      let Dt = ct.position === "left" ? -5 : -2, at = 1;
-      Nt === 0 ? at = 15 : at = -5;
+    }, Nt = (Et, ct, Vt, z) => {
+      let Ft = pt.position === "left" ? -5 : -2, ut = 1;
+      Vt === 0 ? ut = 15 : ut = -5;
       let xt = new Me.PointText(
-        new Me.Point(Tt + Dt, pt + at)
+        new Me.Point(Et + Ft, ct + ut)
       );
-      xt.justification = "left", xt.fillColor = "black", xt.content = Nt, ["Facing Up", "Back-to-Back", "Back"].includes(ct.comparison) && (xt.content = Math.abs(Math.floor(Nt - z))), xt.style = {
+      xt.justification = "left", xt.fillColor = "black", xt.content = Vt, ["Facing Up", "Back-to-Back", "Back"].includes(pt.comparison) && (xt.content = Math.abs(Math.floor(Vt - z))), xt.style = {
         fontFamily: "monospace",
         fontSize: 14
       };
-    }, ve = (Tt, pt, Nt, z, Dt) => {
-      let at = 4, xt = 6;
-      Nt && (at = -1 * at);
+    }, _e = (Et, ct, Vt, z, Ft) => {
+      let ut = 4, xt = 6;
+      Vt && (ut = -1 * ut);
       let ft = new Me.PointText(
-        new Me.Point(Tt + at, pt + xt)
+        new Me.Point(Et + ut, ct + xt)
       );
-      ft.justification = "left", Nt && (ft.justification = "right"), ft.fillColor = "black", ft.content = ct.position === "left" ? z : Math.abs(Math.floor(z - Dt)), ["Facing Up", "Back-to-Back", "Back"].includes(ct.comparison) && (ft.content = ct.position === "left" ? Math.abs(Math.floor(z - Dt)) : z), ft.style = {
+      ft.justification = "left", Vt && (ft.justification = "right"), ft.fillColor = "black", ft.content = pt.position === "left" ? z : Math.abs(Math.floor(z - Ft)), ["Facing Up", "Back-to-Back", "Back"].includes(pt.comparison) && (ft.content = pt.position === "left" ? Math.abs(Math.floor(z - Ft)) : z), ft.style = {
         fontFamily: "monospace",
         fontSize: 14
       };
-    }, Wt = () => {
-      ut.value.width = Math.round(ct.xWidth * et.value.pixelsPerInch), ut.value.height = Math.round(
-        ct.xHeight * et.value.pixelsPerInch + et.value.spaceAddend
-      ), ct.axis === "y" && (ut.value.width = Math.round(
-        ct.yWidth * et.value.pixelsPerInch + et.value.spaceAddend
-      ), ut.value.height = Math.round(
-        ct.yHeight * et.value.pixelsPerInch
+    }, xe = () => {
+      et.value.width = Math.round(pt.xWidth * it.value.pixelsPerInch), et.value.height = Math.round(
+        pt.xHeight * it.value.pixelsPerInch + it.value.spaceAddend
+      ), pt.axis === "y" && (et.value.width = Math.round(
+        pt.yWidth * it.value.pixelsPerInch + it.value.spaceAddend
+      ), et.value.height = Math.round(
+        pt.yHeight * it.value.pixelsPerInch
       ));
     };
-    return Xi(() => {
-    }), Zi(
-      () => ct.imageLoaded,
-      (Tt) => {
-        Tt && (Me.setup(ut.value), Wt(), Qt());
+    return Zi(() => {
+    }), ji(
+      () => pt.imageLoaded,
+      (Et) => {
+        Et && (Me.setup(et.value), xe(), Yt());
       }
-    ), Zi(
-      () => ct.comparison,
+    ), ji(
+      () => pt.comparison,
       () => {
-        ct.imageLoaded && (Me.setup(ut.value), Wt(), Qt());
+        pt.imageLoaded && (Me.setup(et.value), xe(), Yt());
       }
-    ), (Tt, pt) => (Ki(), Yi("div", {
-      style: Li(Re(O))
+    ), (Et, ct) => (Xi(), Ki("div", {
+      style: Ti(Ve(O))
     }, [
-      Qe("canvas", {
+      Yi("canvas", {
         ref_key: "ruler",
-        ref: ut,
-        id: Re(W),
+        ref: et,
+        id: Ve(G),
         resize: ""
-      }, null, 8, fr)
+      }, null, 8, hr)
     ], 4));
   }
 }, xn = {
@@ -13132,97 +13132,100 @@ const Me = yn.exports, fr = ["id"], mn = {
     config: Object
   },
   emits: ["imageLoaded"],
-  setup(ne, { emit: ct }) {
-    const W = ne, ut = Mi(null), et = Mi(!1), O = Oi({
-      pixelsPerInch: W.config.pixelsPerInch || 72,
+  setup(te, { emit: pt }) {
+    const G = te, et = Oi(null), it = Oi(!1), O = Li({
+      pixelsPerInch: G.config.pixelsPerInch || 72,
       spaceAddend: 15,
       xWidth: 0.3,
       xHeight: 0.3,
       yWidth: 0.3,
       yHeight: 0.3,
-      rulerWidth: Math.round(15 + 0.3 * W.config.pixelsPerInch)
-    }), Qt = ui(() => ({
-      width: W.image.rawLength * O.pixelsPerInch
-    })), Gt = () => {
-      ["Facing Up"].includes(W.comparison) && (O.xWidth = Math.round(ut.value.height / O.pixelsPerInch), O.yHeight = Math.round(W.maxLength)), ["Back-to-Back", "Facing In", "Back"].includes(W.comparison) && (O.xWidth = Math.round(W.maxLength), O.yHeight = Math.round(ut.value.height / O.pixelsPerInch));
-    }, ve = () => {
-      et.value = !0, Gt(), ct("imageLoaded", ut.value), Wt();
-    }, Wt = () => {
-      if (ut.value.style.position = "absolute", ["Facing Up", "Back-to-Back", "Back"].includes(W.comparison)) {
-        let pt = (ut.value.width - ut.value.height) / 2 - O.rulerWidth, Nt = (ut.value.height - ut.value.width) / 2 - O.rulerWidth;
-        ut.value.style.bottom = 0, ut.value.style.top = "auto", W.position === "left" && (ut.value.style.right = 0, ut.value.style.left = "auto", W.comparison === "Facing Up" && (ut.value.style.transform = `translate(${pt}px, ${Nt}px) rotate(90deg)`), (W.comparison === "Back-to-Back" || W.comparison === "Back") && (ut.value.style.transform = `translate(-${O.rulerWidth}px, -${O.rulerWidth}px)`)), W.position === "right" && (ut.value.style.left = 0, ut.value.style.right = "auto", W.comparison === "Facing Up" && (ut.value.style.transform = `translate(-${pt}px, ${Nt}px) rotate(-90deg)`), W.comparison === "Back-to-Back" && (ut.value.style.transform = `translate(${O.rulerWidth}px, -${O.rulerWidth}px)`));
+      rulerWidth: Math.round(15 + 0.3 * G.config.pixelsPerInch)
+    }), Yt = ai(() => ({
+      width: G.image.rawLength * O.pixelsPerInch
+    })), Nt = () => {
+      ["Facing Up"].includes(G.comparison) && (O.xWidth = Math.round(et.value.height / O.pixelsPerInch), O.yHeight = Math.round(G.maxLength)), ["Back-to-Back", "Facing In", "Back"].includes(G.comparison) && (O.xWidth = Math.round(G.maxLength), O.yHeight = Math.round(et.value.height / O.pixelsPerInch));
+    }, _e = () => {
+      it.value = !0, Nt(), pt("imageLoaded", et.value), xe();
+    }, xe = () => {
+      if (et.value.style.position = "absolute", ["Facing Up", "Back-to-Back", "Back"].includes(G.comparison)) {
+        let ct = (et.value.width - et.value.height) / 2 - O.rulerWidth, Vt = (et.value.height - et.value.width) / 2 - O.rulerWidth;
+        et.value.style.bottom = 0, et.value.style.top = "auto", G.position === "left" && (et.value.style.right = 0, et.value.style.left = "auto", G.comparison === "Facing Up" && (et.value.style.transform = `translate(${ct}px, ${Vt}px) rotate(90deg)`), (G.comparison === "Back-to-Back" || G.comparison === "Back") && (et.value.style.transform = `translate(-${O.rulerWidth}px, -${O.rulerWidth}px)`)), G.position === "right" && (et.value.style.left = 0, et.value.style.right = "auto", G.comparison === "Facing Up" && (et.value.style.transform = `translate(-${ct}px, ${Vt}px) rotate(-90deg)`), G.comparison === "Back-to-Back" && (et.value.style.transform = `translate(${O.rulerWidth}px, -${O.rulerWidth}px)`));
       }
-      ["Facing In"].includes(W.comparison) && (ut.value.style.top = 0, ut.value.style.bottom = "auto", W.position === "left" && (ut.value.style.left = 0, ut.value.style.right = "auto", ut.value.style.transform = `translate(${O.rulerWidth}px, ${O.rulerWidth}px)`), W.position === "right" && (ut.value.style.right = 0, ut.value.style.left = "auto", ut.value.style.transform = `translate(-${O.rulerWidth}px, ${O.rulerWidth}px)`));
-    }, Tt = (pt) => {
-      ["Facing Up", "Back-to-Back"].includes(pt) && (W.position === "left" && (ut.value.src = W.image.srcLeft), W.position === "right" && (ut.value.src = W.image.srcRight)), pt === "Facing In" && (W.position === "left" && (ut.value.src = W.image.srcRight), W.position === "right" && (ut.value.src = W.image.srcLeft)), pt === "Back" && (ut.value.src = W.image.srcBack);
+      ["Facing In"].includes(G.comparison) && (et.value.style.top = 0, et.value.style.bottom = "auto", G.position === "left" && (et.value.style.left = 0, et.value.style.right = "auto", et.value.style.transform = `translate(${O.rulerWidth}px, ${O.rulerWidth}px)`), G.position === "right" && (et.value.style.right = 0, et.value.style.left = "auto", et.value.style.transform = `translate(-${O.rulerWidth}px, ${O.rulerWidth}px)`));
+    }, Et = (ct) => {
+      ["Facing Up", "Back-to-Back"].includes(ct) && (G.position === "left" && (et.value.src = G.image.srcLeft), G.position === "right" && (et.value.src = G.image.srcRight)), ct === "Facing In" && (G.position === "left" && (et.value.src = G.image.srcRight), G.position === "right" && (et.value.src = G.image.srcLeft)), ct === "Back" && (et.value.src = G.image.srcBack);
     };
-    return Xi(() => {
-      Tt(W.comparison), ut.value.width = Qt.value.width;
-    }), Zi(
-      () => W.comparison,
-      (pt) => {
-        Gt(), Tt(pt);
+    return Zi(() => {
+      Et(G.comparison), et.value.width = Yt.value.width;
+    }), ji(
+      () => G.comparison,
+      (ct) => {
+        Nt(), Et(ct);
       }
-    ), (pt, Nt) => (Ki(), Yi("div", null, [
-      Ni(mn, {
+    ), (ct, Vt) => (Xi(), Ki("div", null, [
+      Mi(mn, {
         axis: "x",
-        position: ne.position,
-        comparison: ne.comparison,
+        position: te.position,
+        comparison: te.comparison,
         "x-width": O.xWidth,
         "x-height": O.xHeight,
         "y-width": O.yWidth,
         "y-height": O.yHeight,
-        "image-loaded": et.value,
-        config: W.config
+        "image-loaded": it.value,
+        config: G.config
       }, null, 8, ["position", "comparison", "x-width", "x-height", "y-width", "y-height", "image-loaded", "config"]),
-      Qe("img", {
+      Yi("img", {
         ref_key: "image",
-        ref: ut,
+        ref: et,
         id: "image",
-        onLoad: ve
+        onLoad: _e
       }, null, 544),
-      Ni(mn, {
+      Mi(mn, {
         axis: "y",
-        position: ne.position,
-        comparison: ne.comparison,
+        position: te.position,
+        comparison: te.comparison,
         "x-width": O.xWidth,
         "x-height": O.xHeight,
         "y-width": O.yWidth,
         "y-height": O.yHeight,
-        "image-loaded": et.value,
-        config: W.config
+        "image-loaded": it.value,
+        config: G.config
       }, null, 8, ["position", "comparison", "x-width", "x-height", "y-width", "y-height", "image-loaded", "config"])
     ]));
   }
-}, cr = /* @__PURE__ */ Qe("option", { value: "Facing Up" }, "Facing Up", -1), dr = /* @__PURE__ */ Qe("option", { value: "Back-to-Back" }, "Back-to-Back", -1), pr = /* @__PURE__ */ Qe("option", { value: "Facing In" }, "Facing In", -1), gr = [
-  cr,
-  dr,
-  pr
-], _r = { style: { display: "flex", "align-items": "center", "justify-content": "center" } }, vr = {
+}, lr = { style: { display: "flex", "align-items": "center", "justify-content": "center" } }, fr = {
   __name: "App",
-  setup(ne) {
-    const ct = Mi("Facing In"), W = Oi({
-      pixelsPerInch: 48,
+  props: {
+    comparison: {
+      type: String,
+      required: !0,
+      default: "Facing Up"
+    }
+  },
+  setup(te) {
+    const G = Oi(te.comparison || "Facing In"), et = Li({
+      pixelsPerInch: 52,
       spaceAddend: 15,
       spacing: 0.3
-    }), ut = ui(() => {
-      let Wt = (Math.floor(et.value.maxHeight) + 1) * W.pixelsPerInch + 100;
-      return ct.value === "Facing Up" && (Wt = Math.ceil(et.value.maxImageHeight) + (W.spacing * W.pixelsPerInch + W.spaceAddend) + 100), Wt * 2 + "px";
-    }), et = ui(() => {
-      const Wt = O.rawLength > Qt.rawLength ? O.rawLength : Qt.rawLength;
-      let Tt = O.height > Qt.height ? O.height : Qt.height;
-      O.width > Qt.width ? O.width : Qt.width;
-      let pt = Wt + 1, Nt = Math.ceil(Tt) + (W.spacing * W.pixelsPerInch + W.spaceAddend) + 100 + "px", z = (Math.floor(Wt) + 1) * W.pixelsPerInch + 100 + "px";
-      return ct.value === "Facing Up" && (Nt = (Math.floor(Wt) + 1) * W.pixelsPerInch + 100 + "px", z = Math.ceil(Tt) + (W.spacing * W.pixelsPerInch + W.spaceAddend) + 100 + "px"), {
-        pixelsPerInch: W.pixelsPerInch,
-        spaceAddend: W.spaceAddend,
-        maxHeight: Wt,
-        containerHeight: Nt,
-        containerWidth: z,
-        maxLength: pt,
-        maxImageHeight: Tt
+    }), it = ai(() => {
+      let Et = (Math.floor(O.value.maxHeight) + 1) * et.pixelsPerInch + 100;
+      return G.value === "Facing Up" && (Et = Math.ceil(O.value.maxImageHeight) + (et.spacing * et.pixelsPerInch + et.spaceAddend) + 100), Et * 2 + "px";
+    }), O = ai(() => {
+      const Et = Yt.rawLength > Nt.rawLength ? Yt.rawLength : Nt.rawLength;
+      let ct = Yt.height > Nt.height ? Yt.height : Nt.height;
+      Yt.width > Nt.width ? Yt.width : Nt.width;
+      let Vt = Et + 1, z = Math.ceil(ct) + (et.spacing * et.pixelsPerInch + et.spaceAddend) + 100 + "px", Ft = (Math.floor(Et) + 1) * et.pixelsPerInch + 100 + "px";
+      return G.value === "Facing Up" && (z = (Math.floor(Et) + 1) * et.pixelsPerInch + 100 + "px", Ft = Math.ceil(ct) + (et.spacing * et.pixelsPerInch + et.spaceAddend) + 100 + "px"), {
+        pixelsPerInch: et.pixelsPerInch,
+        spaceAddend: et.spaceAddend,
+        maxHeight: Et,
+        containerHeight: z,
+        containerWidth: Ft,
+        maxLength: Vt,
+        maxImageHeight: ct
       };
-    }), O = Oi({
+    }), Yt = Li({
       src: "https://img.handgunhero.com/live/handgun/134398/c/G17-lg-1024.png",
       srcLeft: "https://img.handgunhero.com/live/handgun/134398/c/G17-lg-1024.png",
       srcRight: "https://img.handgunhero.com/live/handgun/134399/c/G17-(1)-lg-1024.png",
@@ -13230,7 +13233,7 @@ const Me = yn.exports, fr = ["id"], mn = {
       rawLength: 8.03,
       width: 0,
       height: 0
-    }), Qt = Oi({
+    }), Nt = Li({
       src: "https://img.handgunhero.com/live/handgun/134282/c/365xl-9-bxr3-right-lg-1024.png",
       srcLeft: "https://img.handgunhero.com/live/handgun/134264/c/p365xl-left-lg-1024.png",
       srcRight: "https://img.handgunhero.com/live/handgun/134282/c/365xl-9-bxr3-right-lg-1024.png",
@@ -13238,53 +13241,47 @@ const Me = yn.exports, fr = ["id"], mn = {
       rawLength: 6.6,
       width: 0,
       height: 0
-    }), Gt = ({ width: Wt, height: Tt }) => {
-      O.width = Wt, O.height = Tt;
-    }, ve = ({ width: Wt, height: Tt }) => {
-      Qt.width = Wt, Qt.height = Tt;
+    }), _e = ({ width: Et, height: ct }) => {
+      Yt.width = Et, Yt.height = ct;
+    }, xe = ({ width: Et, height: ct }) => {
+      Nt.width = Et, Nt.height = ct;
     };
-    return Xi(() => {
+    return Zi(() => {
       console.log();
-    }), (Wt, Tt) => (Ki(), Yi("div", {
-      style: Li({
-        width: Re(ut)
+    }), (Et, ct) => (Xi(), Ki("div", {
+      style: Ti({
+        width: Ve(it)
       })
     }, [
-      nr(Qe("select", {
-        "onUpdate:modelValue": Tt[0] || (Tt[0] = (pt) => ct.value = pt),
-        style: { "margin-bottom": "25px" }
-      }, gr, 512), [
-        [rr, ct.value]
-      ]),
-      Qe("div", _r, [
-        Ni(xn, {
-          style: Li({
-            height: Re(et).containerHeight,
+      Yi("div", lr, [
+        Mi(xn, {
+          style: Ti({
+            height: Ve(O).containerHeight,
             position: "relative",
-            width: Re(et).containerWidth
+            width: Ve(O).containerWidth
           }),
           position: "left",
-          comparison: ct.value,
-          image: O,
-          maxLength: Re(et).maxLength,
-          config: W,
-          onImageLoaded: Gt
+          comparison: G.value,
+          image: Yt,
+          maxLength: Ve(O).maxLength,
+          config: et,
+          onImageLoaded: _e
         }, null, 8, ["style", "comparison", "image", "maxLength", "config"]),
-        Ni(xn, {
-          style: Li({
-            height: Re(et).containerHeight,
+        Mi(xn, {
+          style: Ti({
+            height: Ve(O).containerHeight,
             position: "relative",
-            width: Re(et).containerWidth
+            width: Ve(O).containerWidth
           }),
           position: "right",
-          comparison: ct.value,
-          image: Qt,
-          maxLength: Re(et).maxLength,
-          config: W,
-          onImageLoaded: ve
+          comparison: G.value,
+          image: Nt,
+          maxLength: Ve(O).maxLength,
+          config: et,
+          onImageLoaded: xe
         }, null, 8, ["style", "comparison", "image", "maxLength", "config"])
       ])
     ], 4));
   }
 };
-customElements.define("size-comparison", sr(vr));
+customElements.define("size-comparison", nr(fr));
