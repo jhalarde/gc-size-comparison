@@ -18,7 +18,7 @@ export default defineConfig({
             entry: resolve(__dirname, 'src/main.js'),
             name: 'SizeComparison',
             // the proper extensions will be added
-            fileName: 'size-comparison',
+            fileName: 'gc-size-comparison',
         },
         rollupOptions: {
             // make sure to externalize deps that shouldn't be bundled

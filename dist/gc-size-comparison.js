@@ -1,7 +1,7 @@
 import { computed as ai, ref as Oi, onMounted as Zi, watch as ji, openBlock as Xi, createElementBlock as Ki, normalizeStyle as Ti, unref as Ve, createElementVNode as Yi, reactive as Li, createVNode as Mi, defineCustomElement as nr } from "vue";
 var bn = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {};
-function rr(te) {
-  var pt = te.default;
+function rr($t) {
+  var pt = $t.default;
   if (typeof pt == "function") {
     var G = function() {
       return pt.apply(this, arguments);
@@ -9,18 +9,18 @@ function rr(te) {
     G.prototype = pt.prototype;
   } else
     G = {};
-  return Object.defineProperty(G, "__esModule", { value: !0 }), Object.keys(te).forEach(function(et) {
-    var it = Object.getOwnPropertyDescriptor(te, et);
-    Object.defineProperty(G, et, it.get ? it : {
+  return Object.defineProperty(G, "__esModule", { value: !0 }), Object.keys($t).forEach(function(it) {
+    var tt = Object.getOwnPropertyDescriptor($t, it);
+    Object.defineProperty(G, it, tt.get ? tt : {
       enumerable: !0,
       get: function() {
-        return te[et];
+        return $t[it];
       }
     });
   }), G;
 }
-function sr(te) {
-  throw new Error('Could not dynamically require "' + te + '". Please configure the dynamicRequireTargets or/and ignoreDynamicRequires option of @rollup/plugin-commonjs appropriately for this require call to work.');
+function sr($t) {
+  throw new Error('Could not dynamically require "' + $t + '". Please configure the dynamicRequireTargets or/and ignoreDynamicRequires option of @rollup/plugin-commonjs appropriately for this require call to work.');
 }
 var yn = { exports: {} };
 const ar = {}, ur = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
@@ -29,11 +29,11 @@ const ar = {}, ur = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineP
 }, Symbol.toStringTag, { value: "Module" })), _n = /* @__PURE__ */ rr(ur);
 var Ei = { exports: {} }, vn;
 function or() {
-  return vn || (vn = 1, function(te, pt) {
-    (function(G, et) {
-      et(pt);
+  return vn || (vn = 1, function($t, pt) {
+    (function(G, it) {
+      it(pt);
     })(bn, function(G) {
-      var et = [509, 0, 227, 0, 150, 4, 294, 9, 1368, 2, 2, 1, 6, 3, 41, 2, 5, 0, 166, 1, 574, 3, 9, 9, 370, 1, 154, 10, 50, 3, 123, 2, 54, 14, 32, 10, 3, 1, 11, 3, 46, 10, 8, 0, 46, 9, 7, 2, 37, 13, 2, 9, 6, 1, 45, 0, 13, 2, 49, 13, 9, 3, 2, 11, 83, 11, 7, 0, 161, 11, 6, 9, 7, 3, 56, 1, 2, 6, 3, 1, 3, 2, 10, 0, 11, 1, 3, 6, 4, 4, 193, 17, 10, 9, 5, 0, 82, 19, 13, 9, 214, 6, 3, 8, 28, 1, 83, 16, 16, 9, 82, 12, 9, 9, 84, 14, 5, 9, 243, 14, 166, 9, 71, 5, 2, 1, 3, 3, 2, 0, 2, 1, 13, 9, 120, 6, 3, 6, 4, 0, 29, 9, 41, 6, 2, 3, 9, 0, 10, 10, 47, 15, 406, 7, 2, 7, 17, 9, 57, 21, 2, 13, 123, 5, 4, 0, 2, 1, 2, 6, 2, 0, 9, 9, 49, 4, 2, 1, 2, 4, 9, 9, 330, 3, 19306, 9, 87, 9, 39, 4, 60, 6, 26, 9, 1014, 0, 2, 54, 8, 3, 82, 0, 12, 1, 19628, 1, 4706, 45, 3, 22, 543, 4, 4, 5, 9, 7, 3, 6, 31, 3, 149, 2, 1418, 49, 513, 54, 5, 49, 9, 0, 15, 0, 23, 4, 2, 14, 1361, 6, 2, 16, 3, 6, 2, 1, 2, 4, 262, 6, 10, 9, 357, 0, 62, 13, 1495, 6, 110, 6, 6, 9, 4759, 9, 787719, 239], it = [0, 11, 2, 25, 2, 18, 2, 1, 2, 14, 3, 13, 35, 122, 70, 52, 268, 28, 4, 48, 48, 31, 14, 29, 6, 37, 11, 29, 3, 35, 5, 7, 2, 4, 43, 157, 19, 35, 5, 35, 5, 39, 9, 51, 13, 10, 2, 14, 2, 6, 2, 1, 2, 10, 2, 14, 2, 6, 2, 1, 68, 310, 10, 21, 11, 7, 25, 5, 2, 41, 2, 8, 70, 5, 3, 0, 2, 43, 2, 1, 4, 0, 3, 22, 11, 22, 10, 30, 66, 18, 2, 1, 11, 21, 11, 25, 71, 55, 7, 1, 65, 0, 16, 3, 2, 2, 2, 28, 43, 28, 4, 28, 36, 7, 2, 27, 28, 53, 11, 21, 11, 18, 14, 17, 111, 72, 56, 50, 14, 50, 14, 35, 349, 41, 7, 1, 79, 28, 11, 0, 9, 21, 43, 17, 47, 20, 28, 22, 13, 52, 58, 1, 3, 0, 14, 44, 33, 24, 27, 35, 30, 0, 3, 0, 9, 34, 4, 0, 13, 47, 15, 3, 22, 0, 2, 0, 36, 17, 2, 24, 85, 6, 2, 0, 2, 3, 2, 14, 2, 9, 8, 46, 39, 7, 3, 1, 3, 21, 2, 6, 2, 1, 2, 4, 4, 0, 19, 0, 13, 4, 159, 52, 19, 3, 21, 2, 31, 47, 21, 1, 2, 0, 185, 46, 42, 3, 37, 47, 21, 0, 60, 42, 14, 0, 72, 26, 38, 6, 186, 43, 117, 63, 32, 7, 3, 0, 3, 7, 2, 1, 2, 23, 16, 0, 2, 0, 95, 7, 3, 38, 17, 0, 2, 0, 29, 0, 11, 39, 8, 0, 22, 0, 12, 45, 20, 0, 19, 72, 264, 8, 2, 36, 18, 0, 50, 29, 113, 6, 2, 1, 2, 37, 22, 0, 26, 5, 2, 1, 2, 31, 15, 0, 328, 18, 190, 0, 80, 921, 103, 110, 18, 195, 2637, 96, 16, 1070, 4050, 582, 8634, 568, 8, 30, 18, 78, 18, 29, 19, 47, 17, 3, 32, 20, 6, 18, 689, 63, 129, 74, 6, 0, 67, 12, 65, 1, 2, 0, 29, 6135, 9, 1237, 43, 8, 8936, 3, 2, 6, 2, 1, 2, 290, 46, 2, 18, 3, 9, 395, 2309, 106, 6, 12, 4, 8, 8, 9, 5991, 84, 2, 70, 2, 1, 3, 0, 3, 1, 3, 3, 2, 11, 2, 0, 2, 6, 2, 64, 2, 3, 3, 7, 2, 6, 2, 27, 2, 3, 2, 4, 2, 0, 4, 6, 2, 339, 3, 24, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 7, 1845, 30, 482, 44, 11, 6, 17, 0, 322, 29, 19, 43, 1269, 6, 2, 3, 2, 1, 2, 14, 2, 196, 60, 67, 8, 0, 1205, 3, 2, 26, 2, 1, 2, 0, 3, 0, 2, 9, 2, 3, 2, 0, 2, 0, 7, 0, 5, 0, 2, 0, 2, 0, 2, 2, 2, 1, 2, 0, 3, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 1, 2, 0, 3, 3, 2, 6, 2, 3, 2, 3, 2, 0, 2, 9, 2, 16, 6, 2, 2, 4, 2, 16, 4421, 42719, 33, 4152, 8, 221, 3, 5761, 15, 7472, 3104, 541, 1507, 4938], O = "\u200C\u200D\xB7\u0300-\u036F\u0387\u0483-\u0487\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u0669\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u06F0-\u06F9\u0711\u0730-\u074A\u07A6-\u07B0\u07C0-\u07C9\u07EB-\u07F3\u07FD\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u0898-\u089F\u08CA-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0966-\u096F\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u09E6-\u09EF\u09FE\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A66-\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0AE6-\u0AEF\u0AFA-\u0AFF\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B55-\u0B57\u0B62\u0B63\u0B66-\u0B6F\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0BE6-\u0BEF\u0C00-\u0C04\u0C3C\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C66-\u0C6F\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0CE6-\u0CEF\u0D00-\u0D03\u0D3B\u0D3C\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D66-\u0D6F\u0D81-\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DE6-\u0DEF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0E50-\u0E59\u0EB1\u0EB4-\u0EBC\u0EC8-\u0ECD\u0ED0-\u0ED9\u0F18\u0F19\u0F20-\u0F29\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1040-\u1049\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F-\u109D\u135D-\u135F\u1369-\u1371\u1712-\u1715\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u17E0-\u17E9\u180B-\u180D\u180F-\u1819\u18A9\u1920-\u192B\u1930-\u193B\u1946-\u194F\u19D0-\u19DA\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F-\u1A89\u1A90-\u1A99\u1AB0-\u1ABD\u1ABF-\u1ACE\u1B00-\u1B04\u1B34-\u1B44\u1B50-\u1B59\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BB0-\u1BB9\u1BE6-\u1BF3\u1C24-\u1C37\u1C40-\u1C49\u1C50-\u1C59\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF4\u1CF7-\u1CF9\u1DC0-\u1DFF\u203F\u2040\u2054\u20D0-\u20DC\u20E1\u20E5-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA620-\uA629\uA66F\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA82C\uA880\uA881\uA8B4-\uA8C5\uA8D0-\uA8D9\uA8E0-\uA8F1\uA8FF-\uA909\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9D0-\uA9D9\uA9E5\uA9F0-\uA9F9\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA50-\uAA59\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uABF0-\uABF9\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F\uFE33\uFE34\uFE4D-\uFE4F\uFF10-\uFF19\uFF3F", Yt = "\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0560-\u0588\u05D0-\u05EA\u05EF-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u0860-\u086A\u0870-\u0887\u0889-\u088E\u08A0-\u08C9\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u09FC\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C5D\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D04-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E86-\u0E8A\u0E8C-\u0EA3\u0EA5\u0EA7-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16EE-\u16F8\u1700-\u1711\u171F-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1878\u1880-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4C\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1C90-\u1CBA\u1CBD-\u1CBF\u1CE9-\u1CEC\u1CEE-\u1CF3\u1CF5\u1CF6\u1CFA\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2118-\u211D\u2124\u2126\u2128\u212A-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2160-\u2188\u2C00-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u3005-\u3007\u3021-\u3029\u3031-\u3035\u3038-\u303C\u3041-\u3096\u309B-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312F\u3131-\u318E\u31A0-\u31BF\u31F0-\u31FF\u3400-\u4DBF\u4E00-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6EF\uA717-\uA71F\uA722-\uA788\uA78B-\uA7CA\uA7D0\uA7D1\uA7D3\uA7D5-\uA7D9\uA7F2-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA8FE\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB69\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC", Nt = {
+      var it = [509, 0, 227, 0, 150, 4, 294, 9, 1368, 2, 2, 1, 6, 3, 41, 2, 5, 0, 166, 1, 574, 3, 9, 9, 370, 1, 154, 10, 50, 3, 123, 2, 54, 14, 32, 10, 3, 1, 11, 3, 46, 10, 8, 0, 46, 9, 7, 2, 37, 13, 2, 9, 6, 1, 45, 0, 13, 2, 49, 13, 9, 3, 2, 11, 83, 11, 7, 0, 161, 11, 6, 9, 7, 3, 56, 1, 2, 6, 3, 1, 3, 2, 10, 0, 11, 1, 3, 6, 4, 4, 193, 17, 10, 9, 5, 0, 82, 19, 13, 9, 214, 6, 3, 8, 28, 1, 83, 16, 16, 9, 82, 12, 9, 9, 84, 14, 5, 9, 243, 14, 166, 9, 71, 5, 2, 1, 3, 3, 2, 0, 2, 1, 13, 9, 120, 6, 3, 6, 4, 0, 29, 9, 41, 6, 2, 3, 9, 0, 10, 10, 47, 15, 406, 7, 2, 7, 17, 9, 57, 21, 2, 13, 123, 5, 4, 0, 2, 1, 2, 6, 2, 0, 9, 9, 49, 4, 2, 1, 2, 4, 9, 9, 330, 3, 19306, 9, 87, 9, 39, 4, 60, 6, 26, 9, 1014, 0, 2, 54, 8, 3, 82, 0, 12, 1, 19628, 1, 4706, 45, 3, 22, 543, 4, 4, 5, 9, 7, 3, 6, 31, 3, 149, 2, 1418, 49, 513, 54, 5, 49, 9, 0, 15, 0, 23, 4, 2, 14, 1361, 6, 2, 16, 3, 6, 2, 1, 2, 4, 262, 6, 10, 9, 357, 0, 62, 13, 1495, 6, 110, 6, 6, 9, 4759, 9, 787719, 239], tt = [0, 11, 2, 25, 2, 18, 2, 1, 2, 14, 3, 13, 35, 122, 70, 52, 268, 28, 4, 48, 48, 31, 14, 29, 6, 37, 11, 29, 3, 35, 5, 7, 2, 4, 43, 157, 19, 35, 5, 35, 5, 39, 9, 51, 13, 10, 2, 14, 2, 6, 2, 1, 2, 10, 2, 14, 2, 6, 2, 1, 68, 310, 10, 21, 11, 7, 25, 5, 2, 41, 2, 8, 70, 5, 3, 0, 2, 43, 2, 1, 4, 0, 3, 22, 11, 22, 10, 30, 66, 18, 2, 1, 11, 21, 11, 25, 71, 55, 7, 1, 65, 0, 16, 3, 2, 2, 2, 28, 43, 28, 4, 28, 36, 7, 2, 27, 28, 53, 11, 21, 11, 18, 14, 17, 111, 72, 56, 50, 14, 50, 14, 35, 349, 41, 7, 1, 79, 28, 11, 0, 9, 21, 43, 17, 47, 20, 28, 22, 13, 52, 58, 1, 3, 0, 14, 44, 33, 24, 27, 35, 30, 0, 3, 0, 9, 34, 4, 0, 13, 47, 15, 3, 22, 0, 2, 0, 36, 17, 2, 24, 85, 6, 2, 0, 2, 3, 2, 14, 2, 9, 8, 46, 39, 7, 3, 1, 3, 21, 2, 6, 2, 1, 2, 4, 4, 0, 19, 0, 13, 4, 159, 52, 19, 3, 21, 2, 31, 47, 21, 1, 2, 0, 185, 46, 42, 3, 37, 47, 21, 0, 60, 42, 14, 0, 72, 26, 38, 6, 186, 43, 117, 63, 32, 7, 3, 0, 3, 7, 2, 1, 2, 23, 16, 0, 2, 0, 95, 7, 3, 38, 17, 0, 2, 0, 29, 0, 11, 39, 8, 0, 22, 0, 12, 45, 20, 0, 19, 72, 264, 8, 2, 36, 18, 0, 50, 29, 113, 6, 2, 1, 2, 37, 22, 0, 26, 5, 2, 1, 2, 31, 15, 0, 328, 18, 190, 0, 80, 921, 103, 110, 18, 195, 2637, 96, 16, 1070, 4050, 582, 8634, 568, 8, 30, 18, 78, 18, 29, 19, 47, 17, 3, 32, 20, 6, 18, 689, 63, 129, 74, 6, 0, 67, 12, 65, 1, 2, 0, 29, 6135, 9, 1237, 43, 8, 8936, 3, 2, 6, 2, 1, 2, 290, 46, 2, 18, 3, 9, 395, 2309, 106, 6, 12, 4, 8, 8, 9, 5991, 84, 2, 70, 2, 1, 3, 0, 3, 1, 3, 3, 2, 11, 2, 0, 2, 6, 2, 64, 2, 3, 3, 7, 2, 6, 2, 27, 2, 3, 2, 4, 2, 0, 4, 6, 2, 339, 3, 24, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 7, 1845, 30, 482, 44, 11, 6, 17, 0, 322, 29, 19, 43, 1269, 6, 2, 3, 2, 1, 2, 14, 2, 196, 60, 67, 8, 0, 1205, 3, 2, 26, 2, 1, 2, 0, 3, 0, 2, 9, 2, 3, 2, 0, 2, 0, 7, 0, 5, 0, 2, 0, 2, 0, 2, 2, 2, 1, 2, 0, 3, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 1, 2, 0, 3, 3, 2, 6, 2, 3, 2, 3, 2, 0, 2, 9, 2, 16, 6, 2, 2, 4, 2, 16, 4421, 42719, 33, 4152, 8, 221, 3, 5761, 15, 7472, 3104, 541, 1507, 4938], O = "\u200C\u200D\xB7\u0300-\u036F\u0387\u0483-\u0487\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u0669\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u06F0-\u06F9\u0711\u0730-\u074A\u07A6-\u07B0\u07C0-\u07C9\u07EB-\u07F3\u07FD\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u0898-\u089F\u08CA-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0966-\u096F\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u09E6-\u09EF\u09FE\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A66-\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0AE6-\u0AEF\u0AFA-\u0AFF\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B55-\u0B57\u0B62\u0B63\u0B66-\u0B6F\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0BE6-\u0BEF\u0C00-\u0C04\u0C3C\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C66-\u0C6F\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0CE6-\u0CEF\u0D00-\u0D03\u0D3B\u0D3C\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D66-\u0D6F\u0D81-\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DE6-\u0DEF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0E50-\u0E59\u0EB1\u0EB4-\u0EBC\u0EC8-\u0ECD\u0ED0-\u0ED9\u0F18\u0F19\u0F20-\u0F29\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1040-\u1049\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F-\u109D\u135D-\u135F\u1369-\u1371\u1712-\u1715\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u17E0-\u17E9\u180B-\u180D\u180F-\u1819\u18A9\u1920-\u192B\u1930-\u193B\u1946-\u194F\u19D0-\u19DA\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F-\u1A89\u1A90-\u1A99\u1AB0-\u1ABD\u1ABF-\u1ACE\u1B00-\u1B04\u1B34-\u1B44\u1B50-\u1B59\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BB0-\u1BB9\u1BE6-\u1BF3\u1C24-\u1C37\u1C40-\u1C49\u1C50-\u1C59\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF4\u1CF7-\u1CF9\u1DC0-\u1DFF\u203F\u2040\u2054\u20D0-\u20DC\u20E1\u20E5-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA620-\uA629\uA66F\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA82C\uA880\uA881\uA8B4-\uA8C5\uA8D0-\uA8D9\uA8E0-\uA8F1\uA8FF-\uA909\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9D0-\uA9D9\uA9E5\uA9F0-\uA9F9\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA50-\uAA59\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uABF0-\uABF9\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F\uFE33\uFE34\uFE4D-\uFE4F\uFF10-\uFF19\uFF3F", ge = "\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0560-\u0588\u05D0-\u05EA\u05EF-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u0860-\u086A\u0870-\u0887\u0889-\u088E\u08A0-\u08C9\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u09FC\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C5D\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D04-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E86-\u0E8A\u0E8C-\u0EA3\u0EA5\u0EA7-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16EE-\u16F8\u1700-\u1711\u171F-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1878\u1880-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4C\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1C90-\u1CBA\u1CBD-\u1CBF\u1CE9-\u1CEC\u1CEE-\u1CF3\u1CF5\u1CF6\u1CFA\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2118-\u211D\u2124\u2126\u2128\u212A-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2160-\u2188\u2C00-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u3005-\u3007\u3021-\u3029\u3031-\u3035\u3038-\u303C\u3041-\u3096\u309B-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312F\u3131-\u318E\u31A0-\u31BF\u31F0-\u31FF\u3400-\u4DBF\u4E00-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6EF\uA717-\uA71F\uA722-\uA788\uA78B-\uA7CA\uA7D0\uA7D1\uA7D3\uA7D5-\uA7D9\uA7F2-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA8FE\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB69\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC", Rt = {
         3: "abstract boolean byte char class double enum export extends final float goto implements import int interface long native package private protected public short static super synchronized throws transient volatile",
         5: "class enum extends super const export import",
         6: "enum",
@@ -43,7 +43,7 @@ function or() {
         5: _e,
         "5module": _e + " export import",
         6: _e + " const class extends export import super"
-      }, Et = /^in(stanceof)?$/, ct = new RegExp("[" + Yt + "]"), Vt = new RegExp("[" + Yt + O + "]");
+      }, Et = /^in(stanceof)?$/, ct = new RegExp("[" + ge + "]"), Vt = new RegExp("[" + ge + O + "]");
       function z(n, u) {
         for (var x = 65536, A = 0; A < u.length; A += 2) {
           if (x += u[A], x > n)
@@ -53,10 +53,10 @@ function or() {
         }
       }
       function Ft(n, u) {
-        return n < 65 ? n === 36 : n < 91 ? !0 : n < 97 ? n === 95 : n < 123 ? !0 : n <= 65535 ? n >= 170 && ct.test(String.fromCharCode(n)) : u === !1 ? !1 : z(n, it);
+        return n < 65 ? n === 36 : n < 91 ? !0 : n < 97 ? n === 95 : n < 123 ? !0 : n <= 65535 ? n >= 170 && ct.test(String.fromCharCode(n)) : u === !1 ? !1 : z(n, tt);
       }
       function ut(n, u) {
-        return n < 48 ? n === 36 : n < 58 ? !0 : n < 65 ? !1 : n < 91 ? !0 : n < 97 ? n === 95 : n < 123 ? !0 : n <= 65535 ? n >= 170 && Vt.test(String.fromCharCode(n)) : u === !1 ? !1 : z(n, it) || z(n, et);
+        return n < 48 ? n === 36 : n < 58 ? !0 : n < 65 ? !1 : n < 91 ? !0 : n < 97 ? n === 95 : n < 123 ? !0 : n <= 65535 ? n >= 170 && Vt.test(String.fromCharCode(n)) : u === !1 ? !1 : z(n, tt) || z(n, it);
       }
       var xt = function(u, x) {
         x === void 0 && (x = {}), this.label = u, this.keyword = x.keyword, this.beforeExpr = !!x.beforeExpr, this.startsExpr = !!x.startsExpr, this.isLoop = !!x.isLoop, this.isAssign = !!x.isAssign, this.prefix = !!x.prefix, this.postfix = !!x.postfix, this.binop = x.binop || null, this.updateContext = null;
@@ -64,9 +64,9 @@ function or() {
       function ft(n, u) {
         return new xt(n, { beforeExpr: !0, binop: u });
       }
-      var re = { beforeExpr: !0 }, At = { startsExpr: !0 }, Bt = {};
+      var ne = { beforeExpr: !0 }, At = { startsExpr: !0 }, Nt = {};
       function kt(n, u) {
-        return u === void 0 && (u = {}), u.keyword = n, Bt[n] = new xt(n, u);
+        return u === void 0 && (u = {}), u.keyword = n, Nt[n] = new xt(n, u);
       }
       var I = {
         num: new xt("num", At),
@@ -81,16 +81,16 @@ function or() {
         braceR: new xt("}"),
         parenL: new xt("(", { beforeExpr: !0, startsExpr: !0 }),
         parenR: new xt(")"),
-        comma: new xt(",", re),
-        semi: new xt(";", re),
-        colon: new xt(":", re),
+        comma: new xt(",", ne),
+        semi: new xt(";", ne),
+        colon: new xt(":", ne),
         dot: new xt("."),
-        question: new xt("?", re),
+        question: new xt("?", ne),
         questionDot: new xt("?."),
-        arrow: new xt("=>", re),
+        arrow: new xt("=>", ne),
         template: new xt("template"),
         invalidTemplate: new xt("invalidTemplate"),
-        ellipsis: new xt("...", re),
+        ellipsis: new xt("...", ne),
         backQuote: new xt("`", At),
         dollarBraceL: new xt("${", { beforeExpr: !0, startsExpr: !0 }),
         eq: new xt("=", { beforeExpr: !0, isAssign: !0 }),
@@ -112,20 +112,20 @@ function or() {
         starstar: new xt("**", { beforeExpr: !0 }),
         coalesce: ft("??", 1),
         _break: kt("break"),
-        _case: kt("case", re),
+        _case: kt("case", ne),
         _catch: kt("catch"),
         _continue: kt("continue"),
         _debugger: kt("debugger"),
-        _default: kt("default", re),
+        _default: kt("default", ne),
         _do: kt("do", { isLoop: !0, beforeExpr: !0 }),
-        _else: kt("else", re),
+        _else: kt("else", ne),
         _finally: kt("finally"),
         _for: kt("for", { isLoop: !0 }),
         _function: kt("function", At),
         _if: kt("if"),
-        _return: kt("return", re),
+        _return: kt("return", ne),
         _switch: kt("switch"),
-        _throw: kt("throw", re),
+        _throw: kt("throw", ne),
         _try: kt("try"),
         _var: kt("var"),
         _const: kt("const"),
@@ -135,7 +135,7 @@ function or() {
         _this: kt("this", At),
         _super: kt("super", At),
         _class: kt("class", At),
-        _extends: kt("extends", re),
+        _extends: kt("extends", ne),
         _export: kt("export"),
         _import: kt("import", At),
         _null: kt("null", At),
@@ -159,7 +159,7 @@ function or() {
         }
         return -1;
       }
-      var Ue = /[\u1680\u2000-\u200a\u202f\u205f\u3000\ufeff]/, ee = /(?:\s|\/\/.*|\/\*[^]*?\*\/)*/g, ye = Object.prototype, _t = ye.hasOwnProperty, ui = ye.toString, rt = Object.hasOwn || function(n, u) {
+      var Ue = /[\u1680\u2000-\u200a\u202f\u205f\u3000\ufeff]/, te = /(?:\s|\/\/.*|\/\*[^]*?\*\/)*/g, ye = Object.prototype, _t = ye.hasOwnProperty, ui = ye.toString, rt = Object.hasOwn || function(n, u) {
         return _t.call(n, u);
       }, be = Array.isArray || function(n) {
         return ui.call(n) === "[object Array]";
@@ -206,12 +206,12 @@ function or() {
         sourceFile: null,
         directSourceFile: null,
         preserveParens: !1
-      }, Qt = !1;
+      }, Yt = !1;
       function Je(n) {
         var u = {};
         for (var x in Qe)
           u[x] = n && rt(n, x) ? n[x] : Qe[x];
-        if (u.ecmaVersion === "latest" ? u.ecmaVersion = 1e8 : u.ecmaVersion == null ? (!Qt && typeof console == "object" && console.warn && (Qt = !0, console.warn(`Since Acorn 8.0.0, options.ecmaVersion is required.
+        if (u.ecmaVersion === "latest" ? u.ecmaVersion = 1e8 : u.ecmaVersion == null ? (!Yt && typeof console == "object" && console.warn && (Yt = !0, console.warn(`Since Acorn 8.0.0, options.ecmaVersion is required.
 Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion = 11) : u.ecmaVersion >= 2015 && (u.ecmaVersion -= 2009), u.allowReserved == null && (u.allowReserved = u.ecmaVersion < 5), n.allowHashBang == null && (u.allowHashBang = u.ecmaVersion >= 14), be(u.onToken)) {
           var A = u.onToken;
           u.onToken = function(N) {
@@ -238,9 +238,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       var $e = 0, ti = 1, Dt = 2, ei = 3, Ht = 4, di = 5, dt = function(u, x, A) {
         this.options = u = Je(u), this.sourceFile = u.sourceFile, this.keywords = ve(xe[u.ecmaVersion >= 6 ? 6 : u.sourceType === "module" ? "5module" : 5]);
         var N = "";
-        u.allowReserved !== !0 && (N = Nt[u.ecmaVersion >= 6 ? 6 : u.ecmaVersion === 5 ? 5 : 3], u.sourceType === "module" && (N += " await")), this.reservedWords = ve(N);
-        var W = (N ? N + " " : "") + Nt.strict;
-        this.reservedWordsStrict = ve(W), this.reservedWordsStrictBind = ve(W + " " + Nt.strictBind), this.input = String(x), this.containsEsc = !1, A ? (this.pos = A, this.lineStart = this.input.lastIndexOf(`
+        u.allowReserved !== !0 && (N = Rt[u.ecmaVersion >= 6 ? 6 : u.ecmaVersion === 5 ? 5 : 3], u.sourceType === "module" && (N += " await")), this.reservedWords = ve(N);
+        var W = (N ? N + " " : "") + Rt.strict;
+        this.reservedWordsStrict = ve(W), this.reservedWordsStrictBind = ve(W + " " + Rt.strictBind), this.input = String(x), this.containsEsc = !1, A ? (this.pos = A, this.lineStart = this.input.lastIndexOf(`
 `, A - 1) + 1, this.curLine = this.input.slice(0, this.lineStart).split(zt).length) : (this.pos = this.lineStart = 0, this.curLine = 1), this.type = I.eof, this.value = null, this.start = this.end = this.pos, this.startLoc = this.endLoc = this.curPosition(), this.lastTokEndLoc = this.lastTokStartLoc = null, this.lastTokStart = this.lastTokEnd = this.pos, this.context = this.initialContext(), this.exprAllowed = !0, this.inModule = u.sourceType === "module", this.strict = this.inModule || this.strictDirective(this.pos), this.potentialArrowAt = -1, this.potentialArrowInForAwait = !1, this.yieldPos = this.awaitPos = this.awaitIdentPos = 0, this.labels = [], this.undefinedExports = /* @__PURE__ */ Object.create(null), this.pos === 0 && u.allowHashBang && this.input.slice(0, 2) === "#!" && this.skipLineComment(2), this.scopeStack = [], this.enterScope(Be), this.regexpState = null, this.privateNameStack = [];
       }, t = { inFunction: { configurable: !0 }, inGenerator: { configurable: !0 }, inAsync: { configurable: !0 }, canAwait: { configurable: !0 }, allowSuper: { configurable: !0 }, allowDirectSuper: { configurable: !0 }, treatFunctionsAsVar: { configurable: !0 }, allowNewDotTarget: { configurable: !0 }, inClassStaticBlock: { configurable: !0 } };
       dt.prototype.parse = function() {
@@ -292,16 +292,16 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         if (this.options.ecmaVersion < 5)
           return !1;
         for (; ; ) {
-          ee.lastIndex = n, n += ee.exec(this.input)[0].length;
+          te.lastIndex = n, n += te.exec(this.input)[0].length;
           var u = i.exec(this.input.slice(n));
           if (!u)
             return !1;
           if ((u[1] || u[2]) === "use strict") {
-            ee.lastIndex = n + u[0].length;
-            var x = ee.exec(this.input), A = x.index + x[0].length, N = this.input.charAt(A);
+            te.lastIndex = n + u[0].length;
+            var x = te.exec(this.input), A = x.index + x[0].length, N = this.input.charAt(A);
             return N === ";" || N === "}" || zt.test(x[0]) && !(/[(`.[+\-/*%<>=,?^&]/.test(N) || N === "!" && this.input.charAt(A + 1) === "=");
           }
-          n += u[0].length, ee.lastIndex = n, n += ee.exec(this.input)[0].length, this.input[n] === ";" && n++;
+          n += u[0].length, te.lastIndex = n, n += te.exec(this.input)[0].length, this.input[n] === ";" && n++;
         }
       }, e.eat = function(n) {
         return this.type === n ? (this.next(), !0) : !1;
@@ -365,8 +365,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       s.isLet = function(n) {
         if (this.options.ecmaVersion < 6 || !this.isContextual("let"))
           return !1;
-        ee.lastIndex = this.pos;
-        var u = ee.exec(this.input), x = this.pos + u[0].length, A = this.input.charCodeAt(x);
+        te.lastIndex = this.pos;
+        var u = te.exec(this.input), x = this.pos + u[0].length, A = this.input.charCodeAt(x);
         if (A === 91 || A === 92 || A > 55295 && A < 56320)
           return !0;
         if (n)
@@ -386,8 +386,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }, s.isAsyncFunction = function() {
         if (this.options.ecmaVersion < 8 || !this.isContextual("async"))
           return !1;
-        ee.lastIndex = this.pos;
-        var n = ee.exec(this.input), u = this.pos + n[0].length, x;
+        te.lastIndex = this.pos;
+        var n = te.exec(this.input), u = this.pos + n[0].length, x;
         return !zt.test(this.input.slice(this.pos, u)) && this.input.slice(u, u + 8) === "function" && (u + 8 === this.input.length || !(ut(x = this.input.charCodeAt(u + 8)) || x > 55295 && x < 56320));
       }, s.parseStatement = function(n, u, x) {
         var A = this.type, N = this.startNode(), W;
@@ -429,8 +429,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           case I._export:
           case I._import:
             if (this.options.ecmaVersion > 10 && A === I._import) {
-              ee.lastIndex = this.pos;
-              var j = ee.exec(this.input), $ = this.pos + j[0].length, at = this.input.charCodeAt($);
+              te.lastIndex = this.pos;
+              var j = te.exec(this.input), $ = this.pos + j[0].length, at = this.input.charCodeAt($);
               if (at === 40 || at === 46)
                 return this.parseExpressionStatement(N, this.parseExpression());
             }
@@ -1018,8 +1018,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           $ && (W = I.logicalAND.binop);
           var at = this.value;
           this.next();
-          var mt = this.start, wt = this.startLoc, Ut = this.parseExprOp(this.parseMaybeUnary(null, !1, !1, N), mt, wt, W, N), ue = this.buildBinary(u, x, n, Ut, at, j || $);
-          return (j && this.type === I.coalesce || $ && (this.type === I.logicalOR || this.type === I.logicalAND)) && this.raiseRecoverable(this.start, "Logical expressions and coalesce expressions cannot be mixed. Wrap either by parentheses"), this.parseExprOp(ue, u, x, A, N);
+          var mt = this.start, wt = this.startLoc, Ut = this.parseExprOp(this.parseMaybeUnary(null, !1, !1, N), mt, wt, W, N), ae = this.buildBinary(u, x, n, Ut, at, j || $);
+          return (j && this.type === I.coalesce || $ && (this.type === I.logicalOR || this.type === I.logicalAND)) && this.raiseRecoverable(this.start, "Logical expressions and coalesce expressions cannot be mixed. Wrap either by parentheses"), this.parseExprOp(ae, u, x, A, N);
         }
         return n;
       }, p.buildBinary = function(n, u, x, A, N, W) {
@@ -1080,12 +1080,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           var wt = this.startNodeAt(u, x);
           wt.object = n, mt ? (wt.property = this.parseExpression(), this.expect(I.bracketR)) : this.type === I.privateId && n.type !== "Super" ? wt.property = this.parsePrivateIdent() : wt.property = this.parseIdent(this.options.allowReserved !== "never"), wt.computed = !!mt, $ && (wt.optional = at), n = this.finishNode(wt, "MemberExpression");
         } else if (!A && this.eat(I.parenL)) {
-          var Ut = new r(), ue = this.yieldPos, Se = this.awaitPos, Te = this.awaitIdentPos;
+          var Ut = new r(), ae = this.yieldPos, Se = this.awaitPos, Te = this.awaitIdentPos;
           this.yieldPos = 0, this.awaitPos = 0, this.awaitIdentPos = 0;
           var ze = this.parseExprList(I.parenR, this.options.ecmaVersion >= 8, !1, Ut);
           if (N && !at && !this.canInsertSemicolon() && this.eat(I.arrow))
-            return this.checkPatternErrors(Ut, !1), this.checkYieldAwaitInDefaultParams(), this.awaitIdentPos > 0 && this.raise(this.awaitIdentPos, "Cannot use 'await' as identifier inside an async function"), this.yieldPos = ue, this.awaitPos = Se, this.awaitIdentPos = Te, this.parseArrowExpression(this.startNodeAt(u, x), ze, !0, j);
-          this.checkExpressionErrors(Ut, !0), this.yieldPos = ue || this.yieldPos, this.awaitPos = Se || this.awaitPos, this.awaitIdentPos = Te || this.awaitIdentPos;
+            return this.checkPatternErrors(Ut, !1), this.checkYieldAwaitInDefaultParams(), this.awaitIdentPos > 0 && this.raise(this.awaitIdentPos, "Cannot use 'await' as identifier inside an async function"), this.yieldPos = ae, this.awaitPos = Se, this.awaitIdentPos = Te, this.parseArrowExpression(this.startNodeAt(u, x), ze, !0, j);
+          this.checkExpressionErrors(Ut, !0), this.yieldPos = ae || this.yieldPos, this.awaitPos = Se || this.awaitPos, this.awaitIdentPos = Te || this.awaitIdentPos;
           var Le = this.startNodeAt(u, x);
           Le.callee = n, Le.arguments = ze, $ && (Le.optional = at), n = this.finishNode(Le, "CallExpression");
         } else if (this.type === I.backQuote) {
@@ -1176,7 +1176,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var x = this.start, A = this.startLoc, N, W = this.options.ecmaVersion >= 8;
         if (this.options.ecmaVersion >= 6) {
           this.next();
-          var j = this.start, $ = this.startLoc, at = [], mt = !0, wt = !1, Ut = new r(), ue = this.yieldPos, Se = this.awaitPos, Te;
+          var j = this.start, $ = this.startLoc, at = [], mt = !0, wt = !1, Ut = new r(), ae = this.yieldPos, Se = this.awaitPos, Te;
           for (this.yieldPos = 0, this.awaitPos = 0; this.type !== I.parenR; )
             if (mt ? mt = !1 : this.expect(I.comma), W && this.afterTrailingComma(I.parenR, !0)) {
               wt = !0;
@@ -1188,8 +1188,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               at.push(this.parseMaybeAssign(!1, Ut, this.parseParenItem));
           var ze = this.lastTokEnd, Le = this.lastTokEndLoc;
           if (this.expect(I.parenR), n && !this.canInsertSemicolon() && this.eat(I.arrow))
-            return this.checkPatternErrors(Ut, !1), this.checkYieldAwaitInDefaultParams(), this.yieldPos = ue, this.awaitPos = Se, this.parseParenArrowList(x, A, at, u);
-          (!at.length || wt) && this.unexpected(this.lastTokStart), Te && this.unexpected(Te), this.checkExpressionErrors(Ut, !0), this.yieldPos = ue || this.yieldPos, this.awaitPos = Se || this.awaitPos, at.length > 1 ? (N = this.startNodeAt(j, $), N.expressions = at, this.finishNodeAt(N, "SequenceExpression", ze, Le)) : N = at[0];
+            return this.checkPatternErrors(Ut, !1), this.checkYieldAwaitInDefaultParams(), this.yieldPos = ae, this.awaitPos = Se, this.parseParenArrowList(x, A, at, u);
+          (!at.length || wt) && this.unexpected(this.lastTokStart), Te && this.unexpected(Te), this.checkExpressionErrors(Ut, !0), this.yieldPos = ae || this.yieldPos, this.awaitPos = Se || this.awaitPos, at.length > 1 ? (N = this.startNodeAt(j, $), N.expressions = at, this.finishNodeAt(N, "SequenceExpression", ze, Le)) : N = at[0];
         } else
           N = this.parseParenExpression();
         if (this.options.preserveParens) {
@@ -1422,10 +1422,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         11: T,
         12: R,
         13: F
-      }, U = "Cased_Letter LC Close_Punctuation Pe Connector_Punctuation Pc Control Cc cntrl Currency_Symbol Sc Dash_Punctuation Pd Decimal_Number Nd digit Enclosing_Mark Me Final_Punctuation Pf Format Cf Initial_Punctuation Pi Letter L Letter_Number Nl Line_Separator Zl Lowercase_Letter Ll Mark M Combining_Mark Math_Symbol Sm Modifier_Letter Lm Modifier_Symbol Sk Nonspacing_Mark Mn Number N Open_Punctuation Ps Other C Other_Letter Lo Other_Number No Other_Punctuation Po Other_Symbol So Paragraph_Separator Zp Private_Use Co Punctuation P punct Separator Z Space_Separator Zs Spacing_Mark Mc Surrogate Cs Symbol S Titlecase_Letter Lt Unassigned Cn Uppercase_Letter Lu", H = "Adlam Adlm Ahom Anatolian_Hieroglyphs Hluw Arabic Arab Armenian Armn Avestan Avst Balinese Bali Bamum Bamu Bassa_Vah Bass Batak Batk Bengali Beng Bhaiksuki Bhks Bopomofo Bopo Brahmi Brah Braille Brai Buginese Bugi Buhid Buhd Canadian_Aboriginal Cans Carian Cari Caucasian_Albanian Aghb Chakma Cakm Cham Cham Cherokee Cher Common Zyyy Coptic Copt Qaac Cuneiform Xsux Cypriot Cprt Cyrillic Cyrl Deseret Dsrt Devanagari Deva Duployan Dupl Egyptian_Hieroglyphs Egyp Elbasan Elba Ethiopic Ethi Georgian Geor Glagolitic Glag Gothic Goth Grantha Gran Greek Grek Gujarati Gujr Gurmukhi Guru Han Hani Hangul Hang Hanunoo Hano Hatran Hatr Hebrew Hebr Hiragana Hira Imperial_Aramaic Armi Inherited Zinh Qaai Inscriptional_Pahlavi Phli Inscriptional_Parthian Prti Javanese Java Kaithi Kthi Kannada Knda Katakana Kana Kayah_Li Kali Kharoshthi Khar Khmer Khmr Khojki Khoj Khudawadi Sind Lao Laoo Latin Latn Lepcha Lepc Limbu Limb Linear_A Lina Linear_B Linb Lisu Lisu Lycian Lyci Lydian Lydi Mahajani Mahj Malayalam Mlym Mandaic Mand Manichaean Mani Marchen Marc Masaram_Gondi Gonm Meetei_Mayek Mtei Mende_Kikakui Mend Meroitic_Cursive Merc Meroitic_Hieroglyphs Mero Miao Plrd Modi Mongolian Mong Mro Mroo Multani Mult Myanmar Mymr Nabataean Nbat New_Tai_Lue Talu Newa Newa Nko Nkoo Nushu Nshu Ogham Ogam Ol_Chiki Olck Old_Hungarian Hung Old_Italic Ital Old_North_Arabian Narb Old_Permic Perm Old_Persian Xpeo Old_South_Arabian Sarb Old_Turkic Orkh Oriya Orya Osage Osge Osmanya Osma Pahawh_Hmong Hmng Palmyrene Palm Pau_Cin_Hau Pauc Phags_Pa Phag Phoenician Phnx Psalter_Pahlavi Phlp Rejang Rjng Runic Runr Samaritan Samr Saurashtra Saur Sharada Shrd Shavian Shaw Siddham Sidd SignWriting Sgnw Sinhala Sinh Sora_Sompeng Sora Soyombo Soyo Sundanese Sund Syloti_Nagri Sylo Syriac Syrc Tagalog Tglg Tagbanwa Tagb Tai_Le Tale Tai_Tham Lana Tai_Viet Tavt Takri Takr Tamil Taml Tangut Tang Telugu Telu Thaana Thaa Thai Thai Tibetan Tibt Tifinagh Tfng Tirhuta Tirh Ugaritic Ugar Vai Vaii Warang_Citi Wara Yi Yiii Zanabazar_Square Zanb", Q = H + " Dogra Dogr Gunjala_Gondi Gong Hanifi_Rohingya Rohg Makasar Maka Medefaidrin Medf Old_Sogdian Sogo Sogdian Sogd", tt = Q + " Elymaic Elym Nandinagari Nand Nyiakeng_Puachue_Hmong Hmnp Wancho Wcho", nt = tt + " Chorasmian Chrs Diak Dives_Akuru Khitan_Small_Script Kits Yezi Yezidi", ot = nt + " Cypro_Minoan Cpmn Old_Uyghur Ougr Tangsa Tnsa Toto Vithkuqi Vith", X = {
+      }, U = "Cased_Letter LC Close_Punctuation Pe Connector_Punctuation Pc Control Cc cntrl Currency_Symbol Sc Dash_Punctuation Pd Decimal_Number Nd digit Enclosing_Mark Me Final_Punctuation Pf Format Cf Initial_Punctuation Pi Letter L Letter_Number Nl Line_Separator Zl Lowercase_Letter Ll Mark M Combining_Mark Math_Symbol Sm Modifier_Letter Lm Modifier_Symbol Sk Nonspacing_Mark Mn Number N Open_Punctuation Ps Other C Other_Letter Lo Other_Number No Other_Punctuation Po Other_Symbol So Paragraph_Separator Zp Private_Use Co Punctuation P punct Separator Z Space_Separator Zs Spacing_Mark Mc Surrogate Cs Symbol S Titlecase_Letter Lt Unassigned Cn Uppercase_Letter Lu", H = "Adlam Adlm Ahom Anatolian_Hieroglyphs Hluw Arabic Arab Armenian Armn Avestan Avst Balinese Bali Bamum Bamu Bassa_Vah Bass Batak Batk Bengali Beng Bhaiksuki Bhks Bopomofo Bopo Brahmi Brah Braille Brai Buginese Bugi Buhid Buhd Canadian_Aboriginal Cans Carian Cari Caucasian_Albanian Aghb Chakma Cakm Cham Cham Cherokee Cher Common Zyyy Coptic Copt Qaac Cuneiform Xsux Cypriot Cprt Cyrillic Cyrl Deseret Dsrt Devanagari Deva Duployan Dupl Egyptian_Hieroglyphs Egyp Elbasan Elba Ethiopic Ethi Georgian Geor Glagolitic Glag Gothic Goth Grantha Gran Greek Grek Gujarati Gujr Gurmukhi Guru Han Hani Hangul Hang Hanunoo Hano Hatran Hatr Hebrew Hebr Hiragana Hira Imperial_Aramaic Armi Inherited Zinh Qaai Inscriptional_Pahlavi Phli Inscriptional_Parthian Prti Javanese Java Kaithi Kthi Kannada Knda Katakana Kana Kayah_Li Kali Kharoshthi Khar Khmer Khmr Khojki Khoj Khudawadi Sind Lao Laoo Latin Latn Lepcha Lepc Limbu Limb Linear_A Lina Linear_B Linb Lisu Lisu Lycian Lyci Lydian Lydi Mahajani Mahj Malayalam Mlym Mandaic Mand Manichaean Mani Marchen Marc Masaram_Gondi Gonm Meetei_Mayek Mtei Mende_Kikakui Mend Meroitic_Cursive Merc Meroitic_Hieroglyphs Mero Miao Plrd Modi Mongolian Mong Mro Mroo Multani Mult Myanmar Mymr Nabataean Nbat New_Tai_Lue Talu Newa Newa Nko Nkoo Nushu Nshu Ogham Ogam Ol_Chiki Olck Old_Hungarian Hung Old_Italic Ital Old_North_Arabian Narb Old_Permic Perm Old_Persian Xpeo Old_South_Arabian Sarb Old_Turkic Orkh Oriya Orya Osage Osge Osmanya Osma Pahawh_Hmong Hmng Palmyrene Palm Pau_Cin_Hau Pauc Phags_Pa Phag Phoenician Phnx Psalter_Pahlavi Phlp Rejang Rjng Runic Runr Samaritan Samr Saurashtra Saur Sharada Shrd Shavian Shaw Siddham Sidd SignWriting Sgnw Sinhala Sinh Sora_Sompeng Sora Soyombo Soyo Sundanese Sund Syloti_Nagri Sylo Syriac Syrc Tagalog Tglg Tagbanwa Tagb Tai_Le Tale Tai_Tham Lana Tai_Viet Tavt Takri Takr Tamil Taml Tangut Tang Telugu Telu Thaana Thaa Thai Thai Tibetan Tibt Tifinagh Tfng Tirhuta Tirh Ugaritic Ugar Vai Vaii Warang_Citi Wara Yi Yiii Zanabazar_Square Zanb", Q = H + " Dogra Dogr Gunjala_Gondi Gong Hanifi_Rohingya Rohg Makasar Maka Medefaidrin Medf Old_Sogdian Sogo Sogdian Sogd", et = Q + " Elymaic Elym Nandinagari Nand Nyiakeng_Puachue_Hmong Hmnp Wancho Wcho", nt = et + " Chorasmian Chrs Diak Dives_Akuru Khitan_Small_Script Kits Yezi Yezidi", ot = nt + " Cypro_Minoan Cpmn Old_Uyghur Ougr Tangsa Tnsa Toto Vithkuqi Vith", X = {
         9: H,
         10: Q,
-        11: tt,
+        11: et,
         12: nt,
         13: ot
       }, K = {};
@@ -1603,9 +1603,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }
       J.regexp_eatRegExpIdentifierPart = function(n) {
         var u = n.pos, x = this.options.ecmaVersion >= 11, A = n.current(x);
-        return n.advance(x), A === 92 && this.regexp_eatRegExpUnicodeEscapeSequence(n, x) && (A = n.lastIntValue), ie(A) ? (n.lastIntValue = A, !0) : (n.pos = u, !1);
+        return n.advance(x), A === 92 && this.regexp_eatRegExpUnicodeEscapeSequence(n, x) && (A = n.lastIntValue), ee(A) ? (n.lastIntValue = A, !0) : (n.pos = u, !1);
       };
-      function ie(n) {
+      function ee(n) {
         return ut(n, !0) || n === 36 || n === 95 || n === 8204 || n === 8205;
       }
       J.regexp_eatAtomEscape = function(n) {
@@ -1639,15 +1639,15 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
         return !1;
       }, J.regexp_eatZero = function(n) {
-        return n.current() === 48 && !ae(n.lookahead()) ? (n.lastIntValue = 0, n.advance(), !0) : !1;
+        return n.current() === 48 && !se(n.lookahead()) ? (n.lastIntValue = 0, n.advance(), !0) : !1;
       }, J.regexp_eatControlEscape = function(n) {
         var u = n.current();
         return u === 116 ? (n.lastIntValue = 9, n.advance(), !0) : u === 110 ? (n.lastIntValue = 10, n.advance(), !0) : u === 118 ? (n.lastIntValue = 11, n.advance(), !0) : u === 102 ? (n.lastIntValue = 12, n.advance(), !0) : u === 114 ? (n.lastIntValue = 13, n.advance(), !0) : !1;
       }, J.regexp_eatControlLetter = function(n) {
         var u = n.current();
-        return Jt(u) ? (n.lastIntValue = u % 32, n.advance(), !0) : !1;
+        return Qt(u) ? (n.lastIntValue = u % 32, n.advance(), !0) : !1;
       };
-      function Jt(n) {
+      function Qt(n) {
         return n >= 65 && n <= 90 || n >= 97 && n <= 122;
       }
       J.regexp_eatRegExpUnicodeEscapeSequence = function(n, u) {
@@ -1667,13 +1667,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             }
             return !0;
           }
-          if (A && n.eat(123) && this.regexp_eatHexDigits(n) && n.eat(125) && se(n.lastIntValue))
+          if (A && n.eat(123) && this.regexp_eatHexDigits(n) && n.eat(125) && re(n.lastIntValue))
             return !0;
           A && n.raise("Invalid unicode escape"), n.pos = x;
         }
         return !1;
       };
-      function se(n) {
+      function re(n) {
         return n >= 0 && n <= 1114111;
       }
       J.regexp_eatIdentityEscape = function(n) {
@@ -1730,7 +1730,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return n.lastStringValue !== "";
       };
       function Mt(n) {
-        return Jt(n) || n === 95;
+        return Qt(n) || n === 95;
       }
       J.regexp_eatUnicodePropertyValue = function(n) {
         var u = 0;
@@ -1739,7 +1739,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return n.lastStringValue !== "";
       };
       function Xt(n) {
-        return Mt(n) || ae(n);
+        return Mt(n) || se(n);
       }
       J.regexp_eatLoneUnicodePropertyNameOrValue = function(n) {
         return this.regexp_eatUnicodePropertyValue(n);
@@ -1785,7 +1785,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return this.regexp_eatCharacterClassEscape(n) || this.regexp_eatCharacterEscape(n);
       }, J.regexp_eatClassControlLetter = function(n) {
         var u = n.current();
-        return ae(u) || u === 95 ? (n.lastIntValue = u % 32, n.advance(), !0) : !1;
+        return se(u) || u === 95 ? (n.lastIntValue = u % 32, n.advance(), !0) : !1;
       }, J.regexp_eatHexEscapeSequence = function(n) {
         var u = n.pos;
         if (n.eat(120)) {
@@ -1796,23 +1796,23 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return !1;
       }, J.regexp_eatDecimalDigits = function(n) {
         var u = n.pos, x = 0;
-        for (n.lastIntValue = 0; ae(x = n.current()); )
+        for (n.lastIntValue = 0; se(x = n.current()); )
           n.lastIntValue = 10 * n.lastIntValue + (x - 48), n.advance();
         return n.pos !== u;
       };
-      function ae(n) {
+      function se(n) {
         return n >= 48 && n <= 57;
       }
       J.regexp_eatHexDigits = function(n) {
         var u = n.pos, x = 0;
-        for (n.lastIntValue = 0; $t(x = n.current()); )
-          n.lastIntValue = 16 * n.lastIntValue + ge(x), n.advance();
+        for (n.lastIntValue = 0; Jt(x = n.current()); )
+          n.lastIntValue = 16 * n.lastIntValue + pe(x), n.advance();
         return n.pos !== u;
       };
-      function $t(n) {
+      function Jt(n) {
         return n >= 48 && n <= 57 || n >= 65 && n <= 70 || n >= 97 && n <= 102;
       }
-      function ge(n) {
+      function pe(n) {
         return n >= 65 && n <= 70 ? 10 + (n - 65) : n >= 97 && n <= 102 ? 10 + (n - 97) : n - 48;
       }
       J.regexp_eatLegacyOctalEscapeSequence = function(n) {
@@ -1838,19 +1838,19 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         n.lastIntValue = 0;
         for (var A = 0; A < u; ++A) {
           var N = n.current();
-          if (!$t(N))
+          if (!Jt(N))
             return n.pos = x, !1;
-          n.lastIntValue = 16 * n.lastIntValue + ge(N), n.advance();
+          n.lastIntValue = 16 * n.lastIntValue + pe(N), n.advance();
         }
         return !0;
       };
-      var fe = function(u) {
+      var le = function(u) {
         this.type = u.type, this.value = u.value, this.start = u.start, this.end = u.end, u.options.locations && (this.loc = new We(u, u.startLoc, u.endLoc)), u.options.ranges && (this.range = [u.start, u.end]);
       }, St = dt.prototype;
       St.next = function(n) {
-        !n && this.type.keyword && this.containsEsc && this.raiseRecoverable(this.start, "Escape sequence in keyword " + this.type.keyword), this.options.onToken && this.options.onToken(new fe(this)), this.lastTokEnd = this.end, this.lastTokStart = this.start, this.lastTokEndLoc = this.endLoc, this.lastTokStartLoc = this.startLoc, this.nextToken();
+        !n && this.type.keyword && this.containsEsc && this.raiseRecoverable(this.start, "Escape sequence in keyword " + this.type.keyword), this.options.onToken && this.options.onToken(new le(this)), this.lastTokEnd = this.end, this.lastTokStart = this.start, this.lastTokEndLoc = this.endLoc, this.lastTokStartLoc = this.startLoc, this.nextToken();
       }, St.getToken = function() {
-        return this.next(), new fe(this);
+        return this.next(), new le(this);
       }, typeof Symbol < "u" && (St[Symbol.iterator] = function() {
         var n = this;
         return {
@@ -2120,17 +2120,17 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
         return A && $ === 95 && this.raiseRecoverable(this.pos - 1, "Numeric separator is not allowed at the last of digits"), this.pos === W || u != null && this.pos - W !== u ? null : j;
       };
-      function ce(n, u) {
+      function fe(n, u) {
         return u ? parseInt(n, 8) : parseFloat(n.replace(/_/g, ""));
       }
-      function de(n) {
+      function ce(n) {
         return typeof BigInt != "function" ? null : BigInt(n.replace(/_/g, ""));
       }
       St.readRadixNumber = function(n) {
         var u = this.pos;
         this.pos += 2;
         var x = this.readInt(n);
-        return x == null && this.raise(this.start + 2, "Expected number in radix " + n), this.options.ecmaVersion >= 11 && this.input.charCodeAt(this.pos) === 110 ? (x = de(this.input.slice(u, this.pos)), ++this.pos) : Ft(this.fullCharCodeAtPos()) && this.raise(this.pos, "Identifier directly after number"), this.finishToken(I.num, x);
+        return x == null && this.raise(this.start + 2, "Expected number in radix " + n), this.options.ecmaVersion >= 11 && this.input.charCodeAt(this.pos) === 110 ? (x = ce(this.input.slice(u, this.pos)), ++this.pos) : Ft(this.fullCharCodeAtPos()) && this.raise(this.pos, "Identifier directly after number"), this.finishToken(I.num, x);
       }, St.readNumber = function(n) {
         var u = this.pos;
         !n && this.readInt(10, void 0, !0) === null && this.raise(u, "Invalid number");
@@ -2138,11 +2138,11 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         x && this.strict && this.raise(u, "Invalid number");
         var A = this.input.charCodeAt(this.pos);
         if (!x && !n && this.options.ecmaVersion >= 11 && A === 110) {
-          var N = de(this.input.slice(u, this.pos));
+          var N = ce(this.input.slice(u, this.pos));
           return ++this.pos, Ft(this.fullCharCodeAtPos()) && this.raise(this.pos, "Identifier directly after number"), this.finishToken(I.num, N);
         }
         x && /[89]/.test(this.input.slice(u, this.pos)) && (x = !1), A === 46 && !x && (++this.pos, this.readInt(10), A = this.input.charCodeAt(this.pos)), (A === 69 || A === 101) && !x && (A = this.input.charCodeAt(++this.pos), (A === 43 || A === 45) && ++this.pos, this.readInt(10) === null && this.raise(u, "Invalid number")), Ft(this.fullCharCodeAtPos()) && this.raise(this.pos, "Identifier directly after number");
-        var W = ce(this.input.slice(u, this.pos), x);
+        var W = fe(this.input.slice(u, this.pos), x);
         return this.finishToken(I.num, W);
       }, St.readCodePoint = function() {
         var n = this.input.charCodeAt(this.pos), u;
@@ -2284,7 +2284,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return n + this.input.slice(x, this.pos);
       }, St.readWord = function() {
         var n = this.readWord1(), u = I.name;
-        return this.keywords.test(n) && (u = Bt[n]), this.finishToken(u, n);
+        return this.keywords.test(n) && (u = Nt[n]), this.finishToken(u, n);
       };
       var me = "8.8.0";
       dt.acorn = {
@@ -2297,12 +2297,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         Node: S,
         TokenType: xt,
         tokTypes: I,
-        keywordTypes: Bt,
+        keywordTypes: Nt,
         TokContext: w,
         tokContexts: m,
         isIdentifierChar: ut,
         isIdentifierStart: Ft,
-        Token: fe,
+        Token: le,
         isNewLine: Gt,
         lineBreak: zt,
         lineBreakG: Ee,
@@ -2317,7 +2317,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       function yi(n, u) {
         return dt.tokenizer(n, u);
       }
-      G.Node = S, G.Parser = dt, G.Position = Ne, G.SourceLocation = We, G.TokContext = w, G.Token = fe, G.TokenType = xt, G.defaultOptions = Qe, G.getLineInfo = Fe, G.isIdentifierChar = ut, G.isIdentifierStart = Ft, G.isNewLine = Gt, G.keywordTypes = Bt, G.lineBreak = zt, G.lineBreakG = Ee, G.nonASCIIwhitespace = Ue, G.parse = ii, G.parseExpressionAt = bi, G.tokContexts = m, G.tokTypes = I, G.tokenizer = yi, G.version = me, Object.defineProperty(G, "__esModule", { value: !0 });
+      G.Node = S, G.Parser = dt, G.Position = Ne, G.SourceLocation = We, G.TokContext = w, G.Token = le, G.TokenType = xt, G.defaultOptions = Qe, G.getLineInfo = Fe, G.isIdentifierChar = ut, G.isIdentifierStart = Ft, G.isNewLine = Gt, G.keywordTypes = Nt, G.lineBreak = zt, G.lineBreakG = Ee, G.nonASCIIwhitespace = Ue, G.parse = ii, G.parseExpressionAt = bi, G.tokContexts = m, G.tokTypes = I, G.tokenizer = yi, G.version = me, Object.defineProperty(G, "__esModule", { value: !0 });
     });
   }(Ei, Ei.exports)), Ei.exports;
 }
@@ -2352,10 +2352,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
  * created by Marijn Haverbeke and released under an MIT license.
  *
  */
-(function(te) {
+(function($t) {
   (function(pt, G) {
     pt = pt || _n;
-    var et = pt.window, it = pt.document, O = new function() {
+    var it = pt.window, tt = pt.document, O = new function() {
       var t = /^(statics|enumerable|beans|preserve)$/, e = [], i = e.slice, r = Object.create, s = Object.getOwnPropertyDescriptor, a = Object.defineProperty, h = e.forEach || function(g, d) {
         for (var w = 0, m = this.length; w < m; w++)
           g.call(d, this[w], w, this);
@@ -2464,7 +2464,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
       });
     }();
-    te.exports = O, O.inject({
+    $t.exports = O, O.inject({
       enumerable: !1,
       toString: function() {
         return this._id != null ? (this._class || "Object") + (this._name ? " '" + this._name + "'" : " @" + this._id) : "{ " + O.each(this, function(t, e) {
@@ -2731,7 +2731,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
       }
     });
-    var Yt = {
+    var ge = {
       on: function(t, e) {
         if (typeof t != "string")
           O.each(t, function(a, h) {
@@ -2805,7 +2805,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return t.base.apply(this, arguments);
         }
       }
-    }, Nt = O.extend({
+    }, Rt = O.extend({
       _class: "PaperScope",
       initialize: function t() {
         dt = this, this.settings = new O({
@@ -2876,7 +2876,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           e[i].remove();
       },
       remove: function() {
-        this.clear(), delete Nt._scopes[this._id];
+        this.clear(), delete Rt._scopes[this._id];
       },
       statics: new function() {
         function t(e) {
@@ -2894,7 +2894,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           hasAttribute: t("has")
         };
       }()
-    }), _e = O.extend(Yt, {
+    }), _e = O.extend(ge, {
       initialize: function(t) {
         this._scope = dt, this._index = this._scope[this._list].push(this) - 1, (t || !this._scope[this._reference]) && this.activate();
       },
@@ -2960,17 +2960,17 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       },
       findBoundsCollisions: function(t, e, i, r, s) {
         var a = !e || t === e, h = a ? t : t.concat(e), o = t.length, l = h.length;
-        function f(tt, nt, ot) {
-          for (var X = 0, K = tt.length; X < K; ) {
+        function f(et, nt, ot) {
+          for (var X = 0, K = et.length; X < K; ) {
             var st = K + X >>> 1;
-            h[tt[st]][nt] < ot ? X = st + 1 : K = st;
+            h[et[st]][nt] < ot ? X = st + 1 : K = st;
           }
           return X - 1;
         }
         for (var _ = r ? 1 : 0, v = _ + 2, g = r ? 0 : 1, d = g + 2, w = new Array(l), m = 0; m < l; m++)
           w[m] = m;
-        w.sort(function(tt, nt) {
-          return h[tt][_] - h[nt][_];
+        w.sort(function(et, nt) {
+          return h[et][_] - h[nt][_];
         });
         for (var k = [], p = new Array(o), m = 0; m < l; m++) {
           var y = w[m], c = h[y], b = a ? y : y - o, C = y < o, P = a || !C, S = C ? [] : null;
@@ -3714,7 +3714,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       {
         beans: !0
       }
-    )), re = ft.extend(
+    )), ne = ft.extend(
       {
         initialize: function(e, i, r, s, a, h) {
           this._set(e, i, r, s, !0), this._owner = a, this._setter = h;
@@ -4003,7 +4003,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }, this["set" + e] = function(r) {
         this[i] = r, this._changed();
       };
-    }, {})), Bt = O.extend({
+    }, {})), Nt = O.extend({
       _class: "Line",
       initialize: function(e, i, r, s, a) {
         var h = !1;
@@ -4019,7 +4019,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return this.getVector().getLength();
       },
       intersect: function(t, e) {
-        return Bt.intersect(
+        return Nt.intersect(
           this._px,
           this._py,
           this._vx,
@@ -4033,7 +4033,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         );
       },
       getSide: function(t, e) {
-        return Bt.getSide(
+        return Nt.getSide(
           this._px,
           this._py,
           this._vx,
@@ -4048,7 +4048,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return Math.abs(this.getSignedDistance(t));
       },
       getSignedDistance: function(t) {
-        return Bt.getSignedDistance(
+        return Nt.getSignedDistance(
           this._px,
           this._py,
           this._vx,
@@ -4087,7 +4087,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         },
         getDistance: function(t, e, i, r, s, a, h) {
           return Math.abs(
-            Bt.getSignedDistance(t, e, i, r, s, a, h)
+            Nt.getSignedDistance(t, e, i, r, s, a, h)
           );
         }
       }
@@ -4246,7 +4246,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
       }
     }), I = O.extend(
-      Yt,
+      ge,
       {
         statics: {
           extend: function t(e) {
@@ -4500,7 +4500,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             );
             (!r.stroke || this.getStrokeScaling()) && (r.cacheItem = this);
             var s = this._getCachedBounds(i && t, r).rect;
-            return arguments.length ? s : new re(
+            return arguments.length ? s : new ne(
               s.x,
               s.y,
               s.width,
@@ -5715,7 +5715,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           e,
           i !== G && z.read(arguments)
         )) {
-          var r, s = typeof e, a = s === "string" ? it.getElementById(e) : s === "object" ? e : null;
+          var r, s = typeof e, a = s === "string" ? tt.getElementById(e) : s === "object" ? e : null;
           if (a && a !== I.NO_INSERT) {
             if (a.getContext || a.naturalHeight != null)
               r = a;
@@ -5913,18 +5913,18 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
         for (var d = 0; d < 3; d++)
           v[d] /= g;
-        return g ? Qt.read(v) : null;
+        return g ? Yt.read(v) : null;
       },
       getPixel: function() {
         var t = z.read(arguments), e = this.getContext().getImageData(t.x, t.y, 1, 1).data;
-        return new Qt(
+        return new Yt(
           "rgb",
           [e[0] / 255, e[1] / 255, e[2] / 255],
           e[3] / 255
         );
       },
       setPixel: function() {
-        var t = arguments, e = z.read(t), i = Qt.read(t), r = i._convert("rgb"), s = i._alpha, a = this.getContext(!0), h = a.createImageData(1, 1), o = h.data;
+        var t = arguments, e = z.read(t), i = Yt.read(t), r = i._convert("rgb"), s = i._alpha, a = this.getContext(!0), h = a.createImageData(1, 1), o = h.data;
         o[0] = r[0] * 255, o[1] = r[1] * 255, o[2] = r[2] * 255, o[3] = s != null ? s * 255 : 255, a.putImageData(h, e.x, e.y);
       },
       clear: function() {
@@ -5996,7 +5996,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         this._initialize(
           e,
           i !== G && z.read(arguments, 1)
-        ) || this.setDefinition(e instanceof ee ? e : new ee(e));
+        ) || this.setDefinition(e instanceof te ? e : new te(e));
       },
       _equals: function(t) {
         return this._definition === t._definition;
@@ -6026,7 +6026,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       _draw: function(t, e) {
         this._definition._item.draw(t, e);
       }
-    }), ee = O.extend({
+    }), te = O.extend({
       _class: "SymbolDefinition",
       initialize: function(e, i) {
         this._id = Vt.get(), this.project = dt.project, e && this.setItem(e, i);
@@ -6056,7 +6056,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return new Ue(this, t);
       },
       clone: function() {
-        return new ee(this._item.clone(!1));
+        return new te(this._item.clone(!1));
       },
       equals: function(t) {
         return t === this || t && this._item.equals(t._item) || !1;
@@ -6405,7 +6405,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return rt.getArea(this.getValues());
         },
         getLine: function() {
-          return new Bt(this._segment1._point, this._segment2._point);
+          return new Nt(this._segment1._point, this._segment2._point);
         },
         getPart: function(t, e) {
           return new rt(rt.getPart(this.getValues(), t, e));
@@ -6610,7 +6610,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           if (s.isZero())
             return !1;
           if (s.isCollinear(e) && s.isCollinear(i)) {
-            var a = new Bt(t, r), h = 1e-7;
+            var a = new Nt(t, r), h = 1e-7;
             if (a.getDistance(t.add(e)) < h && a.getDistance(r.add(i)) < h) {
               var o = s.dot(s), l = s.dot(e) / o, f = s.dot(i) / o;
               return l >= 0 && l <= 1 && f <= 0 && f >= -1;
@@ -6867,31 +6867,31 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         function e(d, w, m, k, p, y, c, b, C, P, S, E, L) {
           if (++C >= 4096 || ++b >= 40)
             return C;
-          var M = 1e-9, V = w[0], T = w[1], R = w[6], F = w[7], q = Bt.getSignedDistance, U = q(V, T, R, F, w[2], w[3]), H = q(V, T, R, F, w[4], w[5]), Q = U * H > 0 ? 3 / 4 : 4 / 9, tt = Q * Math.min(0, U, H), nt = Q * Math.max(0, U, H), ot = q(V, T, R, F, d[0], d[1]), X = q(V, T, R, F, d[2], d[3]), K = q(V, T, R, F, d[4], d[5]), st = q(V, T, R, F, d[6], d[7]), ht = i(ot, X, K, st), lt = ht[0], vt = ht[1], J, gt;
-          if (U === 0 && H === 0 && ot === 0 && X === 0 && K === 0 && st === 0 || (J = r(lt, vt, tt, nt)) == null || (gt = r(
+          var M = 1e-9, V = w[0], T = w[1], R = w[6], F = w[7], q = Nt.getSignedDistance, U = q(V, T, R, F, w[2], w[3]), H = q(V, T, R, F, w[4], w[5]), Q = U * H > 0 ? 3 / 4 : 4 / 9, et = Q * Math.min(0, U, H), nt = Q * Math.max(0, U, H), ot = q(V, T, R, F, d[0], d[1]), X = q(V, T, R, F, d[2], d[3]), K = q(V, T, R, F, d[4], d[5]), st = q(V, T, R, F, d[6], d[7]), ht = i(ot, X, K, st), lt = ht[0], vt = ht[1], J, gt;
+          if (U === 0 && H === 0 && ot === 0 && X === 0 && K === 0 && st === 0 || (J = r(lt, vt, et, nt)) == null || (gt = r(
             lt.reverse(),
             vt.reverse(),
-            tt,
+            et,
             nt
           )) == null)
             return C;
           var It = P + (S - P) * J, yt = P + (S - P) * gt;
           if (Math.max(L - E, yt - It) < M) {
-            var ie = (It + yt) / 2, Jt = (E + L) / 2;
+            var ee = (It + yt) / 2, Qt = (E + L) / 2;
             t(
               p,
               y,
               c ? k : m,
-              c ? Jt : ie,
+              c ? Qt : ee,
               c ? m : k,
-              c ? ie : Jt
+              c ? ee : Qt
             );
           } else {
             d = rt.getPart(d, J, gt);
-            var se = L - E;
+            var re = L - E;
             if (gt - J > 0.8)
-              if (yt - It > se) {
-                var Zt = rt.subdivide(d, 0.5), ie = (It + yt) / 2;
+              if (yt - It > re) {
+                var Zt = rt.subdivide(d, 0.5), ee = (It + yt) / 2;
                 C = e(
                   w,
                   Zt[0],
@@ -6905,7 +6905,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                   E,
                   L,
                   It,
-                  ie
+                  ee
                 ), C = e(
                   w,
                   Zt[1],
@@ -6918,11 +6918,11 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                   C,
                   E,
                   L,
-                  ie,
+                  ee,
                   yt
                 );
               } else {
-                var Zt = rt.subdivide(w, 0.5), Jt = (E + L) / 2;
+                var Zt = rt.subdivide(w, 0.5), Qt = (E + L) / 2;
                 C = e(
                   Zt[0],
                   d,
@@ -6934,7 +6934,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                   b,
                   C,
                   E,
-                  Jt,
+                  Qt,
                   It,
                   yt
                 ), C = e(
@@ -6947,14 +6947,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                   !c,
                   b,
                   C,
-                  Jt,
+                  Qt,
                   L,
                   It,
                   yt
                 );
               }
             else
-              se === 0 || se >= M ? C = e(
+              re === 0 || re >= M ? C = e(
                 w,
                 d,
                 k,
@@ -7040,7 +7040,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }
         }
         function o(d, w, m, k, p, y) {
-          var c = Bt.intersect(
+          var c = Nt.intersect(
             d[0],
             d[1],
             d[6],
@@ -7094,8 +7094,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                 1
               ), !V || p.length === R)
                 for (var S = 0; S < 4; S++) {
-                  var F = S >> 1, q = S & 1, U = F * 6, H = q * 6, Q = new z(d[U], d[U + 1]), tt = new z(w[H], w[H + 1]);
-                  Q.isClose(tt, c) && t(
+                  var F = S >> 1, q = S & 1, U = F * 6, H = q * 6, Q = new z(d[U], d[U + 1]), et = new z(w[H], w[H + 1]);
+                  Q.isClose(et, c) && t(
                     p,
                     y,
                     m,
@@ -7145,10 +7145,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                   return L;
                 var H = q[U];
                 if (!b || H > T) {
-                  var Q = w[H], tt = E[H];
+                  var Q = w[H], et = E[H];
                   l(
                     F,
-                    tt,
+                    et,
                     R,
                     Q,
                     L,
@@ -7164,7 +7164,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             var ht = st[6] - st[0], lt = st[7] - st[1];
             return ht * ht + lt * lt;
           }
-          var k = Math.abs, p = Bt.getDistance, y = 1e-8, c = 1e-7, b = rt.isStraight(d), C = rt.isStraight(w), P = b && C, S = m(d) < m(w), E = S ? w : d, L = S ? d : w, M = E[0], V = E[1], T = E[6] - M, R = E[7] - V;
+          var k = Math.abs, p = Nt.getDistance, y = 1e-8, c = 1e-7, b = rt.isStraight(d), C = rt.isStraight(w), P = b && C, S = m(d) < m(w), E = S ? w : d, L = S ? d : w, M = E[0], V = E[1], T = E[6] - M, R = E[7] - V;
           if (p(M, V, T, R, L[0], L[1], !0) < c && p(M, V, T, R, L[6], L[7], !0) < c)
             !P && p(M, V, T, R, E[2], E[3], !0) < c && p(M, V, T, R, E[4], E[5], !0) < c && p(M, V, T, R, L[2], L[3], !0) < c && p(M, V, T, R, L[4], L[5], !0) < c && (b = C = P = !0);
           else if (P)
@@ -7172,12 +7172,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           if (b ^ C)
             return null;
           for (var F = [d, w], q = [], U = 0; U < 4 && q.length < 2; U++) {
-            var H = U & 1, Q = H ^ 1, tt = U >> 1, nt = rt.getTimeOf(F[H], new z(
-              F[Q][tt ? 6 : 0],
-              F[Q][tt ? 7 : 1]
+            var H = U & 1, Q = H ^ 1, et = U >> 1, nt = rt.getTimeOf(F[H], new z(
+              F[Q][et ? 6 : 0],
+              F[Q][et ? 7 : 1]
             ));
             if (nt != null) {
-              var ot = H ? [tt, nt] : [nt, tt];
+              var ot = H ? [et, nt] : [nt, et];
               (!q.length || k(ot[0] - q[0][0]) > y && k(ot[1] - q[0][1]) > y) && q.push(ot);
             }
             if (U > 2 && !q.length)
@@ -7196,8 +7196,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           if (Math.abs(U) < ct.CURVETIME_EPSILON) {
             var Q = M * q - V * F, U = M * R - V * T;
             if (U != 0) {
-              var tt = -Q / U;
-              tt >= 0 && tt <= 1 && H.push(tt);
+              var et = -Q / U;
+              et >= 0 && et <= 1 && H.push(et);
             }
           } else {
             var nt = (T * T - 4 * M * F) * L * L + (-2 * T * R + 4 * V * F + 4 * M * q) * E * L + (R * R - 4 * V * q) * E * E, ot = T * L - R * E;
@@ -7924,8 +7924,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             for (var b = 0, C = f - p; b <= m; b++, C++)
               c[b] = s[(C < 0 ? C + a : C) % a]._point;
             for (var P = c[0]._x + 2 * c[1]._x, S = c[0]._y + 2 * c[1]._y, E = 2, L = m - 1, M = [P], V = [S], T = [E], R = [], F = [], b = 1; b < m; b++) {
-              var q = b < L, U = q || g ? 1 : 2, H = q ? 4 : g ? 2 : 7, Q = q ? 4 : g ? 3 : 8, tt = q ? 2 : g ? 0 : 1, nt = U / E;
-              E = T[b] = H - nt, P = M[b] = Q * c[b]._x + tt * c[b + 1]._x - nt * P, S = V[b] = Q * c[b]._y + tt * c[b + 1]._y - nt * S;
+              var q = b < L, U = q || g ? 1 : 2, H = q ? 4 : g ? 2 : 7, Q = q ? 4 : g ? 3 : 8, et = q ? 2 : g ? 0 : 1, nt = U / E;
+              E = T[b] = H - nt, P = M[b] = Q * c[b]._x + et * c[b + 1]._x - nt * P, S = V[b] = Q * c[b]._y + et * c[b + 1]._y - nt * S;
             }
             R[L] = M[L] / T[L], F[L] = V[L] / T[L];
             for (var b = m - 2; b >= 0; b--)
@@ -7962,8 +7962,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           function l(g) {
             var d = e[g], w = d.getNext(), m = d._handleOut, k = w._handleIn, p = 0.5522847498307936;
             if (m.isOrthogonal(k)) {
-              var y = d._point, c = w._point, b = new Bt(y, m, !0).intersect(
-                new Bt(c, k, !0),
+              var y = d._point, c = w._point, b = new Nt(y, m, !0).intersect(
+                new Nt(c, k, !0),
                 !0
               );
               return b && ct.isZero(m.getLength() / b.subtract(y).getLength() - p) && ct.isZero(k.getLength() / b.subtract(c).getLength() - p);
@@ -8288,15 +8288,15 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               _ = new z(P * C / S, -S * b / P).multiply((y === f ? -1 : 1) * r(T)).rotate(p).add(w), d = new At().translate(_).rotate(p).scale(P, S), g = d._inverseTransform(a), v = g.getDirectedAngle(d._inverseTransform(h)), !f && v > 0 ? v -= 360 : f && v < 0 && (v += 360);
             }
             if (o) {
-              var R = new Bt(
+              var R = new Nt(
                 a.add(o).divide(2),
                 o.subtract(a).rotate(90),
                 !0
-              ), F = new Bt(
+              ), F = new Nt(
                 o.add(h).divide(2),
                 h.subtract(o).rotate(90),
                 !0
-              ), q = new Bt(a, h), U = q.getSide(o);
+              ), q = new Nt(a, h), U = q.getSide(o);
               if (_ = R.intersect(F, !0), !_) {
                 if (!U)
                   return this.lineTo(h);
@@ -8309,7 +8309,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               H === 0 ? v = U * i(v) : U === H && (v += v < 0 ? 360 : -360);
             }
             if (v) {
-              for (var Q = 1e-7, tt = i(v), nt = tt >= 360 ? 4 : Math.ceil((tt - Q) / 90), ot = v / nt, X = ot * Math.PI / 360, K = 4 / 3 * Math.sin(X) / (1 + Math.cos(X)), st = [], ht = 0; ht <= nt; ht++) {
+              for (var Q = 1e-7, et = i(v), nt = et >= 360 ? 4 : Math.ceil((et - Q) / 90), ot = v / nt, X = ot * Math.PI / 360, K = 4 / 3 * Math.sin(X) / (1 + Math.cos(X)), st = [], ht = 0; ht <= nt; ht++) {
                 var c = h, lt = null;
                 if (ht < nt && (lt = g.rotate(90).multiply(K), d ? (c = d._transformPoint(g), lt = d._transformPoint(g.add(lt)).subtract(c)) : c = _.add(g)), !ht)
                   s.setHandleOut(lt);
@@ -8447,11 +8447,11 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           _addBevelJoin: function(t, e, i, r, s, a, h, o) {
             var l = t.getCurve(), f = l.getPrevious(), _ = l.getPoint1().transform(s), v = f.getNormalAtTime(1).multiply(i).transform(a), g = l.getNormalAtTime(0).multiply(i).transform(a), d = v.getDirectedAngle(g);
             if ((d < 0 || d >= 180) && (v = v.negate(), g = g.negate()), o && h(_), h(_.add(v)), e === "miter") {
-              var w = new Bt(
+              var w = new Nt(
                 _.add(v),
                 new z(-v.y, v.x),
                 !0
-              ).intersect(new Bt(
+              ).intersect(new Nt(
                 _.add(g),
                 new z(-g.y, g.x),
                 !0
@@ -8777,7 +8777,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           F(L), M && F(M);
           for (var U = new Array(T.length), H = 0, Q = T.length; H < Q; H++)
             U[H] = T[H].getValues();
-          for (var tt = xe.findCurveBoundsCollisions(
+          for (var et = xe.findCurveBoundsCollisions(
             U,
             U,
             0,
@@ -8785,8 +8785,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           ), nt = {}, H = 0; H < T.length; H++) {
             var ot = T[H], X = ot._path._id, K = nt[X] = nt[X] || {};
             K[ot.getIndex()] = {
-              hor: q(tt[H].hor),
-              ver: q(tt[H].ver)
+              hor: q(et[H].hor),
+              ver: q(et[H].ver)
             };
           }
           for (var H = 0, Q = E.length; H < Q; H++)
@@ -8850,14 +8850,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       function g(p, y, c) {
         var b = p && p.length;
         if (b) {
-          var C = O.each(p, function(tt, nt) {
-            this[tt._id] = {
+          var C = O.each(p, function(et, nt) {
+            this[et._id] = {
               container: null,
-              winding: tt.isClockwise() ? 1 : -1,
+              winding: et.isClockwise() ? 1 : -1,
               index: nt
             };
-          }, {}), P = p.slice().sort(function(tt, nt) {
-            return i(nt.getArea()) - i(tt.getArea());
+          }, {}), P = p.slice().sort(function(et, nt) {
+            return i(nt.getArea()) - i(et.getArea());
           }), S = P[0], E = xe.findItemBoundsCollisions(
             P,
             null,
@@ -8900,8 +8900,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           q._path && (L[R(q)] = !0);
         }
         for (var F = p.length - 1; F >= 0; F--) {
-          var U = p[F], H = U._time, Q = H, tt = y && !y(U), q = U._curve, nt;
-          if (q && (q !== V ? (S = !q.hasHandles() || L && L[R(q)], M = [], T = null, V = q) : T >= C && (H /= T)), tt) {
+          var U = p[F], H = U._time, Q = H, et = y && !y(U), q = U._curve, nt;
+          if (q && (q !== V ? (S = !q.hasHandles() || L && L[R(q)], M = [], T = null, V = q) : T >= C && (H /= T)), et) {
             M && M.push(U);
             continue;
           } else
@@ -8930,51 +8930,51 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return c || v(E), b || p;
       }
       function w(p, y, c, b, C) {
-        var P = Array.isArray(y) ? y : y[c ? "hor" : "ver"], S = c ? 1 : 0, E = S ^ 1, L = [p.x, p.y], M = L[S], V = L[E], T = 1e-9, R = 1e-6, F = M - T, q = M + T, U = 0, H = 0, Q = 0, tt = 0, nt = !1, ot = !1, X = 1, K = [], st, ht;
+        var P = Array.isArray(y) ? y : y[c ? "hor" : "ver"], S = c ? 1 : 0, E = S ^ 1, L = [p.x, p.y], M = L[S], V = L[E], T = 1e-9, R = 1e-6, F = M - T, q = M + T, U = 0, H = 0, Q = 0, et = 0, nt = !1, ot = !1, X = 1, K = [], st, ht;
         function lt(Mt) {
-          var Xt = Mt[E + 0], ae = Mt[E + 6];
-          if (!(V < t(Xt, ae) || V > e(Xt, ae))) {
-            var $t = Mt[S + 0], ge = Mt[S + 2], ke = Mt[S + 4], fe = Mt[S + 6];
-            if (Xt === ae) {
-              ($t < q && fe > F || fe < q && $t > F) && (nt = !0);
+          var Xt = Mt[E + 0], se = Mt[E + 6];
+          if (!(V < t(Xt, se) || V > e(Xt, se))) {
+            var Jt = Mt[S + 0], pe = Mt[S + 2], ke = Mt[S + 4], le = Mt[S + 6];
+            if (Xt === se) {
+              (Jt < q && le > F || le < q && Jt > F) && (nt = !0);
               return;
             }
-            var St = V === Xt ? 0 : V === ae || F > e($t, ge, ke, fe) || q < t($t, ge, ke, fe) ? 1 : rt.solveCubic(Mt, E, V, K, 0, 1) > 0 ? K[0] : 1, ce = St === 0 ? $t : St === 1 ? fe : rt.getPoint(Mt, St)[c ? "y" : "x"], de = Xt > ae ? 1 : -1, Ie = st[E] > st[E + 6] ? 1 : -1, me = st[S + 6];
-            return V !== Xt ? (ce < F ? Q += de : ce > q ? tt += de : nt = !0, ce > M - R && ce < M + R && (X /= 2)) : (de !== Ie ? $t < F ? Q += de : $t > q && (tt += de) : $t != me && (me < q && ce > q ? (tt += de, nt = !0) : me > F && ce < F && (Q += de, nt = !0)), X /= 4), st = Mt, !C && ce > F && ce < q && rt.getTangent(Mt, St)[c ? "x" : "y"] === 0 && w(p, y, !c, b, !0);
+            var St = V === Xt ? 0 : V === se || F > e(Jt, pe, ke, le) || q < t(Jt, pe, ke, le) ? 1 : rt.solveCubic(Mt, E, V, K, 0, 1) > 0 ? K[0] : 1, fe = St === 0 ? Jt : St === 1 ? le : rt.getPoint(Mt, St)[c ? "y" : "x"], ce = Xt > se ? 1 : -1, Ie = st[E] > st[E + 6] ? 1 : -1, me = st[S + 6];
+            return V !== Xt ? (fe < F ? Q += ce : fe > q ? et += ce : nt = !0, fe > M - R && fe < M + R && (X /= 2)) : (ce !== Ie ? Jt < F ? Q += ce : Jt > q && (et += ce) : Jt != me && (me < q && fe > q ? (et += ce, nt = !0) : me > F && fe < F && (Q += ce, nt = !0)), X /= 4), st = Mt, !C && fe > F && fe < q && rt.getTangent(Mt, St)[c ? "x" : "y"] === 0 && w(p, y, !c, b, !0);
           }
         }
         function vt(Mt) {
-          var Xt = Mt[E + 0], ae = Mt[E + 2], $t = Mt[E + 4], ge = Mt[E + 6];
-          if (V <= e(Xt, ae, $t, ge) && V >= t(Xt, ae, $t, ge)) {
-            for (var ke = Mt[S + 0], fe = Mt[S + 2], St = Mt[S + 4], ce = Mt[S + 6], de = F > e(ke, fe, St, ce) || q < t(ke, fe, St, ce) ? [Mt] : rt.getMonoCurves(Mt, c), Ie, me = 0, ii = de.length; me < ii; me++)
-              if (Ie = lt(de[me]))
+          var Xt = Mt[E + 0], se = Mt[E + 2], Jt = Mt[E + 4], pe = Mt[E + 6];
+          if (V <= e(Xt, se, Jt, pe) && V >= t(Xt, se, Jt, pe)) {
+            for (var ke = Mt[S + 0], le = Mt[S + 2], St = Mt[S + 4], fe = Mt[S + 6], ce = F > e(ke, le, St, fe) || q < t(ke, le, St, fe) ? [Mt] : rt.getMonoCurves(Mt, c), Ie, me = 0, ii = ce.length; me < ii; me++)
+              if (Ie = lt(ce[me]))
                 return Ie;
           }
         }
         for (var J = 0, gt = P.length; J < gt; J++) {
-          var It = P[J], yt = It._path, ie = It.getValues(), Jt;
+          var It = P[J], yt = It._path, ee = It.getValues(), Qt;
           if ((!J || P[J - 1]._path !== yt) && (st = null, yt._closed || (ht = rt.getValues(
             yt.getLastCurve().getSegment2(),
             It.getSegment1(),
             null,
             !b
           ), ht[E] !== ht[E + 6] && (st = ht)), !st)) {
-            st = ie;
-            for (var se = yt.getLastCurve(); se && se !== It; ) {
-              var Zt = se.getValues();
+            st = ee;
+            for (var re = yt.getLastCurve(); re && re !== It; ) {
+              var Zt = re.getValues();
               if (Zt[E] !== Zt[E + 6]) {
                 st = Zt;
                 break;
               }
-              se = se.getPrevious();
+              re = re.getPrevious();
             }
           }
-          if (Jt = vt(ie))
-            return Jt;
+          if (Qt = vt(ee))
+            return Qt;
           if (J + 1 === gt || P[J + 1]._path !== yt) {
-            if (ht && (Jt = vt(ht)))
-              return Jt;
-            nt && !Q && !tt && (Q = tt = yt.isClockwise(b) ^ c ? 1 : -1), U += Q, H += tt, Q = tt = 0, nt && (ot = !0, nt = !1), ht = null;
+            if (ht && (Qt = vt(ht)))
+              return Qt;
+            nt && !Q && !et && (Q = et = yt.isClockwise(b) ^ c ? 1 : -1), U += Q, H += et, Q = et = 0, nt && (ot = !0, nt = !1), ht = null;
           }
         }
         return U = i(U), H = i(H), {
@@ -8997,8 +8997,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         } while (p && !p._intersection && p !== S);
         for (var V = [0.5, 0.25, 0.75], T = { winding: 0, quality: -1 }, R = 1e-3, F = 1 - R, q = 0; q < V.length && T.quality < 0.5; q++)
           for (var M = E * V[q], U = 0, H = P.length; U < H; U++) {
-            var Q = P[U], tt = Q.length;
-            if (M <= tt) {
+            var Q = P[U], et = Q.length;
+            if (M <= et) {
               var L = Q.curve, nt = L._path, ot = nt._parent, X = ot instanceof we ? ot : nt, K = ct.clamp(L.getTimeAt(M), R, F), st = L.getPointAtTime(K), ht = i(L.getTangentAtTime(K).y) < Math.SQRT1_2, lt = null;
               if (C.subtract && c) {
                 var vt = X === y ? c : y, J = vt._getWinding(st, ht, !0);
@@ -9016,7 +9016,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               ), lt.quality > T.quality && (T = lt);
               break;
             }
-            M -= tt;
+            M -= et;
           }
         for (var U = P.length - 1; U >= 0; U--)
           P[U].segment._winding = T;
@@ -9036,35 +9036,35 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return !1;
         }
         function S(gt) {
-          for (var It = gt._segments, yt = 0, ie = It.length; yt < ie; yt++)
+          for (var It = gt._segments, yt = 0, ee = It.length; yt < ee; yt++)
             It[yt]._visited = !0;
         }
         function E(gt, It) {
-          var yt = gt._intersection, ie = yt, Jt = [];
+          var yt = gt._intersection, ee = yt, Qt = [];
           It && (b = [gt]);
-          function se(Zt, Mt) {
+          function re(Zt, Mt) {
             for (; Zt && Zt !== Mt; ) {
-              var Xt = Zt._segment, ae = Xt && Xt._path;
-              if (ae) {
-                var $t = Xt.getNext() || ae.getFirstSegment(), ge = $t._intersection;
-                Xt !== gt && (P(Xt) || P($t) || $t && C(Xt) && (C($t) || ge && C(ge._segment))) && Jt.push(Xt), It && b.push(Xt);
+              var Xt = Zt._segment, se = Xt && Xt._path;
+              if (se) {
+                var Jt = Xt.getNext() || se.getFirstSegment(), pe = Jt._intersection;
+                Xt !== gt && (P(Xt) || P(Jt) || Jt && C(Xt) && (C(Jt) || pe && C(pe._segment))) && Qt.push(Xt), It && b.push(Xt);
               }
               Zt = Zt._next;
             }
           }
           if (yt) {
-            for (se(yt); yt && yt._previous; )
+            for (re(yt); yt && yt._previous; )
               yt = yt._previous;
-            se(yt, ie);
+            re(yt, ee);
           }
-          return Jt;
+          return Qt;
         }
         p.sort(function(gt, It) {
-          var yt = gt._intersection, ie = It._intersection, Jt = !!(yt && yt._overlap), se = !!(ie && ie._overlap), Zt = gt._path, Mt = It._path;
-          return Jt ^ se ? Jt ? 1 : -1 : !yt ^ !ie ? yt ? 1 : -1 : Zt !== Mt ? Zt._id - Mt._id : gt._index - It._index;
+          var yt = gt._intersection, ee = It._intersection, Qt = !!(yt && yt._overlap), re = !!(ee && ee._overlap), Zt = gt._path, Mt = It._path;
+          return Qt ^ re ? Qt ? 1 : -1 : !yt ^ !ee ? yt ? 1 : -1 : Zt !== Mt ? Zt._id - Mt._id : gt._index - It._index;
         });
         for (var L = 0, M = p.length; L < M; L++) {
-          var V = p[L], T = C(V), R = null, F = !1, q = !0, U = [], H, Q, tt;
+          var V = p[L], T = C(V), R = null, F = !1, q = !0, U = [], H, Q, et;
           if (T && V._path._overlapsOnly) {
             var nt = V._path, ot = V._intersection._segment._path;
             nt.compare(ot) && (nt.getArea() && c.push(nt.clone(!1)), S(nt), S(ot), T = !1);
@@ -9079,14 +9079,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               start: R._segments.length,
               crossings: K,
               visited: Q = [],
-              handleIn: tt
+              handleIn: et
             }), ht && (V = st), !C(V)) {
               R.removeSegments(H.start);
               for (var lt = 0, vt = Q.length; lt < vt; lt++)
                 Q[lt]._visited = !1;
               Q.length = 0;
               do
-                V = H && H.crossings.shift(), (!V || !V._path) && (V = null, H = U.pop(), H && (Q = H.visited, tt = H.handleIn));
+                V = H && H.crossings.shift(), (!V || !V._path) && (V = null, H = U.pop(), H && (Q = H.visited, et = H.handleIn));
               while (H && !C(V));
               if (!V)
                 break;
@@ -9094,11 +9094,11 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             var J = V.getNext();
             R.add(new _t(
               V._point,
-              tt,
+              et,
               J && V._handleOut
-            )), V._visited = !0, Q.push(V), V = J || V._path.getFirstSegment(), tt = J && J._handleIn;
+            )), V._visited = !0, Q.push(V), V = J || V._path.getFirstSegment(), et = J && J._handleIn;
           }
-          F && (q && (R.getFirstSegment().setHandleIn(tt), R.setClosed(q)), R.getArea() !== 0 && c.push(R));
+          F && (q && (R.getFirstSegment().setHandleIn(et), R.setClosed(q)), R.getArea() !== 0 && c.push(R));
         }
         return c;
       }
@@ -9127,8 +9127,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         resolveCrossings: function() {
           var p = this._children, y = p || [this];
           function c(H, Q) {
-            var tt = H && H._intersection;
-            return tt && tt._overlap && tt._path === Q;
+            var et = H && H._intersection;
+            return et && et._overlap && et._path === Q;
           }
           var b = !1, C = !1, P = this.getIntersections(null, function(H) {
             return H.hasOverlap() && (b = !0) || H.isCrossing() && (C = !0);
@@ -9141,10 +9141,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               c(R, V) && c(F, V) && (T.remove(), R._handleOut._set(0, 0), F._handleIn._set(0, 0), R !== T && !R.getCurve().hasLength() && (F._handleIn.set(R._handleIn), R.remove()));
             }
           C && (d(P, b && function(H) {
-            var Q = H.getCurve(), tt = H.getSegment(), nt = H._intersection, ot = nt._curve, X = nt._segment;
+            var Q = H.getCurve(), et = H.getSegment(), nt = H._intersection, ot = nt._curve, X = nt._segment;
             if (Q && ot && Q._path && ot._path)
               return !0;
-            tt && (tt._intersection = null), X && (X._intersection = null);
+            et && (et._intersection = null), X && (X._intersection = null);
           }, S), S && v(S), y = k(O.each(y, function(H) {
             O.push(this, H._segments);
           }, [])));
@@ -9168,9 +9168,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               var L = c[S].getValues(), M = L[1], V = L[3], T = L[5], R = L[7];
               if (b >= t(M, V, T, R) && b <= e(M, V, T, R))
                 for (var F = rt.getMonoCurves(L), q = 0, U = F.length; q < U; q++) {
-                  var H = F[q], Q = H[1], tt = H[7];
-                  if (Q !== tt && (b >= Q && b <= tt || b >= tt && b <= Q)) {
-                    var nt = b === Q ? H[0] : b === tt ? H[6] : rt.solveCubic(H, 1, b, P, 0, 1) === 1 ? rt.getPoint(H, P[0]).x : (H[0] + H[6]) / 2;
+                  var H = F[q], Q = H[1], et = H[7];
+                  if (Q !== et && (b >= Q && b <= et || b >= et && b <= Q)) {
+                    var nt = b === Q ? H[0] : b === et ? H[6] : rt.solveCubic(H, 1, b, P, 0, 1) === 1 ? rt.getPoint(H, P[0]).x : (H[0] + H[6]) / 2;
                     C.push(nt);
                   }
                 }
@@ -9315,8 +9315,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         if (L < U || M < U)
           L = M = q / 3;
         else {
-          var tt = f.subtract(l);
-          H = r.normalize(L), Q = s.normalize(M), H.dot(tt) - Q.dot(tt) > q * q && (L = M = q / 3, H = Q = null);
+          var et = f.subtract(l);
+          H = r.normalize(L), Q = s.normalize(M), H.dot(et) - Q.dot(et) > q * q && (L = M = q / 3, H = Q = null);
         }
         return [
           l,
@@ -9432,7 +9432,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         );
         return t ? t._transformBounds(f, f) : f;
       }
-    }), Qt = O.extend(
+    }), Yt = O.extend(
       new function() {
         var t = {
           gray: ["gray"],
@@ -9477,7 +9477,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           } else {
             var y = i[o];
             if (!y)
-              if (et) {
+              if (it) {
                 r || (r = Dt.getContext(1, 1), r.globalCompositeOperation = "copy"), r.fillStyle = "rgba(0,0,0,0)", r.fillStyle = o, r.fillRect(0, 0, 1, 1);
                 var c = r.getImageData(0, 0, 1, 1).data;
                 y = i[o] = [
@@ -9640,7 +9640,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             );
           },
           convert: function(o) {
-            return new Qt(o, this._convert(o), this._alpha);
+            return new Yt(o, this._convert(o), this._alpha);
           },
           getType: function() {
             return this._type;
@@ -9662,7 +9662,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             return this._alpha != null;
           },
           equals: function(o) {
-            var l = O.isPlainValue(o, !0) ? Qt.read(arguments) : o;
+            var l = O.isPlainValue(o, !0) ? Yt.read(arguments) : o;
             return l === this || l && this._class === l._class && this._type === l._type && this.getAlpha() === l.getAlpha() && O.equals(this._components, l._components) || !1;
           },
           toString: function() {
@@ -9733,7 +9733,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             _types: t,
             random: function() {
               var o = Math.random;
-              return new Qt(o(), o(), o());
+              return new Yt(o(), o(), o());
             },
             _setOwner: function(o, l, f) {
               return o && (o._owner && l && o._owner !== l && (o = o.clone()), !o._owner ^ !l && (o._owner = l || null, o._setter = f || null)), o;
@@ -9758,10 +9758,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         };
         return O.each(t, function(e, i) {
           this[i] = function(r) {
-            r = Qt.read(arguments);
+            r = Yt.read(arguments);
             for (var s = this._type, a = this._components, h = r._convert(s), o = 0, l = a.length; o < l; o++)
               h[o] = e(a[o], h[o]);
-            return new Qt(
+            return new Yt(
               s,
               h,
               this._alpha != null ? e(this._alpha, r.getAlpha()) : null
@@ -9870,8 +9870,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return this._color;
       },
       setColor: function() {
-        Qt._setOwner(this._color, null), this._color = Qt._setOwner(
-          Qt.read(arguments, 0),
+        Yt._setOwner(this._color, null), this._color = Yt._setOwner(
+          Yt.read(arguments, 0),
           this,
           "setColor"
         ), this._changed();
@@ -9902,7 +9902,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         leading: null,
         justification: "left"
       }), i = O.set({}, e, {
-        fillColor: new Qt()
+        fillColor: new Yt()
       }), r = {
         strokeWidth: 193,
         strokeCap: 193,
@@ -9933,7 +9933,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               k[y]._style[g](w);
           if ((o === "selectedColor" || !p) && o in this._defaults) {
             var b = this._values[o];
-            b !== w && (l && (b && (Qt._setOwner(b, null), b._canvasStyle = null), w && w.constructor === Qt && (w = Qt._setOwner(
+            b !== w && (l && (b && (Yt._setOwner(b, null), b._canvasStyle = null), w && w.constructor === Yt && (w = Yt._setOwner(
               w,
               m,
               p && g
@@ -9954,7 +9954,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             if (y === G)
               y = this._defaults[o], y && y.clone && (y = y.clone());
             else {
-              var P = l ? Qt : f ? z : null;
+              var P = l ? Yt : f ? z : null;
               P && !(y && y.constructor === P) && (this._values[o] = y = P.read(
                 [y],
                 0,
@@ -9962,7 +9962,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               ));
             }
           }
-          return y && l && (y = Qt._setOwner(y, m, p && g)), y;
+          return y && l && (y = Yt._setOwner(y, m, p && g)), y;
         }, s[d] = function(w) {
           return this._style[d](w);
         }, s[g] = function(w) {
@@ -10086,7 +10086,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           );
         },
         isInserted: function(e) {
-          return it.body.contains(e);
+          return tt.body.contains(e);
         },
         getPrefixed: function(e, i) {
           return e && t(e, i);
@@ -10104,7 +10104,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         if (t)
           for (var i in e)
             for (var r = e[i], s = i.split(/[\s,]+/g), a = 0, h = s.length; a < h; a++) {
-              var o = s[a], l = t === it && (o === "touchstart" || o === "touchmove") ? { passive: !1 } : !1;
+              var o = s[a], l = t === tt && (o === "touchstart" || o === "touchmove") ? { passive: !1 } : !1;
               t.addEventListener(o, r, l);
             }
       },
@@ -10117,8 +10117,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       getPoint: function(t) {
         var e = t.targetTouches ? t.targetTouches.length ? t.targetTouches[0] : t.changedTouches[0] : t;
         return new z(
-          e.pageX || e.clientX + it.documentElement.scrollLeft,
-          e.pageY || e.clientY + it.documentElement.scrollTop
+          e.pageX || e.clientX + tt.documentElement.scrollLeft,
+          e.pageY || e.clientY + tt.documentElement.scrollTop
         );
       },
       getTarget: function(t) {
@@ -10134,7 +10134,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }
     };
     jt.requestAnimationFrame = new function() {
-      var t = qt.getPrefixed(et, "requestAnimationFrame"), e = !1, i = [], r;
+      var t = qt.getPrefixed(it, "requestAnimationFrame"), e = !1, i = [], r;
       function s() {
         var a = i;
         i = [];
@@ -10147,7 +10147,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       };
     }();
     var Wt = O.extend(
-      Yt,
+      ge,
       {
         _class: "View",
         initialize: function t(e, i) {
@@ -10159,7 +10159,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             return v.isNaN() || v.isZero() ? new ut(r("width"), r("height")) : v;
           }
           var a;
-          if (et && i) {
+          if (it && i) {
             this._id = i.getAttribute("id"), this._id == null && i.setAttribute("id", this._id = "paper-view-" + t._id++), jt.add(i, this._viewEvents);
             var h = "none";
             if (qt.setPrefixed(i.style, {
@@ -10168,29 +10168,29 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               touchCallout: h,
               contentZooming: h,
               tapHighlightColor: "rgba(0,0,0,0)"
-            }), Nt.hasAttribute(i, "resize")) {
+            }), Rt.hasAttribute(i, "resize")) {
               var o = this;
-              jt.add(et, this._windowEvents = {
+              jt.add(it, this._windowEvents = {
                 resize: function() {
                   o.setViewSize(s());
                 }
               });
             }
-            if (a = s(), Nt.hasAttribute(i, "stats") && typeof Stats < "u") {
+            if (a = s(), Rt.hasAttribute(i, "stats") && typeof Stats < "u") {
               this._stats = new Stats();
               var l = this._stats.domElement, f = l.style, _ = qt.getOffset(i);
-              f.position = "absolute", f.left = _.x + "px", f.top = _.y + "px", it.body.appendChild(l);
+              f.position = "absolute", f.left = _.x + "px", f.top = _.y + "px", tt.body.appendChild(l);
             }
           } else
             a = new ut(i), i = null;
-          this._project = e, this._scope = e._scope, this._element = i, this._pixelRatio || (this._pixelRatio = et && et.devicePixelRatio || 1), this._setElementSize(a.width, a.height), this._viewSize = a, t._views.push(this), t._viewsById[this._id] = this, (this._matrix = new At())._owner = this, t._focused || (t._focused = this), this._frameItems = {}, this._frameItemCount = 0, this._itemEvents = { native: {}, virtual: {} }, this._autoUpdate = !dt.agent.node, this._needsUpdate = !1;
+          this._project = e, this._scope = e._scope, this._element = i, this._pixelRatio || (this._pixelRatio = it && it.devicePixelRatio || 1), this._setElementSize(a.width, a.height), this._viewSize = a, t._views.push(this), t._viewsById[this._id] = this, (this._matrix = new At())._owner = this, t._focused || (t._focused = this), this._frameItems = {}, this._frameItemCount = 0, this._itemEvents = { native: {}, virtual: {} }, this._autoUpdate = !dt.agent.node, this._needsUpdate = !1;
         },
         remove: function() {
           if (!this._project)
             return !1;
           Wt._focused === this && (Wt._focused = null), Wt._views.splice(Wt._views.indexOf(this), 1), delete Wt._viewsById[this._id];
           var t = this._project;
-          return t._view === this && (t._view = null), jt.remove(this._element, this._viewEvents), jt.remove(et, this._windowEvents), this._element = this._project = null, this.off("frame"), this._animate = !1, this._frameItems = {}, !0;
+          return t._view === this && (t._view = null), jt.remove(this._element, this._viewEvents), jt.remove(it, this._windowEvents), this._element = this._project = null, this.off("frame"), this._animate = !1, this._frameItems = {}, !0;
         },
         _events: O.each(
           I._itemHandlers.concat(["onResize", "onKeyDown", "onKeyUp"]),
@@ -10229,7 +10229,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               if (t._requested = !1, t._animate) {
                 t.requestUpdate();
                 var e = t._element;
-                (!qt.getPrefixed(it, "hidden") || Nt.getAttribute(e, "keepalive") === "true") && qt.isInView(e) && t._handleFrame();
+                (!qt.getPrefixed(tt, "hidden") || Rt.getAttribute(e, "keepalive") === "true") && qt.isInView(e) && t._handleFrame();
               }
               t._autoUpdate && t.update();
             }), this._requested = !0;
@@ -10308,7 +10308,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         getPixelSize: function(t) {
           var e = this._element, i;
           if (e) {
-            var r = e.parentNode, s = it.createElement("div");
+            var r = e.parentNode, s = tt.createElement("div");
             s.style.fontSize = t, r.appendChild(s), i = parseFloat(qt.getStyles(s).fontSize), r.removeChild(s);
           } else
             i = parseFloat(i);
@@ -10398,14 +10398,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           _viewsById: {},
           _id: 0,
           create: function(t, e) {
-            it && typeof e == "string" && (e = it.getElementById(e));
-            var i = et ? xi : Wt;
+            tt && typeof e == "string" && (e = tt.getElementById(e));
+            var i = it ? xi : Wt;
             return new i(t, e);
           }
         }
       },
       new function() {
-        if (!et)
+        if (!it)
           return;
         var t, e, i = !1, r = !1;
         function s(T) {
@@ -10425,15 +10425,15 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         function h(T, R, F) {
           T._handleMouseEvent("mousemove", R, F);
         }
-        var o = et.navigator, l, f, _;
-        o.pointerEnabled || o.msPointerEnabled ? (l = "pointerdown MSPointerDown", f = "pointermove MSPointerMove", _ = "pointerup pointercancel MSPointerUp MSPointerCancel") : (l = "touchstart", f = "touchmove", _ = "touchend touchcancel", "ontouchstart" in et && o.userAgent.match(
+        var o = it.navigator, l, f, _;
+        o.pointerEnabled || o.msPointerEnabled ? (l = "pointerdown MSPointerDown", f = "pointermove MSPointerMove", _ = "pointerup pointercancel MSPointerUp MSPointerCancel") : (l = "touchstart", f = "touchmove", _ = "touchend touchcancel", "ontouchstart" in it && o.userAgent.match(
           /mobile|tablet|ip(ad|hone|od)|android|silk/i
         ) || (l += " mousedown", f += " mousemove", _ += " mouseup"));
         var v = {}, g = {
           mouseout: function(T) {
             var R = Wt._focused, F = jt.getRelatedTarget(T);
             if (R && (!F || F.nodeName === "HTML")) {
-              var q = jt.getOffset(T, R._element), U = q.x, H = Math.abs, Q = H(U), tt = 1 << 25, nt = Q - tt;
+              var q = jt.getOffset(T, R._element), U = q.x, H = Math.abs, Q = H(U), et = 1 << 25, nt = Q - et;
               q.x = H(nt) < Q ? nt * (U < 0 ? -1 : 1) : U, h(R, T, R.viewToProject(q));
             }
           },
@@ -10454,7 +10454,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }, g[_] = function(T) {
           var R = Wt._focused;
           R && i && R._handleMouseEvent("mouseup", T), r = i = !1;
-        }, jt.add(it, g), jt.add(et, {
+        }, jt.add(tt, g), jt.add(it, {
           load: a
         });
         var d = !1, w = !1, m = {
@@ -10462,7 +10462,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           mousedrag: "mousemove"
         }, k = !1, p, y, c, b, C, P, S, E;
         function L(T, R, F, q, U, H, Q) {
-          var tt = !1, nt;
+          var et = !1, nt;
           function ot(X, K) {
             if (X.responds(K)) {
               if (nt || (nt = new Ge(
@@ -10472,7 +10472,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                 R || X,
                 H ? U.subtract(H) : null
               )), X.emit(K, nt) && (d = !0, nt.prevented && (w = !0), nt.stopped))
-                return tt = !0;
+                return et = !0;
             } else {
               var st = m[K];
               if (st)
@@ -10481,7 +10481,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }
           for (; T && T !== Q && !ot(T, F); )
             T = T._parent;
-          return tt;
+          return et;
         }
         function M(T, R, F, q, U, H) {
           return T._project.removeOn(F), w = d = !1, C && L(
@@ -10523,12 +10523,12 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return {
           _viewEvents: v,
           _handleMouseEvent: function(T, R, F) {
-            var q = this._itemEvents, U = q.native[T], H = T === "mousemove", Q = this._scope.tool, tt = this;
+            var q = this._itemEvents, U = q.native[T], H = T === "mousemove", Q = this._scope.tool, et = this;
             function nt(vt) {
-              return q.virtual[vt] || tt.responds(vt) || Q && Q.responds(vt);
+              return q.virtual[vt] || et.responds(vt) || Q && Q.responds(vt);
             }
             H && i && nt("mousedrag") && (T = "mousedrag"), F || (F = this.getEventPoint(R));
-            var ot = this.getBounds().contains(F), X = U && ot && tt._project.hitTest(F, {
+            var ot = this.getBounds().contains(F), X = U && ot && et._project.hitTest(F, {
               tolerance: 0,
               fill: !0,
               stroke: !0
@@ -10562,10 +10562,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           },
           _handleKeyEvent: function(T, R, F, q) {
             var U = this._scope, H = U.tool, Q;
-            function tt(nt) {
+            function et(nt) {
               nt.responds(T) && (dt = U, nt.emit(T, Q = Q || new hi(T, R, F, q)));
             }
-            this.isVisible() && (tt(this), H && H.responds(T) && tt(H));
+            this.isVisible() && (et(this), H && H.responds(T) && et(H));
           },
           _countItemEvent: function(T, R) {
             var F = this._itemEvents, q = F.native, U = F.virtual;
@@ -10584,7 +10584,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
     ), xi = Wt.extend({
       _class: "CanvasView",
       initialize: function(e, i) {
-        if (!(i instanceof et.HTMLCanvasElement)) {
+        if (!(i instanceof it.HTMLCanvasElement)) {
           var r = ut.read(arguments, 1);
           if (r.isZero())
             throw new Error(
@@ -10593,8 +10593,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           i = Dt.getCanvas(r);
         }
         var s = this._context = i.getContext("2d");
-        if (s.save(), this._pixelRatio = 1, !/^off|false$/.test(Nt.getAttribute(i, "hidpi"))) {
-          var a = et.devicePixelRatio || 1, h = qt.getPrefixed(
+        if (s.save(), this._pixelRatio = 1, !/^off|false$/.test(Rt.getAttribute(i, "hidpi"))) {
+          var a = it.devicePixelRatio || 1, h = qt.getPrefixed(
             s,
             "backingStorePixelRatio"
           ) || 1;
@@ -10609,7 +10609,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var r = this._pixelRatio;
         if (t.base.call(this, e * r, i * r), r !== 1) {
           var s = this._element, a = this._context;
-          if (!Nt.hasAttribute(s, "resize")) {
+          if (!Rt.hasAttribute(s, "resize")) {
             var h = s.style;
             h.width = e + "px", h.height = i + "px";
           }
@@ -10732,7 +10732,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           v
         );
       }
-      return jt.add(it, {
+      return jt.add(tt, {
         keydown: function(f) {
           var _ = o(f), v = dt && dt.agent;
           _.length > 1 || v && v.chrome && (f.altKey || v.mac && f.metaKey || !v.mac && f.ctrlKey) ? l(
@@ -10752,7 +10752,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           var _ = o(f);
           _ in r && l(!1, _, r[_], f);
         }
-      }), jt.add(et, {
+      }), jt.add(it, {
         blur: function(f) {
           for (var _ in r)
             l(!1, _, r[_], f);
@@ -10901,7 +10901,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             v();
         return l;
       }
-    }), $e = O.extend(Yt, {
+    }), $e = O.extend(ge, {
       _class: "Tween",
       statics: {
         easings: new O({
@@ -11055,10 +11055,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
     }, Dt = O.exports.CanvasProvider = {
       canvases: [],
       getCanvas: function(t, e) {
-        if (!et)
+        if (!it)
           return null;
         var i, r = !0;
-        typeof t == "object" && (e = t.height, t = t.width), this.canvases.length ? i = this.canvases.pop() : (i = it.createElement("canvas"), r = !1);
+        typeof t == "object" && (e = t.height, t = t.width), this.canvases.length ? i = this.canvases.pop() : (i = tt.createElement("canvas"), r = !1);
         var s = i.getContext("2d");
         if (!s)
           throw new Error("Canvas " + i + " is unable to provide a 2D context.");
@@ -11200,8 +11200,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             M.height
           ).data, U = 0, H = F.length; U < H; U += 4) {
             r = q[U], o = F[U], s = q[U + 1], l = F[U + 1], a = q[U + 2], f = F[U + 2], h = q[U + 3], _ = F[U + 3], T();
-            var Q = h * E / 255, tt = 1 - Q;
-            F[U] = Q * v + tt * o, F[U + 1] = Q * g + tt * l, F[U + 2] = Q * d + tt * f, F[U + 3] = h * E + tt * _;
+            var Q = h * E / 255, et = 1 - Q;
+            F[U] = Q * v + et * o, F[U + 1] = Q * g + et * l, F[U + 2] = Q * d + et * f, F[U + 3] = h * E + et * _;
           }
           S.putImageData(R, L.x, L.y);
         }
@@ -11214,7 +11214,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         "xmlns:xlink": e + "/"
       };
       function s(o, l, f) {
-        return h(it.createElementNS(t, o), l, f);
+        return h(tt.createElementNS(t, o), l, f);
       }
       function a(o, l) {
         var f = r[l], _ = f ? o.getAttributeNS(f, l) : o.getAttribute(l);
@@ -11503,7 +11503,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             p(F[q], C, !1);
         for (var q = 0, U = S.length; q < U; q++) {
           var H = S[q], Q;
-          H.nodeType === 1 && !/^defs$/i.test(H.nodeName) && (Q = p(H, C, !1)) && !(Q instanceof ee) && R.push(Q);
+          H.nodeType === 1 && !/^defs$/i.test(H.nodeName) && (Q = p(H, C, !1)) && !(Q instanceof te) && R.push(Q);
         }
         return M.addChildren(R), E && (M = m(M.reduce(), c, P)), V._currentStyle = T, (E || L) && (M.remove(), M = null), M;
       }
@@ -11562,7 +11562,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           "0%"
         ));
         var H = m(
-          new Qt(S, R, F, q),
+          new Yt(S, R, F, q),
           c
         );
         return H._scaleToBounds = U, null;
@@ -11593,7 +11593,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }), b;
         },
         symbol: function(c, b, C, P) {
-          return new ee(
+          return new te(
             h(c, b, C, P),
             !0
           );
@@ -11601,7 +11601,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         defs: h,
         use: function(c) {
           var b = (i(c, "href", !0) || "").substring(1), C = t[b], P = r(c);
-          return C ? C instanceof ee ? C.place(P) : C.clone().translate(P) : null;
+          return C ? C instanceof te ? C.place(P) : C.clone().translate(P) : null;
         },
         circle: function(c) {
           return new Gt.Circle(
@@ -11723,7 +11723,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             var T = L ? L.divide(E.getSize()) : 1, V = new At().scale(T).translate(E.getPoint().negate());
             M = c;
           } else
-            c instanceof ee && (L && E.setSize(L), M = c._item);
+            c instanceof te && (L && E.setSize(L), M = c._item);
           if (M) {
             if (w(P, "overflow", S) !== "visible") {
               var R = new Gt.Rectangle(E);
@@ -11752,11 +11752,11 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }), c;
       }
       function k(c) {
-        var b = c && c.match(/\((?:["'#]*)([^"')]+)/), C = b && b[1], P = C && t[et ? C.replace(et.location.href.split("#")[0] + "#", "") : C];
+        var b = c && c.match(/\((?:["'#]*)([^"')]+)/), C = b && b[1], P = C && t[it ? C.replace(it.location.href.split("#")[0] + "#", "") : C];
         return P && P._scaleToBounds && (P = P.clone(), P._scaleToBounds = !0), P;
       }
       function p(c, b, C) {
-        var P = c.nodeName.toLowerCase(), S = P !== "#document", E = it.body, L, M, V;
+        var P = c.nodeName.toLowerCase(), S = P !== "#document", E = tt.body, L, M, V;
         C && S && (e = dt.getView().getSize(), e = s(c, null, null, !0) || e, L = Ht.create("svg", {
           style: "stroke-width: 1px; stroke-miterlimit: 10"
         }), M = c.parentNode, V = c.nextSibling, L.appendChild(c), E.appendChild(L));
@@ -11798,7 +11798,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             throw new Error(T);
         }
         if (typeof c == "string" && !/^[\s\S]*</.test(c)) {
-          var M = it.getElementById(c);
+          var M = tt.getElementById(c);
           M ? E(M) : ti.request({
             url: c,
             async: !0,
@@ -11891,30 +11891,30 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               F = Ct, ri();
             }, Y;
           };
-          var S, E, L, M, V, T, R, F, q, U, H, Q, tt, nt, ot, X;
+          var S, E, L, M, V, T, R, F, q, U, H, Q, et, nt, ot, X;
           function K(B, D) {
             var Z = P(p, B);
             D += " (" + Z.line + ":" + Z.column + ")";
             var Y = new SyntaxError(D);
             throw Y.pos = B, Y.loc = Z, Y.raisedAt = S, Y;
           }
-          var st = [], ht = { type: "num" }, lt = { type: "regexp" }, vt = { type: "string" }, J = { type: "name" }, gt = { type: "eof" }, It = { keyword: "break" }, yt = { keyword: "case", beforeExpr: !0 }, ie = { keyword: "catch" }, Jt = { keyword: "continue" }, se = { keyword: "debugger" }, Zt = { keyword: "default" }, Mt = { keyword: "do", isLoop: !0 }, Xt = { keyword: "else", beforeExpr: !0 }, ae = { keyword: "finally" }, $t = { keyword: "for", isLoop: !0 }, ge = { keyword: "function" }, ke = { keyword: "if" }, fe = { keyword: "return", beforeExpr: !0 }, St = { keyword: "switch" }, ce = { keyword: "throw", beforeExpr: !0 }, de = { keyword: "try" }, Ie = { keyword: "var" }, me = { keyword: "while", isLoop: !0 }, ii = { keyword: "with" }, bi = { keyword: "new", beforeExpr: !0 }, yi = { keyword: "this" }, n = { keyword: "null", atomValue: null }, u = { keyword: "true", atomValue: !0 }, x = { keyword: "false", atomValue: !1 }, A = { keyword: "in", binop: 7, beforeExpr: !0 }, N = {
+          var st = [], ht = { type: "num" }, lt = { type: "regexp" }, vt = { type: "string" }, J = { type: "name" }, gt = { type: "eof" }, It = { keyword: "break" }, yt = { keyword: "case", beforeExpr: !0 }, ee = { keyword: "catch" }, Qt = { keyword: "continue" }, re = { keyword: "debugger" }, Zt = { keyword: "default" }, Mt = { keyword: "do", isLoop: !0 }, Xt = { keyword: "else", beforeExpr: !0 }, se = { keyword: "finally" }, Jt = { keyword: "for", isLoop: !0 }, pe = { keyword: "function" }, ke = { keyword: "if" }, le = { keyword: "return", beforeExpr: !0 }, St = { keyword: "switch" }, fe = { keyword: "throw", beforeExpr: !0 }, ce = { keyword: "try" }, Ie = { keyword: "var" }, me = { keyword: "while", isLoop: !0 }, ii = { keyword: "with" }, bi = { keyword: "new", beforeExpr: !0 }, yi = { keyword: "this" }, n = { keyword: "null", atomValue: null }, u = { keyword: "true", atomValue: !0 }, x = { keyword: "false", atomValue: !1 }, A = { keyword: "in", binop: 7, beforeExpr: !0 }, N = {
             break: It,
             case: yt,
-            catch: ie,
-            continue: Jt,
-            debugger: se,
+            catch: ee,
+            continue: Qt,
+            debugger: re,
             default: Zt,
             do: Mt,
             else: Xt,
-            finally: ae,
-            for: $t,
-            function: ge,
+            finally: se,
+            for: Jt,
+            function: pe,
             if: ke,
-            return: fe,
+            return: le,
             switch: St,
-            throw: ce,
-            try: de,
+            throw: fe,
+            try: ce,
             var: Ie,
             while: me,
             with: ii,
@@ -11928,7 +11928,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             typeof: { keyword: "typeof", prefix: !0, beforeExpr: !0 },
             void: { keyword: "void", prefix: !0, beforeExpr: !0 },
             delete: { keyword: "delete", prefix: !0, beforeExpr: !0 }
-          }, W = { type: "[", beforeExpr: !0 }, j = { type: "]" }, $ = { type: "{", beforeExpr: !0 }, at = { type: "}" }, mt = { type: "(", beforeExpr: !0 }, wt = { type: ")" }, Ut = { type: ",", beforeExpr: !0 }, ue = { type: ";", beforeExpr: !0 }, Se = { type: ":", beforeExpr: !0 }, Te = { type: "." }, ze = { type: "?", beforeExpr: !0 }, Le = { binop: 10, beforeExpr: !0 }, Oe = { isAssign: !0, beforeExpr: !0 }, je = { isAssign: !0, beforeExpr: !0 }, wn = { postfix: !0, prefix: !0, isUpdate: !0 }, Qi = { prefix: !0, beforeExpr: !0 }, Ji = { binop: 1, beforeExpr: !0 }, $i = { binop: 2, beforeExpr: !0 }, Sn = { binop: 3, beforeExpr: !0 }, Cn = { binop: 4, beforeExpr: !0 }, kn = { binop: 5, beforeExpr: !0 }, In = { binop: 6, beforeExpr: !0 }, Pn = { binop: 7, beforeExpr: !0 }, An = { binop: 8, beforeExpr: !0 }, En = { binop: 9, prefix: !0, beforeExpr: !0 }, Tn = { binop: 10, beforeExpr: !0 };
+          }, W = { type: "[", beforeExpr: !0 }, j = { type: "]" }, $ = { type: "{", beforeExpr: !0 }, at = { type: "}" }, mt = { type: "(", beforeExpr: !0 }, wt = { type: ")" }, Ut = { type: ",", beforeExpr: !0 }, ae = { type: ";", beforeExpr: !0 }, Se = { type: ":", beforeExpr: !0 }, Te = { type: "." }, ze = { type: "?", beforeExpr: !0 }, Le = { binop: 10, beforeExpr: !0 }, Oe = { isAssign: !0, beforeExpr: !0 }, je = { isAssign: !0, beforeExpr: !0 }, wn = { postfix: !0, prefix: !0, isUpdate: !0 }, Qi = { prefix: !0, beforeExpr: !0 }, Ji = { binop: 1, beforeExpr: !0 }, $i = { binop: 2, beforeExpr: !0 }, Sn = { binop: 3, beforeExpr: !0 }, Cn = { binop: 4, beforeExpr: !0 }, kn = { binop: 5, beforeExpr: !0 }, In = { binop: 6, beforeExpr: !0 }, Pn = { binop: 7, beforeExpr: !0 }, An = { binop: 8, beforeExpr: !0 }, En = { binop: 9, prefix: !0, beforeExpr: !0 }, Tn = { binop: 10, beforeExpr: !0 };
           m.tokTypes = {
             bracketL: W,
             bracketR: j,
@@ -11937,7 +11937,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             parenL: mt,
             parenR: wt,
             comma: Ut,
-            semi: ue,
+            semi: ae,
             colon: Se,
             dot: Te,
             question: ze,
@@ -11963,17 +11963,17 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                   }
                 Z.push([B[Y]]);
               }
-            function Ct(Rt) {
-              if (Rt.length == 1)
-                return D += "return str === " + JSON.stringify(Rt[0]) + ";";
+            function Ct(Bt) {
+              if (Bt.length == 1)
+                return D += "return str === " + JSON.stringify(Bt[0]) + ";";
               D += "switch(str){";
-              for (var Ae = 0; Ae < Rt.length; ++Ae)
-                D += "case " + JSON.stringify(Rt[Ae]) + ":";
+              for (var Ae = 0; Ae < Bt.length; ++Ae)
+                D += "case " + JSON.stringify(Bt[Ae]) + ":";
               D += "return true}return false;";
             }
             if (Z.length > 3) {
-              Z.sort(function(Rt, Ae) {
-                return Ae.length - Rt.length;
+              Z.sort(function(Bt, Ae) {
+                return Ae.length - Bt.length;
               }), D += "switch(str.length){";
               for (var Y = 0; Y < Z.length; ++Y) {
                 var Pt = Z[Y];
@@ -11995,7 +11995,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           function an() {
             q = 1, S = U = 0, F = !0, ri();
           }
-          function oe(B, D) {
+          function ue(B, D) {
             L = S, k.locations && (V = new Ze()), T = B, ri(), R = D, F = B.beforeExpr;
           }
           function Vn() {
@@ -12057,60 +12057,60 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }
           function Fn() {
             var B = p.charCodeAt(S + 1);
-            return B >= 48 && B <= 57 ? on(!0) : (++S, oe(Te));
+            return B >= 48 && B <= 57 ? on(!0) : (++S, ue(Te));
           }
           function zn() {
             var B = p.charCodeAt(S + 1);
-            return F ? (++S, un()) : B === 61 ? he(je, 2) : he(Le, 1);
+            return F ? (++S, un()) : B === 61 ? oe(je, 2) : oe(Le, 1);
           }
           function Dn() {
             var B = p.charCodeAt(S + 1);
-            return B === 61 ? he(je, 2) : he(Tn, 1);
+            return B === 61 ? oe(je, 2) : oe(Tn, 1);
           }
           function qn(B) {
             var D = p.charCodeAt(S + 1);
-            return D === B ? he(B === 124 ? Ji : $i, 2) : D === 61 ? he(je, 2) : he(B === 124 ? Sn : kn, 1);
+            return D === B ? oe(B === 124 ? Ji : $i, 2) : D === 61 ? oe(je, 2) : oe(B === 124 ? Sn : kn, 1);
           }
           function Un() {
             var B = p.charCodeAt(S + 1);
-            return B === 61 ? he(je, 2) : he(Cn, 1);
+            return B === 61 ? oe(je, 2) : oe(Cn, 1);
           }
           function Wn(B) {
             var D = p.charCodeAt(S + 1);
-            return D === B ? D == 45 && p.charCodeAt(S + 2) == 62 && Si.test(p.slice(Q, S)) ? (S += 3, Ni(), ri(), Xe()) : he(wn, 2) : D === 61 ? he(je, 2) : he(En, 1);
+            return D === B ? D == 45 && p.charCodeAt(S + 2) == 62 && Si.test(p.slice(Q, S)) ? (S += 3, Ni(), ri(), Xe()) : oe(wn, 2) : D === 61 ? oe(je, 2) : oe(En, 1);
           }
           function Hn(B) {
             var D = p.charCodeAt(S + 1), Z = 1;
-            return D === B ? (Z = B === 62 && p.charCodeAt(S + 2) === 62 ? 3 : 2, p.charCodeAt(S + Z) === 61 ? he(je, Z + 1) : he(An, Z)) : D == 33 && B == 60 && p.charCodeAt(S + 2) == 45 && p.charCodeAt(S + 3) == 45 ? (S += 4, Ni(), ri(), Xe()) : (D === 61 && (Z = p.charCodeAt(S + 2) === 61 ? 3 : 2), he(Pn, Z));
+            return D === B ? (Z = B === 62 && p.charCodeAt(S + 2) === 62 ? 3 : 2, p.charCodeAt(S + Z) === 61 ? oe(je, Z + 1) : oe(An, Z)) : D == 33 && B == 60 && p.charCodeAt(S + 2) == 45 && p.charCodeAt(S + 3) == 45 ? (S += 4, Ni(), ri(), Xe()) : (D === 61 && (Z = p.charCodeAt(S + 2) === 61 ? 3 : 2), oe(Pn, Z));
           }
           function Gn(B) {
             var D = p.charCodeAt(S + 1);
-            return D === 61 ? he(In, p.charCodeAt(S + 2) === 61 ? 3 : 2) : he(B === 61 ? Oe : Qi, 1);
+            return D === 61 ? oe(In, p.charCodeAt(S + 2) === 61 ? 3 : 2) : oe(B === 61 ? Oe : Qi, 1);
           }
           function jn(B) {
             switch (B) {
               case 46:
                 return Fn();
               case 40:
-                return ++S, oe(mt);
+                return ++S, ue(mt);
               case 41:
-                return ++S, oe(wt);
+                return ++S, ue(wt);
               case 59:
-                return ++S, oe(ue);
+                return ++S, ue(ae);
               case 44:
-                return ++S, oe(Ut);
+                return ++S, ue(Ut);
               case 91:
-                return ++S, oe(W);
+                return ++S, ue(W);
               case 93:
-                return ++S, oe(j);
+                return ++S, ue(j);
               case 123:
-                return ++S, oe($);
+                return ++S, ue($);
               case 125:
-                return ++S, oe(at);
+                return ++S, ue(at);
               case 58:
-                return ++S, oe(Se);
+                return ++S, ue(Se);
               case 63:
-                return ++S, oe(ze);
+                return ++S, ue(ze);
               case 48:
                 var D = p.charCodeAt(S + 1);
                 if (D === 120 || D === 88)
@@ -12148,7 +12148,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               case 33:
                 return Gn(B);
               case 126:
-                return he(Qi, 1);
+                return oe(Qi, 1);
             }
             return !1;
           }
@@ -12156,7 +12156,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             if (B ? S = E + 1 : E = S, k.locations && (M = new Ze()), B)
               return un();
             if (S >= y)
-              return oe(gt);
+              return ue(gt);
             var D = p.charCodeAt(S);
             if (Ci(D) || D === 92)
               return ln();
@@ -12169,9 +12169,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             }
             return Z;
           }
-          function he(B, D) {
+          function oe(B, D) {
             var Z = p.slice(S, S + D);
-            S += D, oe(B, Z);
+            S += D, ue(B, Z);
           }
           function un() {
             for (var bt = "", B, D, Z = S; ; ) {
@@ -12196,24 +12196,24 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             Ct && !/^[gmsiy]*$/.test(Ct) && K(Z, "Invalid regexp flag");
             try {
               var Pt = new RegExp(bt, Ct);
-            } catch (Rt) {
-              Rt instanceof SyntaxError && K(Z, Rt.message), K(Rt);
+            } catch (Bt) {
+              Bt instanceof SyntaxError && K(Z, Bt.message), K(Bt);
             }
-            return oe(lt, Pt);
+            return ue(lt, Pt);
           }
           function gi(B, D) {
             for (var Z = S, Y = 0, bt = 0, Ct = D == null ? 1 / 0 : D; bt < Ct; ++bt) {
-              var Pt = p.charCodeAt(S), Rt;
-              if (Pt >= 97 ? Rt = Pt - 97 + 10 : Pt >= 65 ? Rt = Pt - 65 + 10 : Pt >= 48 && Pt <= 57 ? Rt = Pt - 48 : Rt = 1 / 0, Rt >= B)
+              var Pt = p.charCodeAt(S), Bt;
+              if (Pt >= 97 ? Bt = Pt - 97 + 10 : Pt >= 65 ? Bt = Pt - 65 + 10 : Pt >= 48 && Pt <= 57 ? Bt = Pt - 48 : Bt = 1 / 0, Bt >= B)
                 break;
-              ++S, Y = Y * B + Rt;
+              ++S, Y = Y * B + Bt;
             }
             return S === Z || D != null && S - Z !== D ? null : Y;
           }
           function Zn() {
             S += 2;
             var B = gi(16);
-            return B == null && K(E + 2, "Expected hexadecimal number"), Ci(p.charCodeAt(S)) && K(S, "Identifier directly after number"), oe(ht, B);
+            return B == null && K(E + 2, "Expected hexadecimal number"), Ci(p.charCodeAt(S)) && K(S, "Identifier directly after number"), ue(ht, B);
           }
           function on(B) {
             var D = S, Z = !1, Y = p.charCodeAt(S) === 48;
@@ -12221,7 +12221,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             var bt = p.charCodeAt(S);
             (bt === 69 || bt === 101) && (bt = p.charCodeAt(++S), (bt === 43 || bt === 45) && ++S, gi(10) === null && K(D, "Invalid number"), Z = !0), Ci(p.charCodeAt(S)) && K(S, "Identifier directly after number");
             var Ct = p.slice(D, S), Pt;
-            return Z ? Pt = parseFloat(Ct) : !Y || Ct.length === 1 ? Pt = parseInt(Ct, 10) : /[89]/.test(Ct) || X ? K(D, "Invalid number") : Pt = parseInt(Ct, 8), oe(ht, Pt);
+            return Z ? Pt = parseFloat(Ct) : !Y || Ct.length === 1 ? Pt = parseInt(Ct, 10) : /[89]/.test(Ct) || X ? K(D, "Invalid number") : Pt = parseInt(Ct, 8), ue(ht, Pt);
           }
           function Xn(B) {
             S++;
@@ -12229,7 +12229,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               S >= y && K(E, "Unterminated string constant");
               var Z = p.charCodeAt(S);
               if (Z === B)
-                return ++S, oe(vt, D);
+                return ++S, ue(vt, D);
               if (Z === 92) {
                 Z = p.charCodeAt(++S);
                 var Y = /^[0-7]+/.exec(p.slice(S, S + 3));
@@ -12306,10 +12306,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }
           function ln() {
             var B = hn(), D = J;
-            return !si && Mn(B) && (D = N[B]), oe(D, B);
+            return !si && Mn(B) && (D = N[B]), ue(D, B);
           }
           function Ot() {
-            H = E, Q = L, tt = V, Xe();
+            H = E, Q = L, et = V, Xe();
           }
           function Bi(B) {
             if (X = B, S = E, k.locations)
@@ -12324,7 +12324,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           function cn() {
             this.start = M, this.end = null, c !== null && (this.source = c);
           }
-          function le() {
+          function he() {
             var B = new fn();
             return k.locations && (B.loc = new cn()), k.directSourceFile && (B.sourceFile = k.directSourceFile), k.ranges && (B.range = [E, 0]), B;
           }
@@ -12333,7 +12333,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             return D.start = B.start, k.locations && (D.loc = new cn(), D.loc.start = B.loc.start), k.ranges && (D.range = [B.range[0], 0]), D;
           }
           function Lt(B, D) {
-            return B.type = D, B.end = Q, k.locations && (B.loc.end = tt), k.ranges && (B.range[1] = Q), B;
+            return B.type = D, B.end = Q, k.locations && (B.loc.end = et), k.ranges && (B.range[1] = Q), B;
           }
           function Ri(B) {
             return k.ecmaVersion >= 5 && B.type === "ExpressionStatement" && B.expression.type === "Literal" && B.expression.value === "use strict";
@@ -12346,9 +12346,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             return !k.strictSemicolons && (T === gt || T === at || Si.test(p.slice(Q, E)));
           }
           function Ke() {
-            !Kt(ue) && !Ii() && Re();
+            !Kt(ae) && !Ii() && Re();
           }
-          function ne(B) {
+          function ie(B) {
             T === B ? Ot() : Re();
           }
           function Re() {
@@ -12358,8 +12358,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             B.type !== "Identifier" && B.type !== "MemberExpression" && K(B.start, "Assigning to rvalue"), X && B.type === "Identifier" && wi(B.name) && K(B.start, "Assigning to " + B.name + " in strict mode");
           }
           function Kn(B) {
-            H = Q = S, k.locations && (tt = new Ze()), nt = X = null, ot = [], Xe();
-            var D = B || le(), Z = !0;
+            H = Q = S, k.locations && (et = new Ze()), nt = X = null, ot = [], Xe();
+            var D = B || he(), Z = !0;
             for (B || (D.body = []); T !== gt; ) {
               var Y = Pe();
               D.body.push(Y), Z && Ri(Y) && Bi(!0), Z = !1;
@@ -12369,55 +12369,55 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           var Vi = { kind: "loop" }, Yn = { kind: "switch" };
           function Pe() {
             (T === Le || T === je && R == "/=") && Xe(!0);
-            var B = T, D = le();
+            var B = T, D = he();
             switch (B) {
               case It:
-              case Jt:
+              case Qt:
                 Ot();
                 var Z = B === It;
-                Kt(ue) || Ii() ? D.label = null : T !== J ? Re() : (D.label = qe(), Ke());
+                Kt(ae) || Ii() ? D.label = null : T !== J ? Re() : (D.label = qe(), Ke());
                 for (var Y = 0; Y < ot.length; ++Y) {
                   var bt = ot[Y];
                   if ((D.label == null || bt.name === D.label.name) && (bt.kind != null && (Z || bt.kind === "loop") || D.label && Z))
                     break;
                 }
                 return Y === ot.length && K(D.start, "Unsyntactic " + B.keyword), Lt(D, Z ? "BreakStatement" : "ContinueStatement");
-              case se:
+              case re:
                 return Ot(), Ke(), Lt(D, "DebuggerStatement");
               case Mt:
-                return Ot(), ot.push(Vi), D.body = Pe(), ot.pop(), ne(me), D.test = _i(), Ke(), Lt(D, "DoWhileStatement");
-              case $t:
-                if (Ot(), ot.push(Vi), ne(mt), T === ue)
+                return Ot(), ot.push(Vi), D.body = Pe(), ot.pop(), ie(me), D.test = _i(), Ke(), Lt(D, "DoWhileStatement");
+              case Jt:
+                if (Ot(), ot.push(Vi), ie(mt), T === ae)
                   return Fi(D, null);
                 if (T === Ie) {
-                  var Ct = le();
+                  var Ct = he();
                   return Ot(), pn(Ct, !0), Lt(Ct, "VariableDeclaration"), Ct.declarations.length === 1 && Kt(A) ? dn(D, Ct) : Fi(D, Ct);
                 }
-                var Ct = pe(!1, !0);
+                var Ct = de(!1, !0);
                 return Kt(A) ? (Pi(Ct), dn(D, Ct)) : Fi(D, Ct);
-              case ge:
+              case pe:
                 return Ot(), Wi(D, !0);
               case ke:
                 return Ot(), D.test = _i(), D.consequent = Pe(), D.alternate = Kt(Xt) ? Pe() : null, Lt(D, "IfStatement");
-              case fe:
-                return !nt && !k.allowReturnOutsideFunction && K(E, "'return' outside of function"), Ot(), Kt(ue) || Ii() ? D.argument = null : (D.argument = pe(), Ke()), Lt(D, "ReturnStatement");
+              case le:
+                return !nt && !k.allowReturnOutsideFunction && K(E, "'return' outside of function"), Ot(), Kt(ae) || Ii() ? D.argument = null : (D.argument = de(), Ke()), Lt(D, "ReturnStatement");
               case St:
-                Ot(), D.discriminant = _i(), D.cases = [], ne($), ot.push(Yn);
-                for (var Pt, Rt; T != at; )
+                Ot(), D.discriminant = _i(), D.cases = [], ie($), ot.push(Yn);
+                for (var Pt, Bt; T != at; )
                   if (T === yt || T === Zt) {
                     var Ae = T === yt;
-                    Pt && Lt(Pt, "SwitchCase"), D.cases.push(Pt = le()), Pt.consequent = [], Ot(), Ae ? Pt.test = pe() : (Rt && K(H, "Multiple default clauses"), Rt = !0, Pt.test = null), ne(Se);
+                    Pt && Lt(Pt, "SwitchCase"), D.cases.push(Pt = he()), Pt.consequent = [], Ot(), Ae ? Pt.test = de() : (Bt && K(H, "Multiple default clauses"), Bt = !0, Pt.test = null), ie(Se);
                   } else
                     Pt || Re(), Pt.consequent.push(Pe());
                 return Pt && Lt(Pt, "SwitchCase"), Ot(), ot.pop(), Lt(D, "SwitchStatement");
+              case fe:
+                return Ot(), Si.test(p.slice(Q, E)) && K(Q, "Illegal newline after throw"), D.argument = de(), Ke(), Lt(D, "ThrowStatement");
               case ce:
-                return Ot(), Si.test(p.slice(Q, E)) && K(Q, "Illegal newline after throw"), D.argument = pe(), Ke(), Lt(D, "ThrowStatement");
-              case de:
-                if (Ot(), D.block = vi(), D.handler = null, T === ie) {
-                  var Ye = le();
-                  Ot(), ne(mt), Ye.param = qe(), X && wi(Ye.param.name) && K(Ye.param.start, "Binding " + Ye.param.name + " in strict mode"), ne(wt), Ye.guard = null, Ye.body = vi(), D.handler = Lt(Ye, "CatchClause");
+                if (Ot(), D.block = vi(), D.handler = null, T === ee) {
+                  var Ye = he();
+                  Ot(), ie(mt), Ye.param = qe(), X && wi(Ye.param.name) && K(Ye.param.start, "Binding " + Ye.param.name + " in strict mode"), ie(wt), Ye.guard = null, Ye.body = vi(), D.handler = Lt(Ye, "CatchClause");
                 }
-                return D.guardedHandlers = st, D.finalizer = Kt(ae) ? vi() : null, !D.handler && !D.finalizer && K(D.start, "Missing catch or finally clause"), Lt(D, "TryStatement");
+                return D.guardedHandlers = st, D.finalizer = Kt(se) ? vi() : null, !D.handler && !D.finalizer && K(D.start, "Missing catch or finally clause"), Lt(D, "TryStatement");
               case Ie:
                 return Ot(), pn(D), Ke(), Lt(D, "VariableDeclaration");
               case me:
@@ -12426,10 +12426,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                 return X && K(E, "'with' in strict mode"), Ot(), D.object = _i(), D.body = Pe(), Lt(D, "WithStatement");
               case $:
                 return vi();
-              case ue:
+              case ae:
                 return Ot(), Lt(D, "EmptyStatement");
               default:
-                var Gi = R, Ai = pe();
+                var Gi = R, Ai = de();
                 if (B === J && Ai.type === "Identifier" && Kt(Se)) {
                   for (var Y = 0; Y < ot.length; ++Y)
                     ot[Y].name === Gi && K(Ai.start, "Label '" + Gi + "' is already declared");
@@ -12440,33 +12440,33 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             }
           }
           function _i() {
-            ne(mt);
-            var B = pe();
-            return ne(wt), B;
+            ie(mt);
+            var B = de();
+            return ie(wt), B;
           }
           function vi(B) {
-            var D = le(), Z = !0, Y = !1, bt;
-            for (D.body = [], ne($); !Kt(at); ) {
+            var D = he(), Z = !0, Y = !1, bt;
+            for (D.body = [], ie($); !Kt(at); ) {
               var Ct = Pe();
               D.body.push(Ct), Z && B && Ri(Ct) && (bt = Y, Bi(Y = !0)), Z = !1;
             }
             return Y && !bt && Bi(!1), Lt(D, "BlockStatement");
           }
           function Fi(B, D) {
-            return B.init = D, ne(ue), B.test = T === ue ? null : pe(), ne(ue), B.update = T === wt ? null : pe(), ne(wt), B.body = Pe(), ot.pop(), Lt(B, "ForStatement");
+            return B.init = D, ie(ae), B.test = T === ae ? null : de(), ie(ae), B.update = T === wt ? null : de(), ie(wt), B.body = Pe(), ot.pop(), Lt(B, "ForStatement");
           }
           function dn(B, D) {
-            return B.left = D, B.right = pe(), ne(wt), B.body = Pe(), ot.pop(), Lt(B, "ForInStatement");
+            return B.left = D, B.right = de(), ie(wt), B.body = Pe(), ot.pop(), Lt(B, "ForInStatement");
           }
           function pn(B, D) {
             for (B.declarations = [], B.kind = "var"; ; ) {
-              var Z = le();
-              if (Z.id = qe(), X && wi(Z.id.name) && K(Z.id.start, "Binding " + Z.id.name + " in strict mode"), Z.init = Kt(Oe) ? pe(!0, D) : null, B.declarations.push(Lt(Z, "VariableDeclarator")), !Kt(Ut))
+              var Z = he();
+              if (Z.id = qe(), X && wi(Z.id.name) && K(Z.id.start, "Binding " + Z.id.name + " in strict mode"), Z.init = Kt(Oe) ? de(!0, D) : null, B.declarations.push(Lt(Z, "VariableDeclarator")), !Kt(Ut))
                 break;
             }
             return B;
           }
-          function pe(B, D) {
+          function de(B, D) {
             var Z = zi(D);
             if (!B && T === Ut) {
               var Y = De(Z);
@@ -12488,7 +12488,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             var D = Jn(B);
             if (Kt(ze)) {
               var Z = De(D);
-              return Z.test = D, Z.consequent = pe(!0), ne(Se), Z.alternate = pe(!0, B), Lt(Z, "ConditionalExpression");
+              return Z.test = D, Z.consequent = de(!0), ie(Se), Z.alternate = de(!0, B), Lt(Z, "ConditionalExpression");
             }
             return D;
           }
@@ -12509,7 +12509,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }
           function qi() {
             if (T.prefix) {
-              var B = le(), D = T.isUpdate;
+              var B = he(), D = T.isUpdate;
               return B.operator = R, B.prefix = !0, F = !0, Ot(), B.argument = qi(), D ? Pi(B.argument) : X && B.operator === "delete" && B.argument.type === "Identifier" && K(B.start, "Deleting local variable in strict mode"), Lt(B, D ? "UpdateExpression" : "UnaryExpression");
             }
             for (var Z = $n(); T.postfix && !Ii(); ) {
@@ -12527,7 +12527,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               return Z.object = B, Z.property = qe(!0), Z.computed = !1, mi(Lt(Z, "MemberExpression"), D);
             } else if (Kt(W)) {
               var Z = De(B);
-              return Z.object = B, Z.property = pe(), Z.computed = !0, ne(j), mi(Lt(Z, "MemberExpression"), D);
+              return Z.object = B, Z.property = de(), Z.computed = !0, ie(j), mi(Lt(Z, "MemberExpression"), D);
             } else if (!D && Kt(mt)) {
               var Z = De(B);
               return Z.callee = B, Z.arguments = Hi(wt, !1), mi(Lt(Z, "CallExpression"), D);
@@ -12537,32 +12537,32 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           function Ui() {
             switch (T) {
               case yi:
-                var Y = le();
+                var Y = he();
                 return Ot(), Lt(Y, "ThisExpression");
               case J:
                 return qe();
               case ht:
               case vt:
               case lt:
-                var Y = le();
+                var Y = he();
                 return Y.value = R, Y.raw = p.slice(E, L), Ot(), Lt(Y, "Literal");
               case n:
               case u:
               case x:
-                var Y = le();
+                var Y = he();
                 return Y.value = T.atomValue, Y.raw = T.keyword, Ot(), Lt(Y, "Literal");
               case mt:
                 var B = M, D = E;
                 Ot();
-                var Z = pe();
-                return Z.start = D, Z.end = L, k.locations && (Z.loc.start = B, Z.loc.end = V), k.ranges && (Z.range = [D, L]), ne(wt), Z;
+                var Z = de();
+                return Z.start = D, Z.end = L, k.locations && (Z.loc.start = B, Z.loc.end = V), k.ranges && (Z.range = [D, L]), ie(wt), Z;
               case W:
-                var Y = le();
+                var Y = he();
                 return Ot(), Y.elements = Hi(j, !0, !0), Lt(Y, "ArrayExpression");
               case $:
                 return er();
-              case ge:
-                var Y = le();
+              case pe:
+                var Y = he();
                 return Ot(), Wi(Y, !1);
               case bi:
                 return tr();
@@ -12571,23 +12571,23 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             }
           }
           function tr() {
-            var B = le();
+            var B = he();
             return Ot(), B.callee = mi(Ui(), !0), Kt(mt) ? B.arguments = Hi(wt, !1) : B.arguments = st, Lt(B, "NewExpression");
           }
           function er() {
-            var B = le(), D = !0, Z = !1;
+            var B = he(), D = !0, Z = !1;
             for (B.properties = [], Ot(); !Kt(at); ) {
               if (D)
                 D = !1;
-              else if (ne(Ut), k.allowTrailingCommas && Kt(at))
+              else if (ie(Ut), k.allowTrailingCommas && Kt(at))
                 break;
               var Y = { key: gn() }, bt = !1, Ct;
-              if (Kt(Se) ? (Y.value = pe(!0), Ct = Y.kind = "init") : k.ecmaVersion >= 5 && Y.key.type === "Identifier" && (Y.key.name === "get" || Y.key.name === "set") ? (bt = Z = !0, Ct = Y.kind = Y.key.name, Y.key = gn(), T !== mt && Re(), Y.value = Wi(le(), !1)) : Re(), Y.key.type === "Identifier" && (X || Z))
+              if (Kt(Se) ? (Y.value = de(!0), Ct = Y.kind = "init") : k.ecmaVersion >= 5 && Y.key.type === "Identifier" && (Y.key.name === "get" || Y.key.name === "set") ? (bt = Z = !0, Ct = Y.kind = Y.key.name, Y.key = gn(), T !== mt && Re(), Y.value = Wi(he(), !1)) : Re(), Y.key.type === "Identifier" && (X || Z))
                 for (var Pt = 0; Pt < B.properties.length; ++Pt) {
-                  var Rt = B.properties[Pt];
-                  if (Rt.key.name === Y.key.name) {
-                    var Ae = Ct == Rt.kind || bt && Rt.kind === "init" || Ct === "init" && (Rt.kind === "get" || Rt.kind === "set");
-                    Ae && !X && Ct === "init" && Rt.kind === "init" && (Ae = !1), Ae && K(Y.key.start, "Redefinition of property");
+                  var Bt = B.properties[Pt];
+                  if (Bt.key.name === Y.key.name) {
+                    var Ae = Ct == Bt.kind || bt && Bt.kind === "init" || Ct === "init" && (Bt.kind === "get" || Bt.kind === "set");
+                    Ae && !X && Ct === "init" && Bt.kind === "init" && (Ae = !1), Ae && K(Y.key.start, "Redefinition of property");
                   }
                 }
               B.properties.push(Y);
@@ -12600,15 +12600,15 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           function Wi(B, D) {
             T === J ? B.id = qe() : D ? Re() : B.id = null, B.params = [];
             var Z = !0;
-            for (ne(mt); !Kt(wt); )
-              Z ? Z = !1 : ne(Ut), B.params.push(qe());
+            for (ie(mt); !Kt(wt); )
+              Z ? Z = !1 : ie(Ut), B.params.push(qe());
             var Y = nt, bt = ot;
             if (nt = !0, ot = [], B.body = vi(!0), nt = Y, ot = bt, X || B.body.body.length && Ri(B.body.body[0]))
               for (var Ct = B.id ? -1 : 0; Ct < B.params.length; ++Ct) {
                 var Pt = Ct < 0 ? B.id : B.params[Ct];
                 if ((en(Pt.name) || wi(Pt.name)) && K(Pt.start, "Defining '" + Pt.name + "' in strict mode"), Ct >= 0)
-                  for (var Rt = 0; Rt < Ct; ++Rt)
-                    Pt.name === B.params[Rt].name && K(Pt.start, "Argument name clash in strict mode");
+                  for (var Bt = 0; Bt < Ct; ++Bt)
+                    Pt.name === B.params[Bt].name && K(Pt.start, "Argument name clash in strict mode");
               }
             return Lt(B, D ? "FunctionDeclaration" : "FunctionExpression");
           }
@@ -12616,14 +12616,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             for (var Y = [], bt = !0; !Kt(B); ) {
               if (bt)
                 bt = !1;
-              else if (ne(Ut), D && k.allowTrailingCommas && Kt(B))
+              else if (ie(Ut), D && k.allowTrailingCommas && Kt(B))
                 break;
-              Z && T === Ut ? Y.push(null) : Y.push(pe(!0));
+              Z && T === Ut ? Y.push(null) : Y.push(de(!0));
             }
             return Y;
           }
           function qe(B) {
-            var D = le();
+            var D = he();
             return B && k.forbidReserved == "everywhere" && (B = !1), T === J ? (!B && (k.forbidReserved && (k.ecmaVersion === 3 ? Ln : On)(R) || X && en(R)) && p.slice(E, L).indexOf("\\") == -1 && K(E, "The keyword '" + R + "' is reserved"), D.name = R) : B && T.keyword ? D.name = T.keyword : Re(), F = !1, Ot(), Lt(D, "Identifier");
           }
         }), e.version || (e = null);
@@ -12653,7 +12653,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }
         }
       );
-      z.inject(o), ut.inject(o), Qt.inject(o);
+      z.inject(o), ut.inject(o), Yt.inject(o);
       function l(m, k, p) {
         var y = a[k];
         if (m && m[y]) {
@@ -12805,19 +12805,19 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }
           return K;
         }
-        var M = k.url || "", V = k.sourceMaps, T = k.paperFeatures || {}, R = k.source || m, F = k.offset || 0, q = dt.agent, U = q.versionNumber, H = !1, Q = /\r\n|\n|\r/mg, tt;
+        var M = k.url || "", V = k.sourceMaps, T = k.paperFeatures || {}, R = k.source || m, F = k.offset || 0, q = dt.agent, U = q.versionNumber, H = !1, Q = /\r\n|\n|\r/mg, et;
         if (V && (q.chrome && U >= 30 || q.webkit && U >= 537.76 || q.firefox && U >= 23 || q.node)) {
           if (q.node)
             F -= 2;
-          else if (et && M && !et.location.href.indexOf(M)) {
-            var nt = it.getElementsByTagName("html")[0].innerHTML;
+          else if (it && M && !it.location.href.indexOf(M)) {
+            var nt = tt.getElementsByTagName("html")[0].innerHTML;
             F = nt.substr(0, nt.indexOf(m) + 1).match(
               Q
             ).length + 1;
           }
           H = F > 0 && !(q.chrome && U >= 36 || q.safari && U >= 600 || q.firefox && U >= 40 || q.node);
           var ot = ["AA" + L(H ? 0 : F) + "A"];
-          ot.length = (m.match(Q) || []).length + 1 + (H ? F : 0), tt = {
+          ot.length = (m.match(Q) || []).length + 1 + (H ? F : 0), et = {
             version: 3,
             file: M,
             names: [],
@@ -12831,16 +12831,16 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           ranges: !0,
           preserveParens: !0,
           sourceType: "module"
-        }), null, T), tt && (H && (m = new Array(F + 1).join(`
+        }), null, T), et && (H && (m = new Array(F + 1).join(`
 `) + m), /^(inline|both)$/.test(V) && (m += `
 //# sourceMappingURL=data:application/json;base64,` + pt.btoa(unescape(encodeURIComponent(
-          JSON.stringify(tt)
+          JSON.stringify(et)
         )))), m += `
 //# sourceURL=` + (M || "paperscript")), {
           url: M,
           source: R,
           code: m,
-          map: tt
+          map: et
         };
       }
       function v(m, k, p) {
@@ -12863,13 +12863,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
 ` + F), m += `
 return module.exports;`;
         var V = dt.agent;
-        if (it && (V.chrome || V.firefox && V.versionNumber < 40)) {
-          var T = it.createElement("script"), R = it.head || it.getElementsByTagName("head")[0];
+        if (tt && (V.chrome || V.firefox && V.versionNumber < 40)) {
+          var T = tt.createElement("script"), R = tt.head || tt.getElementsByTagName("head")[0];
           V.firefox && (m = `
-` + m), T.appendChild(it.createTextNode(
+` + m), T.appendChild(tt.createTextNode(
             "document.__paperscript__ = function(" + P + ") {" + m + `
 }`
-          )), R.appendChild(T), E = it.__paperscript__, delete it.__paperscript__, R.removeChild(T);
+          )), R.appendChild(T), E = tt.__paperscript__, delete tt.__paperscript__, R.removeChild(T);
         } else
           E = Function(P, m);
         var F = E && E.apply(k, S), q = F || {};
@@ -12882,11 +12882,11 @@ return module.exports;`;
         }), q.onFrame && y.setOnFrame(q.onFrame), y.requestUpdate()), F;
       }
       function g(m) {
-        if (/^text\/(?:x-|)paperscript$/.test(m.type) && Nt.getAttribute(m, "ignore") !== "true") {
-          var k = Nt.getAttribute(m, "canvas"), p = it.getElementById(k), y = m.src || m.getAttribute("data-src"), c = Nt.hasAttribute(m, "async"), b = "data-paper-scope";
+        if (/^text\/(?:x-|)paperscript$/.test(m.type) && Rt.getAttribute(m, "ignore") !== "true") {
+          var k = Rt.getAttribute(m, "canvas"), p = tt.getElementById(k), y = m.src || m.getAttribute("data-src"), c = Rt.hasAttribute(m, "async"), b = "data-paper-scope";
           if (!p)
             throw new Error('Unable to find canvas with id "' + k + '"');
-          var C = Nt.get(p.getAttribute(b)) || new Nt().setup(p);
+          var C = Rt.get(p.getAttribute(b)) || new Rt().setup(p);
           return p.setAttribute(b, C._id), y ? ti.request({
             url: y,
             async: c,
@@ -12899,14 +12899,14 @@ return module.exports;`;
       }
       function d() {
         O.each(
-          it && it.getElementsByTagName("script"),
+          tt && tt.getElementsByTagName("script"),
           g
         );
       }
       function w(m) {
         return m ? g(m) : d();
       }
-      return et && (it.readyState === "complete" ? setTimeout(d) : jt.add(et, { load: d })), {
+      return it && (tt.readyState === "complete" ? setTimeout(d) : jt.add(it, { load: d })), {
         compile: _,
         execute: v,
         load: w,
@@ -12915,18 +12915,18 @@ return module.exports;`;
         calculateUnary: f
       };
     }.call(this);
-    var dt = new (Nt.inject(O.exports, {
+    var dt = new (Rt.inject(O.exports, {
       Base: O,
       Numerical: ct,
       Key: li,
       DomEvent: jt,
       DomElement: qt,
-      document: it,
-      window: et,
-      Symbol: ee,
+      document: tt,
+      window: it,
+      Symbol: te,
       PlacedSymbol: Ue
     }))();
-    return dt.agent.node && _n(dt), typeof G == "function" && G.amd ? G("paper", dt) : te && (te.exports = dt), dt;
+    return dt.agent.node && _n(dt), typeof G == "function" && G.amd ? G("paper", dt) : $t && ($t.exports = dt), dt;
   }).call(bn, typeof self == "object" ? self : null);
 })(yn);
 const Me = yn.exports, hr = ["id"], mn = {
@@ -12943,8 +12943,8 @@ const Me = yn.exports, hr = ["id"], mn = {
     imageLoaded: Boolean,
     config: Object
   },
-  setup(te) {
-    const pt = te, G = ai(() => "#" + pt.position + "Ruler"), et = Oi(null), it = ai(() => ({
+  setup($t) {
+    const pt = $t, G = ai(() => "#" + pt.position + "Ruler"), it = Oi(null), tt = ai(() => ({
       pixelsPerInch: pt.config.pixelsPerInch || 72,
       spaceAddend: 15,
       subUnitBase: 2,
@@ -12960,15 +12960,15 @@ const Me = yn.exports, hr = ["id"], mn = {
             position: "absolute",
             bottom: 0,
             right: 0,
-            height: `${it.value.rulerWidth}px`,
-            transform: `translateX(-${it.value.rulerWidth}px)`
+            height: `${tt.value.rulerWidth}px`,
+            transform: `translateX(-${tt.value.rulerWidth}px)`
           },
           y: {
             position: "absolute",
             bottom: 0,
             right: 0,
-            width: `${it.value.rulerWidth}px`,
-            transform: `translateY(-${it.value.rulerWidth}px)`
+            width: `${tt.value.rulerWidth}px`,
+            transform: `translateY(-${tt.value.rulerWidth}px)`
           }
         },
         right: {
@@ -12976,15 +12976,15 @@ const Me = yn.exports, hr = ["id"], mn = {
             position: "absolute",
             bottom: 0,
             left: 0,
-            height: `${it.value.rulerWidth}px`,
-            transform: `translateX(${it.value.rulerWidth}px)`
+            height: `${tt.value.rulerWidth}px`,
+            transform: `translateX(${tt.value.rulerWidth}px)`
           },
           y: {
             position: "absolute",
             bottom: 0,
             left: 0,
-            width: `${it.value.rulerWidth}px`,
-            transform: `translateY(-${it.value.rulerWidth}px)`
+            width: `${tt.value.rulerWidth}px`,
+            transform: `translateY(-${tt.value.rulerWidth}px)`
           }
         }
       }, ct = {
@@ -12993,15 +12993,15 @@ const Me = yn.exports, hr = ["id"], mn = {
             position: "absolute",
             bottom: 0,
             right: 0,
-            height: `${it.value.rulerWidth}px`,
-            transform: `translateX(-${it.value.rulerWidth}px)`
+            height: `${tt.value.rulerWidth}px`,
+            transform: `translateX(-${tt.value.rulerWidth}px)`
           },
           y: {
             position: "absolute",
             bottom: 0,
             right: 0,
-            width: `${it.value.rulerWidth}px`,
-            transform: `translateY(-${it.value.rulerWidth}px)`
+            width: `${tt.value.rulerWidth}px`,
+            transform: `translateY(-${tt.value.rulerWidth}px)`
           }
         },
         right: {
@@ -13009,15 +13009,15 @@ const Me = yn.exports, hr = ["id"], mn = {
             position: "absolute",
             bottom: 0,
             right: 0,
-            height: `${it.value.rulerWidth}px`,
-            transform: `translateX(-${it.value.rulerWidth}px)`
+            height: `${tt.value.rulerWidth}px`,
+            transform: `translateX(-${tt.value.rulerWidth}px)`
           },
           y: {
             position: "absolute",
             bottom: 0,
             left: 0,
-            width: `${it.value.rulerWidth}px`,
-            transform: `translateY(-${it.value.rulerWidth}px)`
+            width: `${tt.value.rulerWidth}px`,
+            transform: `translateY(-${tt.value.rulerWidth}px)`
           }
         }
       }, Vt = {
@@ -13026,15 +13026,15 @@ const Me = yn.exports, hr = ["id"], mn = {
             position: "absolute",
             top: 0,
             left: 0,
-            height: `${it.value.rulerWidth}px`,
-            transform: `translateX(${it.value.rulerWidth}px)`
+            height: `${tt.value.rulerWidth}px`,
+            transform: `translateX(${tt.value.rulerWidth}px)`
           },
           y: {
             position: "absolute",
             top: 0,
             left: 0,
-            width: `${it.value.rulerWidth}px`,
-            transform: `translateY(${it.value.rulerWidth}px)`
+            width: `${tt.value.rulerWidth}px`,
+            transform: `translateY(${tt.value.rulerWidth}px)`
           }
         },
         right: {
@@ -13042,36 +13042,36 @@ const Me = yn.exports, hr = ["id"], mn = {
             position: "absolute",
             top: 0,
             right: 0,
-            height: `${it.value.rulerWidth}px`,
-            transform: `translateX(-${it.value.rulerWidth}px)`
+            height: `${tt.value.rulerWidth}px`,
+            transform: `translateX(-${tt.value.rulerWidth}px)`
           },
           y: {
             position: "absolute",
             top: 0,
             right: 0,
-            width: `${it.value.rulerWidth}px`,
-            transform: `translateY(${it.value.rulerWidth}px)`
+            width: `${tt.value.rulerWidth}px`,
+            transform: `translateY(${tt.value.rulerWidth}px)`
           }
         }
       }, z = { left: { x: {}, y: {} }, right: { x: {}, y: {} } };
       return pt.comparison === "Facing Up" && (z = Et), (pt.comparison === "Back-to-Back" || pt.comparison === "Back") && (z = ct), pt.comparison === "Facing In" && (z = Vt), z[pt.position][pt.axis];
-    }), Yt = () => {
+    }), ge = () => {
       let Et = [], ct = 0;
-      for (let Vt = 0; Vt <= it.value.subUnitExponent; Vt++) {
+      for (let Vt = 0; Vt <= tt.value.subUnitExponent; Vt++) {
         let z = Math.floor(
-          (pt.axis === "x" ? pt.xWidth : pt.yHeight) * Math.pow(it.value.subUnitBase, Vt)
-        ), Ft = it.value.ticksPerUnit / Math.pow(it.value.subUnitBase, Vt);
+          (pt.axis === "x" ? pt.xWidth : pt.yHeight) * Math.pow(tt.value.subUnitBase, Vt)
+        ), Ft = tt.value.ticksPerUnit / Math.pow(tt.value.subUnitBase, Vt);
         for (let ut = 0; ut <= z; ut++) {
           ct = Ft * ut;
-          let xt = pt.xHeight * it.value.pixelsPerInch * Math.pow(it.value.levelToLevelMultiplier, Vt), ft = pt.yWidth * it.value.pixelsPerInch * Math.pow(it.value.levelToLevelMultiplier, Vt), re = it.value.pixelsPerInch / Math.pow(it.value.subUnitBase, Vt), At = ut === z, Bt = re * ut, kt = Bt, I = 0, zt = xt;
-          if (pt.axis === "y" && (Bt = pt.position === "left" ? 0 : pt.yWidth * it.value.pixelsPerInch + it.value.spaceAddend, kt = pt.position === "left" ? ft : Bt - ft, I = re * ut, zt = I), ["Facing In"].includes(pt.comparison) && (pt.axis === "y" && (Bt = pt.position === "left" ? pt.yWidth * it.value.pixelsPerInch + it.value.spaceAddend : 0, kt = pt.position === "left" ? Bt - ft : ft, I = re * ut, zt = I), pt.axis === "x" && (Bt = re * ut, kt = Bt, I = pt.yWidth * it.value.pixelsPerInch + it.value.spaceAddend, zt = I - xt)), Et[ct] === void 0) {
-            let Ee = new Me.Point(Bt, I), Gt = new Me.Point(kt, zt), Ce = new Me.Path.Line(Ee, Gt);
-            Ce.strokeColor = "black", Ce.strokeWidth = "1", Et[ct] = !0, Vt === 0 && (pt.axis === "x" && _e(Bt, zt, At, ut, z), pt.axis === "y" && Nt(kt, I, ut, z));
+          let xt = pt.xHeight * tt.value.pixelsPerInch * Math.pow(tt.value.levelToLevelMultiplier, Vt), ft = pt.yWidth * tt.value.pixelsPerInch * Math.pow(tt.value.levelToLevelMultiplier, Vt), ne = tt.value.pixelsPerInch / Math.pow(tt.value.subUnitBase, Vt), At = ut === z, Nt = ne * ut, kt = Nt, I = 0, zt = xt;
+          if (pt.axis === "y" && (Nt = pt.position === "left" ? 0 : pt.yWidth * tt.value.pixelsPerInch + tt.value.spaceAddend, kt = pt.position === "left" ? ft : Nt - ft, I = ne * ut, zt = I), ["Facing In"].includes(pt.comparison) && (pt.axis === "y" && (Nt = pt.position === "left" ? pt.yWidth * tt.value.pixelsPerInch + tt.value.spaceAddend : 0, kt = pt.position === "left" ? Nt - ft : ft, I = ne * ut, zt = I), pt.axis === "x" && (Nt = ne * ut, kt = Nt, I = pt.yWidth * tt.value.pixelsPerInch + tt.value.spaceAddend, zt = I - xt)), Et[ct] === void 0) {
+            let Ee = new Me.Point(Nt, I), Gt = new Me.Point(kt, zt), Ce = new Me.Path.Line(Ee, Gt);
+            Ce.strokeColor = "black", Ce.strokeWidth = "1", Et[ct] = !0, Vt === 0 && (pt.axis === "x" && _e(Nt, zt, At, ut, z), pt.axis === "y" && Rt(kt, I, ut, z));
           }
         }
       }
       Me.view.draw();
-    }, Nt = (Et, ct, Vt, z) => {
+    }, Rt = (Et, ct, Vt, z) => {
       let Ft = pt.position === "left" ? -5 : -2, ut = 1;
       Vt === 0 ? ut = 15 : ut = -5;
       let xt = new Me.PointText(
@@ -13092,31 +13092,31 @@ const Me = yn.exports, hr = ["id"], mn = {
         fontSize: 14
       };
     }, xe = () => {
-      et.value.width = Math.round(pt.xWidth * it.value.pixelsPerInch), et.value.height = Math.round(
-        pt.xHeight * it.value.pixelsPerInch + it.value.spaceAddend
-      ), pt.axis === "y" && (et.value.width = Math.round(
-        pt.yWidth * it.value.pixelsPerInch + it.value.spaceAddend
-      ), et.value.height = Math.round(
-        pt.yHeight * it.value.pixelsPerInch
+      it.value.width = Math.round(pt.xWidth * tt.value.pixelsPerInch), it.value.height = Math.round(
+        pt.xHeight * tt.value.pixelsPerInch + tt.value.spaceAddend
+      ), pt.axis === "y" && (it.value.width = Math.round(
+        pt.yWidth * tt.value.pixelsPerInch + tt.value.spaceAddend
+      ), it.value.height = Math.round(
+        pt.yHeight * tt.value.pixelsPerInch
       ));
     };
     return Zi(() => {
     }), ji(
       () => pt.imageLoaded,
       (Et) => {
-        Et && (Me.setup(et.value), xe(), Yt());
+        Et && (Me.setup(it.value), xe(), ge());
       }
     ), ji(
       () => pt.comparison,
       () => {
-        pt.imageLoaded && (Me.setup(et.value), xe(), Yt());
+        pt.imageLoaded && (Me.setup(it.value), xe(), ge());
       }
     ), (Et, ct) => (Xi(), Ki("div", {
       style: Ti(Ve(O))
     }, [
       Yi("canvas", {
         ref_key: "ruler",
-        ref: et,
+        ref: it,
         id: Ve(G),
         resize: ""
       }, null, 8, hr)
@@ -13132,8 +13132,8 @@ const Me = yn.exports, hr = ["id"], mn = {
     config: Object
   },
   emits: ["imageLoaded"],
-  setup(te, { emit: pt }) {
-    const G = te, et = Oi(null), it = Oi(!1), O = Li({
+  setup($t, { emit: pt }) {
+    const G = $t, it = Oi(null), tt = Oi(!1), O = Li({
       pixelsPerInch: G.config.pixelsPerInch || 72,
       spaceAddend: 15,
       xWidth: 0.3,
@@ -13141,55 +13141,55 @@ const Me = yn.exports, hr = ["id"], mn = {
       yWidth: 0.3,
       yHeight: 0.3,
       rulerWidth: Math.round(15 + 0.3 * G.config.pixelsPerInch)
-    }), Yt = ai(() => ({
+    }), ge = ai(() => ({
       width: G.image.rawLength * O.pixelsPerInch
-    })), Nt = () => {
-      ["Facing Up"].includes(G.comparison) && (O.xWidth = Math.round(et.value.height / O.pixelsPerInch), O.yHeight = Math.round(G.maxLength)), ["Back-to-Back", "Facing In", "Back"].includes(G.comparison) && (O.xWidth = Math.round(G.maxLength), O.yHeight = Math.round(et.value.height / O.pixelsPerInch));
+    })), Rt = () => {
+      ["Facing Up"].includes(G.comparison) && (O.xWidth = Math.round(it.value.height / O.pixelsPerInch), O.yHeight = Math.round(G.maxLength)), ["Back-to-Back", "Facing In", "Back"].includes(G.comparison) && (O.xWidth = Math.round(G.maxLength), O.yHeight = Math.round(it.value.height / O.pixelsPerInch));
     }, _e = () => {
-      it.value = !0, Nt(), pt("imageLoaded", et.value), xe();
+      tt.value = !0, Rt(), pt("imageLoaded", it.value), xe();
     }, xe = () => {
-      if (et.value.style.position = "absolute", ["Facing Up", "Back-to-Back", "Back"].includes(G.comparison)) {
-        let ct = (et.value.width - et.value.height) / 2 - O.rulerWidth, Vt = (et.value.height - et.value.width) / 2 - O.rulerWidth;
-        et.value.style.bottom = 0, et.value.style.top = "auto", G.position === "left" && (et.value.style.right = 0, et.value.style.left = "auto", G.comparison === "Facing Up" && (et.value.style.transform = `translate(${ct}px, ${Vt}px) rotate(90deg)`), (G.comparison === "Back-to-Back" || G.comparison === "Back") && (et.value.style.transform = `translate(-${O.rulerWidth}px, -${O.rulerWidth}px)`)), G.position === "right" && (et.value.style.left = 0, et.value.style.right = "auto", G.comparison === "Facing Up" && (et.value.style.transform = `translate(-${ct}px, ${Vt}px) rotate(-90deg)`), G.comparison === "Back-to-Back" && (et.value.style.transform = `translate(${O.rulerWidth}px, -${O.rulerWidth}px)`));
+      if (it.value.style.position = "absolute", ["Facing Up", "Back-to-Back", "Back"].includes(G.comparison)) {
+        let ct = (it.value.width - it.value.height) / 2 - O.rulerWidth, Vt = (it.value.height - it.value.width) / 2 - O.rulerWidth;
+        it.value.style.bottom = 0, it.value.style.top = "auto", G.position === "left" && (it.value.style.right = 0, it.value.style.left = "auto", G.comparison === "Facing Up" && (it.value.style.transform = `translate(${ct}px, ${Vt}px) rotate(90deg)`), (G.comparison === "Back-to-Back" || G.comparison === "Back") && (it.value.style.transform = `translate(-${O.rulerWidth}px, -${O.rulerWidth}px)`)), G.position === "right" && (it.value.style.left = 0, it.value.style.right = "auto", G.comparison === "Facing Up" && (it.value.style.transform = `translate(-${ct}px, ${Vt}px) rotate(-90deg)`), G.comparison === "Back-to-Back" && (it.value.style.transform = `translate(${O.rulerWidth}px, -${O.rulerWidth}px)`));
       }
-      ["Facing In"].includes(G.comparison) && (et.value.style.top = 0, et.value.style.bottom = "auto", G.position === "left" && (et.value.style.left = 0, et.value.style.right = "auto", et.value.style.transform = `translate(${O.rulerWidth}px, ${O.rulerWidth}px)`), G.position === "right" && (et.value.style.right = 0, et.value.style.left = "auto", et.value.style.transform = `translate(-${O.rulerWidth}px, ${O.rulerWidth}px)`));
+      ["Facing In"].includes(G.comparison) && (it.value.style.top = 0, it.value.style.bottom = "auto", G.position === "left" && (it.value.style.left = 0, it.value.style.right = "auto", it.value.style.transform = `translate(${O.rulerWidth}px, ${O.rulerWidth}px)`), G.position === "right" && (it.value.style.right = 0, it.value.style.left = "auto", it.value.style.transform = `translate(-${O.rulerWidth}px, ${O.rulerWidth}px)`));
     }, Et = (ct) => {
-      ["Facing Up", "Back-to-Back"].includes(ct) && (G.position === "left" && (et.value.src = G.image.srcLeft), G.position === "right" && (et.value.src = G.image.srcRight)), ct === "Facing In" && (G.position === "left" && (et.value.src = G.image.srcRight), G.position === "right" && (et.value.src = G.image.srcLeft)), ct === "Back" && (et.value.src = G.image.srcBack);
+      ["Facing Up", "Back-to-Back"].includes(ct) && (G.position === "left" && (it.value.src = G.image.srcLeft), G.position === "right" && (it.value.src = G.image.srcRight)), ct === "Facing In" && (G.position === "left" && (it.value.src = G.image.srcRight), G.position === "right" && (it.value.src = G.image.srcLeft)), ct === "Back" && (it.value.src = G.image.srcBack);
     };
     return Zi(() => {
-      Et(G.comparison), et.value.width = Yt.value.width;
+      Et(G.comparison), it.value.width = ge.value.width;
     }), ji(
       () => G.comparison,
       (ct) => {
-        Nt(), Et(ct);
+        Rt(), Et(ct);
       }
     ), (ct, Vt) => (Xi(), Ki("div", null, [
       Mi(mn, {
         axis: "x",
-        position: te.position,
-        comparison: te.comparison,
+        position: $t.position,
+        comparison: $t.comparison,
         "x-width": O.xWidth,
         "x-height": O.xHeight,
         "y-width": O.yWidth,
         "y-height": O.yHeight,
-        "image-loaded": it.value,
+        "image-loaded": tt.value,
         config: G.config
       }, null, 8, ["position", "comparison", "x-width", "x-height", "y-width", "y-height", "image-loaded", "config"]),
       Yi("img", {
         ref_key: "image",
-        ref: et,
+        ref: it,
         id: "image",
         onLoad: _e
       }, null, 544),
       Mi(mn, {
         axis: "y",
-        position: te.position,
-        comparison: te.comparison,
+        position: $t.position,
+        comparison: $t.comparison,
         "x-width": O.xWidth,
         "x-height": O.xHeight,
         "y-width": O.yWidth,
         "y-height": O.yHeight,
-        "image-loaded": it.value,
+        "image-loaded": tt.value,
         config: G.config
       }, null, 8, ["position", "comparison", "x-width", "x-height", "y-width", "y-height", "image-loaded", "config"])
     ]));
@@ -13203,29 +13203,12 @@ const Me = yn.exports, hr = ["id"], mn = {
       default: "Facing Up"
     }
   },
-  setup(te) {
-    const G = Oi(te.comparison || "Facing In"), et = Li({
+  setup($t) {
+    const G = Oi($t.comparison || "Facing In"), it = Li({
       pixelsPerInch: 52,
       spaceAddend: 15,
       spacing: 0.3
-    }), it = ai(() => {
-      let Et = (Math.floor(O.value.maxHeight) + 1) * et.pixelsPerInch + 100;
-      return G.value === "Facing Up" && (Et = Math.ceil(O.value.maxImageHeight) + (et.spacing * et.pixelsPerInch + et.spaceAddend) + 100), Et * 2 + "px";
-    }), O = ai(() => {
-      const Et = Yt.rawLength > Nt.rawLength ? Yt.rawLength : Nt.rawLength;
-      let ct = Yt.height > Nt.height ? Yt.height : Nt.height;
-      Yt.width > Nt.width ? Yt.width : Nt.width;
-      let Vt = Et + 1, z = Math.ceil(ct) + (et.spacing * et.pixelsPerInch + et.spaceAddend) + 100 + "px", Ft = (Math.floor(Et) + 1) * et.pixelsPerInch + 100 + "px";
-      return G.value === "Facing Up" && (z = (Math.floor(Et) + 1) * et.pixelsPerInch + 100 + "px", Ft = Math.ceil(ct) + (et.spacing * et.pixelsPerInch + et.spaceAddend) + 100 + "px"), {
-        pixelsPerInch: et.pixelsPerInch,
-        spaceAddend: et.spaceAddend,
-        maxHeight: Et,
-        containerHeight: z,
-        containerWidth: Ft,
-        maxLength: Vt,
-        maxImageHeight: ct
-      };
-    }), Yt = Li({
+    }), tt = Li({
       src: "https://img.handgunhero.com/live/handgun/134398/c/G17-lg-1024.png",
       srcLeft: "https://img.handgunhero.com/live/handgun/134398/c/G17-lg-1024.png",
       srcRight: "https://img.handgunhero.com/live/handgun/134399/c/G17-(1)-lg-1024.png",
@@ -13233,7 +13216,7 @@ const Me = yn.exports, hr = ["id"], mn = {
       rawLength: 8.03,
       width: 0,
       height: 0
-    }), Nt = Li({
+    }), O = Li({
       src: "https://img.handgunhero.com/live/handgun/134282/c/365xl-9-bxr3-right-lg-1024.png",
       srcLeft: "https://img.handgunhero.com/live/handgun/134264/c/p365xl-left-lg-1024.png",
       srcRight: "https://img.handgunhero.com/live/handgun/134282/c/365xl-9-bxr3-right-lg-1024.png",
@@ -13241,47 +13224,64 @@ const Me = yn.exports, hr = ["id"], mn = {
       rawLength: 6.6,
       width: 0,
       height: 0
+    }), ge = ai(() => {
+      let Et = (Math.floor(Rt.value.maxHeight) + 1) * it.pixelsPerInch + 100;
+      return G.value === "Facing Up" && (Et = Math.ceil(Rt.value.maxImageHeight) + (it.spacing * it.pixelsPerInch + it.spaceAddend) + 100), Et * 2 + "px";
+    }), Rt = ai(() => {
+      const Et = tt.rawLength > O.rawLength ? tt.rawLength : O.rawLength;
+      let ct = tt.height > O.height ? tt.height : O.height;
+      tt.width > O.width ? tt.width : O.width;
+      let Vt = Et + 1, z = Math.ceil(ct) + (it.spacing * it.pixelsPerInch + it.spaceAddend) + 100 + "px", Ft = (Math.floor(Et) + 1) * it.pixelsPerInch + 100 + "px";
+      return G.value === "Facing Up" && (z = (Math.floor(Et) + 1) * it.pixelsPerInch + 100 + "px", Ft = Math.ceil(ct) + (it.spacing * it.pixelsPerInch + it.spaceAddend) + 100 + "px"), {
+        pixelsPerInch: it.pixelsPerInch,
+        spaceAddend: it.spaceAddend,
+        maxHeight: Et,
+        containerHeight: z,
+        containerWidth: Ft,
+        maxLength: Vt,
+        maxImageHeight: ct
+      };
     }), _e = ({ width: Et, height: ct }) => {
-      Yt.width = Et, Yt.height = ct;
+      tt.width = Et, tt.height = ct;
     }, xe = ({ width: Et, height: ct }) => {
-      Nt.width = Et, Nt.height = ct;
+      O.width = Et, O.height = ct;
     };
     return Zi(() => {
       console.log();
     }), (Et, ct) => (Xi(), Ki("div", {
       style: Ti({
-        width: Ve(it)
+        width: Ve(ge)
       })
     }, [
       Yi("div", lr, [
         Mi(xn, {
           style: Ti({
-            height: Ve(O).containerHeight,
+            height: Ve(Rt).containerHeight,
             position: "relative",
-            width: Ve(O).containerWidth
+            width: Ve(Rt).containerWidth
           }),
           position: "left",
           comparison: G.value,
-          image: Yt,
-          maxLength: Ve(O).maxLength,
-          config: et,
+          image: tt,
+          maxLength: Ve(Rt).maxLength,
+          config: it,
           onImageLoaded: _e
         }, null, 8, ["style", "comparison", "image", "maxLength", "config"]),
         Mi(xn, {
           style: Ti({
-            height: Ve(O).containerHeight,
+            height: Ve(Rt).containerHeight,
             position: "relative",
-            width: Ve(O).containerWidth
+            width: Ve(Rt).containerWidth
           }),
           position: "right",
           comparison: G.value,
-          image: Nt,
-          maxLength: Ve(O).maxLength,
-          config: et,
+          image: O,
+          maxLength: Ve(Rt).maxLength,
+          config: it,
           onImageLoaded: xe
         }, null, 8, ["style", "comparison", "image", "maxLength", "config"])
       ])
     ], 4));
   }
 };
-customElements.define("size-comparison", nr(fr));
+customElements.define("gc-size-comparison", nr(fr));

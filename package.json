@@ -5,7 +5,7 @@
   "files": [
     "dist"
   ],
-  "module": "./dist/size-comparison",
+  "module": "./dist/gc-size-comparison",
   "version": "1.0.2",
   "scripts": {
     "dev": "vite",
@@ -28,8 +28,8 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/size-comparison.js",
-      "require": "./dist/size-comparison.umd.cjs"
+      "import": "./dist/gc-size-comparison.js",
+      "require": "./dist/gc-size-comparison.umd.cjs"
     }
   },
   "description": "GC Size Comparison",

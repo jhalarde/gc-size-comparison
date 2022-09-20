@@ -2,6 +2,7 @@
     <div
         :style="{
             width: baseContainerWidth,
+            overflow: 'scroll hidden',
         }"
     >
         <!--        <select v-model="comparison" style="margin-bottom: 25px">-->
@@ -53,6 +54,8 @@ const props = defineProps({
         required: true,
         default: 'Facing Up', // Facing Up, Back-to-Back, Facing In, Back
     },
+    leftImage: Object,
+    rightImage: Object,
 })
 
 const comparison = ref(props.comparison || 'Facing In')
@@ -61,6 +64,26 @@ const config = reactive({
     pixelsPerInch: 52,
     spaceAddend: 15,
     spacing: 0.3,
+})
+
+const leftImage = reactive({
+    src: 'https://img.handgunhero.com/live/handgun/134398/c/G17-lg-1024.png',
+    srcLeft: props.leftImage.left_image,
+    srcRight: props.leftImage.right_image,
+    srcBack: null,
+    rawLength: props.leftImage.length,
+    width: 0,
+    height: 0,
+})
+
+const rightImage = reactive({
+    src: 'https://img.handgunhero.com/live/handgun/134282/c/365xl-9-bxr3-right-lg-1024.png',
+    srcLeft: props.rightImage.left_image,
+    srcRight: props.rightImage.right_image,
+    srcBack: null,
+    rawLength: props.rightImage.length,
+    width: 0,
+    height: 0,
 })
 
 const baseContainerWidth = computed(() => {
@@ -122,31 +145,6 @@ const defaultConfig = computed(() => {
         maxLength,
         maxImageHeight,
     }
-})
-
-const leftImage = reactive({
-    src: 'https://img.handgunhero.com/live/handgun/134398/c/G17-lg-1024.png',
-    srcLeft:
-        'https://img.handgunhero.com/live/handgun/134398/c/G17-lg-1024.png',
-    srcRight:
-        'https://img.handgunhero.com/live/handgun/134399/c/G17-(1)-lg-1024.png',
-    srcBack: 'https://img.handgunhero.com/live/handgun/134328/c/G17-sm-240.jpg',
-    rawLength: 8.03,
-    width: 0,
-    height: 0,
-})
-
-const rightImage = reactive({
-    src: 'https://img.handgunhero.com/live/handgun/134282/c/365xl-9-bxr3-right-lg-1024.png',
-    srcLeft:
-        'https://img.handgunhero.com/live/handgun/134264/c/p365xl-left-lg-1024.png',
-    srcRight:
-        'https://img.handgunhero.com/live/handgun/134282/c/365xl-9-bxr3-right-lg-1024.png',
-    srcBack:
-        'https://img.handgunhero.com/live/handgun/134334/c/365xl-back-sm-240.jpg',
-    rawLength: 6.6,
-    width: 0,
-    height: 0,
 })
 
 const leftImageLoaded = ({ width, height }) => {
