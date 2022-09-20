@@ -1,12 +1,12 @@
 import { computed as ai, ref as Oi, onMounted as Zi, watch as ji, openBlock as Xi, createElementBlock as Ki, normalizeStyle as Ti, unref as Ve, createElementVNode as Yi, reactive as Li, createVNode as Mi, defineCustomElement as nr } from "vue";
 var bn = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {};
 function rr($t) {
-  var pt = $t.default;
-  if (typeof pt == "function") {
+  var ct = $t.default;
+  if (typeof ct == "function") {
     var G = function() {
-      return pt.apply(this, arguments);
+      return ct.apply(this, arguments);
     };
-    G.prototype = pt.prototype;
+    G.prototype = ct.prototype;
   } else
     G = {};
   return Object.defineProperty(G, "__esModule", { value: !0 }), Object.keys($t).forEach(function(it) {
@@ -29,9 +29,9 @@ const ar = {}, ur = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineP
 }, Symbol.toStringTag, { value: "Module" })), _n = /* @__PURE__ */ rr(ur);
 var Ei = { exports: {} }, vn;
 function or() {
-  return vn || (vn = 1, function($t, pt) {
+  return vn || (vn = 1, function($t, ct) {
     (function(G, it) {
-      it(pt);
+      it(ct);
     })(bn, function(G) {
       var it = [509, 0, 227, 0, 150, 4, 294, 9, 1368, 2, 2, 1, 6, 3, 41, 2, 5, 0, 166, 1, 574, 3, 9, 9, 370, 1, 154, 10, 50, 3, 123, 2, 54, 14, 32, 10, 3, 1, 11, 3, 46, 10, 8, 0, 46, 9, 7, 2, 37, 13, 2, 9, 6, 1, 45, 0, 13, 2, 49, 13, 9, 3, 2, 11, 83, 11, 7, 0, 161, 11, 6, 9, 7, 3, 56, 1, 2, 6, 3, 1, 3, 2, 10, 0, 11, 1, 3, 6, 4, 4, 193, 17, 10, 9, 5, 0, 82, 19, 13, 9, 214, 6, 3, 8, 28, 1, 83, 16, 16, 9, 82, 12, 9, 9, 84, 14, 5, 9, 243, 14, 166, 9, 71, 5, 2, 1, 3, 3, 2, 0, 2, 1, 13, 9, 120, 6, 3, 6, 4, 0, 29, 9, 41, 6, 2, 3, 9, 0, 10, 10, 47, 15, 406, 7, 2, 7, 17, 9, 57, 21, 2, 13, 123, 5, 4, 0, 2, 1, 2, 6, 2, 0, 9, 9, 49, 4, 2, 1, 2, 4, 9, 9, 330, 3, 19306, 9, 87, 9, 39, 4, 60, 6, 26, 9, 1014, 0, 2, 54, 8, 3, 82, 0, 12, 1, 19628, 1, 4706, 45, 3, 22, 543, 4, 4, 5, 9, 7, 3, 6, 31, 3, 149, 2, 1418, 49, 513, 54, 5, 49, 9, 0, 15, 0, 23, 4, 2, 14, 1361, 6, 2, 16, 3, 6, 2, 1, 2, 4, 262, 6, 10, 9, 357, 0, 62, 13, 1495, 6, 110, 6, 6, 9, 4759, 9, 787719, 239], tt = [0, 11, 2, 25, 2, 18, 2, 1, 2, 14, 3, 13, 35, 122, 70, 52, 268, 28, 4, 48, 48, 31, 14, 29, 6, 37, 11, 29, 3, 35, 5, 7, 2, 4, 43, 157, 19, 35, 5, 35, 5, 39, 9, 51, 13, 10, 2, 14, 2, 6, 2, 1, 2, 10, 2, 14, 2, 6, 2, 1, 68, 310, 10, 21, 11, 7, 25, 5, 2, 41, 2, 8, 70, 5, 3, 0, 2, 43, 2, 1, 4, 0, 3, 22, 11, 22, 10, 30, 66, 18, 2, 1, 11, 21, 11, 25, 71, 55, 7, 1, 65, 0, 16, 3, 2, 2, 2, 28, 43, 28, 4, 28, 36, 7, 2, 27, 28, 53, 11, 21, 11, 18, 14, 17, 111, 72, 56, 50, 14, 50, 14, 35, 349, 41, 7, 1, 79, 28, 11, 0, 9, 21, 43, 17, 47, 20, 28, 22, 13, 52, 58, 1, 3, 0, 14, 44, 33, 24, 27, 35, 30, 0, 3, 0, 9, 34, 4, 0, 13, 47, 15, 3, 22, 0, 2, 0, 36, 17, 2, 24, 85, 6, 2, 0, 2, 3, 2, 14, 2, 9, 8, 46, 39, 7, 3, 1, 3, 21, 2, 6, 2, 1, 2, 4, 4, 0, 19, 0, 13, 4, 159, 52, 19, 3, 21, 2, 31, 47, 21, 1, 2, 0, 185, 46, 42, 3, 37, 47, 21, 0, 60, 42, 14, 0, 72, 26, 38, 6, 186, 43, 117, 63, 32, 7, 3, 0, 3, 7, 2, 1, 2, 23, 16, 0, 2, 0, 95, 7, 3, 38, 17, 0, 2, 0, 29, 0, 11, 39, 8, 0, 22, 0, 12, 45, 20, 0, 19, 72, 264, 8, 2, 36, 18, 0, 50, 29, 113, 6, 2, 1, 2, 37, 22, 0, 26, 5, 2, 1, 2, 31, 15, 0, 328, 18, 190, 0, 80, 921, 103, 110, 18, 195, 2637, 96, 16, 1070, 4050, 582, 8634, 568, 8, 30, 18, 78, 18, 29, 19, 47, 17, 3, 32, 20, 6, 18, 689, 63, 129, 74, 6, 0, 67, 12, 65, 1, 2, 0, 29, 6135, 9, 1237, 43, 8, 8936, 3, 2, 6, 2, 1, 2, 290, 46, 2, 18, 3, 9, 395, 2309, 106, 6, 12, 4, 8, 8, 9, 5991, 84, 2, 70, 2, 1, 3, 0, 3, 1, 3, 3, 2, 11, 2, 0, 2, 6, 2, 64, 2, 3, 3, 7, 2, 6, 2, 27, 2, 3, 2, 4, 2, 0, 4, 6, 2, 339, 3, 24, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 7, 1845, 30, 482, 44, 11, 6, 17, 0, 322, 29, 19, 43, 1269, 6, 2, 3, 2, 1, 2, 14, 2, 196, 60, 67, 8, 0, 1205, 3, 2, 26, 2, 1, 2, 0, 3, 0, 2, 9, 2, 3, 2, 0, 2, 0, 7, 0, 5, 0, 2, 0, 2, 0, 2, 2, 2, 1, 2, 0, 3, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 1, 2, 0, 3, 3, 2, 6, 2, 3, 2, 3, 2, 0, 2, 9, 2, 16, 6, 2, 2, 4, 2, 16, 4421, 42719, 33, 4152, 8, 221, 3, 5761, 15, 7472, 3104, 541, 1507, 4938], O = "\u200C\u200D\xB7\u0300-\u036F\u0387\u0483-\u0487\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u0669\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u06F0-\u06F9\u0711\u0730-\u074A\u07A6-\u07B0\u07C0-\u07C9\u07EB-\u07F3\u07FD\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u0898-\u089F\u08CA-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0966-\u096F\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u09E6-\u09EF\u09FE\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A66-\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0AE6-\u0AEF\u0AFA-\u0AFF\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B55-\u0B57\u0B62\u0B63\u0B66-\u0B6F\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0BE6-\u0BEF\u0C00-\u0C04\u0C3C\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C66-\u0C6F\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0CE6-\u0CEF\u0D00-\u0D03\u0D3B\u0D3C\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D66-\u0D6F\u0D81-\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DE6-\u0DEF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0E50-\u0E59\u0EB1\u0EB4-\u0EBC\u0EC8-\u0ECD\u0ED0-\u0ED9\u0F18\u0F19\u0F20-\u0F29\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1040-\u1049\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F-\u109D\u135D-\u135F\u1369-\u1371\u1712-\u1715\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u17E0-\u17E9\u180B-\u180D\u180F-\u1819\u18A9\u1920-\u192B\u1930-\u193B\u1946-\u194F\u19D0-\u19DA\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F-\u1A89\u1A90-\u1A99\u1AB0-\u1ABD\u1ABF-\u1ACE\u1B00-\u1B04\u1B34-\u1B44\u1B50-\u1B59\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BB0-\u1BB9\u1BE6-\u1BF3\u1C24-\u1C37\u1C40-\u1C49\u1C50-\u1C59\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF4\u1CF7-\u1CF9\u1DC0-\u1DFF\u203F\u2040\u2054\u20D0-\u20DC\u20E1\u20E5-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA620-\uA629\uA66F\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA82C\uA880\uA881\uA8B4-\uA8C5\uA8D0-\uA8D9\uA8E0-\uA8F1\uA8FF-\uA909\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9D0-\uA9D9\uA9E5\uA9F0-\uA9F9\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA50-\uAA59\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uABF0-\uABF9\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F\uFE33\uFE34\uFE4D-\uFE4F\uFF10-\uFF19\uFF3F", ge = "\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0560-\u0588\u05D0-\u05EA\u05EF-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u0860-\u086A\u0870-\u0887\u0889-\u088E\u08A0-\u08C9\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u09FC\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C5D\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D04-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E86-\u0E8A\u0E8C-\u0EA3\u0EA5\u0EA7-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16EE-\u16F8\u1700-\u1711\u171F-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1878\u1880-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4C\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1C90-\u1CBA\u1CBD-\u1CBF\u1CE9-\u1CEC\u1CEE-\u1CF3\u1CF5\u1CF6\u1CFA\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2118-\u211D\u2124\u2126\u2128\u212A-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2160-\u2188\u2C00-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u3005-\u3007\u3021-\u3029\u3031-\u3035\u3038-\u303C\u3041-\u3096\u309B-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312F\u3131-\u318E\u31A0-\u31BF\u31F0-\u31FF\u3400-\u4DBF\u4E00-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6EF\uA717-\uA71F\uA722-\uA788\uA78B-\uA7CA\uA7D0\uA7D1\uA7D3\uA7D5-\uA7D9\uA7F2-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA8FE\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB69\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC", Rt = {
         3: "abstract boolean byte char class double enum export extends final float goto implements import int interface long native package private protected public short static super synchronized throws transient volatile",
@@ -43,7 +43,7 @@ function or() {
         5: _e,
         "5module": _e + " export import",
         6: _e + " const class extends export import super"
-      }, Et = /^in(stanceof)?$/, ct = new RegExp("[" + ge + "]"), Vt = new RegExp("[" + ge + O + "]");
+      }, Et = /^in(stanceof)?$/, dt = new RegExp("[" + ge + "]"), Vt = new RegExp("[" + ge + O + "]");
       function z(n, u) {
         for (var x = 65536, A = 0; A < u.length; A += 2) {
           if (x += u[A], x > n)
@@ -53,7 +53,7 @@ function or() {
         }
       }
       function Ft(n, u) {
-        return n < 65 ? n === 36 : n < 91 ? !0 : n < 97 ? n === 95 : n < 123 ? !0 : n <= 65535 ? n >= 170 && ct.test(String.fromCharCode(n)) : u === !1 ? !1 : z(n, tt);
+        return n < 65 ? n === 36 : n < 91 ? !0 : n < 97 ? n === 95 : n < 123 ? !0 : n <= 65535 ? n >= 170 && dt.test(String.fromCharCode(n)) : u === !1 ? !1 : z(n, tt);
       }
       function ut(n, u) {
         return n < 48 ? n === 36 : n < 58 ? !0 : n < 65 ? !1 : n < 91 ? !0 : n < 97 ? n === 95 : n < 123 ? !0 : n <= 65535 ? n >= 170 && Vt.test(String.fromCharCode(n)) : u === !1 ? !1 : z(n, tt) || z(n, it);
@@ -235,7 +235,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       function ci(n, u) {
         return qt | (n ? jt : 0) | (u ? Wt : 0);
       }
-      var $e = 0, ti = 1, Dt = 2, ei = 3, Ht = 4, di = 5, dt = function(u, x, A) {
+      var $e = 0, ti = 1, Dt = 2, ei = 3, Ht = 4, di = 5, pt = function(u, x, A) {
         this.options = u = Je(u), this.sourceFile = u.sourceFile, this.keywords = ve(xe[u.ecmaVersion >= 6 ? 6 : u.sourceType === "module" ? "5module" : 5]);
         var N = "";
         u.allowReserved !== !0 && (N = Rt[u.ecmaVersion >= 6 ? 6 : u.ecmaVersion === 5 ? 5 : 3], u.sourceType === "module" && (N += " await")), this.reservedWords = ve(N);
@@ -243,7 +243,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         this.reservedWordsStrict = ve(W), this.reservedWordsStrictBind = ve(W + " " + Rt.strictBind), this.input = String(x), this.containsEsc = !1, A ? (this.pos = A, this.lineStart = this.input.lastIndexOf(`
 `, A - 1) + 1, this.curLine = this.input.slice(0, this.lineStart).split(zt).length) : (this.pos = this.lineStart = 0, this.curLine = 1), this.type = I.eof, this.value = null, this.start = this.end = this.pos, this.startLoc = this.endLoc = this.curPosition(), this.lastTokEndLoc = this.lastTokStartLoc = null, this.lastTokStart = this.lastTokEnd = this.pos, this.context = this.initialContext(), this.exprAllowed = !0, this.inModule = u.sourceType === "module", this.strict = this.inModule || this.strictDirective(this.pos), this.potentialArrowAt = -1, this.potentialArrowInForAwait = !1, this.yieldPos = this.awaitPos = this.awaitIdentPos = 0, this.labels = [], this.undefinedExports = /* @__PURE__ */ Object.create(null), this.pos === 0 && u.allowHashBang && this.input.slice(0, 2) === "#!" && this.skipLineComment(2), this.scopeStack = [], this.enterScope(Be), this.regexpState = null, this.privateNameStack = [];
       }, t = { inFunction: { configurable: !0 }, inGenerator: { configurable: !0 }, inAsync: { configurable: !0 }, canAwait: { configurable: !0 }, allowSuper: { configurable: !0 }, allowDirectSuper: { configurable: !0 }, treatFunctionsAsVar: { configurable: !0 }, allowNewDotTarget: { configurable: !0 }, inClassStaticBlock: { configurable: !0 } };
-      dt.prototype.parse = function() {
+      pt.prototype.parse = function() {
         var u = this.options.program || this.startNode();
         return this.nextToken(), this.parseTopLevel(u);
       }, t.inFunction.get = function() {
@@ -273,21 +273,21 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return (u & (qt | Ge)) > 0 || x;
       }, t.inClassStaticBlock.get = function() {
         return (this.currentVarScope().flags & Ge) > 0;
-      }, dt.extend = function() {
+      }, pt.extend = function() {
         for (var u = [], x = arguments.length; x--; )
           u[x] = arguments[x];
         for (var A = this, N = 0; N < u.length; N++)
           A = u[N](A);
         return A;
-      }, dt.parse = function(u, x) {
+      }, pt.parse = function(u, x) {
         return new this(x, u).parse();
-      }, dt.parseExpressionAt = function(u, x, A) {
+      }, pt.parseExpressionAt = function(u, x, A) {
         var N = new this(A, u, x);
         return N.nextToken(), N.parseExpression();
-      }, dt.tokenizer = function(u, x) {
+      }, pt.tokenizer = function(u, x) {
         return new this(x, u);
-      }, Object.defineProperties(dt.prototype, t);
-      var e = dt.prototype, i = /^(?:'((?:\\.|[^'\\])*?)'|"((?:\\.|[^"\\])*?)")/;
+      }, Object.defineProperties(pt.prototype, t);
+      var e = pt.prototype, i = /^(?:'((?:\\.|[^'\\])*?)'|"((?:\\.|[^"\\])*?)")/;
       e.strictDirective = function(n) {
         if (this.options.ecmaVersion < 5)
           return !1;
@@ -347,7 +347,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }, e.isSimpleAssignTarget = function(n) {
         return n.type === "ParenthesizedExpression" ? this.isSimpleAssignTarget(n.expression) : n.type === "Identifier" || n.type === "MemberExpression";
       };
-      var s = dt.prototype;
+      var s = pt.prototype;
       s.parseTopLevel = function(n) {
         var u = /* @__PURE__ */ Object.create(null);
         for (n.body || (n.body = []); this.type !== I.eof; ) {
@@ -731,7 +731,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }, s.isDirectiveCandidate = function(n) {
         return this.options.ecmaVersion >= 5 && n.type === "ExpressionStatement" && n.expression.type === "Literal" && typeof n.expression.value == "string" && (this.input[n.start] === '"' || this.input[n.start] === "'");
       };
-      var d = dt.prototype;
+      var d = pt.prototype;
       d.toAssignable = function(n, u, x) {
         if (this.options.ecmaVersion >= 6 && n)
           switch (n.type) {
@@ -892,7 +892,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         f_expr: new w("function", !0),
         f_expr_gen: new w("function", !0, !1, null, !0),
         f_gen: new w("function", !1, !1, null, !0)
-      }, k = dt.prototype;
+      }, k = pt.prototype;
       k.initialContext = function() {
         return [m.b_stat];
       }, k.curContext = function() {
@@ -941,7 +941,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var u = !1;
         this.options.ecmaVersion >= 6 && n !== I.dot && (this.value === "of" && !this.exprAllowed || this.value === "yield" && this.inGeneratorContext()) && (u = !0), this.exprAllowed = u;
       };
-      var p = dt.prototype;
+      var p = pt.prototype;
       p.checkPropClash = function(n, u, x) {
         if (!(this.options.ecmaVersion >= 9 && n.type === "SpreadElement") && !(this.options.ecmaVersion >= 6 && (n.computed || n.method || n.shorthand))) {
           var A = n.key, N;
@@ -1337,7 +1337,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var u = this.startNode();
         return this.next(), u.argument = this.parseMaybeUnary(null, !0, !1, n), this.finishNode(u, "AwaitExpression");
       };
-      var b = dt.prototype;
+      var b = pt.prototype;
       b.raise = function(n, u) {
         var x = Fe(this.input, n);
         u += " (" + x.line + ":" + x.column + ")";
@@ -1347,7 +1347,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         if (this.options.locations)
           return new Ne(this.curLine, this.pos - this.lineStart);
       };
-      var C = dt.prototype, P = function(u) {
+      var C = pt.prototype, P = function(u) {
         this.flags = u, this.var = [], this.lexical = [], this.functions = [], this.inClassFieldInit = !1;
       };
       C.enterScope = function(n) {
@@ -1397,7 +1397,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       };
       var S = function(u, x, A) {
         this.type = "", this.start = x, this.end = 0, u.options.locations && (this.loc = new We(u, A)), u.options.directSourceFile && (this.sourceFile = u.options.directSourceFile), u.options.ranges && (this.range = [x, 0]);
-      }, E = dt.prototype;
+      }, E = pt.prototype;
       E.startNode = function() {
         return new S(this, this.start, this.startLoc);
       }, E.startNodeAt = function(n, u) {
@@ -1443,7 +1443,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var vt = lt[ht];
         st(vt);
       }
-      var J = dt.prototype, gt = function(u) {
+      var J = pt.prototype, gt = function(u) {
         this.parser = u, this.validFlags = "gim" + (u.options.ecmaVersion >= 6 ? "uy" : "") + (u.options.ecmaVersion >= 9 ? "s" : "") + (u.options.ecmaVersion >= 13 ? "d" : ""), this.unicodeProperties = K[u.options.ecmaVersion >= 13 ? 13 : u.options.ecmaVersion], this.source = "", this.flags = "", this.start = 0, this.switchU = !1, this.switchN = !1, this.pos = 0, this.lastIntValue = 0, this.lastStringValue = "", this.lastAssertionIsQuantifiable = !1, this.numCapturingParens = 0, this.maxBackReference = 0, this.groupNames = [], this.backReferenceNames = [];
       };
       gt.prototype.reset = function(u, x, A) {
@@ -1846,7 +1846,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       };
       var le = function(u) {
         this.type = u.type, this.value = u.value, this.start = u.start, this.end = u.end, u.options.locations && (this.loc = new We(u, u.startLoc, u.endLoc)), u.options.ranges && (this.range = [u.start, u.end]);
-      }, St = dt.prototype;
+      }, St = pt.prototype;
       St.next = function(n) {
         !n && this.type.keyword && this.containsEsc && this.raiseRecoverable(this.start, "Escape sequence in keyword " + this.type.keyword), this.options.onToken && this.options.onToken(new le(this)), this.lastTokEnd = this.end, this.lastTokStart = this.start, this.lastTokEndLoc = this.endLoc, this.lastTokStartLoc = this.startLoc, this.nextToken();
       }, St.getToken = function() {
@@ -2287,8 +2287,8 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return this.keywords.test(n) && (u = Nt[n]), this.finishToken(u, n);
       };
       var me = "8.8.0";
-      dt.acorn = {
-        Parser: dt,
+      pt.acorn = {
+        Parser: pt,
         version: me,
         defaultOptions: Qe,
         Position: Ne,
@@ -2309,15 +2309,15 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         nonASCIIwhitespace: Ue
       };
       function ii(n, u) {
-        return dt.parse(n, u);
+        return pt.parse(n, u);
       }
       function bi(n, u, x) {
-        return dt.parseExpressionAt(n, u, x);
+        return pt.parseExpressionAt(n, u, x);
       }
       function yi(n, u) {
-        return dt.tokenizer(n, u);
+        return pt.tokenizer(n, u);
       }
-      G.Node = S, G.Parser = dt, G.Position = Ne, G.SourceLocation = We, G.TokContext = w, G.Token = le, G.TokenType = xt, G.defaultOptions = Qe, G.getLineInfo = Fe, G.isIdentifierChar = ut, G.isIdentifierStart = Ft, G.isNewLine = Gt, G.keywordTypes = Nt, G.lineBreak = zt, G.lineBreakG = Ee, G.nonASCIIwhitespace = Ue, G.parse = ii, G.parseExpressionAt = bi, G.tokContexts = m, G.tokTypes = I, G.tokenizer = yi, G.version = me, Object.defineProperty(G, "__esModule", { value: !0 });
+      G.Node = S, G.Parser = pt, G.Position = Ne, G.SourceLocation = We, G.TokContext = w, G.Token = le, G.TokenType = xt, G.defaultOptions = Qe, G.getLineInfo = Fe, G.isIdentifierChar = ut, G.isIdentifierStart = Ft, G.isNewLine = Gt, G.keywordTypes = Nt, G.lineBreak = zt, G.lineBreakG = Ee, G.nonASCIIwhitespace = Ue, G.parse = ii, G.parseExpressionAt = bi, G.tokContexts = m, G.tokTypes = I, G.tokenizer = yi, G.version = me, Object.defineProperty(G, "__esModule", { value: !0 });
     });
   }(Ei, Ei.exports)), Ei.exports;
 }
@@ -2353,9 +2353,9 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
  *
  */
 (function($t) {
-  (function(pt, G) {
-    pt = pt || _n;
-    var it = pt.window, tt = pt.document, O = new function() {
+  (function(ct, G) {
+    ct = ct || _n;
+    var it = ct.window, tt = ct.document, O = new function() {
       var t = /^(statics|enumerable|beans|preserve)$/, e = [], i = e.slice, r = Object.create, s = Object.getOwnPropertyDescriptor, a = Object.defineProperty, h = e.forEach || function(g, d) {
         for (var w = 0, m = this.length; w < m; w++)
           g.call(d, this[w], w, this);
@@ -2808,7 +2808,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
     }, Rt = O.extend({
       _class: "PaperScope",
       initialize: function t() {
-        dt = this, this.settings = new O({
+        pt = this, this.settings = new O({
           applyMatrix: !0,
           insertItems: !0,
           handleSize: 4,
@@ -2823,7 +2823,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }, Dt.release(i);
         }
         if (!this.agent) {
-          var r = pt.navigator.userAgent.toLowerCase(), s = (/(darwin|win|mac|linux|freebsd|sunos)/.exec(r) || [])[0], a = s === "darwin" ? "mac" : s, h = e.agent = e.browser = { platform: a };
+          var r = ct.navigator.userAgent.toLowerCase(), s = (/(darwin|win|mac|linux|freebsd|sunos)/.exec(r) || [])[0], a = s === "darwin" ? "mac" : s, h = e.agent = e.browser = { platform: a };
           a && (h[a] = !0), r.replace(
             /(opera|chrome|safari|webkit|firefox|msie|trident|atom|node|jsdom)\/?\s*([.\d]+)(?:.*version\/([.\d]+))?(?:.*rv\:v?([.\d]+))?/g,
             function(o, l, f, _, v) {
@@ -2844,7 +2844,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return this;
       },
       execute: function(t, e) {
-        var i = dt.PaperScript.execute(t, this, e);
+        var i = pt.PaperScript.execute(t, this, e);
         return Wt.updateFocus(), i;
       },
       install: function(t) {
@@ -2861,13 +2861,13 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           !/^_/.test(i) && this[i] && (t[i] = this[i]);
       },
       setup: function(t) {
-        return dt = this, this.project = new kt(t), this;
+        return pt = this, this.project = new kt(t), this;
       },
       createCanvas: function(t, e) {
         return Dt.getCanvas(t, e);
       },
       activate: function() {
-        dt = this;
+        pt = this;
       },
       clear: function() {
         for (var t = this.projects, e = this.tools, i = t.length - 1; i >= 0; i--)
@@ -2896,7 +2896,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }()
     }), _e = O.extend(ge, {
       initialize: function(t) {
-        this._scope = dt, this._index = this._scope[this._list].push(this) - 1, (t || !this._scope[this._reference]) && this.activate();
+        this._scope = pt, this._index = this._scope[this._list].push(this) - 1, (t || !this._scope[this._reference]) && this.activate();
       },
       activate: function() {
         if (!this._scope)
@@ -3029,7 +3029,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }
     });
     Et.instance = new Et();
-    var ct = new function() {
+    var dt = new function() {
       var t = [
         [0.5773502691896257],
         [0, 0.7745966692414834],
@@ -3159,7 +3159,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               i(v) * c * c > i(w / c) && (C = -w / c, b = (C - d) / c);
             }
           }
-          var q = ct.solveQuadratic(v, b, C, m, k, p), U = k == null;
+          var q = dt.solveQuadratic(v, b, C, m, k, p), U = k == null;
           return isFinite(c) && (q === 0 || q > 0 && c !== m[0] && c !== m[1]) && (U || c > k - h && c < p + h) && (m[q++] = U ? c : l(c, k, p)), q;
         }
       };
@@ -3219,7 +3219,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           );
         } else {
           var i = t / this.getLength();
-          ct.isZero(i) && this.getAngle(), this._set(
+          dt.isZero(i) && this.getAngle(), this._set(
             this.x * i,
             this.y * i
           );
@@ -3236,7 +3236,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       getAngleInRadians: function() {
         if (arguments.length) {
           var t = z.read(arguments), e = this.getLength() * t.getLength();
-          if (ct.isZero(e))
+          if (dt.isZero(e))
             return NaN;
           var i = this.dot(t) / e;
           return Math.acos(i < -1 ? -1 : i > 1 ? 1 : i);
@@ -3323,7 +3323,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return z.isOrthogonal(this.x, this.y, t.x, t.y);
       },
       isZero: function() {
-        var t = ct.isZero;
+        var t = dt.isZero;
         return t(this.x) && t(this.y);
       },
       isNaN: function() {
@@ -3466,7 +3466,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return new ut(-this.width, -this.height);
       },
       isZero: function() {
-        var t = ct.isZero;
+        var t = dt.isZero;
         return t(this.width) && t(this.height);
       },
       isNaN: function() {
@@ -4068,7 +4068,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         intersect: function(t, e, i, r, s, a, h, o, l, f) {
           l || (i -= t, r -= e, h -= s, o -= a);
           var _ = i * o - r * h;
-          if (!ct.isMachineZero(_)) {
+          if (!dt.isMachineZero(_)) {
             var v = t - s, g = e - a, d = (h * g - o * v) / _, w = (i * g - r * v) / _, m = 1e-12, k = -m, p = 1 + m;
             if (f || k < d && d < p && k < w && w < p)
               return f || (d = d <= 0 ? 0 : d >= 1 ? 1 : d), new z(
@@ -4080,7 +4080,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         getSide: function(t, e, i, r, s, a, h, o) {
           h || (i -= t, r -= e);
           var l = s - t, f = a - e, _ = l * r - f * i;
-          return !o && ct.isMachineZero(_) && (_ = (l * i + l * i) / (i * i + r * r), _ >= 0 && _ <= 1 && (_ = 0)), _ < 0 ? -1 : _ > 0 ? 1 : 0;
+          return !o && dt.isMachineZero(_) && (_ = (l * i + l * i) / (i * i + r * r), _ >= 0 && _ <= 1 && (_ = 0)), _ < 0 ? -1 : _ > 0 ? 1 : 0;
         },
         getSignedDistance: function(t, e, i, r, s, a, h) {
           return h || (i -= t, r -= e), i === 0 ? r > 0 ? s - t : t - s : r === 0 ? i < 0 ? a - e : e - a : ((s - t) * r - (a - e) * i) / (r > i ? r * Math.sqrt(1 + i * i / (r * r)) : i * Math.sqrt(1 + r * r / (i * i)));
@@ -4335,7 +4335,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         initialize: function() {
         },
         _initialize: function(t, e) {
-          var i = t && O.isPlainObject(t), r = i && t.internal === !0, s = this._matrix = new At(), a = i && t.project || dt.project, h = dt.settings;
+          var i = t && O.isPlainObject(t), r = i && t.internal === !0, s = this._matrix = new At(), a = i && t.project || pt.project, h = pt.settings;
           return this._id = r ? null : Vt.get(), this._parent = this._index = null, this._applyMatrix = this._canApplyMatrix && h.applyMatrix, e && s.translate(e), s._owner = this, this._style = new Be(a._currentStyle, this, a), r || i && t.insert == !1 || !h.insertItems && !(i && t.insert === !0) ? this._setProject(a) : (i && t.parent || a)._insertItem(G, this, !0), i && t !== I.NO_INSERT && this.set(t, {
             internal: !0,
             insert: !0,
@@ -4620,7 +4620,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         setScaling: function() {
           var t = this.getScaling(), e = z.read(arguments, 0, { clone: !0, readNull: !0 });
           if (t && e && !t.equals(e)) {
-            var i = this.getRotation(), r = this._decomposed, s = new At(), a = ct.isZero;
+            var i = this.getRotation(), r = this._decomposed, s = new At(), a = dt.isZero;
             if (a(t.x) || a(t.y))
               s.translate(r.translation), i && s.rotate(i), s.scale(e.x, e.y), this._matrix.set(s);
             else {
@@ -5260,7 +5260,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           if (r.hasFill() && (t.fillStyle = r.getFillColor().toCanvasStyle(t, s)), r.hasStroke()) {
             t.strokeStyle = r.getStrokeColor().toCanvasStyle(t, s), t.lineWidth = r.getStrokeWidth();
             var a = r.getStrokeJoin(), h = r.getStrokeCap(), o = r.getMiterLimit();
-            if (a && (t.lineJoin = a), h && (t.lineCap = h), o && (t.miterLimit = o), dt.support.nativeDash) {
+            if (a && (t.lineJoin = a), h && (t.lineCap = h), o && (t.miterLimit = o), pt.support.nativeDash) {
               var l = r.getDashArray(), f = r.getDashOffset();
               l && l.length && ("setLineDash" in t ? (t.setLineDash(l), t.lineDashOffset = f) : (t.mozDash = l, t.mozDashOffset = f));
             }
@@ -5277,7 +5277,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             var r = e.matrices, s = e.viewMatrix, a = this._matrix, h = r[r.length - 1].appended(a);
             if (!!h.isInvertible()) {
               s = s ? s.appended(h) : h, r.push(h), e.updateMatrix && (this._globalMatrix = h);
-              var o = this._blendMode, l = ct.clamp(this._opacity, 0, 1), f = o === "normal", _ = ei.nativeModes[o], v = f && l === 1 || e.dontStart || e.clip || (_ || f && l < 1) && this._canComposite(), g = e.pixelRatio || 1, d, w, m;
+              var o = this._blendMode, l = dt.clamp(this._opacity, 0, 1), f = o === "normal", _ = ei.nativeModes[o], v = f && l === 1 || e.dontStart || e.clip || (_ || f && l < 1) && this._canComposite(), g = e.pixelRatio || 1, d, w, m;
               if (!v) {
                 var k = this.getStrokeBounds(s);
                 if (!k.width || !k.height) {
@@ -5522,7 +5522,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             radius: this._radius,
             insert: !1
           });
-          return e.copyAttributes(this), dt.settings.applyMatrix && e.setApplyMatrix(!0), (t === G || t) && e.insertAbove(this), e;
+          return e.copyAttributes(this), pt.settings.applyMatrix && e.setApplyMatrix(!0), (t === G || t) && e.insertAbove(this), e;
         },
         toShape: "#clone",
         _asPathItem: function() {
@@ -5800,7 +5800,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var e = this;
         function i(r) {
           var s = e.getView(), a = r && r.type || "load";
-          s && e.responds(a) && (dt = s._scope, e.emit(a, new He(r)));
+          s && e.responds(a) && (pt = s._scope, e.emit(a, new He(r)));
         }
         this._setImage(t), this._loaded ? setTimeout(i, 0) : t && jt.add(t, {
           load: function(r) {
@@ -5838,7 +5838,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return t && t.src || this.toDataURL();
       },
       setSource: function(t) {
-        var e = new pt.Image(), i = this._crossOrigin;
+        var e = new ct.Image(), i = this._crossOrigin;
         i && (e.crossOrigin = i), t && (e.src = t), this.setImage(e);
       },
       getCrossOrigin: function() {
@@ -5968,7 +5968,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       _draw: function(t, e, i) {
         var r = this.getElement();
         if (r && r.width > 0 && r.height > 0) {
-          t.globalAlpha = ct.clamp(this._opacity, 0, 1), this._setStyles(t, e, i);
+          t.globalAlpha = dt.clamp(this._opacity, 0, 1), this._setStyles(t, e, i);
           var s = this._smoothing, a = s === "off";
           qt.setPrefixed(
             t,
@@ -6029,7 +6029,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
     }), te = O.extend({
       _class: "SymbolDefinition",
       initialize: function(e, i) {
-        this._id = Vt.get(), this.project = dt.project, e && this.setItem(e, i);
+        this._id = Vt.get(), this.project = pt.project, e && this.setItem(e, i);
       },
       _serialize: function(t, e) {
         return e.add(this, function() {
@@ -6071,7 +6071,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           var e = t && O.read(t);
           return new O({
             type: null,
-            tolerance: dt.settings.hitTolerance,
+            tolerance: pt.settings.hitTolerance,
             fill: !e,
             stroke: !e,
             segments: !e,
@@ -6276,7 +6276,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         this._y = t, this._owner._changed(this);
       },
       isZero: function() {
-        var t = ct.isZero;
+        var t = dt.isZero;
         return t(this._x) && t(this._y);
       },
       isSelected: function() {
@@ -6477,7 +6477,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             if (s >= a == a >= h && a >= h == h >= o || rt.isStraight(t))
               i.push(t);
             else {
-              var l = 3 * (a - h) - s + o, f = 2 * (s + h) - 4 * a, _ = a - s, v = 1e-8, g = 1 - v, d = [], w = ct.solveQuadratic(l, f, _, d, v, g);
+              var l = 3 * (a - h) - s + o, f = 2 * (s + h) - 4 * a, _ = a - s, v = 1e-8, g = 1 - v, d = [], w = dt.solveQuadratic(l, f, _, d, v, g);
               if (!w)
                 i.push(t);
               else {
@@ -6492,7 +6492,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             var h = t[e], o = t[e + 2], l = t[e + 4], f = t[e + 6], _ = 0;
             if (!(h < i && f < i && o < i && l < i || h > i && f > i && o > i && l > i)) {
               var v = 3 * (o - h), g = 3 * (l - o) - v, d = f - h - v - g;
-              _ = ct.solveCubic(d, g, v, h - i, r, s, a);
+              _ = dt.solveCubic(d, g, v, h - i, r, s, a);
             }
             return _;
           },
@@ -6574,7 +6574,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               if (e < t != e < r && i < t != i < r)
                 f(t, 0), f(r, 0);
               else {
-                var g = 3 * (e - i) - t + r, d = 2 * (t + i) - 4 * e, w = e - t, m = ct.solveQuadratic(g, d, w, l), k = 1e-8, p = 1 - k;
+                var g = 3 * (e - i) - t + r, d = 2 * (t + i) - 4 * e, w = e - t, m = dt.solveQuadratic(g, d, w, l), k = 1e-8, p = 1 - k;
                 f(r, 0);
                 for (var y = 0; y < m; y++) {
                   var c = l[y], b = 1 - c;
@@ -6741,7 +6741,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         function i(r, s, a, h) {
           if (s == null || s < 0 || s > 1)
             return null;
-          var o = r[0], l = r[1], f = r[2], _ = r[3], v = r[4], g = r[5], d = r[6], w = r[7], m = ct.isZero;
+          var o = r[0], l = r[1], f = r[2], _ = r[3], v = r[4], g = r[5], d = r[6], w = r[7], m = dt.isZero;
           m(f - o) && m(_ - l) && (f = o, _ = l), m(v - d) && m(g - w) && (v = d, g = w);
           var k = 3 * (f - o), p = 3 * (v - f) - k, y = d - o - k - p, c = 3 * (_ - l), b = 3 * (g - _) - c, C = w - l - c - b, P, S;
           if (a === 0)
@@ -6762,7 +6762,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
         return { statics: {
           classify: function(r) {
-            var s = r[0], a = r[1], h = r[2], o = r[3], l = r[4], f = r[5], _ = r[6], v = r[7], g = s * (v - f) + a * (l - _) + _ * f - v * l, d = h * (a - v) + o * (_ - s) + s * v - a * _, w = l * (o - a) + f * (s - h) + h * a - o * s, m = 3 * w, k = m - d, p = k - d + g, y = Math.sqrt(p * p + k * k + m * m), c = y !== 0 ? 1 / y : 0, b = ct.isZero, C = "serpentine";
+            var s = r[0], a = r[1], h = r[2], o = r[3], l = r[4], f = r[5], _ = r[6], v = r[7], g = s * (v - f) + a * (l - _) + _ * f - v * l, d = h * (a - v) + o * (_ - s) + s * v - a * _, w = l * (o - a) + f * (s - h) + h * a - o * s, m = 3 * w, k = m - d, p = k - d + g, y = Math.sqrt(p * p + k * k + m * m), c = y !== 0 ? 1 / y : 0, b = dt.isZero, C = "serpentine";
             p *= c, k *= c, m *= c;
             function P(M, V, T) {
               var R = V !== G, F = R && V > 0 && V < 1, q = R && T > 0 && T < 1;
@@ -6790,7 +6790,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               var l = o[6] - o[0], f = o[7] - o[1];
               return Math.sqrt(l * l + f * f);
             }
-            return ct.integrate(
+            return dt.integrate(
               h || t(r),
               s,
               a,
@@ -6807,14 +6807,14 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
               return null;
             var w = s / g, m = 0;
             function k(p) {
-              return m += ct.integrate(
+              return m += dt.integrate(
                 v,
                 a,
                 p,
                 e(a, p)
               ), a = p, m - s;
             }
-            return ct.findRoot(
+            return dt.findRoot(
               k,
               v,
               a + w,
@@ -6844,7 +6844,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           },
           getPeaks: function(r) {
             var s = r[0], a = r[1], h = r[2], o = r[3], l = r[4], f = r[5], _ = r[6], v = r[7], g = -s + 3 * h - 3 * l + _, d = 3 * s - 6 * h + 3 * l, w = -3 * s + 3 * h, m = -a + 3 * o - 3 * f + v, k = 3 * a - 6 * o + 3 * f, p = -3 * a + 3 * o, y = 1e-8, c = 1 - y, b = [];
-            return ct.solveCubic(
+            return dt.solveCubic(
               9 * (g * g + m * m),
               9 * (g * d + k * m),
               2 * (d * d + k * k) + 3 * (w * g + p * m),
@@ -7012,7 +7012,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           return null;
         }
         function a(d, w, m, k, p) {
-          var y = ct.isZero;
+          var y = dt.isZero;
           if (y(k) && y(p)) {
             var c = rt.getTimeOf(d, new z(w, m));
             return c === null ? [] : [c];
@@ -7193,7 +7193,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
         function g(d, w) {
           var m = d[0], k = d[1], p = d[2], y = d[3], c = d[4], b = d[5], C = d[6], P = d[7], S = w.normalize(), E = S.x, L = S.y, M = 3 * C - 9 * c + 9 * p - 3 * m, V = 3 * P - 9 * b + 9 * y - 3 * k, T = 6 * c - 12 * p + 6 * m, R = 6 * b - 12 * y + 6 * k, F = 3 * p - 3 * m, q = 3 * y - 3 * k, U = 2 * M * L - 2 * V * E, H = [];
-          if (Math.abs(U) < ct.CURVETIME_EPSILON) {
+          if (Math.abs(U) < dt.CURVETIME_EPSILON) {
             var Q = M * q - V * F, U = M * R - V * T;
             if (U != 0) {
               var et = -Q / U;
@@ -7574,7 +7574,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         if (t) {
           var i = this._children || [this], r = t._children ? t._children.slice() : [t], s = i.length, a = r.length, h = [], o = 0;
           e = !0;
-          for (var l = xe.findItemBoundsCollisions(i, r, ct.GEOMETRIC_EPSILON), f = s - 1; f >= 0 && e; f--) {
+          for (var l = xe.findItemBoundsCollisions(i, r, dt.GEOMETRIC_EPSILON), f = s - 1; f >= 0 && e; f--) {
             var _ = i[f];
             e = !1;
             var v = l[f];
@@ -7966,7 +7966,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
                 new Nt(c, k, !0),
                 !0
               );
-              return b && ct.isZero(m.getLength() / b.subtract(y).getLength() - p) && ct.isZero(k.getLength() / b.subtract(c).getLength() - p);
+              return b && dt.isZero(m.getLength() / b.subtract(y).getLength() - p) && dt.isZero(k.getLength() / b.subtract(c).getLength() - p);
             }
             return !1;
           }
@@ -7976,7 +7976,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           if (!this.hasHandles() && e.length === 4 && h(0, 2) && h(1, 3) && o(1) ? (i = Gt.Rectangle, r = new ut(f(0, 3), f(0, 1)), a = e[1]._point.add(e[2]._point).divide(2)) : e.length === 8 && l(0) && l(2) && l(4) && l(6) && h(1, 5) && h(3, 7) ? (i = Gt.Rectangle, r = new ut(f(1, 6), f(0, 3)), s = r.subtract(new ut(
             f(0, 7),
             f(1, 2)
-          )).divide(2), a = e[3]._point.add(e[4]._point).divide(2)) : e.length === 4 && l(0) && l(1) && l(2) && l(3) && (ct.isZero(f(0, 2) - f(1, 3)) ? (i = Gt.Circle, s = f(0, 2) / 2) : (i = Gt.Ellipse, s = new ut(f(2, 0) / 2, f(3, 1) / 2)), a = e[1]._point), i) {
+          )).divide(2), a = e[3]._point.add(e[4]._point).divide(2)) : e.length === 4 && l(0) && l(1) && l(2) && l(3) && (dt.isZero(f(0, 2) - f(1, 3)) ? (i = Gt.Circle, s = f(0, 2) / 2) : (i = Gt.Ellipse, s = new ut(f(2, 0) / 2, f(3, 1) / 2)), a = e[1]._point), i) {
             var _ = this.getPosition(!0), v = new i({
               center: _,
               size: r,
@@ -8199,7 +8199,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         }
         return {
           _draw: function(i, r, s, a) {
-            var h = r.dontStart, o = r.dontFinish || r.clip, l = this.getStyle(), f = l.hasFill(), _ = l.hasStroke(), v = l.getDashArray(), g = !dt.support.nativeDash && _ && v && v.length;
+            var h = r.dontStart, o = r.dontFinish || r.clip, l = this.getStyle(), f = l.hasFill(), _ = l.hasStroke(), v = l.getDashArray(), g = !pt.support.nativeDash && _ && v && v.length;
             h || i.beginPath(), (f || _ && !g || o) && (e(i, this, a), this._closed && i.closePath());
             function d(c) {
               return v[(c % g + g) % g];
@@ -8226,7 +8226,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             }
           },
           _drawSelected: function(i, r) {
-            i.beginPath(), e(i, this, r), i.stroke(), t(i, this._segments, r, dt.settings.handleSize);
+            i.beginPath(), e(i, this, r), i.stroke(), t(i, this._segments, r, pt.settings.handleSize);
           }
         };
       }(),
@@ -8277,7 +8277,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             else if (O.remain(e) <= 2)
               o = h, h = z.read(e);
             else if (!a.equals(h)) {
-              var m = ut.read(e), k = ct.isZero;
+              var m = ut.read(e), k = dt.isZero;
               if (k(m.width) || k(m.height))
                 return this.lineTo(h);
               var p = O.read(e), f = !!O.read(e), y = !!O.read(e), w = a.add(h).divide(2), c = a.subtract(w).rotate(-p), b = c.x, C = c.y, P = i(m.width), S = i(m.height), E = P * P, L = S * S, M = b * b, V = C * C, T = r(M / E + V / L);
@@ -8861,7 +8861,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }), S = P[0], E = xe.findItemBoundsCollisions(
             P,
             null,
-            ct.GEOMETRIC_EPSILON
+            dt.GEOMETRIC_EPSILON
           );
           c == null && (c = S.isClockwise());
           for (var L = 0; L < b; L++) {
@@ -8999,7 +8999,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           for (var M = E * V[q], U = 0, H = P.length; U < H; U++) {
             var Q = P[U], et = Q.length;
             if (M <= et) {
-              var L = Q.curve, nt = L._path, ot = nt._parent, X = ot instanceof we ? ot : nt, K = ct.clamp(L.getTimeAt(M), R, F), st = L.getPointAtTime(K), ht = i(L.getTangentAtTime(K).y) < Math.SQRT1_2, lt = null;
+              var L = Q.curve, nt = L._path, ot = nt._parent, X = ot instanceof we ? ot : nt, K = dt.clamp(L.getTimeAt(M), R, F), st = L.getPointAtTime(K), ht = i(L.getTangentAtTime(K).y) < Math.SQRT1_2, lt = null;
               if (C.subtract && c) {
                 var vt = X === y ? c : y, J = vt._getWinding(st, ht, !0);
                 if (X === y && J.winding || X === c && !J.winding) {
@@ -9339,7 +9339,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         for (var a = 0; a <= 1; a++)
           s[a] = r[a + 1].subtract(r[a]).multiply(2);
         var h = this.evaluate(3, t, i), o = this.evaluate(2, r, i), l = this.evaluate(1, s, i), f = h.subtract(e), _ = o.dot(o) + f.dot(l);
-        return ct.isMachineZero(_) ? i : i - f.dot(o) / _;
+        return dt.isMachineZero(_) ? i : i - f.dot(o) / _;
       },
       evaluate: function(t, e, i) {
         for (var r = e.slice(), s = 1; s <= t; s++)
@@ -9921,7 +9921,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         _class: "Style",
         beans: !0,
         initialize: function(o, l, f) {
-          this._values = {}, this._owner = l, this._project = l && l._project || f || dt.project, this._defaults = !l || l instanceof zt ? e : l instanceof Fe ? i : t, o && this.set(o);
+          this._values = {}, this._owner = l, this._project = l && l._project || f || pt.project, this._defaults = !l || l instanceof zt ? e : l instanceof Fe ? i : t, o && this.set(o);
         }
       };
       return O.each(e, function(h, o) {
@@ -10183,7 +10183,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             }
           } else
             a = new ut(i), i = null;
-          this._project = e, this._scope = e._scope, this._element = i, this._pixelRatio || (this._pixelRatio = it && it.devicePixelRatio || 1), this._setElementSize(a.width, a.height), this._viewSize = a, t._views.push(this), t._viewsById[this._id] = this, (this._matrix = new At())._owner = this, t._focused || (t._focused = this), this._frameItems = {}, this._frameItemCount = 0, this._itemEvents = { native: {}, virtual: {} }, this._autoUpdate = !dt.agent.node, this._needsUpdate = !1;
+          this._project = e, this._scope = e._scope, this._element = i, this._pixelRatio || (this._pixelRatio = it && it.devicePixelRatio || 1), this._setElementSize(a.width, a.height), this._viewSize = a, t._views.push(this), t._viewsById[this._id] = this, (this._matrix = new At())._owner = this, t._focused || (t._focused = this), this._frameItems = {}, this._frameItemCount = 0, this._itemEvents = { native: {}, virtual: {} }, this._autoUpdate = !pt.agent.node, this._needsUpdate = !1;
         },
         remove: function() {
           if (!this._project)
@@ -10242,7 +10242,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           this._animate = !1;
         },
         _handleFrame: function() {
-          dt = this._scope;
+          pt = this._scope;
           var t = Date.now() / 1e3, e = this._last ? t - this._last : 0;
           this._last = t, this.emit("frame", new O({
             delta: e,
@@ -10563,7 +10563,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           _handleKeyEvent: function(T, R, F, q) {
             var U = this._scope, H = U.tool, Q;
             function et(nt) {
-              nt.responds(T) && (dt = U, nt.emit(T, Q = Q || new hi(T, R, F, q)));
+              nt.responds(T) && (pt = U, nt.emit(T, Q = Q || new hi(T, R, F, q)));
             }
             this.isVisible() && (et(this), H && H.responds(T) && et(H));
           },
@@ -10620,7 +10620,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return this._context;
       },
       getPixelSize: function t(e) {
-        var i = dt.agent, r;
+        var i = pt.agent, r;
         if (i && i.firefox)
           r = t.base.call(this, e);
         else {
@@ -10701,7 +10701,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         },
         command: {
           get: function() {
-            var f = dt && dt.agent;
+            var f = pt && pt.agent;
             return f && f.mac ? this.meta : this.control;
           }
         }
@@ -10714,7 +10714,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         var d = Wt._focused, w;
         if (i[_] = f, f ? r[_] = v : delete r[_], _.length > 1 && (w = O.camelize(_)) in h) {
           h[w] = f;
-          var m = dt && dt.agent;
+          var m = pt && pt.agent;
           if (w === "meta" && m && m.mac)
             if (f)
               s = {};
@@ -10734,7 +10734,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }
       return jt.add(tt, {
         keydown: function(f) {
-          var _ = o(f), v = dt && dt.agent;
+          var _ = o(f), v = pt && pt.agent;
           _.length > 1 || v && v.chrome && (f.altKey || v.mac && f.metaKey || !v.mac && f.ctrlKey) ? l(
             !0,
             _,
@@ -10870,7 +10870,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         this._minDistance = this._maxDistance = t;
       },
       _handleMouseEvent: function(t, e, i, r) {
-        dt = this._scope, r.drag && !this.responds(t) && (t = "mousemove");
+        pt = this._scope, r.drag && !this.responds(t) && (t = "mousemove");
         var s = r.move || r.drag, a = this.responds(t), h = this.minDistance, o = this.maxDistance, l = !1, f = this;
         function _(g, d) {
           var w = i, m = s ? f._point : f._downPoint || w;
@@ -11016,7 +11016,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         return e;
       },
       _calculate: function(t, e, i) {
-        return dt.PaperScript.calculateBinary(t, e, i);
+        return pt.PaperScript.calculateBinary(t, e, i);
       },
       _parseKeys: function(t) {
         for (var e = {}, i = 0, r = t.length; i < r; i++) {
@@ -11036,7 +11036,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }
     }), ti = {
       request: function(t) {
-        var e = new pt.XMLHttpRequest();
+        var e = new ct.XMLHttpRequest();
         return e.open(
           (t.method || "get").toUpperCase(),
           t.url,
@@ -11288,7 +11288,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           var E = y.decompose();
           if (E) {
             var L = [], M = E.rotation, V = E.scaling, T = E.skewing;
-            P && !P.isZero() && L.push("translate(" + t.point(P) + ")"), M && L.push("rotate(" + t.number(M) + ")"), (!ct.isZero(V.x - 1) || !ct.isZero(V.y - 1)) && L.push("scale(" + t.point(V) + ")"), T.x && L.push("skewX(" + t.number(T.x) + ")"), T.y && L.push("skewY(" + t.number(T.y) + ")"), C.transform = L.join(" ");
+            P && !P.isZero() && L.push("translate(" + t.point(P) + ")"), M && L.push("rotate(" + t.number(M) + ")"), (!dt.isZero(V.x - 1) || !dt.isZero(V.y - 1)) && L.push("scale(" + t.point(V) + ")"), T.x && L.push("skewX(" + t.number(T.x) + ")"), T.y && L.push("skewY(" + t.number(T.y) + ")"), C.transform = L.join(" ");
           } else
             C.transform = "matrix(" + y.getValues().join(",") + ")";
         }
@@ -11442,7 +11442,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
             )), C.appendChild(g.svgs[P]);
           g = null;
         }
-        return c.asString ? new pt.XMLSerializer().serializeToString(b) : b;
+        return c.asString ? new ct.XMLSerializer().serializeToString(b) : b;
       }
       function k(y, c, b) {
         var C = _[y._class], P = C && C(y, c);
@@ -11757,10 +11757,10 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
       }
       function p(c, b, C) {
         var P = c.nodeName.toLowerCase(), S = P !== "#document", E = tt.body, L, M, V;
-        C && S && (e = dt.getView().getSize(), e = s(c, null, null, !0) || e, L = Ht.create("svg", {
+        C && S && (e = pt.getView().getSize(), e = s(c, null, null, !0) || e, L = Ht.create("svg", {
           style: "stroke-width: 1px; stroke-miterlimit: 10"
         }), M = c.parentNode, V = c.nextSibling, L.appendChild(c), E.appendChild(L));
-        var T = dt.settings, R = T.applyMatrix, F = T.insertItems;
+        var T = pt.settings, R = T.applyMatrix, F = T.insertItems;
         T.applyMatrix = !1, T.insertItems = !1;
         var q = _[P], U = q && q(c, P, b, C) || null;
         if (T.insertItems = F, T.applyMatrix = R, U) {
@@ -11774,16 +11774,16 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         if (!c)
           return null;
         b = typeof b == "function" ? { onLoad: b } : b || {};
-        var P = dt, S = null;
+        var P = pt, S = null;
         function E(T) {
           try {
-            var R = typeof T == "object" ? T : new pt.DOMParser().parseFromString(
+            var R = typeof T == "object" ? T : new ct.DOMParser().parseFromString(
               T.trim(),
               "image/svg+xml"
             );
             if (!R.nodeName)
               throw R = null, new Error("Unsupported SVG source: " + c);
-            dt = P, S = p(R, b, !0), (!b || b.insert !== !1) && C._insertItem(G, S);
+            pt = P, S = p(R, b, !0), (!b || b.insert !== !1) && C._insertItem(G, S);
             var F = b.onLoad;
             F && F(S, T);
           } catch (q) {
@@ -12805,7 +12805,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           }
           return K;
         }
-        var M = k.url || "", V = k.sourceMaps, T = k.paperFeatures || {}, R = k.source || m, F = k.offset || 0, q = dt.agent, U = q.versionNumber, H = !1, Q = /\r\n|\n|\r/mg, et;
+        var M = k.url || "", V = k.sourceMaps, T = k.paperFeatures || {}, R = k.source || m, F = k.offset || 0, q = pt.agent, U = q.versionNumber, H = !1, Q = /\r\n|\n|\r/mg, et;
         if (V && (q.chrome && U >= 30 || q.webkit && U >= 537.76 || q.firefox && U >= 23 || q.node)) {
           if (q.node)
             F -= 2;
@@ -12833,7 +12833,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
           sourceType: "module"
         }), null, T), et && (H && (m = new Array(F + 1).join(`
 `) + m), /^(inline|both)$/.test(V) && (m += `
-//# sourceMappingURL=data:application/json;base64,` + pt.btoa(unescape(encodeURIComponent(
+//# sourceMappingURL=data:application/json;base64,` + ct.btoa(unescape(encodeURIComponent(
           JSON.stringify(et)
         )))), m += `
 //# sourceURL=` + (M || "paperscript")), {
@@ -12844,7 +12844,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         };
       }
       function v(m, k, p) {
-        dt = k;
+        pt = k;
         var y = k.getView(), c = /\btool\.\w+|\s+on(?:Key|Mouse)(?:Up|Down|Move|Drag)\b/.test(m) && !/\bnew\s+Tool\b/.test(m) ? new ci() : null, b = c ? c._events : [], C = ["onFrame", "onResize"].concat(b), P = [], S = [], E, L = typeof m == "object" ? m : _(m, p);
         m = L.code;
         function M(U, H) {
@@ -12862,7 +12862,7 @@ Defaulting to 2020, but this will stop working in the future.`)), u.ecmaVersion 
         F && (m += `
 ` + F), m += `
 return module.exports;`;
-        var V = dt.agent;
+        var V = pt.agent;
         if (tt && (V.chrome || V.firefox && V.versionNumber < 40)) {
           var T = tt.createElement("script"), R = tt.head || tt.getElementsByTagName("head")[0];
           V.firefox && (m = `
@@ -12915,9 +12915,9 @@ return module.exports;`;
         calculateUnary: f
       };
     }.call(this);
-    var dt = new (Rt.inject(O.exports, {
+    var pt = new (Rt.inject(O.exports, {
       Base: O,
-      Numerical: ct,
+      Numerical: dt,
       Key: li,
       DomEvent: jt,
       DomElement: qt,
@@ -12926,7 +12926,7 @@ return module.exports;`;
       Symbol: te,
       PlacedSymbol: Ue
     }))();
-    return dt.agent.node && _n(dt), typeof G == "function" && G.amd ? G("paper", dt) : $t && ($t.exports = dt), dt;
+    return pt.agent.node && _n(pt), typeof G == "function" && G.amd ? G("paper", pt) : $t && ($t.exports = pt), pt;
   }).call(bn, typeof self == "object" ? self : null);
 })(yn);
 const Me = yn.exports, hr = ["id"], mn = {
@@ -12944,15 +12944,15 @@ const Me = yn.exports, hr = ["id"], mn = {
     config: Object
   },
   setup($t) {
-    const pt = $t, G = ai(() => "#" + pt.position + "Ruler"), it = Oi(null), tt = ai(() => ({
-      pixelsPerInch: pt.config.pixelsPerInch || 72,
+    const ct = $t, G = ai(() => "#" + ct.position + "Ruler"), it = Oi(null), tt = ai(() => ({
+      pixelsPerInch: ct.config.pixelsPerInch || 72,
       spaceAddend: 15,
       subUnitBase: 2,
       subUnitExponent: 2,
       levelToLevelMultiplier: 0.5,
       ticksPerUnit: Math.pow(2, 2),
-      masterTickQty: Math.pow(2, 2) * pt.xWidth,
-      rulerWidth: Math.round(15 + 0.3 * pt.config.pixelsPerInch)
+      masterTickQty: Math.pow(2, 2) * ct.xWidth,
+      rulerWidth: Math.round(15 + 0.3 * ct.config.pixelsPerInch)
     })), O = ai(() => {
       let Et = {
         left: {
@@ -12987,7 +12987,7 @@ const Me = yn.exports, hr = ["id"], mn = {
             transform: `translateY(-${tt.value.rulerWidth}px)`
           }
         }
-      }, ct = {
+      }, dt = {
         left: {
           x: {
             position: "absolute",
@@ -13054,64 +13054,64 @@ const Me = yn.exports, hr = ["id"], mn = {
           }
         }
       }, z = { left: { x: {}, y: {} }, right: { x: {}, y: {} } };
-      return pt.comparison === "Facing Up" && (z = Et), (pt.comparison === "Back-to-Back" || pt.comparison === "Back") && (z = ct), pt.comparison === "Facing In" && (z = Vt), z[pt.position][pt.axis];
+      return ct.comparison === "Facing Up" && (z = Et), (ct.comparison === "Back-to-Back" || ct.comparison === "Back") && (z = dt), ct.comparison === "Facing In" && (z = Vt), z[ct.position][ct.axis];
     }), ge = () => {
-      let Et = [], ct = 0;
+      let Et = [], dt = 0;
       for (let Vt = 0; Vt <= tt.value.subUnitExponent; Vt++) {
         let z = Math.floor(
-          (pt.axis === "x" ? pt.xWidth : pt.yHeight) * Math.pow(tt.value.subUnitBase, Vt)
+          (ct.axis === "x" ? ct.xWidth : ct.yHeight) * Math.pow(tt.value.subUnitBase, Vt)
         ), Ft = tt.value.ticksPerUnit / Math.pow(tt.value.subUnitBase, Vt);
         for (let ut = 0; ut <= z; ut++) {
-          ct = Ft * ut;
-          let xt = pt.xHeight * tt.value.pixelsPerInch * Math.pow(tt.value.levelToLevelMultiplier, Vt), ft = pt.yWidth * tt.value.pixelsPerInch * Math.pow(tt.value.levelToLevelMultiplier, Vt), ne = tt.value.pixelsPerInch / Math.pow(tt.value.subUnitBase, Vt), At = ut === z, Nt = ne * ut, kt = Nt, I = 0, zt = xt;
-          if (pt.axis === "y" && (Nt = pt.position === "left" ? 0 : pt.yWidth * tt.value.pixelsPerInch + tt.value.spaceAddend, kt = pt.position === "left" ? ft : Nt - ft, I = ne * ut, zt = I), ["Facing In"].includes(pt.comparison) && (pt.axis === "y" && (Nt = pt.position === "left" ? pt.yWidth * tt.value.pixelsPerInch + tt.value.spaceAddend : 0, kt = pt.position === "left" ? Nt - ft : ft, I = ne * ut, zt = I), pt.axis === "x" && (Nt = ne * ut, kt = Nt, I = pt.yWidth * tt.value.pixelsPerInch + tt.value.spaceAddend, zt = I - xt)), Et[ct] === void 0) {
+          dt = Ft * ut;
+          let xt = ct.xHeight * tt.value.pixelsPerInch * Math.pow(tt.value.levelToLevelMultiplier, Vt), ft = ct.yWidth * tt.value.pixelsPerInch * Math.pow(tt.value.levelToLevelMultiplier, Vt), ne = tt.value.pixelsPerInch / Math.pow(tt.value.subUnitBase, Vt), At = ut === z, Nt = ne * ut, kt = Nt, I = 0, zt = xt;
+          if (ct.axis === "y" && (Nt = ct.position === "left" ? 0 : ct.yWidth * tt.value.pixelsPerInch + tt.value.spaceAddend, kt = ct.position === "left" ? ft : Nt - ft, I = ne * ut, zt = I), ["Facing In"].includes(ct.comparison) && (ct.axis === "y" && (Nt = ct.position === "left" ? ct.yWidth * tt.value.pixelsPerInch + tt.value.spaceAddend : 0, kt = ct.position === "left" ? Nt - ft : ft, I = ne * ut, zt = I), ct.axis === "x" && (Nt = ne * ut, kt = Nt, I = ct.yWidth * tt.value.pixelsPerInch + tt.value.spaceAddend, zt = I - xt)), Et[dt] === void 0) {
             let Ee = new Me.Point(Nt, I), Gt = new Me.Point(kt, zt), Ce = new Me.Path.Line(Ee, Gt);
-            Ce.strokeColor = "black", Ce.strokeWidth = "1", Et[ct] = !0, Vt === 0 && (pt.axis === "x" && _e(Nt, zt, At, ut, z), pt.axis === "y" && Rt(kt, I, ut, z));
+            Ce.strokeColor = "black", Ce.strokeWidth = "1", Et[dt] = !0, Vt === 0 && (ct.axis === "x" && _e(Nt, zt, At, ut, z), ct.axis === "y" && Rt(kt, I, ut, z));
           }
         }
       }
       Me.view.draw();
-    }, Rt = (Et, ct, Vt, z) => {
-      let Ft = pt.position === "left" ? -5 : -2, ut = 1;
+    }, Rt = (Et, dt, Vt, z) => {
+      let Ft = ct.position === "left" ? -5 : -2, ut = 1;
       Vt === 0 ? ut = 15 : ut = -5;
       let xt = new Me.PointText(
-        new Me.Point(Et + Ft, ct + ut)
+        new Me.Point(Et + Ft, dt + ut)
       );
-      xt.justification = "left", xt.fillColor = "black", xt.content = Vt, ["Facing Up", "Back-to-Back", "Back"].includes(pt.comparison) && (xt.content = Math.abs(Math.floor(Vt - z))), xt.style = {
+      xt.justification = "left", xt.fillColor = "black", xt.content = Vt, ["Facing Up", "Back-to-Back", "Back"].includes(ct.comparison) && (xt.content = Math.abs(Math.floor(Vt - z))), xt.style = {
         fontFamily: "monospace",
         fontSize: 14
       };
-    }, _e = (Et, ct, Vt, z, Ft) => {
+    }, _e = (Et, dt, Vt, z, Ft) => {
       let ut = 4, xt = 6;
       Vt && (ut = -1 * ut);
       let ft = new Me.PointText(
-        new Me.Point(Et + ut, ct + xt)
+        new Me.Point(Et + ut, dt + xt)
       );
-      ft.justification = "left", Vt && (ft.justification = "right"), ft.fillColor = "black", ft.content = pt.position === "left" ? z : Math.abs(Math.floor(z - Ft)), ["Facing Up", "Back-to-Back", "Back"].includes(pt.comparison) && (ft.content = pt.position === "left" ? Math.abs(Math.floor(z - Ft)) : z), ft.style = {
+      ft.justification = "left", Vt && (ft.justification = "right"), ft.fillColor = "black", ft.content = ct.position === "left" ? z : Math.abs(Math.floor(z - Ft)), ["Facing Up", "Back-to-Back", "Back"].includes(ct.comparison) && (ft.content = ct.position === "left" ? Math.abs(Math.floor(z - Ft)) : z), ft.style = {
         fontFamily: "monospace",
         fontSize: 14
       };
     }, xe = () => {
-      it.value.width = Math.round(pt.xWidth * tt.value.pixelsPerInch), it.value.height = Math.round(
-        pt.xHeight * tt.value.pixelsPerInch + tt.value.spaceAddend
-      ), pt.axis === "y" && (it.value.width = Math.round(
-        pt.yWidth * tt.value.pixelsPerInch + tt.value.spaceAddend
+      it.value.width = Math.round(ct.xWidth * tt.value.pixelsPerInch), it.value.height = Math.round(
+        ct.xHeight * tt.value.pixelsPerInch + tt.value.spaceAddend
+      ), ct.axis === "y" && (it.value.width = Math.round(
+        ct.yWidth * tt.value.pixelsPerInch + tt.value.spaceAddend
       ), it.value.height = Math.round(
-        pt.yHeight * tt.value.pixelsPerInch
+        ct.yHeight * tt.value.pixelsPerInch
       ));
     };
     return Zi(() => {
     }), ji(
-      () => pt.imageLoaded,
+      () => ct.imageLoaded,
       (Et) => {
         Et && (Me.setup(it.value), xe(), ge());
       }
     ), ji(
-      () => pt.comparison,
+      () => ct.comparison,
       () => {
-        pt.imageLoaded && (Me.setup(it.value), xe(), ge());
+        ct.imageLoaded && (Me.setup(it.value), xe(), ge());
       }
-    ), (Et, ct) => (Xi(), Ki("div", {
+    ), (Et, dt) => (Xi(), Ki("div", {
       style: Ti(Ve(O))
     }, [
       Yi("canvas", {
@@ -13132,7 +13132,7 @@ const Me = yn.exports, hr = ["id"], mn = {
     config: Object
   },
   emits: ["imageLoaded"],
-  setup($t, { emit: pt }) {
+  setup($t, { emit: ct }) {
     const G = $t, it = Oi(null), tt = Oi(!1), O = Li({
       pixelsPerInch: G.config.pixelsPerInch || 72,
       spaceAddend: 15,
@@ -13146,24 +13146,24 @@ const Me = yn.exports, hr = ["id"], mn = {
     })), Rt = () => {
       ["Facing Up"].includes(G.comparison) && (O.xWidth = Math.round(it.value.height / O.pixelsPerInch), O.yHeight = Math.round(G.maxLength)), ["Back-to-Back", "Facing In", "Back"].includes(G.comparison) && (O.xWidth = Math.round(G.maxLength), O.yHeight = Math.round(it.value.height / O.pixelsPerInch));
     }, _e = () => {
-      tt.value = !0, Rt(), pt("imageLoaded", it.value), xe();
+      tt.value = !0, Rt(), ct("imageLoaded", it.value), xe();
     }, xe = () => {
       if (it.value.style.position = "absolute", ["Facing Up", "Back-to-Back", "Back"].includes(G.comparison)) {
-        let ct = (it.value.width - it.value.height) / 2 - O.rulerWidth, Vt = (it.value.height - it.value.width) / 2 - O.rulerWidth;
-        it.value.style.bottom = 0, it.value.style.top = "auto", G.position === "left" && (it.value.style.right = 0, it.value.style.left = "auto", G.comparison === "Facing Up" && (it.value.style.transform = `translate(${ct}px, ${Vt}px) rotate(90deg)`), (G.comparison === "Back-to-Back" || G.comparison === "Back") && (it.value.style.transform = `translate(-${O.rulerWidth}px, -${O.rulerWidth}px)`)), G.position === "right" && (it.value.style.left = 0, it.value.style.right = "auto", G.comparison === "Facing Up" && (it.value.style.transform = `translate(-${ct}px, ${Vt}px) rotate(-90deg)`), G.comparison === "Back-to-Back" && (it.value.style.transform = `translate(${O.rulerWidth}px, -${O.rulerWidth}px)`));
+        let dt = (it.value.width - it.value.height) / 2 - O.rulerWidth, Vt = (it.value.height - it.value.width) / 2 - O.rulerWidth;
+        it.value.style.bottom = 0, it.value.style.top = "auto", G.position === "left" && (it.value.style.right = 0, it.value.style.left = "auto", G.comparison === "Facing Up" && (it.value.style.transform = `translate(${dt}px, ${Vt}px) rotate(90deg)`), (G.comparison === "Back-to-Back" || G.comparison === "Back") && (it.value.style.transform = `translate(-${O.rulerWidth}px, -${O.rulerWidth}px)`)), G.position === "right" && (it.value.style.left = 0, it.value.style.right = "auto", G.comparison === "Facing Up" && (it.value.style.transform = `translate(-${dt}px, ${Vt}px) rotate(-90deg)`), G.comparison === "Back-to-Back" && (it.value.style.transform = `translate(${O.rulerWidth}px, -${O.rulerWidth}px)`));
       }
       ["Facing In"].includes(G.comparison) && (it.value.style.top = 0, it.value.style.bottom = "auto", G.position === "left" && (it.value.style.left = 0, it.value.style.right = "auto", it.value.style.transform = `translate(${O.rulerWidth}px, ${O.rulerWidth}px)`), G.position === "right" && (it.value.style.right = 0, it.value.style.left = "auto", it.value.style.transform = `translate(-${O.rulerWidth}px, ${O.rulerWidth}px)`));
-    }, Et = (ct) => {
-      ["Facing Up", "Back-to-Back"].includes(ct) && (G.position === "left" && (it.value.src = G.image.srcLeft), G.position === "right" && (it.value.src = G.image.srcRight)), ct === "Facing In" && (G.position === "left" && (it.value.src = G.image.srcRight), G.position === "right" && (it.value.src = G.image.srcLeft)), ct === "Back" && (it.value.src = G.image.srcBack);
+    }, Et = (dt) => {
+      ["Facing Up", "Back-to-Back"].includes(dt) && (G.position === "left" && (it.value.src = G.image.srcLeft), G.position === "right" && (it.value.src = G.image.srcRight)), dt === "Facing In" && (G.position === "left" && (it.value.src = G.image.srcRight), G.position === "right" && (it.value.src = G.image.srcLeft)), dt === "Back" && (it.value.src = G.image.srcBack);
     };
     return Zi(() => {
       Et(G.comparison), it.value.width = ge.value.width;
     }), ji(
       () => G.comparison,
-      (ct) => {
-        Rt(), Et(ct);
+      (dt) => {
+        Rt(), Et(dt);
       }
-    ), (ct, Vt) => (Xi(), Ki("div", null, [
+    ), (dt, Vt) => (Xi(), Ki("div", null, [
       Mi(mn, {
         axis: "x",
         position: $t.position,
@@ -13201,27 +13201,29 @@ const Me = yn.exports, hr = ["id"], mn = {
       type: String,
       required: !0,
       default: "Facing Up"
-    }
+    },
+    leftImage: Object,
+    rightImage: Object
   },
   setup($t) {
-    const G = Oi($t.comparison || "Facing In"), it = Li({
+    const ct = $t, G = Oi(ct.comparison || "Facing In"), it = Li({
       pixelsPerInch: 52,
       spaceAddend: 15,
       spacing: 0.3
     }), tt = Li({
       src: "https://img.handgunhero.com/live/handgun/134398/c/G17-lg-1024.png",
-      srcLeft: "https://img.handgunhero.com/live/handgun/134398/c/G17-lg-1024.png",
-      srcRight: "https://img.handgunhero.com/live/handgun/134399/c/G17-(1)-lg-1024.png",
-      srcBack: "https://img.handgunhero.com/live/handgun/134328/c/G17-sm-240.jpg",
-      rawLength: 8.03,
+      srcLeft: ct.leftImage.left_image,
+      srcRight: ct.leftImage.right_image,
+      srcBack: null,
+      rawLength: ct.leftImage.length,
       width: 0,
       height: 0
     }), O = Li({
       src: "https://img.handgunhero.com/live/handgun/134282/c/365xl-9-bxr3-right-lg-1024.png",
-      srcLeft: "https://img.handgunhero.com/live/handgun/134264/c/p365xl-left-lg-1024.png",
-      srcRight: "https://img.handgunhero.com/live/handgun/134282/c/365xl-9-bxr3-right-lg-1024.png",
-      srcBack: "https://img.handgunhero.com/live/handgun/134334/c/365xl-back-sm-240.jpg",
-      rawLength: 6.6,
+      srcLeft: ct.rightImage.left_image,
+      srcRight: ct.rightImage.right_image,
+      srcBack: null,
+      rawLength: ct.rightImage.length,
       width: 0,
       height: 0
     }), ge = ai(() => {
@@ -13229,28 +13231,29 @@ const Me = yn.exports, hr = ["id"], mn = {
       return G.value === "Facing Up" && (Et = Math.ceil(Rt.value.maxImageHeight) + (it.spacing * it.pixelsPerInch + it.spaceAddend) + 100), Et * 2 + "px";
     }), Rt = ai(() => {
       const Et = tt.rawLength > O.rawLength ? tt.rawLength : O.rawLength;
-      let ct = tt.height > O.height ? tt.height : O.height;
+      let dt = tt.height > O.height ? tt.height : O.height;
       tt.width > O.width ? tt.width : O.width;
-      let Vt = Et + 1, z = Math.ceil(ct) + (it.spacing * it.pixelsPerInch + it.spaceAddend) + 100 + "px", Ft = (Math.floor(Et) + 1) * it.pixelsPerInch + 100 + "px";
-      return G.value === "Facing Up" && (z = (Math.floor(Et) + 1) * it.pixelsPerInch + 100 + "px", Ft = Math.ceil(ct) + (it.spacing * it.pixelsPerInch + it.spaceAddend) + 100 + "px"), {
+      let Vt = Et + 1, z = Math.ceil(dt) + (it.spacing * it.pixelsPerInch + it.spaceAddend) + 100 + "px", Ft = (Math.floor(Et) + 1) * it.pixelsPerInch + 100 + "px";
+      return G.value === "Facing Up" && (z = (Math.floor(Et) + 1) * it.pixelsPerInch + 100 + "px", Ft = Math.ceil(dt) + (it.spacing * it.pixelsPerInch + it.spaceAddend) + 100 + "px"), {
         pixelsPerInch: it.pixelsPerInch,
         spaceAddend: it.spaceAddend,
         maxHeight: Et,
         containerHeight: z,
         containerWidth: Ft,
         maxLength: Vt,
-        maxImageHeight: ct
+        maxImageHeight: dt
       };
-    }), _e = ({ width: Et, height: ct }) => {
-      tt.width = Et, tt.height = ct;
-    }, xe = ({ width: Et, height: ct }) => {
-      O.width = Et, O.height = ct;
+    }), _e = ({ width: Et, height: dt }) => {
+      tt.width = Et, tt.height = dt;
+    }, xe = ({ width: Et, height: dt }) => {
+      O.width = Et, O.height = dt;
     };
     return Zi(() => {
       console.log();
-    }), (Et, ct) => (Xi(), Ki("div", {
+    }), (Et, dt) => (Xi(), Ki("div", {
       style: Ti({
-        width: Ve(ge)
+        width: Ve(ge),
+        overflow: "scroll hidden"
       })
     }, [
       Yi("div", lr, [
