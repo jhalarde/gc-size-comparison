@@ -4,19 +4,22 @@
         <div class="inline-flex">
             <button
                 @click="comparison = 'Facing Up'"
-                class="font-sans text-sm bg-white hover:bg-red-600 hover:text-white border-gray-200 border text-red-600 py-1 px-4"
+                class="font-sans text-sm bg-white border-gray-200 border text-red-600 py-1 px-4"
+                :class="buttonClass('Facing Up')"
             >
                 Facing Up
             </button>
             <button
                 @click="comparison = 'Back-to-Back'"
-                class="font-sans text-sm bg-white hover:bg-red-600 hover:text-white border-gray-200 border text-red-600 py-1 px-4"
+                class="font-sans text-sm bg-white border-gray-200 border text-red-600 py-1 px-4"
+                :class="buttonClass('Back-to-Back')"
             >
                 Back-to-Back
             </button>
             <button
                 @click="comparison = 'Facing In'"
-                class="font-sans text-sm bg-white hover:bg-red-600 hover:text-white border-gray-200 border text-red-600 py-1 px-4"
+                class="font-sans text-sm bg-white border-gray-200 border text-red-600 py-1 px-4"
+                :class="buttonClass('Facing In')"
             >
                 Facing In
             </button>
@@ -95,7 +98,6 @@ const props = defineProps({
     rightImageLength: String,
 
     baseContainerClass: String,
-    buttonClass: String,
 })
 
 const comparison = ref('Facing In')
@@ -207,12 +209,18 @@ const rightImageLoaded = ({ width, height }) => {
     rightImage.height = height
 }
 
+const buttonClass = (type) => {
+    return {
+        'hover:bg-red-600 hover:text-white': comparison.value !== type,
+        'bg-red-600 text-white': comparison.value === type,
+    }
+}
+
 let windowWidth = ref(window.innerWidth)
 
 const onWidthChange = () => (windowWidth.value = window.innerWidth)
 
 onMounted(() => {
-    console.log(props)
     window.addEventListener('resize', onWidthChange)
 })
 onUnmounted(() => {
